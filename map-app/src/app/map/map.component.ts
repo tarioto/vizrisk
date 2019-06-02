@@ -1,6 +1,6 @@
 // Load dependencies
 import { Component, OnInit } from '@angular/core';
-import { tileLayer, latLng, circle, polygon, marker, geoJSON } from 'leaflet';
+import { tileLayer, latLng, circle, polygon, marker, Map, geoJSON } from 'leaflet';
 import { HttpClient } from '@angular/common/http';
 
 // Create component
@@ -56,7 +56,7 @@ export class MapComponent implements OnInit {
     return this.http.get('/api/buildings');
   }
 
-// Method to ensure unique values
+// Method to retrieve unique values of array
   uniq(a) {
     var seen = {};
     return a.filter(function(item) {
@@ -74,7 +74,7 @@ export class MapComponent implements OnInit {
   }
 
 // Method to add requested geojson layer to map
-  onMapReady(map: L.Map) {
+  onMapReady(map: Map) {
     this.http.get('assets/Peak_Gust_mph.geojson').subscribe((json: any) => {
         console.log(json);
         geoJSON(json).addTo(map);
