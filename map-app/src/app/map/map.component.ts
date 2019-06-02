@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { tileLayer, latLng, circle, polygon, marker } from 'leaflet';
+import { tileLayer, latLng, circle, polygon, marker, geoJSON } from 'leaflet';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -39,6 +39,8 @@ export class MapComponent implements OnInit {
           );
       });
     })
+
+    this.addGeoJsonLayer();
   }
 
   getBuildings() {
@@ -59,5 +61,18 @@ export class MapComponent implements OnInit {
     })
     return result;
   }
+
+  addGeoJsonLayer() {
+    this.http.get('assets/Peak_Gust_mph.geojson').subscribe((json: any) => {
+        console.log(json);
+    });
+  }
+
+  onMapReady(map: L.Map) {
+    this.http.get('assets/Peak_Gust_mph.geojson').subscribe((json: any) => {
+        console.log(json);
+        geoJSON(json).addTo(map);
+    });
+}
 
 }

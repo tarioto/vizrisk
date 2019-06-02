@@ -14,5 +14,6 @@
 <div class="map"
      leaflet
      [leafletOptions]="options"
-     [leafletLayers]="layers">
+     [leafletLayers]="layers"
+     (leafletMapReady)="onMapReady($event)">
 </div>
