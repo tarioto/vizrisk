@@ -1,12 +1,16 @@
+// Load dependencies
 import { Component, OnInit } from '@angular/core';
 import { tileLayer, latLng, circle, polygon, marker, geoJSON } from 'leaflet';
 import { HttpClient } from '@angular/common/http';
 
+// Create component
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css']
 })
+
+// Load basemap
 export class MapComponent implements OnInit {
   layers = [];
   options = {
@@ -14,13 +18,16 @@ export class MapComponent implements OnInit {
     		tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
     	],
   	zoom: 6,
-  	center: latLng(15.4150, -69.3710)
+  	center: latLng(15.4150, -62.3710)
   };
+  // Set placeholders for data overlay - not used
   uniqBldgClasses:any;
   colors: any;
 
+// Binding HttpClient module to component
   constructor(private http: HttpClient) { }
 
+// Process data from db - not used
   ngOnInit() {
     this.getBuildings().subscribe((buildings: any) => {
       console.log(buildings, 'buildings')
@@ -40,13 +47,16 @@ export class MapComponent implements OnInit {
       });
     })
 
+// Call geoJSON layer
     this.addGeoJsonLayer();
   }
 
+// Use API to get buildings from db - not used
   getBuildings() {
     return this.http.get('/api/buildings');
   }
 
+// Method to ensure unique values
   uniq(a) {
     var seen = {};
     return a.filter(function(item) {
@@ -54,6 +64,7 @@ export class MapComponent implements OnInit {
     });
   }
 
+// Method to generate random unique colors for n features
   getColors(uniqValues) {
     const result = {}
     uniqValues.forEach((v) => {
@@ -62,12 +73,7 @@ export class MapComponent implements OnInit {
     return result;
   }
 
-  addGeoJsonLayer() {
-    this.http.get('assets/Peak_Gust_mph.geojson').subscribe((json: any) => {
-        console.log(json);
-    });
-  }
-
+// Method to add requested geojson layer to map
   onMapReady(map: L.Map) {
     this.http.get('assets/Peak_Gust_mph.geojson').subscribe((json: any) => {
         console.log(json);
