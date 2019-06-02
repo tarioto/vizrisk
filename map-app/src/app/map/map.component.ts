@@ -17,8 +17,8 @@ export class MapComponent implements OnInit {
     layers: [
       tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
     ],
-    zoom: 6,
-    center: latLng(15.4150, -62.3710)
+    zoom: 12,
+    center: latLng(15.3150, -61.3710)
   };
   // Set placeholders for data overlay from buildings
   uniqBldgClasses: any;
@@ -69,32 +69,32 @@ export class MapComponent implements OnInit {
 
   // Method to add requested geojson layer to map
   onMapReady(map: Map) {
-  //   this.http.get('assets/Peak_Gust_mph.geojson').subscribe((json: any) => {
-  //     console.log(json);
-  //     geoJSON(json, {
-  //       style: function(feature) {
-  //         switch (feature.properties.Name) {
-  //           case '40': return { color: "#00d4e5" , opacity: 0.1};
-  //           case '50': return { color: "#00d4e5" , opacity: 0.1};
-  //           case '60': return { color: "#00e1ba" , opacity: 0.1};
-  //           case '70': return { color: "#00e1ba" , opacity: 0.1};
-  //           case '80': return { color: "#00de7f" , opacity: 0.1};
-  //           case '90': return { color: "#00db0f" , opacity: 0.1};
-  //           case '100': return { color: "#25d500" , opacity: 0.1};
-  //           case '110': return { color: "#59d200" , opacity: 0.1};
-  //           case '120': return { color: "#8bce00" , opacity: 0.1};
-  //           case '130': return { color: "#bccb00" , opacity: 0.1};
-  //           case '140': return { color: "#c8a500" , opacity: 0.1};
-  //           case '150': return { color: "#c46900" , opacity: 0.1};
-  //           case '160': return { color: "#c46900" , opacity: 0.1};
-  //           case '170': return { color: "#c13a00" , opacity: 0.1};
-  //           case '180': return { color: "#c13a00" , opacity: 0.1};
-  //           case '190': return { color: "#bf0e00" , opacity: 0.1};
-  //           case '200': return { color: "#bf0e00" , opacity: 0.1};
-  //         }
-  //       }
-  //     }).addTo(map);
-  //   });
+    this.http.get('assets/Peak_Gust_mph.geojson').subscribe((json: any) => {
+      console.log(json);
+      geoJSON(json, {
+        style: function(feature) {
+          switch (feature.properties.Name) {
+            case '40': return { color: "#00d4e5" , opacity: 0.0, fillOpacity: 0.05};
+            case '50': return { color: "#00d4e5" , opacity: 0.0, fillOpacity: 0.05};
+            case '60': return { color: "#00e1ba" , opacity: 0.0, fillOpacity: 0.05};
+            case '70': return { color: "#00e1ba" , opacity: 0.0, fillOpacity: 0.05};
+            case '80': return { color: "#00de7f" , opacity: 0.0, fillOpacity: 0.05};
+            case '90': return { color: "#00db0f" , opacity: 0.0, fillOpacity: 0.05};
+            case '100': return { color: "#25d500" , opacity: 0.0, fillOpacity: 0.05};
+            case '110': return { color: "#59d200" , opacity: 0.0, fillOpacity: 0.05};
+            case '120': return { color: "#8bce00" , opacity: 0.0, fillOpacity: 0.05};
+            case '130': return { color: "#bccb00" , opacity: 0.0, fillOpacity: 0.05};
+            case '140': return { color: "#c8a500" , opacity: 0.0, fillOpacity: 0.05};
+            case '150': return { color: "#c46900" , opacity: 0.0, fillOpacity: 0.05};
+            case '160': return { color: "#c46900" , opacity: 0.0, fillOpacity: 0.05};
+            case '170': return { color: "#c13a00" , opacity: 0.0, fillOpacity: 0.05};
+            case '180': return { color: "#c13a00" , opacity: 0.0, fillOpacity: 0.05};
+            case '190': return { color: "#bf0e00" , opacity: 0.0, fillOpacity: 0.05};
+            case '200': return { color: "#bf0e00" , opacity: 0.0, fillOpacity: 0.05};
+          }
+        }
+      }).addTo(map);
+    });
   }
 
 }
