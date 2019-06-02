@@ -10,7 +10,7 @@ const Building = require(path.join(__dirname, 'building.js'));
 // const Component = require('../schema/component.js');
 
 // Connect
-const url = 'mongodb://localhost/db_training'
+const url = 'mongodb://localhost/viz_risk'
 mongoose.Promise = global.Promise;
 mongoose.connect(url);
 
@@ -20,7 +20,7 @@ app.get('/', (req, res) => res.send('Hello World!'))
 
 // Get buildings
 app.get('/api/buildings',(req, res, next) => {
-  Building.find({}, (err, buildings) => {
+  Building.find({"main_damage": {$ne: "Damaged"}}, (err, buildings) => { // filter out buildings that only were labeled as 'Damaged'
     if (err) next(err);
     res.json(buildings);
   });
