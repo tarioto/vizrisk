@@ -13,8 +13,8 @@ export class MapComponent implements OnInit {
   	layers: [
     		tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
     	],
-  	zoom: 9,
-  	center: latLng(47.628346, -122.489379)
+  	zoom: 6,
+  	center: latLng(15.4150, -69.3710)
   };
   uniqBldgClasses:any;
   colors: any;
