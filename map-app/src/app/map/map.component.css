@@ -1,0 +1,29 @@
+.legend {
+  background-color: white;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  width:100px;
+  z-index: 10;
+}
+
+.map {
+  height: 100vh;
+  z-index: 5;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.wrapper {
+  display: flex;
+}

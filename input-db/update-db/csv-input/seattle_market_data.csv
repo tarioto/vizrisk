@@ -1,0 +1,1434 @@
+bldg_id,lat,lng,bldg_address,bldg_name,submarket,zip_code,floor_area,bldg_class,nstory,constr_year
+B0001,47.6388254,-122.1923881,3101 Northup Way,Northup Office Center,520 Corridor,98004,42086,A,3,1979
+B0002,47.67132072,-122.1377076,152nd Ave NE,Esterra Park - Two,520 Corridor,98052,180000,B,6,2015
+B0003,47.67132072,-122.1377076,152nd Ave NE,Esterra Park - Three,520 Corridor,98052,223000,B,6,2015
+B0004,47.67132072,-122.1377076,152nd Ave NE,Esterra Park - Five,520 Corridor,98052,225000,B,6,
+B0005,47.67132072,-122.1377076,152nd Ave NE,Esterra Park - Four,520 Corridor,98052,230000,B,6,
+B0006,47.630487,-122.147336,14335 NE 24th St,Oakhurst Center B,520 Corridor,98007,"70,794",A,2,1985
+B0007,47.630524,-122.146143,14475 NE 24th St,Oakhurst Center A,520 Corridor,98007,"72,397",A,2,1985
+B0008,47.639232,-122.142316,14860 NE 31st Way,Microsoft - Bldg 114,520 Corridor,98052,"85,226",A,3,1999
+B0009,47.645329,-122.136351,15291 NE 40th St,Microsoft Studio A,520 Corridor,98052,"96,912",A,3,1990
+B0010,47.640434,-122.138367,15011 NE 36th St,Laguna North,520 Corridor,98052,"104,353",A,3,1998
+B0011,47.638752,-122.1409,14980 NE 31st Way,Laguna South,520 Corridor,98052,"104,443",A,3,1999
+B0012,47.64026,-122.142249,14855 NE 31st Way,Microsoft - Bldg 115,520 Corridor,98052,"114,391",A,4,1999
+B0013,47.639484,-122.141542,14870 NE 31st Way,Microsoft - Bldg113,520 Corridor,98052,"114,391",A,4,1999
+B0014,47.640565,-122.141097,14999 NE 31st Way,Microsoft - Bldg 112,520 Corridor,98052,"114,392",A,4,1999
+B0015,47.646832,-122.133029,4001 156th Ave NE,Microsoft - Bldg 50,520 Corridor,98052,"118,050",A,4,2001
+B0016,47.641114,-122.136296,15050 NE 36th St,Microsoft Studio X,520 Corridor,98052,"122,103",A,3,1998
+B0017,47.651848,-122.133705,4514 154th Pl NE,Microsoft - Bldg 84,520 Corridor,98052,"148,792",A,3,2000
+B0018,47.643562,-122.141541,3800 148th Ave NE,Microsoft Studio G,520 Corridor,98052,"152,478",A,3,2000
+B0019,47.643562,-122.14076,3850 148th Ave NE,Microsoft Studio H,520 Corridor,98052,"152,478",A,3,2000
+B0020,47.644517,-122.142812,3900 148th Ave NE,Microsoft Studio F,520 Corridor,98052,"152,478",A,3,2000
+B0021,47.645173,-122.142808,3950 148th Ave NE,Microsoft Studio E,520 Corridor,98052,"152,478",A,3,2001
+B0022,47.638105,-122.132994,15563 NE 31st St,Microsoft - Bldg 40,520 Corridor,98052,"152,821",A,6,1998
+B0023,47.639283,-122.134312,15580 NE 31st St,Microsoft- Bldg 43,520 Corridor,98052,"154,739",A,4,1997
+B0024,47.636986,-122.133568,15571 NE 31st St,Microsoft - Bldg 41,520 Corridor,98052,"196,999",A,6,1998
+B0025,47.63925,-122.133052,15590 NE 31st St,Microsoft - Bldg 42,520 Corridor,98052,"207,082",A,4,1997
+B0026,47.640565,-122.141097,14999 NE 31st Way,Microsoft Campus 109,520 Corridor,98052,"211,731",A,4,2002
+B0027,47.642095,-122.142068,14820 NE 36th St,Bldg99,520 Corridor,98052,"217,112",A,4,2007
+B0028,47.650955,-122.14038,4600 150th Ave NE,Nintendo HQ,520 Corridor,98052,"284,985",A,3,2010
+B0029,47.630676,-122.16935,2353 130th Ave NE,520 Corporate Center B,520 Corridor,98005,"30,000",B,2,1990
+B0030,47.637841,-122.194704,3001 112th Ave NE,Corporate Campus East III H,520 Corridor,98004,"30,190",B,2,1986
+B0031,47.631187,-122.168785,2375 130th Ave NE,520 Corporate Center A,520 Corridor,98005,"30,285",B,2,1988
+B0032,47.636107,-122.195443,3005 112th Ave NE,Corporate Campus East III G,520 Corridor,98004,"30,377",B,2,1986
+B0033,47.647754,-122.142256,4102-4120 148th Ave NE,Overlake Business Center North G,520 Corridor,98052,"30,483",B,2,1980
+B0034,47.630963,-122.168107,2331-2355 130th Ave NE,520 Corporate Center C,520 Corridor,98005,"30,504",B,2,1990
+B0035,47.637802,-122.196365,3025 112th Ave NE,Corporate Campus East A,520 Corridor,98004,"30,825",B,2,1982
+B0036,47.633821,-122.183909,2606 116th Ave NE,Sweeney Conrad Building,520 Corridor,98005,"33,155",B,2,2000
+B0037,47.649263,-122.139392,4420 150th Ave NE,Microsoft - Bldg 126,520 Corridor,98052,"33,392",B,1,1975
+B0038,47.633312,-122.180415,11980 NE 24th St,Pike's Peak Plaza,520 Corridor,98005,"34,354",B,2,1999
+B0039,47.633747,-122.183174,2600 116th Ave NE,Twilight Center,520 Corridor,98005,"34,823",B,2,2001
+B0040,47.648366,-122.139769,4330 150th Ave NE,Microsoft - Bldg124,520 Corridor,98052,"36,907",B,1,1975
+B0041,47.648979,-122.138132,4350 150th Ave NE,Microsoft Campus - Bldg 3,520 Corridor,98052,"37,200",B,1,1975
+B0042,47.648979,-122.138132,4350 150th Ave NE,Microsoft - Bldg 125,520 Corridor,98052,"37,623",B,1,1975
+B0043,47.652504,-122.142082,5010 148th Ave NE,Redmond Woods B,520 Corridor,98052,"41,365",B,2,1982
+B0044,47.636395,-122.194977,3055 112th Ave NE,Corporate Campus East B,520 Corridor,98004,"42,300",B,2,1982
+B0045,47.634705,-122.145248,14673 NE 29th Pl,Liberty II,520 Corridor,98007,"42,993",B,2,1999
+B0046,47.636528,-122.19434,3009 112th Ave NE,Corporate Campus East III F,520 Corridor,98004,"43,031",B,2,1986
+B0047,47.633374,-122.181696,11820 Northup Way,Centra Office Park East,520 Corridor,98005,"45,427",B,3,1983
+B0048,47.633457,-122.182254,11808 Northup Way,Centra Office Park West,520 Corridor,98005,"45,582",B,3,1983
+B0049,47.633082,-122.133366,15446 Bel Red Rd,Overlake Office Center,520 Corridor,98052,"48,568",B,4,1980
+B0050,47.632459,-122.154769,2445 140th Ave NE,Park 140 B,520 Corridor,98005,"48,646",B,2,1988
+B0051,47.652109,-122.142152,5000 148th Ave NE,Redmond Woods A,520 Corridor,98052,"49,645",B,2,1982
+B0052,47.637054,-122.195365,3015 112th Ave NE,Corporate Campus East III E,520 Corridor,98004,"50,468",B,2,1986
+B0053,47.652938,-122.142297,5020 148th Ave NE,Redmond Woods C,520 Corridor,98052,"53,841",B,2,1982
+B0054,47.647441,-122.139262,4240 150th Ave NE,Microsoft Building 123,520 Corridor,98052,"58,293",B,1,1981
+B0055,47.640714,-122.13324,15595 NE 36th St,Microsoft - Bldg 44,520 Corridor,98052,"60,000",B,4,1997
+B0056,47.63279,-122.147842,14450 NE 29th Pl,Clover Building,520 Corridor,98007,"60,171",B,2,1981
+B0057,47.638668,-122.198143,3075 112th Ave NE,Corporate Campus East C,520 Corridor,98004,"60,875",B,2,1983
+B0058,47.63539,-122.144856,14711 NE 29th Pl,Liberty Northwest Center,520 Corridor,98007,"66,688",B,2,1980
+B0059,47.649404,-122.142965,4420 148th Ave NE,Microsoft - Bldg 127,520 Corridor,98052,"97,258",B,2,1978
+B0060,47.652542,-122.133464,4900 154th Pl NE,Microsoft - Bldg 86,520 Corridor,98052,"106,000",B,1,1980
+B0061,47.637333,-122.135994,3050 152nd Ave NE,Microsoft - Bldg 22,520 Corridor,98052,"113,391",B,4,1982
+B0062,47.659763,-122.139751,5600 148th Ave NE,Microsoft Red West Building D,520 Corridor,98052,"122,433",B,3,1995
+B0063,47.654049,-122.141991,5001 150th Ave NE,Nintendo,520 Corridor,98052,"126,200",B,2,1989
+B0064,47.659763,-122.139751,5600 148th Ave NE,Microsoft Red West Building E,520 Corridor,98052,"132,144",B,3,1995
+B0065,47.659763,-122.139751,5600 148th Ave NE,Microsoft Red West Building B,520 Corridor,98052,"134,922",B,3,1995
+B0066,47.659763,-122.139751,5600 148th Ave NE,Microsoft Red West Building C,520 Corridor,98052,"135,456",B,3,1995
+B0067,47.659763,-122.139751,5600 148th Ave NE,Microsoft Red West Building A,520 Corridor,98052,"140,822",B,3,1995
+B0068,47.639919,-122.13986,15001 NE 31st Way,Honeywell 1,520 Corridor,98052,"152,717",B,2,1960
+B0069,47.650846,-122.134354,4634 154th Pl NE,Adams Bldg,520 Corridor,98052,"157,875",B,3,2000
+B0070,47.652809,-122.135894,5069 154th Pl NE,Microsoft - Bldg 88,520 Corridor,98052,"178,171",B,2,2000
+B0071,47.646017,-122.137327,15220 NE 40th St,Microsoft - Bldg 121,520 Corridor,98052,"180,270",B,3,1990
+B0072,47.642357,-122.137006,15010 NE 36th St,Microsoft - Bldg 92,520 Corridor,98052,"194,054",B,3,1973
+B0073,47.646496,-122.138977,15120 NE 40th St,Microsoft 3 - Bldg 122,520 Corridor,98052,"213,292",B,3,1995
+B0074,47.651061,-122.135795,4500 154th Pl NE,Microsoft - Bldg 87,520 Corridor,98052,"221,358",B,3,1980
+B0075,47.64295,-122.138104,3640 150th Ave NE,Microsoft Commons - Bldg 95,520 Corridor,98052,"239,395",B,4,2008
+B0076,47.643146,-122.135629,15030 NE 36th St,Microsoft Commons - Bldg 94,520 Corridor,98052,"240,661",B,4,2008
+B0077,47.645319,-122.138933,15101 NE 40th St,Microsoft Studio B,520 Corridor,98052,"271,757",B,4,2008
+B0078,47.649034,-122.133266,154th Pl NE @ NE 45th Ct,Microsoft Bldg 83,520 Corridor,98052,"276,135",B,4,2015
+B0079,47.630182,-122.176705,12328-12342 Northup Way,North Park BC West,520 Corridor,98005,"30,000",C,2,1981
+B0080,47.629265,-122.162079,13256 NE 20th St,Cascade Place I - East Bldg,520 Corridor,98005,"30,400",C,1,1974
+B0081,47.649755,-122.135568,15319 NE 45th St,,520 Corridor,98052,"47,701",C,2,2000
+B0082,47.64917938,-122.3468864,900 N 34th St,Watershed,Ballard/U Dist,98103,58010,A,7,2020
+B0083,47.66692003,-122.385498,5423 Shilshole Ave NW,Stimson Bay - Bldg 2,Ballard/U Dist,98107,100000,A,5,
+B0084,47.66692003,-122.385498,5423 Shilshole Ave NW,Stimson Bay - Bldg 3,Ballard/U Dist,98107,100000,A,5,
+B0085,47.66692003,-122.385498,5423 Shilshole Ave NW,Stimson Bay - Bldg 4,Ballard/U Dist,98107,100000,A,5,
+B0086,47.66692003,-122.385498,5423 Shilshole Ave NW,Stimson Bay - Bldg 5,Ballard/U Dist,98107,100000,A,5,
+B0087,47.66692003,-122.385498,5423 Shilshole Ave NW,Stimson Bay - Bldg 1,Ballard/U Dist,98107,100000,A,5,
+B0088,47.66218248,-122.3749125,1451 NW 46th St,Ballard Blocks II,Ballard/U Dist,98107,267000,A,5,
+B0089,47.65449662,-122.3121632,3945 15th Ave NE,U of WA Care Clinic,Ballard/U Dist,98105,75000,C,3,
+B0090,47.662316,-122.317981,4545 Roosevelt Way NE,4545 Roosevelt,Ballard/U Dist,98105,"54,676",A,6,2016
+B0091,47.647834,-122.332642,2157 N Northlake Way,Emerald Landing,Ballard/U Dist,98103,"55,729",A,2,2012
+B0092,47.661545,-122.316246,1100 NE 45th St,45th Street Plaza,Ballard/U Dist,98105,"57,600",A,6,2001
+B0093,47.661041,-122.31578,1121 NE 45th St,WSECU Building,Ballard/U Dist,98105,"66,750",A,7,2018
+B0094,47.65052,-122.351746,3417 Evanston Ave N,Saturn Building,Ballard/U Dist,98103,"70,000",A,5,2012
+B0095,47.668368,-122.380854,5350 Tallman Ave NW,Tallman Building,Ballard/U Dist,98107,"83,508",A,5,2010
+B0096,47.649085,-122.348158,837 N 34th St,The Lake View,Ballard/U Dist,98103,"111,580",A,4,2008
+B0097,47.649723,-122.348407,744 N 34th St,Data 1,Ballard/U Dist,98103,"123,332",A,5,2017
+B0098,47.648716,-122.342293,3400 Stone Way N,Stone 34,Ballard/U Dist,98103,"132,293",A,5,2014
+B0099,47.648134,-122.348363,801 N 34th St,The Waterfront,Ballard/U Dist,98103,"164,961",A,3,1998
+B0100,47.669046,-122.375929,1448 NW Market St,15th & Market,Ballard/U Dist,98107,"204,000",A,5,2019
+B0101,47.64749,-122.338015,3301 Densmore Ave N,NorthEdge,Ballard/U Dist,98103,"210,000",A,5,2016
+B0102,47.661183,-122.338888,1501 N 45th St,Fremont Public Association Bldg,Ballard/U Dist,98103,"30,000",B,3,1998
+B0103,47.650158,-122.350089,3417 Fremont Ave N,Fremont Building,Ballard/U Dist,98103,"30,000",B,3,1906
+B0104,47.665131,-122.30117,5001 25th Ave NE,Northcut Landing East,Ballard/U Dist,98105,"30,000",B,3,2007
+B0105,47.661122,-122.329421,2409 N 45th St,Vehicle Sales,Ballard/U Dist,98103,"30,184",B,2,1969
+B0106,47.668938,-122.392433,2654 NW Market St,Western Fire & Safety Building,Ballard/U Dist,98107,"30,203",B,3,2017
+B0107,47.661142,-122.341753,1307-1309 N 45th St,Wallingford Plaza,Ballard/U Dist,98103,"30,761",B,3,1916
+B0108,47.662075,-122.312918,4518-4524 University Way NE,4518-4524 University,Ballard/U Dist,98105,"32,000",B,4,1953
+B0109,47.675025,-122.315419,1204 NE 64th St,Pnb Bldg,Ballard/U Dist,98115,"32,500",B,4,1969
+B0110,47.662613,-122.317848,4555 Roosevelt Way NE,University Center II,Ballard/U Dist,98105,"32,928",B,2,1999
+B0111,47.652237,-122.342269,3650-3670 Stone Way N,Bastyr Building,Ballard/U Dist,98103,"33,152",B,2,2001
+B0112,47.65111,-122.349613,701 N 36th St,Peck Building,Ballard/U Dist,98103,"33,740",B,5,2001
+B0113,47.661587,-122.313934,1300 NE 45th St,Key Bank,Ballard/U Dist,98105,"34,948",B,2,1976
+B0114,47.678099,-122.323266,444 NE Ravenna Blvd,Ravenna Building,Ballard/U Dist,98115,"36,000",B,4,1967
+B0115,47.652884,-122.35851,123 NW 36th St,Fremont West Building,Ballard/U Dist,98107,"36,839",B,2,1985
+B0116,47.66256,-122.369812,907 NW Ballard Way,,Ballard/U Dist,98107,"37,448",B,2,1980
+B0117,47.661775,-122.292663,3216 NE 45th Pl,Lakeview Medical Dental Building,Ballard/U Dist,98105,"38,378",B,3,1967
+B0118,47.658547,-122.312384,4201 15th Ave NE,George F. Russell Jr. Hall,Ballard/U Dist,98105,"40,351",B,6,2009
+B0119,47.667661,-122.375113,1417-1431 NW 54th St,Studioworks Ballard,Ballard/U Dist,98107,"44,000",B,4,2016
+B0120,47.647557,-122.34092,1341 N Northlake Way,Northlake I,Ballard/U Dist,98103,"44,198",B,3,2008
+B0121,47.661625,-122.285767,4500 Sand Point Way NE,Springbrook Professional Center,Ballard/U Dist,98105,"48,123",B,4,1984
+B0122,47.649951,-122.35345,437 N 34th St,437 N  34th St,Ballard/U Dist,98103,"50,939",B,3,1997
+B0123,47.649913,-122.352151,551 N 34th St,Canal View Building,Ballard/U Dist,98103,"51,058",B,3,2001
+B0124,47.668976,-122.385315,2208 NW Market St,2208 NW Market,Ballard/U Dist,98107,"51,800",B,4,1961
+B0125,47.650035,-122.352811,501 N 34th St,Evanston Building,Ballard/U Dist,98103,"53,410",B,4,2001
+B0126,47.660408,-122.315159,4310 12th Ave NE,Bldg S,Ballard/U Dist,98105,"57,016",B,4,1969
+B0127,47.685902,-122.337303,7900 E Green Lake Dr N,Lakeside Plaza,Ballard/U Dist,98103,"57,114",B,3,1996
+B0128,47.648643,-122.350622,651 N 34th St,Waterside Building,Ballard/U Dist,98103,"62,518",B,3,2001
+B0129,47.661457,-122.318322,4500 9th Ave NE,Theater Arts Building,Ballard/U Dist,98105,"63,000",B,3,1988
+B0130,47.665207,-122.301755,4915 25th Ave NE,Northcut Landing West,Ballard/U Dist,98105,"65,000",B,3,2007
+B0131,47.663331,-122.375464,1455 NW Leary Way,1455 Leary,Ballard/U Dist,98107,"70,080",B,4,2001
+B0132,47.660408,-122.315159,4310 12th Ave NE,Bldg O,Ballard/U Dist,98105,"71,267",B,4,1949
+B0133,47.660934,-122.316261,1107 NE 45th St,University District Building,Ballard/U Dist,98105,"80,205",B,5,1981
+B0134,47.66024,-122.315775,4311 12th Ave NE,Bldg C,Ballard/U Dist,98105,"93,224",B,6,1961
+B0135,47.660375,-122.316866,4311 11th Ave NE,Roosevelt Commons B,Ballard/U Dist,98105,"95,943",B,7,2002
+B0136,47.647844,-122.339045,1441 N 34th St,1441 N 34th St,Ballard/U Dist,98103,"103,697",B,3,2001
+B0137,47.658839,-122.318284,4245 Roosevelt Way NE,U of W Medical Center,Ballard/U Dist,98105,"105,000",B,4,1994
+B0138,47.658178,-122.318146,4225 Roosevelt Way NE,The 4225 Roosevelt Building,Ballard/U Dist,98105,"107,254",B,4,1988
+B0139,47.661831,-122.312317,4501 15th Ave NE,4545 Building Office Condos,Ballard/U Dist,98105,"113,994",B,4,1968
+B0140,47.650483,-122.35306,400 N 34th St,The Burke Building,Ballard/U Dist,98103,"124,071",B,3,1987
+B0141,47.649361,-122.350261,601 N 34th St,Park View Building,Ballard/U Dist,98103,"127,309",B,3,2001
+B0142,47.660464,-122.317343,4300 Roosevelt Way NE,Roosevelt Commons A,Ballard/U Dist,98105,"132,181",B,5,2002
+B0143,47.64871,-122.348888,701 N 34th St,The Plaza,Ballard/U Dist,98103,"138,994",B,4,1998
+B0144,47.660728,-122.314682,4333 Brooklyn Ave NE,UW Tower,Ballard/U Dist,98105,"279,459",B,22,1971
+B0145,47.651748,-122.35102,600 N 36th St,Fremont Space Building,Ballard/U Dist,98103,"31,370",C,4,2006
+B0146,47.668191,-122.380197,1801 NW Market St,Ballard Medical Plaza,Ballard/U Dist,98107,"40,000",C,4,1974
+B0147,47.662659,-122.364775,614 NW 46th St,Seattle City Light,Ballard/U Dist,98107,"41,066",C,2,1993
+B0148,47.665984,-122.384871,5303 Shilshole Ave NW,Salmon Bay Center - Bldg 4,Ballard/U Dist,98107,"43,500",C,3,1964
+B0149,47.61221291,-122.1989033,201 106th Ave NE,Taco Time,Bellevue CBD,98004,150000,A,9,2023
+B0150,47.61345488,-122.1961518,320 108th Ave NE,The Summit III,Bellevue CBD,98004,370000,A,17,
+B0151,47.61745753,-122.197104,10630-10660 NE 8th St,Skanska,Bellevue CBD,98004,500000,A,20,2023
+B0152,47.61828867,-122.1963642,833 108th Ave NE,Cadillac Office Tower,Bellevue CBD,98004,650000,A,19,2021
+B0153,47.61053295,-122.1988743,117 106th Ave NE,Bellevue Plaza,Bellevue CBD,98004,725000,A,34,2023
+B0154,47.61544349,-122.1962907,555 108th Ave NE,555 108th,Bellevue CBD,98004,937000,A,42,2023
+B0155,47.61614606,-122.1989128,606-620 106th Ave NE,620 Office Tower,Bellevue CBD,98004,850000,Trophy,60,2022
+B0156,47.613251,-122.197899,10655 NE 4th St,Key Bank Building,Bellevue CBD,98004,"96,571",A,9,1971
+B0157,47.617757,-122.201199,800 Bellevue Way NE,Corner Building,Bellevue CBD,98004,"105,000",A,6,1988
+B0158,47.611564,-122.198165,188 106th Ave NE,Bellevue Pacific Center,Bellevue CBD,98004,"110,372",A,6,1995
+B0159,47.620747,-122.190402,1110 112th Ave NE,One Twelfth West,Bellevue CBD,98004,"134,000",A,6,2001
+B0160,47.611644,-122.196663,155 108th Ave NE,Columbia West Building,Bellevue CBD,98004,"137,349",A,8,1986
+B0161,47.617897,-122.195869,10800 NE 8th St,US Bank Plaza,Bellevue CBD,98004,"144,510",A,10,1978
+B0162,47.617644,-122.191314,11100 NE 8th St,Plaza East,Bellevue CBD,98004,"156,000",A,9,1987
+B0163,47.620496,-122.189651,1120 112th Ave NE,One Twelfth East,Bellevue CBD,98004,"170,755",A,6,2001
+B0164,47.619959,-122.190033,1100 112th Ave NE,One Twelfth South,Bellevue CBD,98004,"175,634",A,6,2001
+B0165,47.613383,-122.193589,355 110th Ave NE,The Summit I,Bellevue CBD,98004,"248,902",A,11,2005
+B0166,47.613706,-122.195071,10885 NE 4th St,The Summit II,Bellevue CBD,98004,"283,232",A,13,2002
+B0167,47.617871,-122.193867,10900 NE 8th St,Plaza Center,Bellevue CBD,98004,"345,586",A,16,1983
+B0168,47.614194,-122.196807,411 108th Ave NE,One Bellevue Center,Bellevue CBD,98004,"358,838",A,21,1984
+B0169,47.614288,-122.192001,450 110th Ave NE,New City Hall,Bellevue CBD,98004,"377,000",A,9,1983
+B0170,47.617475,-122.200504,10500 NE 8th St,Bellevue Place Bank of America,Bellevue CBD,98004,"390,000",A,21,1988
+B0171,47.616926,-122.196749,777 108th Ave NE,Symetra Center,Bellevue CBD,98004,"445,089",A,25,1986
+B0172,47.617156,-122.201648,770 Bellevue Way NE,Lincoln Square North Tower,Bellevue CBD,98004,"540,000",A,27,2007
+B0173,47.610575,-122.191315,11058-11100 Main St,Gateway Office Building,Bellevue CBD,98004,"31,908",B,2,1980
+B0174,47.614685,-122.190056,520 112th Ave NE,520 Building,Bellevue CBD,98004,"36,208",B,4,1980
+B0175,47.610485,-122.192299,11040 Main St,Main Street Scott,Bellevue CBD,98004,"38,729",B,2,1980
+B0176,47.615589,-122.199608,505 106th Ave NE,Bellevue Park Plaza,Bellevue CBD,98004,"42,411",B,3,1967
+B0177,47.612151,-122.19008,200 112th Ave NE,200 Building,Bellevue CBD,98004,"50,531",B,3,1969
+B0178,47.61412,-122.190086,400 112th Ave NE,Tetra Tech Building,Bellevue CBD,98004,"64,446",B,4,1981
+B0179,47.614079,-122.195616,400 108th Ave NE,Washington Federal Center,Bellevue CBD,98004,"76,676",B,7,1968
+B0180,47.616668,-122.19957,777 106th Ave NE,Paccar Bldg,Bellevue CBD,98004,"213,672",B,14,1970
+B0181,47.611316,-122.193095,110 110th Ave NE,110 Atrium,Bellevue CBD,98004,"243,381",B,7,1981
+B0182,47.613042,-122.19695,305 108th Ave NE,Four106,Bellevue CBD,98004,"250,000",B,15,
+B0183,47.616009,-122.194984,600 108th Ave NE,Bellevue Corporate Plaza,Bellevue CBD,98004,"256,829",B,10,1979
+B0184,47.610934,-122.198116,120 106th Ave NE,Bellevue Rite Aid Bldg,Bellevue CBD,98004,"44,400",C,2,1962
+B0185,47.612151,-122.1963,205 108th Ave NE,Civica Office South Tower,Bellevue CBD,98004,"133,790",Trophy,6,2001
+B0186,47.612272,-122.196669,225 108th Ave NE,Civica Office North Tower,Bellevue CBD,98004,"178,505",Trophy,8,2001
+B0187,47.616031,-122.192376,11155 NE 8th St,Bravern 1,Bellevue CBD,98004,"251,000",Trophy,12,2009
+B0188,47.614226,-122.199341,425 106th Ave NE,Centre 425,Bellevue CBD,98004,"356,909",Trophy,16,2016
+B0189,47.613465,-122.196762,333 108th Ave NE,Expedia Building,Bellevue CBD,98004,"414,964",Trophy,20,2008
+B0190,47.614062,-122.194006,10900 NE 4th St,Skyline Tower,Bellevue CBD,98004,"416,755",Trophy,24,1983
+B0191,47.618382,-122.196834,929 108th Ave NE,929 Office Tower,Bellevue CBD,98004,"462,000",Trophy,19,2015
+B0192,47.61588,-122.196705,601 108th Ave NE,Key Center,Bellevue CBD,98004,"488,470",Trophy,22,2000
+B0193,47.61755,-122.192988,11025 NE 8th St,Bravern 2,Bellevue CBD,98004,"497,000",Trophy,23,2009
+B0194,47.614964,-122.19565,500 108th Ave NE,City Center Bellevue,Bellevue CBD,98004,"497,076",Trophy,27,1987
+B0195,47.614923,-122.193838,555 110th Ave NE,City Center Plaza,Bellevue CBD,98004,"583,179",Trophy,26,2009
+B0196,47.613865,-122.201342,10400 NE 4th St,Lincoln Square South Tower,Bellevue CBD,98004,"724,693",Trophy,31,2017
+B0197,47.616009,-122.194984,600 108th Ave NE,600 Bellevue,Bellevue CBD,98004,"794,000",Trophy,34,2022
+B0198,47.61542035,-122.3540172,2815 Elliott Ave,A&D Building - fka Old Spaghetti Factory,Belltown/Denny Regrade,98121,32210,B,3,1903
+B0199,47.610542,-122.344495,2001 Western Ave,Market Place II,Belltown/Denny Regrade,98121,"46,752",A,4,1981
+B0200,47.614386,-122.339675,2020 5th Ave,Seattle IBX,Belltown/Denny Regrade,98121,"59,720",A,7,2013
+B0201,47.611284,-122.347889,2200 Alaskan Way,World Trade Center West,Belltown/Denny Regrade,98121,"69,507",A,4,1998
+B0202,47.615846,-122.346089,2400 3rd Ave,Third & Battery,Belltown/Denny Regrade,98121,"75,120",A,3,2016
+B0203,47.610468,-122.343844,2003 Western Ave,Market Place I,Belltown/Denny Regrade,98121,"84,390",A,7,1981
+B0204,47.617306,-122.347317,2601 4th Ave,4th & Vine,Belltown/Denny Regrade,98121,"123,324",A,8,1975
+B0205,47.612929,-122.350089,2401-2415 Elliott Ave,World Trade Center North,Belltown/Denny Regrade,98121,"133,777",A,5,2000
+B0206,47.612823,-122.342232,2031 3rd Ave,Third & Lenora,Belltown/Denny Regrade,98121,"176,000",A,36,2020
+B0207,47.611598,-122.347692,2211 Elliott Ave,World Trade Center East,Belltown/Denny Regrade,98121,"186,117",A,6,1999
+B0208,47.611229,-122.343071,2025 1st Ave,Market Place Tower,Belltown/Denny Regrade,98121,"194,687",A,17,1988
+B0209,47.618217,-122.35183,2901 3rd Ave,Third & Broad,Belltown/Denny Regrade,98121,"283,293",A,5,1982
+B0210,47.614418,-122.338917,2001 6th Ave,Westin Building,Belltown/Denny Regrade,98121,"400,369",A,34,1981
+B0211,47.614128,-122.34243,2101-2121 4th Ave,4th & Blanchard,Belltown/Denny Regrade,98121,"413,279",A,25,1979
+B0212,47.616122,-122.344624,2320 4th Ave,,Belltown/Denny Regrade,98121,"33,211",B,2,1922
+B0213,47.61187,-122.343369,2030 1st Ave,1st & Lenora,Belltown/Denny Regrade,98121,"37,632",B,3,1930
+B0214,47.613183,-122.340361,2013 4th Ave,Marshall Building,Belltown/Denny Regrade,98121,"46,212",B,4,1925
+B0215,47.611234,-122.345139,2107 Elliott Ave,Elliott Court,Belltown/Denny Regrade,98121,"47,265",B,4,1990
+B0216,47.61731,-122.349815,200 Cedar St,Grange Insurance,Belltown/Denny Regrade,98121,"50,000",B,4,1981
+B0217,47.616096,-122.347763,2505 3rd Ave,Trianon Building,Belltown/Denny Regrade,98121,"50,775",B,3,1926
+B0218,47.615765,-122.351166,2701 1st Ave,First & Cedar Building,Belltown/Denny Regrade,98121,"52,075",B,5,1973
+B0219,47.615301,-122.348438,2505 2nd Ave,2505 Second,Belltown/Denny Regrade,98121,"68,212",B,7,1989
+B0220,47.612217,-122.349098,2323 Elliott Ave,Art Institute Seattle,Belltown/Denny Regrade,98121,"71,627",B,2,1905
+B0221,47.611041,-122.34222,1932 1st Ave,Terminal Sales Building,Belltown/Denny Regrade,98101,"90,000",B,12,1925
+B0222,47.61777,-122.350112,2807 3rd Ave,Kiro Telivision (Channel 7),Belltown/Denny Regrade,98121,"100,734",B,3,1968
+B0223,47.617718,-122.354469,3005 1st Ave,ECONET Building,Belltown/Denny Regrade,98121,"104,200",B,4,1980
+B0224,47.61711,-122.351539,2801-2815 2nd Ave,Bay Vista Office Tower,Belltown/Denny Regrade,98121,"119,793",B,5,1982
+B0225,47.617432,-122.344452,521 Wall St,6th & Wall,Belltown/Denny Regrade,98121,"132,790",B,3,1947
+B0226,47.612129,-122.339447,1904 3rd Ave,Securities Building,Belltown/Denny Regrade,98101,"139,567",B,10,1917
+B0227,47.611664,-122.350186,2223 Alaskan Way,Pier 66,Belltown/Denny Regrade,98121,"159,229",B,3,1995
+B0228,47.614677,-122.339417,2033 6th Ave,Sixth & Lenora Building,Belltown/Denny Regrade,98121,"161,000",B,11,1963
+B0229,47.612481,-122.343686,120 Lenora St,Qwest Communications,Belltown/Denny Regrade,98121,"162,118",B,12,1970
+B0230,47.613924,-122.353791,2611-2727 Alaskan Way,Pier 69 - Corporate HQ,Belltown/Denny Regrade,98121,"191,193",B,3,1931
+B0231,47.616409,-122.341118,2200 6th Ave,Denny Building,Belltown/Denny Regrade,98121,"206,000",B,12,1967
+B0232,47.616207,-122.34597,2401 4th Ave,Fourth & Battery,Belltown/Denny Regrade,98121,"210,807",B,12,1978
+B0233,47.614527,-122.353046,2601 Elliott Ave,2601 Elliott,Belltown/Denny Regrade,98121,"339,799",B,6,1917
+B0234,47.610508,-122.34227,1917-1921 1st Ave,Alaska Trade,Belltown/Denny Regrade,98101,"36,160",C,6,1910
+B0235,47.616709,-122.35157,2800 1st Ave,,Belltown/Denny Regrade,98121,"40,230",C,3,1942
+B0236,47.80365662,-122.2072819,1908 214th St SE,"Woodlands Technology Campus Phase II, Bldg 2",Bothell/Kenmore,98021,126081,A,5,
+B0237,47.80365662,-122.2072819,1908 214th St SE,"Woodlands Technology Campus Phase II, Bldg 3",Bothell/Kenmore,98021,260400,B,7,
+B0238,47.80365662,-122.2072819,1908 214th St SE,"Woodlands Technology Campus Phase II, Bldg 4",Bothell/Kenmore,98021,260400,B,7,
+B0239,47.773079,-122.180963,20021 120th Ave NE,Parklands North Creek P,Bothell/Kenmore,98011,"58,324",A,2,2000
+B0240,47.774547,-122.188521,20020-20030 N Creek Pkwy,North Creek Tech Campus 3 - Bldg M,Bothell/Kenmore,98011,"88,464",A,3,2000
+B0241,47.773841,-122.181216,20111 120th Ave NE,Parklands North Creek O,Bothell/Kenmore,98011,"96,509",A,3,2000
+B0242,47.779028,-122.182903,3755 Monte Villa Pkwy,Quadrant MV-AT&T 2,Bothell/Kenmore,98021,"103,000",A,3,1997
+B0243,47.766787,-122.187076,19125 N Creek Pkwy,North Creek Office I,Bothell/Kenmore,98011,"30,500",B,2,1991
+B0244,47.763363,-122.177773,18701 120th Ave NE,International Union of Operating Engineers Building,Bothell/Kenmore,98011,"32,200",B,2,1996
+B0245,47.760612,-122.249199,18120 68th Ave NE,Kenmore City Hall,Bothell/Kenmore,98028,"32,494",B,2,2010
+B0246,47.744488,-122.185555,16017 Juanita Woodinville Way NE,160th Interchange Plaza,Bothell/Kenmore,98011,"37,784",B,3,2008
+B0247,47.792272,-122.195225,22745 29th Dr SE,Canyon Park 228 East,Bothell/Kenmore,98021,"38,502",B,2,2001
+B0248,47.769649,-122.185563,19515 N Creek Pkwy,North Creek Office Center,Bothell/Kenmore,98011,"38,512",B,3,1989
+B0249,47.77112,-122.187644,19801 N Creek Pkwy,Parklands North Creek C,Bothell/Kenmore,98011,"38,643",B,2,1999
+B0250,47.775139,-122.183937,11714 N Creek Pkwy N,Schnitzer North Creek I,Bothell/Kenmore,98011,"39,082",B,2,2001
+B0251,47.795346,-122.211678,22232 17th Ave SE,Canyon Park Office Center,Bothell/Kenmore,98021,"40,553",B,3,1990
+B0252,47.779536,-122.186801,24000 35th Ave SE,Creekside Building,Bothell/Kenmore,98021,"43,917",B,2,1998
+B0253,47.795911,-122.19873,2530 223rd St SE,Canyon Park Commons I,Bothell/Kenmore,98021,"44,680",B,2,1999
+B0254,47.777626,-122.188547,3350 Monte Villa Pkwy,Creekview Building,Bothell/Kenmore,98021,"46,227",B,2,1999
+B0255,47.771794,-122.186024,19800 N Creek Pkwy,Parklands North Creek D,Bothell/Kenmore,98011,"46,320",B,2,1999
+B0256,47.772957,-122.186302,19900 N Creek Pkwy,Parklands North Creek G,Bothell/Kenmore,98011,"47,123",B,2,1999
+B0257,47.764183,-122.194252,18807 Beardslee Blvd,Bothell Professional Bldg,Bothell/Kenmore,98011,"48,214",B,2,2007
+B0258,47.776951,-122.189829,3330 Monte Villa Pkwy,Quadrant Monte Villa 3330,Bothell/Kenmore,98021,"48,647",B,2,1996
+B0259,47.796991,-122.201014,22201 23rd Dr SE,USDA-Food & Drug Administration,Bothell/Kenmore,98021,"51,688",B,1,1988
+B0260,47.774095,-122.182559,11831 N Creek Pkwy N,Parklands North Creek N,Bothell/Kenmore,98011,"58,376",B,2,2000
+B0261,47.768509,-122.180923,19201 120th Ave NE,Wright Group Building,Bothell/Kenmore,98011,"59,830",B,2,1989
+B0262,47.774006,-122.185921,20000 N Creek Pkwy,Parklands North Creek H,Bothell/Kenmore,98011,"59,965",B,2,1999
+B0263,47.777616,-122.183388,3700 Monte Villa Pkwy,The Clark Building,Bothell/Kenmore,98021,"62,850",B,2,1997
+B0264,47.776835,-122.18166,3830 Monte Villa Pkwy,3830 Monte Villa Pky Bldg,Bothell/Kenmore,98021,"63,200",B,2,1998
+B0265,47.814579,-122.287033,4003 204th St SW,,Bothell/Kenmore,98036,"63,228",B,2,2012
+B0266,47.77892,-122.181334,3855 Monte Villa Pkwy,3855 Monte Villa,Bothell/Kenmore,98021,"65,586",B,2,1998
+B0267,47.772058,-122.184983,19820 N Creek Pkwy,Parklands North Creek E,Bothell/Kenmore,98011,"66,432",B,2,1999
+B0268,47.794207,-122.203167,2020 224th St SE,Canyon Park Commons 4,Bothell/Kenmore,98021,"66,448",B,3,1999
+B0269,47.792213,-122.196786,22722 29th Dr SE,Canyon Park 228 West,Bothell/Kenmore,98021,"66,519",B,2,2001
+B0270,47.77275,-122.184876,19910 N Creek Pkwy,Parklands North Creek F,Bothell/Kenmore,98011,"67,333",B,2,1999
+B0271,47.799968,-122.213024,1522 217th Pl SE,217th Place Research Center,Bothell/Kenmore,98021,"67,799",B,2,1987
+B0272,47.771757,-122.180907,19909 120th Ave NE,Parklands North Creek Q,Bothell/Kenmore,98011,"68,158",B,2,1999
+B0273,47.795514,-122.198795,2500 223rd St SE,Canyon Park Commons II,Bothell/Kenmore,98021,"68,370",B,3,1999
+B0274,47.803175,-122.195864,21520 30th Dr SE,Highlands Campus A,Bothell/Kenmore,98021,"74,685",B,2,1999
+B0275,47.779387,-122.184502,3555 Monte Villa Pkwy,Quadrant MV-AT&T 1,Bothell/Kenmore,98021,"80,000",B,2,1997
+B0276,47.804477,-122.20715,1909 214th St SE,Woodlands Technology Campus,Bothell/Kenmore,98021,"85,111",B,3,2007
+B0277,47.799597,-122.215495,22100 Bothell Everett Hwy,Philips Medical Systems - Bldg A,Bothell/Kenmore,98021,"87,080",B,2,1984
+B0278,47.798327,-122.19543,22213 30th Dr SE,Canyon Pointe B,Bothell/Kenmore,98021,"87,808",B,3,2007
+B0279,47.79624,-122.193946,22309 30th Dr SE,Canyon Pointe A,Bothell/Kenmore,98021,"87,808",B,3,2007
+B0280,47.774547,-122.188521,20020-20030 N Creek Pkwy,North Creek Tech Campus 3 - Bldg L,Bothell/Kenmore,98011,"88,464",B,2,2000
+B0281,47.779398,-122.189211,3303 Monte Villa Pkwy,Monte Villa Farms 3303,Bothell/Kenmore,98021,"91,886",B,3,1994
+B0282,47.795964,-122.201846,2300 223rd St SE,Canyon Park Commons III,Bothell/Kenmore,98021,"93,721",B,3,1993
+B0283,47.769938,-122.178278,12100 NE 195th St,North Creek Place,Bothell/Kenmore,98011,"94,137",B,3,1999
+B0284,47.765501,-122.185542,19015 N Creek Pkwy,North Plaza,Bothell/Kenmore,98011,"96,200",B,3,1990
+B0285,47.764701,-122.184542,18911 N Creek Pkwy,East Plaza,Bothell/Kenmore,98011,"97,254",B,3,1990
+B0286,47.769808,-122.183524,11724 NE 195th St,Parklands North Creek A,Bothell/Kenmore,98011,"105,277",B,3,2009
+B0287,47.798653,-122.216688,22000 Bothell Everett Hwy,Philips Medical Systems - Bldg D,Bothell/Kenmore,98021,"134,713",B,3,2002
+B0288,47.797298,-122.215216,22050 Bothell Everett Hwy,Philips Medical Systems B,Bothell/Kenmore,98021,"136,112",B,3,1998
+B0289,47.801235,-122.196487,21540 30th Dr SE,Canyon Park Heights Office Center,Bothell/Kenmore,98021,"143,758",B,4,2000
+B0290,47.774547,-122.188521,20020-20030 N Creek Pkwy,North Creek Tech Campus 3 - Bldg J & K,Bothell/Kenmore,98011,"173,988",B,2,2000
+B0291,47.799597,-122.215495,22100 Bothell Everett Hwy,Philips Medical Systems - Bldg C,Bothell/Kenmore,98021,"282,345",B,2,1984
+B0292,47.614359,-122.31239,1501 E Madison St,Bullitt Center,Capitol Hill/Central Dist,98122,"50,000",A,6,2013
+B0293,47.607909,-122.328042,805 Madison St,M Street,Capitol Hill/Central Dist,98104,"52,500",A,17,2007
+B0294,47.614885,-122.3185,1525 11th Ave,Kelly Springfield Building,Capitol Hill/Central Dist,98122,"73,024",A,5,2019
+B0295,47.607445,-122.329209,701 Madison St,,Capitol Hill/Central Dist,98104,"205,148",A,9,2009
+B0296,47.606599,-122.325189,700-710 9th Ave,Paul Pigott Building,Capitol Hill/Central Dist,98104,"30,348",B,7,1970
+B0297,47.61731,-122.304944,2001 E Madison St,Planned Parenthood,Capitol Hill/Central Dist,98122,"30,565",B,3,1999
+B0298,47.608505,-122.326414,921 Terry Ave,,Capitol Hill/Central Dist,98104,"33,804",B,6,1983
+B0299,47.614426,-122.319061,1000 E Pike St,Former AEI/REI Music Bldg,Capitol Hill/Central Dist,98122,"34,000",B,2,1912
+B0300,47.608567,-122.320417,718 Broadway,Pacific Northwest Research Institute,Capitol Hill/Central Dist,98122,"34,380",B,5,1988
+B0301,47.602595,-122.284524,110-140 Lakeside Ave,Leschi Lakecenter,Capitol Hill/Central Dist,98122,"36,800",B,3,1971
+B0302,47.61569,-122.307501,1625 19th Ave,Views @ Madison,Capitol Hill/Central Dist,98122,"37,261",B,6,2003
+B0303,47.608388,-122.329178,1013 8th Ave,,Capitol Hill/Central Dist,98104,"37,796",B,3,1962
+B0304,47.616769,-122.310814,1600 E Olive St,Seattle Mental Health Institute Bldg,Capitol Hill/Central Dist,98122,"38,879",B,1,1975
+B0305,47.607328,-122.31103,550 16th Ave,Providence Professional Bldg,Capitol Hill/Central Dist,98122,"43,400",B,4,1976
+B0306,47.605888,-122.313789,1401 E Jefferson St,Jefferson Prof Bldg,Capitol Hill/Central Dist,98122,"44,000",B,5,1970
+B0307,47.608475,-122.309601,1700 E Cherry St,,Capitol Hill/Central Dist,98122,"52,493",B,2,1962
+B0308,47.604575,-122.320336,316 Broadway,,Capitol Hill/Central Dist,98122,"52,605",B,3,1900
+B0309,47.606275,-122.321838,516 Boren Ave N,First Hill Medical Building,Capitol Hill/Central Dist,98104,"70,623",B,4,1988
+B0310,47.611423,-122.321369,1001 Broadway,,Capitol Hill/Central Dist,98122,"71,007",B,3,1928
+B0311,47.609441,-122.321158,801 Broadway,Harold Health Bldg,Capitol Hill/Central Dist,98122,"88,999",B,10,1970
+B0312,47.608608,-122.325241,901 Boren Ave,Cabrini Medical Tower,Capitol Hill/Central Dist,98104,"92,855",B,19,1975
+B0313,47.604694,-122.32349,410 Terry Ave,,Capitol Hill/Central Dist,98104,"95,915",B,9,1930
+B0314,47.606479,-122.31113,1600 E Jefferson St,Jefferson Tower,Capitol Hill/Central Dist,98122,"121,500",B,8,1987
+B0315,47.607692,-122.320156,600 Broadway,600 Broadway Medical Center,Capitol Hill/Central Dist,98122,"130,864",B,6,1990
+B0316,47.610351,-122.327944,1201 Terry Ave,Lindeman Pavilion,Capitol Hill/Central Dist,98101,"133,780",B,8,1988
+B0317,47.603849,-122.322587,300 9th Ave,Harborview Research Building,Capitol Hill/Central Dist,98104,"135,000",B,7,1930
+B0318,47.605729,-122.321458,401 Broadway,,Capitol Hill/Central Dist,98122,"156,800",B,5,2003
+B0319,47.610138,-122.322037,1229 Madison St,Elmer J. Nordstrom Medical Tower,Capitol Hill/Central Dist,98104,"176,257",B,16,1986
+B0320,47.609761,-122.322743,1221 Madison St,Arnold Medical Pavillion,Capitol Hill/Central Dist,98104,"225,982",B,13,1976
+B0321,47.608675,-122.323609,1124 Columbia St,1st Hill Medical Pavilion,Capitol Hill/Central Dist,98104,"227,628",B,6,1976
+B0322,47.607527,-122.321321,601 Broadway,Orthopedic Institute,Capitol Hill/Central Dist,98122,"236,727",B,11,2008
+B0323,47.60924,-122.324199,1101 Madison St,1101 Madison Tower,Capitol Hill/Central Dist,98104,"265,525",B,14,1994
+B0324,47.606524,-122.310168,550 17th Ave,James Tower Life Sciences Bldg,Capitol Hill/Central Dist,98122,"307,524",B,6,1910
+B0325,47.604993,-122.323906,908 Jefferson St,Ninth & Jefferson Building - Harborview,Capitol Hill/Central Dist,98104,"421,838",B,14,2009
+B0326,47.614635,-122.317187,1517 12th Ave,Ballou Wright Building,Capitol Hill/Central Dist,98122,"30,720",C,3,1917
+B0327,47.610987,-122.327656,1218 Terry Ave,Cassel Crag Apartments,Capitol Hill/Central Dist,98101,"31,007",C,4,1925
+B0328,47.601972,-122.314438,1310 E Yesler Way,Urban League Building,Capitol Hill/Central Dist,98122,"32,500",C,3,1910
+B0329,47.601951,-122.314335,105 14th Ave,The Urban League of Metropolitan Seattle,Capitol Hill/Central Dist,98122,"38,000",C,3,1910
+B0330,47.608398,-122.320313,700 Broadway,Northwest Kidney Center,Capitol Hill/Central Dist,98122,"39,115",C,3,1963
+B0331,47.61393,-122.320332,901-911 E Pike St,Broadway and East Pike Building,Capitol Hill/Central Dist,98122,"50,000",C,3,1912
+B0332,47.610542,-122.328711,909 University St,Health Resources Building,Capitol Hill/Central Dist,98101,"58,225",C,2,1988
+B0333,47.614946,-122.319816,915 E Pine St,OddFellows Building,Capitol Hill/Central Dist,98122,"76,803",C,4,1908
+B0334,47.53272674,-122.0668573,Talus Village Dr,Talus Corporate Center - Bldg C,Coal Creek/Issaquah,98027,141613,A,6,
+B0335,47.53272674,-122.0668573,Talus Village Dr,Talus Corporate Center - Bldg B,Coal Creek/Issaquah,98027,182945,A,6,
+B0336,47.53272674,-122.0668573,Talus Village Dr,Talus Corporate Center - Bldg D,Coal Creek/Issaquah,98027,276287,A,9,
+B0337,47.550766,-122.061829,1605 NW Sammamish Rd,I-90 Lake Place II,Coal Creek/Issaquah,98027,"96,588",A,3,1992
+B0338,47.554588,-122.047181,5150 220th Ave SE,Sammamish Park Place B,Coal Creek/Issaquah,98029,"106,646",A,4,1992
+B0339,47.546871,-122.034752,22833 SE Black Nugget Rd,Eastpointe Corporate Center,Coal Creek/Issaquah,98029,"156,393",A,5,2001
+B0340,47.555298,-122.050671,21930 SE 51st St,90 East E,Coal Creek/Issaquah,98027,"176,656",A,6,2000
+B0341,47.556084,-122.049591,21925 SE 51st St,90 East C,Coal Creek/Issaquah,98027,"178,333",A,5,2000
+B0342,47.547791,-122.050354,999 Lake Dr,I-90 Corporate Center,Coal Creek/Issaquah,98027,"202,467",A,4,1990
+B0343,47.605539,-122.037811,22620 SE 4th St,Building 7,Coal Creek/Issaquah,98074,"32,000",B,2,2017
+B0344,47.543213,-122.043944,450 NW Gilman Blvd,Medical Center of Issaquah,Coal Creek/Issaquah,98027,"40,319",B,3,1988
+B0345,47.532542,-122.029411,371 NE Gilman Blvd,Liberty Park,Coal Creek/Issaquah,98027,"43,923",B,3,2001
+B0346,47.550652,-122.064026,2005 NW Sammamish Rd,I-90 Lake Place B,Coal Creek/Issaquah,98027,"55,225",B,2,1989
+B0347,47.5513,-122.065704,2001 NW Sammamish Rd,I-90 Lake Place A,Coal Creek/Issaquah,98027,"70,197",B,2,1989
+B0348,47.542851,-122.040517,1301 4th Ave NW,1301 Fourth,Coal Creek/Issaquah,98027,"71,136",B,4,2011
+B0349,47.543825,-122.06382,1740 NW Maple St,HighMark Medical Center,Coal Creek/Issaquah,98027,"72,306",B,2,2010
+B0350,47.555702,-122.047287,22011 SE 51st St,Sammamish Park Place A,Coal Creek/Issaquah,98029,"97,190",B,2,1987
+B0351,47.54332,-122.055931,1180 NW Maple St,Maple Street Office,Coal Creek/Issaquah,98027,"110,000",B,3,1999
+B0352,47.555253,-122.049314,21933 SE 51st St,90 East D,Coal Creek/Issaquah,98027,"198,019",B,6,2000
+B0353,47.090751,-122.643601,1495 Wilmington Dr,ACU Corp Headquaters,Dupont,98327,"48,000",A,3,2007
+B0354,47.111702,-122.633278,2700-2800 Center Dr,Bldg 1,Dupont,98327,"312,000",B,4,1996
+B0355,47.111702,-122.633278,2700-2800 Center Dr,Bldg 2,Dupont,98327,"328,000",B,4,1996
+B0356,47.092072,-122.636505,1000 Wilmington Dr,State Farm Regional Office,Dupont,98327,"364,000",B,3,1995
+B0357,47.849805,-122.2578135,164th St SW @ I-5,"Northpointe Corporate Campus, Lot B - Bldg B",Edmonds/Lynnwood,98087,60000,B,3,
+B0358,47.849805,-122.2578135,164th St SW @ I-5,Northpointe Corporate Campus Lot C - Bldg C,Edmonds/Lynnwood,98087,65000,B,2,
+B0359,47.800284,-122.33531,21911-21919 76th Ave W,76th Professional Commons,Edmonds/Lynnwood,98026,"45,422",A,2,2006
+B0360,47.82249,-122.28868,4100 194th St SW,Sparling Technology Center,Edmonds/Lynnwood,98036,"69,798",A,5,2000
+B0361,47.814125,-122.301765,20311 52nd Ave W,Creekside Plaza,Edmonds/Lynnwood,98036,"70,371",A,3,1999
+B0362,47.80474,-122.32975,21401 72nd Ave W,,Edmonds/Lynnwood,98026,"71,712",A,3,2012
+B0363,47.802667,-122.33198,7320 216th St SW,Edmonds Medical Pavilion,Edmonds/Lynnwood,98026,"73,548",A,3,2002
+B0364,47.828149,-122.280378,3500 188th St SW,Alderwood Business Center B,Edmonds/Lynnwood,98036,"99,171",A,6,1984
+B0365,47.827442,-122.279716,3400 188th St SW,Alderwood Business Center A,Edmonds/Lynnwood,98036,"99,337",A,6,1986
+B0366,47.800211,-122.316717,6100 219th St SW,Redstone Corporate Center II,Edmonds/Lynnwood,98043,"118,438",A,5,1999
+B0367,47.825892,-122.278655,19020 33rd Ave W,Redstone Corporate Center I,Edmonds/Lynnwood,98036,"206,203",A,6,2002
+B0368,47.80221,-122.334738,21701 76th Ave W,Stevens Health Center,Edmonds/Lynnwood,98026,"30,088",B,3,1977
+B0369,47.845627,-122.292609,16824 44th Ave W,Meadowdale Office,Edmonds/Lynnwood,98037,"30,336",B,2,2009
+B0370,47.799126,-122.325043,6808 220th St SW,North Star Place,Edmonds/Lynnwood,98043,"31,000",B,3,2000
+B0371,47.810909,-122.380989,123 2nd Ave S,Water Works Building,Edmonds/Lynnwood,98020,"31,919",B,2,2002
+B0372,47.800376,-122.318041,21905 64th Ave W,Pacific Cascade Building,Edmonds/Lynnwood,98043,"32,683",B,3,1990
+B0373,47.811658,-122.378974,110 3rd Ave N,Bayview Plaza,Edmonds/Lynnwood,98020,"32,815",B,3,1998
+B0374,47.820339,-122.323067,6600 196th St SW,Edmonds Community College,Edmonds/Lynnwood,98036,"32,860",B,4,1986
+B0375,47.811314,-122.377151,121 5th Ave N,Edmonds City Hall,Edmonds/Lynnwood,98020,"34,074",B,3,1980
+B0376,47.801765,-122.319984,6405 218th St SW,Mountlake Terrace Professional Building,Edmonds/Lynnwood,98043,"34,363",B,3,1987
+B0377,47.798458,-122.32634,6912 220th St SW,Hall Creek Office Park,Edmonds/Lynnwood,98043,"38,114",B,3,1985
+B0378,47.829113,-122.267708,18631 Alderwood Mall Pkwy,Alderwood Medical Center,Edmonds/Lynnwood,98037,"38,542",B,3,1980
+B0379,47.799083,-122.327283,6920 220th St SW,1st Security Bank of WA,Edmonds/Lynnwood,98043,"40,273",B,3,1985
+B0380,47.807695,-122.332014,7315 212th St SW,Edmonds Professional Center,Edmonds/Lynnwood,98026,"40,960",B,2,1965
+B0381,47.80275,-122.330849,21600 Highway 99,Kruger Clinic,Edmonds/Lynnwood,98026,"42,121",B,2,1986
+B0382,47.802799,-122.336693,21616 76th Ave W,Edmonds Medical Plaza,Edmonds/Lynnwood,98026,"47,225",B,2,1972
+B0383,47.845875,-122.297501,16825 48th Ave W,Creative Workspace,Edmonds/Lynnwood,98037,"48,339",B,4,2008
+B0384,47.825577,-122.276924,19031 33rd Ave W,Lynnwood Financial Center II,Edmonds/Lynnwood,98036,"48,550",B,3,1988
+B0385,47.812176,-122.384911,144 Railroad Ave,Waterfront Park,Edmonds/Lynnwood,98020,"53,191",B,3,1982
+B0386,47.809994,-122.292386,20816 44th Ave W,Northview Corporate C,Edmonds/Lynnwood,98036,"59,219",B,2,1990
+B0387,47.779946,-122.314808,6021 244th St SW,North Seattle Business Center,Edmonds/Lynnwood,98043,"59,496",B,4,1992
+B0388,47.80984,-122.29569,20818 44th Ave W,Northview Corporate B,Edmonds/Lynnwood,98036,"60,270",B,2,1990
+B0389,47.756207,-122.343781,17500 Midvale Ave N,Shoreline Civic Center/City Hall,Edmonds/Lynnwood,98133,"67,000",B,4,2009
+B0390,47.851859,-122.26745,16201 25th Ave W,Northpointe Corporate Center A,Edmonds/Lynnwood,98087,"68,962",B,2,2007
+B0391,47.851192,-122.2703,2700 162nd St SW,Cypress Semiconductor - Bldg D,Edmonds/Lynnwood,98087,"69,300",B,3,2002
+B0392,47.822792,-122.286975,19401 40th Ave W,Lynnwood Corporate Center,Edmonds/Lynnwood,98036,"73,100",B,4,1989
+B0393,47.854889,-122.268204,15815 25th Ave W,Comcast Building,Edmonds/Lynnwood,98087,"87,000",B,1,2007
+B0394,47.80202,-122.325059,7001 220th St SW,Hall Creek Business Ctr - Bldg 3,Edmonds/Lynnwood,98043,"99,425",B,3,1987
+B0395,47.80202,-122.325059,7001 220th St SW,Hall Creek Business Ctr - Bldg 2,Edmonds/Lynnwood,98043,"104,214",B,3,1988
+B0396,47.80202,-122.325059,7001 220th St SW,Hall Creek Business Ctr - Bldg 1,Edmonds/Lynnwood,98043,"131,626",B,2,1987
+B0397,47.743317,-122.351821,15700 Dayton Ave N,Dept. of Transportation,Edmonds/Lynnwood,98133,"149,000",B,6,1975
+B0398,47.810995,-122.292374,20700 44th Ave W,Northview Corporate Center,Edmonds/Lynnwood,98036,"173,776",B,6,1990
+B0399,47.810747,-122.382115,110 James St,,Edmonds/Lynnwood,98020,"47,195",C,3,1978
+B0400,47.80202,-122.325059,7001 220th St SW,Hall Creek Business Ctr - Bldg 4,Edmonds/Lynnwood,98043,"106,921",C,1,1958
+B0401,47.38595188,-122.077829,23237 SE Wax Rd,Vine Maple Medical Bldg,E King County,98038,46800,B,2,
+B0402,47.526504,-121.867225,8226 Bracken Pl SE,Nexus Snoqualmie II,E King County,98065,"76,000",A,1,
+B0403,47.694106,-122.036817,22635 NE Marketplace Dr,Image Corps Bldg,E King County,98053,"30,196",B,1,
+B0404,47.533748,-121.838374,37624 Snoqualmie Pkwy SE,Kimball Creek Village - Bldg C,E King County,98065,"31,000",B,2,2007
+B0405,47.386351,-122.040554,22443 SE 240th St,Capstone Office Bldg,E King County,98038,"33,010",B,2,2008
+B0406,47.694106,-122.036817,22635 NE Marketplace Dr,Redmond Ridge Corporate Center - BP-2A,E King County,98053,"33,880",B,1,2005
+B0407,47.525723,-121.87265,34935 SE Douglas St,Inception Group Bldg,E King County,98065,"37,384",B,2,1999
+B0408,47.527695,-121.871834,35131 SE Center St,Nuprecon Bldg,E King County,98065,"45,532",B,2,2002
+B0409,47.525458,-121.871296,35131 SE Douglas St,Trailside,E King County,98065,"50,500",B,2,2001
+B0410,47.527096,-121.87297,35030 SE Douglas St,Kendall Lake Building,E King County,98065,"56,000",B,2,2008
+B0411,47.526417,-121.873985,34931 SE Douglas St,Cascade View at Snoqualmie Ridge,E King County,98065,"59,000",B,2,1999
+B0412,47.526504,-121.867225,8226 Bracken Pl SE,Nexus Corporate Park,E King County,98065,"76,420",B,2,2001
+B0413,47.174764,-122.186171,18209 State Route 410 E,Rainier Professional Plaza,E Pierce County,98391,"32,448",B,3,2004
+B0414,47.097068,-122.279385,11216 Sunrise Blvd E,Sunrise Medical Campus - Bldg 3,E Pierce County,98374,"37,481",B,2,2008
+B0415,47.096992,-122.281361,11102 Sunrise Blvd E,Sunrise Medical Campus - Bldg 1,E Pierce County,98374,"41,702",B,1,2004
+B0416,47.1655,-122.157134,10004 204th Ave E,Bonney Lake Medical Office Building,E Pierce County,98391,"55,991",B,3,2011
+B0417,47.250742,-122.242246,14103 Stewart Rd,Potelco Bldg,E Pierce County,98390,"59,900",B,2,1983
+B0418,47.250117,-122.246185,13702 Stewart Rd,Manke Lumber Bldg,E Pierce County,98390,"32,000",C,1,1977
+B0419,47.96803904,-122.2039191,3715 Oakes Ave,Longfellow Building,Everett CBD,98201,32200,C,3,
+B0420,47.978133,-122.207622,2930 Wetmore Ave,Wall Street Building,Everett CBD,98201,"88,000",A,10,1980
+B0421,47.97084,-122.207851,3501 Colby Ave,Grenwich Building,Everett CBD,98201,"30,187",B,3,2001
+B0422,47.97994,-122.208226,2815 Colby Ave,Coastal Community Bank Building,Everett CBD,98201,"35,000",B,4,1960
+B0423,47.981678,-122.206741,2701 Wetmore Ave,Pacifica Regency Building,Everett CBD,98201,"36,000",B,2,1948
+B0424,47.964982,-122.210453,3927 Rucker Ave,Everett Clinic,Everett CBD,98201,"36,830",B,2,1997
+B0425,47.967686,-122.20153,3726 Broadway,Everett Gateway Center A,Everett CBD,98201,"38,147",B,3,2006
+B0426,47.979619,-122.208229,2825 Colby Ave,Union Bank Building,Everett CBD,98201,"41,180",B,3,1994
+B0427,47.947536,-122.214165,5415 Evergreen Way,Everett Fairway Plaza,Everett CBD,98203,"47,662",B,2,1992
+B0428,47.979519,-122.209016,2828 Colby Ave,Opus Bank Building,Everett CBD,98201,"52,582",B,4,1976
+B0429,47.977255,-122.211997,3020 Rucker Ave,The Rucker Building,Everett CBD,98201,"54,000",B,3,1987
+B0430,47.980854,-122.206757,2731 Wetmore Ave,Wetmore Building,Everett CBD,98201,"60,000",B,5,1987
+B0431,47.975513,-122.197853,3201 Smith Ave,Everett Station,Everett CBD,98201,"65,839",B,4,2002
+B0432,47.980379,-122.207593,2802 Wetmore Ave,Port Gardner Bldg,Everett CBD,98201,"93,873",B,5,1929
+B0433,48.000948,-122.206012,1717 13th St,1717 Bldg,Everett CBD,98201,"100,000",B,5,2007
+B0434,47.975829,-122.218058,900 Pacific Ave,Providence Pavilion for Women & Children,Everett CBD,98201,"100,000",B,5,2002
+B0435,48.006727,-122.197541,840 N Broadway,State of Washington,Everett CBD,98201,"111,908",B,3,1985
+B0436,47.981453,-122.20813,2707 Colby Ave,Key Bank Tower,Everett CBD,98201,"145,000",B,16,1995
+B0437,47.977084,-122.206165,3000 Rockefeller Ave,3000 Rockefeller,Everett CBD,98201,"155,846",B,5,1971
+B0438,47.962203,-122.205574,1800 41st St,1800 41st,Everett CBD,98203,"290,244",B,5,1981
+B0439,47.981499,-122.206937,2707-2709 Wetmore Ave,,Everett CBD,98201,"33,000",C,2,1948
+B0440,47.979477,-122.206087,1721 Hewitt Ave,Central Bldg,Everett CBD,98201,"33,780",C,6,1924
+B0441,47.98015,-122.198004,2320 California St,Public Utility Dist,Everett CBD,98201,"57,000",C,4,1958
+B0442,47.979012,-122.20797,1602 Hewitt Ave,Bank of America-Everett Bldg,Everett CBD,98201,"62,700",C,7,1956
+B0443,47.980949,-122.209,2722 Colby Ave,American West Bank Tower,Everett CBD,98201,"126,108",C,7,1925
+B0444,47.31372934,-122.288964,32125 Weyerhaeuser Way S,East Campus Plaza - Bldg A,Federal Way/Auburn,98001,30240,B,2,
+B0445,47.293875,-122.3222535,S 344th St @ 9th Ave S,Bldg A,Federal Way/Auburn,98003,36000,B,2,
+B0446,47.31348023,-122.2888703,32150 Weyerhaeuser Way S,Highmark Plaza,Federal Way/Auburn,98001,47804,B,2,
+B0447,47.293875,-122.3222535,S 344th St @ 9th Ave S,Bldg B,Federal Way/Auburn,98003,50400,B,2,
+B0448,47.316965,-122.226817,205 10th St SE,Franciscan Medical Pavilion,Federal Way/Auburn,98002,"35,000",A,2,2014
+B0449,47.307447,-122.229619,1 E Main St,One Main Street Professional Plaza,Federal Way/Auburn,98002,"88,000",A,3,2009
+B0450,47.299118,-122.327866,501 S 336th St,Fountain Plaza II,Federal Way/Auburn,98003,"30,000",B,2,1982
+B0451,47.34333,-122.221451,4020 Auburn Way N,Comcast Building,Federal Way/Auburn,98002,"31,270",B,1,1988
+B0452,47.299927,-122.324936,33600 6th Ave S,Russell Plaza,Federal Way/Auburn,98003,"31,491",B,2,1985
+B0453,47.298864,-122.324698,33650 6th Ave S,Ridgewood Center,Federal Way/Auburn,98003,"31,757",B,2,1989
+B0454,47.297588,-122.329373,33915 1st Way S,Maplewood Office,Federal Way/Auburn,98003,"32,374",B,2,2005
+B0455,47.303487,-122.320575,33310 9th Ave S,Forest Park,Federal Way/Auburn,98003,"34,500",B,2,1981
+B0456,47.303074,-122.323097,33434 8th Ave S,9th Avenue Pavilion,Federal Way/Auburn,98003,"34,718",B,2,1979
+B0457,47.318395,-122.303178,31620 23rd Ave S,Parklane Executive Center,Federal Way/Auburn,98003,"35,190",B,3,1984
+B0458,47.302303,-122.321903,33400 9th Ave S,Golden Stone Office Building,Federal Way/Auburn,98003,"38,641",B,2,2000
+B0459,47.300052,-122.322131,909 S 336th St,Omni Building,Federal Way/Auburn,98003,"39,516",B,3,1979
+B0460,47.308917,-122.230396,121 N Division St,Auburn Medical Plaza II,Federal Way/Auburn,98001,"42,408",B,3,2009
+B0461,47.301646,-122.327217,33433-33455 6th Ave S,Cedar Park @ West Campus,Federal Way/Auburn,98003,"48,869",B,2,2008
+B0462,47.298342,-122.329641,33801 1st Way S,Washington Park I,Federal Way/Auburn,98003,"49,932",B,3,1990
+B0463,47.303813,-122.32443,33400 8th Ave S,Park Center I,Federal Way/Auburn,98003,"50,000",B,2,1982
+B0464,47.303806,-122.322319,33301 9th Ave S,ABAM Building,Federal Way/Auburn,98003,"51,124",B,3,1985
+B0465,47.292931,-122.32374,34503 9th Ave S,Medical Pavilion at St. Francis,Federal Way/Auburn,98003,"51,465",B,3,1997
+B0466,47.29807,-122.290058,33810 Weyerhaeuser Way S,Talon Building,Federal Way/Auburn,98001,"55,172",B,2,2001
+B0467,47.297366,-122.292218,33820 Weyerhaeuser Way S,Heron Building,Federal Way/Auburn,98001,"55,755",B,2,2001
+B0468,47.314362,-122.287888,32032 Weyerhaeuser Way S,WEA Bldg,Federal Way/Auburn,98001,"58,500",B,2,2003
+B0469,47.301342,-122.319595,1010 S 336th St,Granville Court,Federal Way/Auburn,98003,"60,000",B,3,1982
+B0470,47.292709,-122.290858,3450 S 344th Way,East Campus IV,Federal Way/Auburn,98001,"65,462",B,2,1999
+B0471,47.304966,-122.32478,33330 8th Ave S,NW Corporate Center,Federal Way/Auburn,98003,"69,528",B,3,1984
+B0472,47.296875,-122.292231,33936 Weyerhaeuser Way S,East Campus IV,Federal Way/Auburn,98001,"72,000",B,3,2000
+B0473,47.296471,-122.291039,33940 Weyerhaeuser Way S,East Campus III,Federal Way/Auburn,98001,"72,000",B,3,2000
+B0474,47.314262,-122.300461,2505 S 320th St,The Centre at Federal Way,Federal Way/Auburn,98003,"74,031",B,6,1987
+B0475,47.303926,-122.326474,33325 8th Ave S,Paragon Bldg,Federal Way/Auburn,98003,"86,123",B,2,1994
+B0476,47.299408,-122.326645,505 S 336th St,Fountain Plaza I,Federal Way/Auburn,98003,"88,288",B,6,1982
+B0477,47.294496,-122.287905,3600 S 344th Way,East Campus Corporate Park V,Federal Way/Auburn,98001,"97,216",B,2,2001
+B0478,47.313198,-122.294006,32125 32nd Ave S,I-5 Technology Center,Federal Way/Auburn,98001,"102,030",B,2,2001
+B0479,47.314299,-122.29345,32001 32nd Ave S,East Campus Corporate Park I,Federal Way/Auburn,98001,"105,807",B,4,2001
+B0480,47.302555,-122.325356,33405 8th Ave S,Evergreen Corporate Plaza,Federal Way/Auburn,98003,"114,707",B,2,1979
+B0481,47.291569,-122.288887,3455 S 344th Way,East Campus VI,Federal Way/Auburn,98001,"114,769",B,3,1999
+B0482,47.294746,-122.243324,1002 15th St SW,Auburn Corporate Center II,Federal Way/Auburn,98001,"116,000",B,2,1989
+B0483,47.294815,-122.246193,1102 15th St SW,Auburn Corporate Center I,Federal Way/Auburn,98001,"149,268",B,2,1991
+B0484,47.289581,-122.29055,34834 Weyerhaeuser Way S,,Federal Way/Auburn,98001,"150,045",B,4,1995
+B0485,47.31165,-122.29454,32275 32nd Ave S,Davita Data Center North 1,Federal Way/Auburn,98001,"186,612",B,2,1999
+B0486,47.299242,-122.295062,33663 Weyerhaeuser Way S,The Greenline,Federal Way/Auburn,98001,"350,717",B,5,1971
+B0487,47.314969,-122.212532,1314 8th St NE,8th Street Medical Bldg,Federal Way/Auburn,98002,"30,000",C,2,1997
+B0488,47.28711,-122.187996,3101 Auburn Way S,Bldg 1,Federal Way/Auburn,98092,"34,770",C,3,1971
+B0489,47.305301,-122.229535,10 2nd St SE,,Federal Way/Auburn,98002,"42,290",C,3,1955
+B0490,47.28711,-122.187996,3101 Auburn Way S,Control & Radar Bldg,Federal Way/Auburn,98092,"42,352",C,2,1961
+B0491,47.314206,-122.331507,301 S 320th St,,Federal Way/Auburn,98003,"59,697",C,1,1974
+B0492,47.300379,-122.330858,33501 1st Way S,,Federal Way/Auburn,98003,"92,257",C,2,1988
+B0493,47.32921117,-122.5791752,3025 Harborview Dr,The Russell Family Foundation,Gig Harbor/W Pierce Co,98335,33061,B,2,
+B0494,47.358639,-122.61231,Canterwood Dr @ Borgen Blvd,Gig Harbor North Medical Pavilion,Gig Harbor/W Pierce Co,98332,80000,B,4,
+B0495,47.363291,-122.613148,11511 Canterwood Blvd NW,Milgard Medical Pavilion at St. Anthony,Gig Harbor/W Pierce Co,98332,"85,903",A,5,2009
+B0496,47.311056,-122.577846,5801 Soundview Dr,Soundview,Gig Harbor/W Pierce Co,98335,"32,043",B,2,1997
+B0497,47.299428,-122.577638,4545 Point Fosdick Dr NW,,Gig Harbor/W Pierce Co,98335,"51,666",B,2,2006
+B0498,47.309336,-122.57571,2727 Hollycroft St,East,Gig Harbor/W Pierce Co,98335,"64,309",B,4,2004
+B0499,47.282113,-122.56302,2605 Jahn Ave NW,Gateway Pointe Business Park - Bldg D,Gig Harbor/W Pierce Co,98335,"78,880",B,2,1993
+B0500,47.30041,-122.581203,4700 Point Fosdick Dr NW,Fosdick Bldg,Gig Harbor/W Pierce Co,98335,"173,838",B,3,1990
+B0501,47.580025,-122.135422,3245 158th Ave SE,I-90 Bellevue I,I-90 Corridor,98008,"67,408",A,3,1986
+B0502,47.580967,-122.132141,3305 160th Ave SE,I-90 Bellevue II,I-90 Corridor,98008,"70,123",A,3,1986
+B0503,47.577789,-122.143349,14725 SE 36th St,Crestwood Corporate Plaza,I-90 Corridor,98006,"73,653",A,4,2001
+B0504,47.579197,-122.165154,3605 132nd Ave SE,One Newport,I-90 Corridor,98006,"89,850",A,4,1985
+B0505,47.579754,-122.130325,3326 160th Ave SE,Kenyon Center,I-90 Corridor,98008,"94,860",A,4,1986
+B0506,47.578188,-122.171605,3545 Factoria Blvd SE,Sterling Plaza II,I-90 Corridor,98006,"97,405",A,5,2001
+B0507,47.579297,-122.169006,3535 Factoria Blvd SE,Sterling Plaza I,I-90 Corridor,98006,"132,240",A,6,1989
+B0508,47.578724,-122.166718,3617 131st Ave SE,Newport Terrace,I-90 Corridor,98006,"144,900",A,6,1992
+B0509,47.582493,-122.1533,3150 139th Ave SE,Sunset North IV,I-90 Corridor,98007,"152,633",A,5,1999
+B0510,47.577738,-122.166495,3655 131st Ave SE,Four Newport,I-90 Corridor,98006,"153,697",A,6,2000
+B0511,47.58177,-122.154201,3180 139th Ave SE,Sunset North III,I-90 Corridor,98007,"156,101",A,5,1999
+B0512,47.58326,-122.154018,3120 139th Ave SE,Sunset North V,I-90 Corridor,98007,"160,574",A,5,1999
+B0513,47.578644,-122.165215,3625 132nd Ave SE,Two Newport,I-90 Corridor,98006,"165,320",A,6,2010
+B0514,47.583604,-122.131253,3009 160th Ave SE,Advanta Office B,I-90 Corridor,98008,"196,000",A,7,2008
+B0515,47.584087,-122.13065,3007 160th Ave SE,Advanta Office A,I-90 Corridor,98008,"200,000",A,7,2008
+B0516,47.578053,-122.16504,3650 131st Ave SE,Newport Tower,I-90 Corridor,98006,"222,894",A,7,1988
+B0517,47.583582,-122.130622,3003 160th Ave SE,Advanta Office C,I-90 Corridor,98008,"240,322",A,7,2008
+B0518,47.576599,-122.167099,12920 SE 38th St,Five Newport,I-90 Corridor,98006,"283,100",A,10,2000
+B0519,47.578837,-122.164063,13231 SE 36th St,Newport Heights,I-90 Corridor,98006,"30,684",B,2,1983
+B0520,47.585309,-122.164734,2700 Richards Rd,Pacific International Building,I-90 Corridor,98005,"31,907",B,3,1990
+B0521,47.582613,-122.128553,3156 160th Ave SE,,I-90 Corridor,98008,"34,678",B,2,1983
+B0522,47.582603,-122.166779,3150 Richards Rd,3150 Building,I-90 Corridor,98005,"34,811",B,2,1984
+B0523,47.58239,-122.162341,13230 SE 32nd St,PSE Factoria Service Center,I-90 Corridor,98005,"37,788",B,2,2009
+B0524,47.582436,-122.168671,12822 SE 32nd St,Biocontrol Systems Building,I-90 Corridor,98005,"39,500",B,2,1998
+B0525,47.572216,-122.168484,4122 Factoria Blvd SE,Newport Place,I-90 Corridor,98006,"41,081",B,4,1982
+B0526,47.583572,-122.134628,15400 SE 30th Pl,NCR Executive Center,I-90 Corridor,98007,"43,000",B,2,1985
+B0527,47.579279,-122.129,3460 161st Ave SE,I-90 Corporate B,I-90 Corridor,98008,"43,637",B,2,1982
+B0528,47.578417,-122.14945,14205 SE 36th St,14205 Building,I-90 Corridor,98006,"43,836",B,3,1990
+B0529,47.578992,-122.160834,13451 SE 36th St,Factoria Medical Center,I-90 Corridor,98006,"45,628",B,2,1987
+B0530,47.579662,-122.127731,3350 161st Ave SE,I-90 Corporate A,I-90 Corridor,98008,"45,636",B,2,1982
+B0531,47.577065,-122.134346,15405 SE 37th St,15405 SE 37th,I-90 Corridor,98006,"50,050",B,2,1999
+B0532,47.577473,-122.171089,12600 SE 38th St,12600 Building,I-90 Corridor,98006,"57,000",B,2,1980
+B0533,47.5811,-122.129465,3190 160th Ave SE,Department of Ecology Building,I-90 Corridor,98008,"60,423",B,2,1982
+B0534,47.581337,-122.147751,3245 146th Pl SE,Lincoln Executive Center III,I-90 Corridor,98007,"64,614",B,3,1986
+B0535,47.583359,-122.136459,15325 SE 30th Pl,Eastgate Office 1,I-90 Corridor,98007,"65,217",B,3,1985
+B0536,47.582962,-122.134,15500 SE 30th Pl,The Eastgate Building,I-90 Corridor,98007,"65,843",B,3,1999
+B0537,47.579784,-122.13308,15900 SE Eastgate Way,Commons on 90 B,I-90 Corridor,98008,"66,355",B,3,1988
+B0538,47.578671,-122.156822,3633 136th Pl SE,Bellevue Terrace,I-90 Corridor,98006,"69,980",B,3,1983
+B0539,47.580089,-122.133705,15800 SE Eastgate Way,Commons on 90 A,I-90 Corridor,98008,"73,974",B,3,1988
+B0540,47.579113,-122.155632,3600 136th Pl SE,Benaroya I-90 Center South,I-90 Corridor,98006,"79,905",B,4,1986
+B0541,47.580395,-122.144997,3380 146th Pl SE,Lincoln Executive Center I,I-90 Corridor,98007,"83,134",B,4,1984
+B0542,47.580387,-122.147324,14432 SE Eastgate Way,Lincoln Executive Center II,I-90 Corridor,98007,"84,517",B,4,1986
+B0543,47.578714,-122.15932,13555 SE 36th St,Pacific Corporate Center,I-90 Corridor,98006,"85,146",B,3,1987
+B0544,47.582967,-122.136694,15375 SE 30th Pl,Eastgate Office 3,I-90 Corridor,98007,"99,800",B,3,1986
+B0545,47.58384,-122.127411,2810 160th Ave SE,Boeing,I-90 Corridor,98008,"103,311",B,3,1981
+B0546,47.587169,-122.12463,2710 160th Ave NE,,I-90 Corridor,98008,"107,663",B,4,1986
+B0547,47.582214,-122.136587,15395 SE 30th Pl,Eastgate Office 4,I-90 Corridor,98007,"115,970",B,3,1985
+B0548,47.581133,-122.155628,13920 SE Eastgate Way,Sunset Corporate 2,I-90 Corridor,98005,"153,396",B,5,1992
+B0549,47.580537,-122.156407,13810 SE Eastgate Way,Sunset Corporate 1,I-90 Corridor,98005,"156,796",B,5,1992
+B0550,47.585425,-122.125513,2750 160th Ave NE,Boeing Computer Services,I-90 Corridor,98008,"848,488",B,3,1981
+B0551,47.582731,-122.127715,3076 160th Ave SE,90 North 4,I-90 Corridor,98008,"34,340",C,2,1983
+B0552,47.582607,-122.131166,3305 158th Ave SE,,I-90 Corridor,98008,"66,827",C,3,1985
+B0553,47.4390827,-122.2130181,4500 Talbot Rd S,Talbot Place Medical,Kent Valley,98055,66000,B,3,
+B0554,47.44108652,-122.2139503,305 S 43rd St,Valley Center Medical Office,Kent Valley,98055,189000,B,12,
+B0555,47.439909,-122.254753,18100 Andover Park W,Continental Mills Corp HQ,Kent Valley,98188,"59,567",A,2,2011
+B0556,47.36232,-122.229181,1851 Central Pl S,Oakhurst Office Park,Kent Valley,98030,"30,476",B,2,1980
+B0557,47.397974,-122.253589,6414 S 228th St,REI Headquarters-Whitaker Bldg,Kent Valley,98032,"31,816",B,2,1989
+B0558,47.391535,-122.250149,6703 S 234th St,Van Doren's Landing Office Plaza,Kent Valley,98032,"35,550",B,3,2001
+B0559,47.44153,-122.209818,601 S Carr Rd,Pacific Medical Clinic Renton,Kent Valley,98055,"36,625",B,4,1989
+B0560,47.381812,-122.229334,403 E Meeker St,Kent Community Health Center,Kent Valley,98030,"40,134",B,3,1997
+B0561,47.381535,-122.262014,24437 Russell Rd,Plaza by the Green,Kent Valley,98032,"44,550",B,2,1990
+B0562,47.398239,-122.252489,6524 228th St,REI Headquarters,Kent Valley,98032,"46,921",B,2,1988
+B0563,47.438046,-122.247559,18200 Cascade Ave S,RiverPoint Corporate North,Kent Valley,98188,"49,383",B,2,1981
+B0564,47.436779,-122.248131,18300 Cascade Ave S,RiverPoint Corporate South,Kent Valley,98188,"54,042",B,2,1981
+B0565,47.380629,-122.236064,400 W Gowe St,Centennial Center,Kent Valley,98032,"72,839",B,4,1990
+B0566,47.41851,-122.24504,20415 72nd Ave S,Creekside One,Kent Valley,98032,"72,850",B,4,1984
+B0567,47.418473,-122.246466,20435 72nd Ave S,Creekside Three,Kent Valley,98032,"72,864",B,4,1984
+B0568,47.417673,-122.245537,20425 72nd Ave S,Creekside Two,Kent Valley,98032,"72,871",B,4,1984
+B0569,47.383846,-122.235176,321 Ramsay Way,Kent Station 16,Kent Valley,98032,"75,697",B,4,2009
+B0570,47.398528,-122.250985,6750 S 228th St,REI Headquarters,Kent Valley,98032,"79,120",B,2,1988
+B0571,47.416947,-122.248617,20610 68th Ave S,The Technology Center,Kent Valley,98032,"81,464",B,2,1986
+B0572,47.414265,-122.228767,20811 84th Ave S,Kent Office,Kent Valley,98032,"92,141",B,1,1968
+B0573,47.419302,-122.249113,6811 S 204th St,The Atrium,Kent Valley,98032,"118,603",B,4,1985
+B0574,47.415806,-122.245098,20819 72nd Ave S,Cascade East,Kent Valley,98032,"146,497",B,8,1986
+B0575,47.415612,-122.24307,20829 72nd Ave S,Cascade West,Kent Valley,98032,"146,497",B,8,1986
+B0576,47.440864,-122.256532,6101 S 180th St,Seattle South Business Park D,Kent Valley,98188,"218,003",B,2,1984
+B0577,47.439349,-122.242608,18000 72nd Ave S,,Kent Valley,98032,"37,466",C,2,1987
+B0578,47.385666,-122.23831,525 4th Ave,kent commons,Kent Valley,98032,"42,898",C,1,1979
+B0579,47.368386,-122.230528,1209-1215 Central Ave S,Cascade Office Plaza,Kent Valley,98032,"73,500",C,2,1969
+B0580,47.67788731,-122.1995398,401 Parkplace Ctr,Kirkland Park Place Tower,Kirkland,98033,80000,A,5,1982
+B0581,47.67506319,-122.20631,112 Lake St S,Lake Street Place,Kirkland,98033,82000,A,5,
+B0582,47.67787137,-122.1995413,303-335 Parkplace Ctr,Garden Building,Kirkland,98033,33063,B,2,1982
+B0583,47.680483,-122.1962113,621 7th Ave,Park Place North,Kirkland,98033,59690,B,3,
+B0584,47.643311,-122.20005,10510 Northup Way,Yarrow Bay Plaza,Kirkland,98033,"51,290",A,3,2002
+B0585,47.65422,-122.205356,5209 Lake Washington Blvd NE,Waterfront Place on Yarrow Bay,Kirkland,98033,"52,091",A,3,2008
+B0586,47.709846,-122.189125,11332 NE 122nd Way,Kirkland 405 A2,Kirkland,98034,"65,200",A,3,1994
+B0587,47.676289,-122.199017,520 Kirkland Way,The Emerald Building,Kirkland,98033,"65,407",A,4,1995
+B0588,47.659946,-122.205536,5808 Lake Washington Blvd NE,Lake Washington Park,Kirkland,98033,"70,019",A,4,1986
+B0589,47.676781,-122.198242,550 Kirkland Way,550 Kirkland Way,Kirkland,98033,"75,605",A,5,1990
+B0590,47.657096,-122.206731,2000 Carillon Pt,2000 Carillon Point,Kirkland,98033,"82,000",A,3,1989
+B0591,47.678589,-122.196507,720 4th Ave,Central Way Plaza (FileNET Building),Kirkland,98033,"91,130",A,4,1998
+B0592,47.656625,-122.20639,4000 Carillon Pt,4000 Carillon Point,Kirkland,98033,"120,000",A,7,1991
+B0593,47.654935,-122.205901,5000 Carillon Pt,5000 Carillon Point,Kirkland,98033,"125,000",A,4,1989
+B0594,47.657292,-122.206217,3000 Carillon Pt,3000 Carillon Point,Kirkland,98033,"154,000",A,7,1991
+B0595,47.669952,-122.199147,451 7th Ave S,Google Campus Phase II,Kirkland,98033,"180,000",A,2,2016
+B0596,47.67844,-122.19813,469 Central Way,Kirkland Urban Central,Kirkland,98033,"198,070",A,8,2019
+B0597,47.67844,-122.19813,469 Central Way,Kirkland Urban North,Kirkland,98033,"204,178",A,7,2018
+B0598,47.67844,-122.19813,469 Central Way,Kirkland Urban - South,Kirkland,98033,"216,293",A,7,
+B0599,47.646957,-122.200447,4020 Lake Washington Blvd NE,Legacy Crown Pointe 4020,Kirkland,98033,"32,819",B,3,1986
+B0600,47.674229,-122.206596,135 Lake St S,Homeport Building,Kirkland,98033,"32,885",B,3,1976
+B0601,47.646873,-122.199173,4030 Lake Washington Blvd NE,Legacy Crown Pointe 4030,Kirkland,98033,"33,431",B,3,1975
+B0602,47.638195,-122.191322,3100 Northup Way,3100 Northup,Kirkland,98004,"33,492",B,2,2000
+B0603,47.708969,-122.187248,12112 115th Ave NE,Bldg F,Kirkland,98034,"33,728",B,2,1991
+B0604,47.647393,-122.20005,4040 Lake Washington Blvd NE,Legacy Crown Pointe 4040,Kirkland,98033,"33,925",B,3,1987
+B0605,47.640628,-122.191329,11130 NE 33rd Pl,Bel-Kirk 520 B2,Kirkland,98004,"34,028",B,2,1988
+B0606,47.665871,-122.195297,6710 108th Ave NE,Kirkland Lakeview,Kirkland,98033,"34,240",B,3,2000
+B0607,47.679749,-122.181709,8525 120th Ave NE,Avio Support Building,Kirkland,98033,"35,275",B,3,1986
+B0608,47.674551,-122.194449,803-805 Kirkland Ave,803-805 Kirkland,Kirkland,98033,"36,000",B,2,1998
+B0609,47.675178,-122.193222,811-821 Kirkland Ave,811-821 Kirkland,Kirkland,98033,"36,000",B,2,1998
+B0610,47.64146,-122.193794,10940 NE 33rd Pl,Evergreen Office 1,Kirkland,98004,"36,011",B,2,1981
+B0611,47.714504,-122.187136,11521 NE 128th St,Totem Lake Medical Plaza,Kirkland,98034,"36,350",B,3,2003
+B0612,47.704136,-122.211735,9757 Juanita Dr NE,Weidner Investment Services Building,Kirkland,98034,"36,900",B,3,1983
+B0613,47.637726,-122.190132,3006 Northup Way,3006 Northup,Kirkland,98004,"38,176",B,3,1986
+B0614,47.701324,-122.17816,11241 Slater Ave NE,Slater Avenue Office,Kirkland,98033,"38,836",B,2,1997
+B0615,47.710598,-122.18837,11411 NE 124th St,Kirkland 405 A,Kirkland,98034,"41,405",B,3,1986
+B0616,47.64414,-122.198594,10630 NE 38th Pl,Yarrow Bay Quad 2 North,Kirkland,98033,"43,659",B,2,1975
+B0617,47.645796,-122.202912,3933 Lake Washington Blvd NE,Plaza Yarrow Bay 4,Kirkland,98033,"46,450",B,3,1994
+B0618,47.67836,-122.187592,11255 Kirkland Way,Kirkland Way Building,Kirkland,98033,"49,646",B,3,1985
+B0619,47.641449,-122.192932,11000 NE 33rd Pl,Evergreen Office 2,Kirkland,98004,"49,801",B,3,1986
+B0620,47.644278,-122.203183,10220 NE Points Dr,Plaza Yarrow Bay 1,Kirkland,98033,"49,851",B,3,1987
+B0621,47.681621,-122.178681,8815 122nd Ave NE,Arris Building,Kirkland,98033,"50,954",B,2,2000
+B0622,47.71011,-122.189957,12220 113th Ave NE,Evergreen Building,Kirkland,98034,"52,287",B,2,1993
+B0623,47.708797,-122.189445,11335 NE 122nd Way,Kirkland 405 B,Kirkland,98034,"53,268",B,2,1986
+B0624,47.64547,-122.198728,10604 NE 38th Pl,Yarrow Bay Quad 1 North,Kirkland,98033,"56,418",B,2,1975
+B0625,47.714073,-122.155563,13905 NE 128th St,Valley View Building,Kirkland,98034,"58,530",B,2,2001
+B0626,47.640008,-122.191379,11120 NE 33rd Pl,Bel-Kirk 520 B1,Kirkland,98004,"59,036",B,2,1988
+B0627,47.716118,-122.184418,12910 Totem Lake Blvd NE,Kingsgate Place,Kirkland,98034,"60,562",B,2,1983
+B0628,47.642105,-122.197708,10700 Northup Way,10700 Building,Kirkland,98033,"62,677",B,2,1980
+B0629,47.697186,-122.181831,10809 120th Ave NE,10809 120th,Kirkland,98033,"62,824",B,2,1966
+B0630,47.669986,-122.19758,747 6th St S,Google Kirkland Campus - Bldg C,Kirkland,98033,"62,966",B,2,2009
+B0631,47.669016,-122.19786,787 6th St S,Google Kirkland Campus - Bldg B,Kirkland,98033,"62,967",B,2,2008
+B0632,47.709656,-122.188026,11410 NE 122nd Way,Kirkland 405 A1,Kirkland,98034,"64,116",B,3,1991
+B0633,47.669372,-122.19703,777 6th St S,Google Kirkland Campus - Bldg A,Kirkland,98033,"68,892",B,2,2008
+B0634,47.716169,-122.181571,12911 120th Ave NE,Evergreen Professional Plaza,Kirkland,98034,"75,807",B,2,1972
+B0635,47.643524,-122.203631,10210 NE Points Dr,Plaza Yarrow Bay 3,Kirkland,98033,"84,350",B,4,1991
+B0636,47.714435,-122.179399,12039 NE 128th St,DeYoung Pavillion,Kirkland,98034,"85,000",B,5,2008
+B0637,47.715217,-122.183993,11800 NE 128th St,Evergreen Plaza,Kirkland,98034,"96,726",B,5,2005
+B0638,47.715485,-122.177515,12303 NE 130th Ln,Evergreen Professional Center,Kirkland,98034,"97,645",B,5,1993
+B0639,47.645075,-122.203427,10230 NE Points Dr,Plaza Yarrow Bay 2,Kirkland,98033,"98,982",B,5,1989
+B0640,47.70956,-122.191269,12131 113th Ave NE,Touchstone Kirkland Building,Kirkland,98034,"102,000",B,3,1998
+B0641,47.71621,-122.176462,12333 NE 130th Ln,Evergreen Physicians & Surgery Center,Kirkland,98034,"145,846",B,5,2002
+B0642,47.63045911,-122.3278342,1165 Eastlake Ave E,1165 Eastlake,Lake Union,98109,92000,A,4,2023
+B0643,47.62549516,-122.3407858,820 Roy St,820 Roy,Lake Union,98109,162963,A,6,
+B0644,47.62104364,-122.3423317,300 Dexter Ave N,300 Dexter,Lake Union,98109,199000,A,11,2021
+B0645,47.62236533,-122.3384233,400 Westlake Ave N,400 Westlake,Lake Union,98109,225000,A,15,2020
+B0646,47.63003895,-122.3281708,1150 Eastlake Ave E,1150 Eastlake,Lake Union,98109,280000,A,10,2023
+B0647,47.61747114,-122.3416278,2301 7th Ave,2301 7th,Lake Union,98121,310000,A,40,2021
+B0648,47.623995,-122.3384122,520 Westlake Ave N,Block 38W - Google,Lake Union,98109,322000,A,12,2021
+B0649,47.61946667,-122.3385492,111 Westlake Ave N,111 Westlake,Lake Union,98109,397931,A,18,2020
+B0650,47.625696,-122.3422812,700 Dexter Ave N,Dexter Yard,Lake Union,98109,495879,A,14,2021
+B0651,47.6197215,-122.3347811,1120 John St,1120 John - Former Seattle Times Bldg,Lake Union,98109,940160,A,13,
+B0652,47.6197215,-122.3347811,1120 John St,Seattle Times,Lake Union,98109,241520,B,3,1930
+B0653,47.620037,-122.337234,225 Terry Ave N,The Terry Thomas Building,Lake Union,98109,"40,000",A,4,2008
+B0654,47.644745,-122.326233,2701 Eastlake Ave E,2701 Eastlake,Lake Union,98102,"52,000",A,3,2017
+B0655,47.623358,-122.338843,960-964 Republican St,Rosen Building,Lake Union,98109,"60,375",A,3,1999
+B0656,47.623278,-122.330354,500 Yale Ave N,500 Yale,Lake Union,98109,"73,631",A,4,2009
+B0657,47.633789,-122.340797,1633 Westlake Ave N,1633 Westlake,Lake Union,98109,"94,000",A,4,2000
+B0658,47.629135,-122.341904,1100 Dexter Ave N,1100 Dexter,Lake Union,98109,"100,951",A,5,1997
+B0659,47.62566,-122.342964,701 Dexter Ave N,701 Dexter,Lake Union,98109,"102,000",A,10,2025
+B0660,47.628532,-122.341911,1000 Dexter Ave N,1000 Dexter,Lake Union,98109,"110,534",A,5,1998
+B0661,47.629936,-122.339943,1200 Westlake Ave N,AGC Building,Lake Union,98109,"114,896",A,10,1971
+B0662,47.634529,-122.326462,199 E Blaine St,Alexandria,Lake Union,98102,"115,084",A,3,2010
+B0663,47.623447,-122.333916,500 Fairview Ave N,Fairview Research Center II,Lake Union,98109,"123,778",A,8,2016
+B0664,47.621452,-122.337532,321 Terry Ave N,Westlake Terry East,Lake Union,98109,"132,001",A,4,2007
+B0665,47.622512,-122.337474,401 Terry Ave N,401 Terry,Lake Union,98109,"140,605",A,4,2004
+B0666,47.625453,-122.335511,630 Boren Ave N,Lakefront Block 25 West,Lake Union,98109,"142,000",A,14,2019
+B0667,47.625587,-122.335584,1000 Mercer St,Lakefront Block 31 South,Lake Union,98109,"143,000",A,6,2019
+B0668,47.628886,-122.341407,1101 Westlake Ave N,Eleven01 Westlake,Lake Union,98109,"153,708",A,6,2015
+B0669,47.625587,-122.33558,1021 Valley St,Lakefront Block 31 North,Lake Union,98109,"159,000",A,6,2019
+B0670,47.623654,-122.34141,501 8th Ave N,UW Medicine Research,Lake Union,98109,"173,899",A,8,2013
+B0671,47.628834,-122.328827,1100 Eastlake Ave E,1100 Eastlake,Lake Union,98109,"177,000",A,5,2008
+B0672,47.625453,-122.335511,630 Boren Ave N,Lakefront Block 25 East,Lake Union,98109,"180,000",A,14,2019
+B0673,47.621456,-122.338058,320 Westlake Ave N,Westlake Terry West,Lake Union,98109,"184,643",A,6,2007
+B0674,47.621906,-122.34123,333 8th Ave N,Arbor Blocks West,Lake Union,98109,"192,703",A,6,2019
+B0675,47.621424,-122.34074,300 8th Ave N,Arbor Blocks East,Lake Union,98109,"196,208",A,6,2019
+B0676,47.632535,-122.341629,1505 Westlake Ave N,West Lake Union Office Center,Lake Union,98109,"204,790",A,10,1994
+B0677,47.635147,-122.32659,1818 Fairview Ave E,The Atrium,Lake Union,98102,"204,941",A,4,2019
+B0678,47.620556,-122.330795,221 Yale Ave N,Alley24 East Block,Lake Union,98109,"215,402",A,6,2006
+B0679,47.616065,-122.33487,1900 9th Ave,9th & Stewart Life Science Bldg,Lake Union,98101,"216,088",A,11,2004
+B0680,47.615707,-122.335159,818 Stewart St,818 Stewart,Lake Union,98101,"232,127",A,14,2008
+B0681,47.624958,-122.338829,601 Westlake Ave N,Allen Institute for Brain Science,Lake Union,98109,"272,408",A,6,2015
+B0682,47.629293,-122.342397,1101 Dexter Ave N,Dexter Station,Lake Union,98109,"345,992",A,10,2015
+B0683,47.621475,-122.34304,333 Dexter Ave N,333 Dexter,Lake Union,98109,"616,584",A,12,2019
+B0684,47.640468,-122.325653,2324 Eastlake Ave E,2324 Eastlake,Lake Union,98102,"32,000",B,5,1986
+B0685,47.641041,-122.326248,2345 Eastlake Ave E,2345 Eastlake,Lake Union,98102,"32,379",B,3,2001
+B0686,47.635647,-122.324936,1820 Eastlake Ave E,Hartford Building,Lake Union,98102,"34,000",B,3,1960
+B0687,47.625691,-122.331377,1213 Valley St,C B I C,Lake Union,98109,"35,351",B,2,1990
+B0688,47.632771,-122.339775,1500 Westlake Ave N,Marina Mart,Lake Union,98109,"35,587",B,2,1940
+B0689,47.622791,-122.3308,1265 Republican St,The Supply Laundry Building,Lake Union,98109,"36,600",B,2,1904
+B0690,47.615266,-122.335285,800 Stewart St,Connect at 800,Lake Union,98101,"37,612",B,5,1977
+B0691,47.620329,-122.338867,227 Westlake Ave N,Sellen Construction,Lake Union,98109,"38,038",B,4,1999
+B0692,47.62337,-122.338786,503 Westlake Ave N,503 Westlake,Lake Union,98109,"38,640",B,6,2018
+B0693,47.636602,-122.328256,1938 Fairview Ave E,R.D. Merrill Building,Lake Union,98102,"39,234",B,3,2000
+B0694,47.646339,-122.325745,2825 Eastlake Ave E,Eastlake Center I,Lake Union,98102,"39,500",B,3,1986
+B0695,47.645945,-122.326152,2815 Eastlake Ave E,Eastlake Center II,Lake Union,98102,"45,500",B,3,1989
+B0696,47.640348,-122.326253,2323 Eastlake Ave E,Northwest Bldg,Lake Union,98102,"50,389",B,4,1977
+B0697,47.636089,-122.327026,1910 Fairview Ave E,1910 Fairview,Lake Union,98102,"51,000",B,5,1964
+B0698,47.62566,-122.342964,701 Dexter Ave N,701 Dexter,Lake Union,98109,"58,681",B,6,1984
+B0699,47.622707,-122.332085,425 Pontius Ave N,425 Pontius,Lake Union,98109,"72,442",B,4,1980
+B0700,47.634259,-122.339673,1700 Westlake Ave N,Lake Union Building,Lake Union,98109,"77,250",B,7,1970
+B0701,47.631015,-122.341888,1300 Dexter Ave N,1300 Dexter,Lake Union,98109,"79,877",B,5,1986
+B0702,47.629734,-122.328049,1144 Eastlake Ave E,1144 Eastlake,Lake Union,98109,"82,098",B,7,2002
+B0703,47.62175,-122.339335,326 9th Ave N,,Lake Union,98109,"82,440",B,9,1930
+B0704,47.628712,-122.329674,1100 Fairview Ave N,Fred Hutchinson Cancer Research Ctr - Bldg D,Lake Union,98109,"86,690",B,5,1997
+B0705,47.624954,-122.329722,617 Eastlake Ave E,617 Eastlake,Lake Union,98109,"93,895",B,5,1990
+B0706,47.623614,-122.340081,815 Mercer St,Bldg 1,Lake Union,98109,"96,000",B,5,2008
+B0707,47.630845,-122.326855,1208 Eastlake Ave E,Earl Davie Building,Lake Union,98109,"97,365",B,4,1999
+B0708,47.623482,-122.329521,501 Eastlake Ave E,501 Eastlake,Lake Union,98109,"103,494",B,5,2002
+B0709,47.631033,-122.327539,1201-1241 Eastlake Ave E,Zymogenetics,Lake Union,98109,"106,000",B,4,1911
+B0710,47.624105,-122.340266,801-815 Mercer St,South Lake Union - Blue Flame Bldg,Lake Union,98109,"110,264",B,4,1963
+B0711,47.621374,-122.338849,307-315 Westlake Ave N,SBRI Building,Lake Union,98109,"116,214",B,5,2004
+B0712,47.633476,-122.326393,1551 Eastlake Ave E,1551 Eastlake,Lake Union,98102,"117,482",B,3,1961
+B0713,47.626408,-122.331444,823 Yale Ave N,Fred Hutchinson Cancer Research Ctr - Bldg J,Lake Union,98109,"134,497",B,6,2001
+B0714,47.626518,-122.329567,825 Eastlake Ave E,Fred Hutchinson Cancer Research Ctr - Bldg G,Lake Union,98109,"152,600",B,7,2000
+B0715,47.621395,-122.329544,325 Eastlake Ave E,Yale & Thomas,Lake Union,98109,"158,433",B,7,1981
+B0716,47.634415,-122.324745,1616 Eastlake Ave E,1616 Eastlake,Lake Union,98102,"165,493",B,5,2002
+B0717,47.623614,-122.340081,815 Mercer St,Bldg 2,Lake Union,98109,"188,000",B,4,2008
+B0718,47.613985,-122.337129,600 Stewart St,Plaza 600,Lake Union,98101,"213,979",B,20,1969
+B0719,47.628712,-122.329674,1100 Fairview Ave N,Fred Hutchinson Cancer Research Ctr - Bldg AB,Lake Union,98109,"220,173",B,5,1997
+B0720,47.628712,-122.329674,1100 Fairview Ave N,Fred Hutchinson Cancer Research Ctr - Bldg C,Lake Union,98109,"229,084",B,5,1997
+B0721,47.619053,-122.336395,1000 Denny Way,Denny Way Building,Lake Union,98109,"262,565",B,8,1965
+B0722,47.616478,-122.334488,1915 Terry Ave,1915 Terry,Lake Union,98101,"263,000",B,7,1953
+B0723,47.628712,-122.329674,1100 Fairview Ave N,Public Health Sciences Building,Lake Union,98109,"372,000",B,5,2002
+B0724,47.627987,-122.331314,1000-1012 Fairview Ave N,Fred Hutchinson Cancer Research Ctr - Bldg LF,Lake Union,98109,"37,740",C,3,1926
+B0725,47.619807,-122.333932,222 Fairview Ave N,Cascade Natural Gas,Lake Union,98109,"44,865",C,2,1957
+B0726,47.641625,-122.325645,2366 Eastlake Ave E,Areis Bldg,Lake Union,98102,"50,333",C,4,1959
+B0727,47.635414,-122.340685,1813 Westlake Ave N,Q-13 Bldg,Lake Union,98109,"57,670",C,3,1952
+B0728,47.623462,-122.337484,964 Republican St,Rosen Bldg,Lake Union,98109,"60,375",C,3,1922
+B0729,47.620705,-122.339394,234 9th Ave N,9th & Thomas,Lake Union,98109,"159,037",Trophy,12,2017
+B0730,47.622182,-122.341893,400 Dexter Ave N,The Alexandria Center,Lake Union,98109,"288,850",Trophy,12,2017
+B0731,47.622536,-122.333941,400 Fairview Ave N,400 Fairview,Lake Union,98109,"345,542",Trophy,13,2015
+B0732,47.621161,-122.335482,300 Boren Ave N,Troy Block South Tower,Lake Union,98109,"395,000",Trophy,12,2016
+B0733,47.588634,-122.238609,7525 SE 24th St,Island Corporate Center,Mercer Island,98040,"105,796",A,6,1987
+B0734,47.585777,-122.232183,7900 SE 28th St,Mercer Island Court,Mercer Island,98040,"36,337",B,5,1986
+B0735,47.583091,-122.235763,3003 77th Ave SE,Farmers New World Life,Mercer Island,98040,"155,200",B,5,1982
+B0736,47.732922,-122.151843,Woodinville Redmond Rd @ NE 145th St,Woodinville Village - Bldg T,Mill Creek/Woodinville,98052,108000,B,1,
+B0737,47.859422,-122.220701,15224 Main St,Park Place Center,Mill Creek/Woodinville,98012,"31,000",B,3,2004
+B0738,47.853077,-122.219025,16000 Bothell Everett Hwy,Main Building,Mill Creek/Woodinville,98012,"31,000",B,3,1986
+B0739,47.7172,-122.152651,12950 Willows Rd NE,Phase I - Bldg A,Mill Creek/Woodinville,98034,"45,735",B,2,2008
+B0740,47.7172,-122.152651,12950 Willows Rd NE,Sammamish Ridge B,Mill Creek/Woodinville,98034,"45,735",B,2,2008
+B0741,47.880684,-122.229538,125 130th St SE,Ameritek Building,Mill Creek/Woodinville,98208,"51,682",B,3,2005
+B0742,47.831224,-122.207885,18323 Bothell Everett Hwy,RG Professional Center,Mill Creek/Woodinville,98012,"54,236",B,3,2001
+B0743,47.878588,-122.234627,13020 Meridian Ave S,Swedish Mill Creek,Mill Creek/Woodinville,98208,"86,198",B,3,2010
+B0744,47.751167,-122.151769,17000 140th Ave NE,Woodinville Medical Center,Mill Creek/Woodinville,98072,"32,400",C,4,1991
+B0745,47.707277,-122.332769,10700 Meridian Ave N,Northway Square West,Northgate/N Seattle,98133,"83,361",A,6,1977
+B0746,47.699178,-122.326742,9709 3rd Ave NE,Northgate Plaza,Northgate/N Seattle,98115,"122,000",A,5,1984
+B0747,47.704834,-122.334442,1833 N 105th St,Meridian Office,Northgate/N Seattle,98133,"32,099",B,3,1981
+B0748,47.70557,-122.335049,10501 Meridian Ave N,King County Health Dept.,Northgate/N Seattle,98133,"34,759",B,2,1979
+B0749,47.693506,-122.355261,8760 Greenwood Ave N,Westview North,Northgate/N Seattle,98103,"38,196",B,4,1998
+B0750,47.700784,-122.327225,115 NE 100th St,Northgate Executive A,Northgate/N Seattle,98115,"39,217",B,3,1974
+B0751,47.708845,-122.333964,11027 Meridian Ave N,Verity Credit Union,Northgate/N Seattle,98133,"40,000",B,3,1996
+B0752,47.71888,-122.294518,12360 Lake City Way NE,Lake City Center,Northgate/N Seattle,98125,"40,795",B,5,1979
+B0753,47.700532,-122.32491,9750 3rd Ave NE,Northgate Office Building,Northgate/N Seattle,98115,"45,700",B,4,1978
+B0754,47.70837,-122.333328,2111 N Northgate Way,Northgate Meridian,Northgate/N Seattle,98133,"46,806",B,3,1986
+B0755,47.697166,-122.291044,9425 35th Ave NE,Morningside Apartments,Northgate/N Seattle,98115,"50,095",B,3,1994
+B0756,47.700532,-122.32491,9750 3rd Ave NE,9750 3rd,Northgate/N Seattle,98115,"52,282",B,4,1978
+B0757,47.712625,-122.337352,1536 N 115th St,McMurray Medical Office Bldg,Northgate/N Seattle,98133,"60,000",B,3,2005
+B0758,47.708861,-122.334664,11011 Meridian Ave N,Meridian Medical Center,Northgate/N Seattle,98133,"71,400",B,3,2006
+B0759,47.700862,-122.326524,155 NE 100th St,Northgate Executive B,Northgate/N Seattle,98115,"72,490",B,5,1973
+B0760,47.707449,-122.3317,2150 N 107th St,Northway Square East,Northgate/N Seattle,98133,"78,200",B,6,1974
+B0761,47.700032,-122.326615,9725 3rd Ave NE,Northgate Executive C,Northgate/N Seattle,98115,"86,774",B,6,1979
+B0762,47.699317,-122.323724,9706 4th Ave NE,Northgate Delta Building,Northgate/N Seattle,98115,"87,000",B,5,1987
+B0763,47.704189,-122.332001,10330 Meridian Ave N,NW Outpatient Medical Center,Northgate/N Seattle,98133,"105,138",B,3,1961
+B0764,47.701744,-122.302658,10015 Lake City Way NE,Active Space,Northgate/N Seattle,98125,"33,546",C,4,2000
+B0765,48.241214,-122.363808,9612 270th St NW,Port Susan Commons,N Snohomish County,98292,"30,684",B,2,2005
+B0766,48.112158,-122.180686,12806 State Ave,Bldg 2,N Snohomish County,98271,"66,592",B,2,1993
+B0767,48.187447,-122.116929,875 Wesley St,Whitehorse Medical center,N Snohomish County,98223,"75,000",B,2,1991
+B0768,48.145608,-122.177688,3810 166th Pl NE,Corporate Central,N Snohomish County,98223,"45,289",C,2,2003
+B0769,47.59922247,-122.3351221,74 S Jackson St,The Jack,Pioneer Sq/Waterfront,98104,150000,A,7,2021
+B0770,47.59298028,-122.3259932,1021-1045 6th Ave S,Bldg E,Pioneer Sq/Waterfront,98134,171000,A,7,2017
+B0771,47.60336158,-122.3366141,815-825 Western Ave,Commuter Bldg site,Pioneer Sq/Waterfront,98104,175000,A,9,2022
+B0772,47.59298028,-122.3259932,1021-1045 6th Ave S,Bldg C,Pioneer Sq/Waterfront,98134,182000,A,8,
+B0773,47.59298028,-122.3259932,1021-1045 6th Ave S,Bldg D,Pioneer Sq/Waterfront,98134,182000,A,8,
+B0774,47.59298028,-122.3259932,1021-1045 6th Ave S,Bldg A,Pioneer Sq/Waterfront,98134,227000,A,10,
+B0775,47.59298028,-122.3259932,1021-1045 6th Ave S,Bldg B,Pioneer Sq/Waterfront,98134,227000,A,10,
+B0776,47.59917651,-122.3347595,95 S Jackson St,95 Jackson,Pioneer Sq/Waterfront,98104,35807,B,3,
+B0777,47.59854303,-122.3329347,419 Occidental Ave S,Railspur,Pioneer Sq/Waterfront,98104,63818,B,6,1906
+B0778,47.597127,-122.327963,625 5th Ave S,625 Union Station,Pioneer Sq/Waterfront,98104,"64,849",A,4,2000
+B0779,47.60153,-122.333799,101 Yesler Way,Olympic Block,Pioneer Sq/Waterfront,98104,"70,796",A,8,1986
+B0780,47.605586,-122.337407,1109 1st Ave,Watermark Tower,Pioneer Sq/Waterfront,98101,"71,150",A,23,1983
+B0781,47.59983,-122.327755,315 5th Ave S,Fifth & Jackson,Pioneer Sq/Waterfront,98104,"145,000",A,10,2002
+B0782,47.598574,-122.335151,450 Alaskan Way S,450 Alaskan,Pioneer Sq/Waterfront,98104,"167,000",A,9,2017
+B0783,47.600762,-122.332799,200 Occidental Ave S,200 Occidental,Pioneer Sq/Waterfront,98104,"183,000",A,12,2016
+B0784,47.597977,-122.33122,255 S King St,Hawk Tower,Pioneer Sq/Waterfront,98104,"208,840",A,9,2018
+B0785,47.597371,-122.327731,605 5th Ave S,605 Union Station,Pioneer Sq/Waterfront,98104,"254,995",A,9,2000
+B0786,47.5966,-122.327747,705 5th Ave S,705 Union Station,Pioneer Sq/Waterfront,98104,"257,768",A,11,2001
+B0787,47.597786,-122.334511,501-505 1st Ave S,505 First,Pioneer Sq/Waterfront,98104,"288,543",A,7,2010
+B0788,47.598229,-122.327726,505 5th Ave S,505 Union Station,Pioneer Sq/Waterfront,98104,"294,697",A,11,2000
+B0789,47.598774,-122.330833,201 S Jackson St,King Street Center,Pioneer Sq/Waterfront,98104,"343,400",A,8,1999
+B0790,47.600544,-122.335144,210 Alaskan Way S,,Pioneer Sq/Waterfront,98104,"31,608",B,5,2005
+B0791,47.601024,-122.334533,119 1st Ave S,Maynard Building,Pioneer Sq/Waterfront,98104,"31,629",B,5,1892
+B0792,47.60109,-122.335044,72-80 S Washington St,Washington Park Building,Pioneer Sq/Waterfront,98104,"34,568",B,3,1896
+B0793,47.599428,-122.333775,316-318 1st Ave S,Seattle Quilt Building,Pioneer Sq/Waterfront,98104,"35,163",B,6,1905
+B0794,47.607,-122.338485,1201-1215 1st Ave,Harbor Steps Northwest Tower,Pioneer Sq/Waterfront,98101,"36,807",B,25,2000
+B0795,47.606881,-122.338965,1303 1st Ave,Harbor Steps Northwest Tower,Pioneer Sq/Waterfront,98101,"36,807",B,25,2000
+B0796,47.596448,-122.324278,675 S Lane St,International Building,Pioneer Sq/Waterfront,98104,"37,155",B,4,1979
+B0797,47.608327,-122.341576,1501-1505 Western Ave,Madore Building,Pioneer Sq/Waterfront,98101,"41,594",B,6,1915
+B0798,47.599656,-122.330682,307-311 3rd Ave S,Mottman Building,Pioneer Sq/Waterfront,98104,"41,920",B,5,1910
+B0799,47.594978,-122.328552,830 4th Ave S,The Turner Construction Building,Pioneer Sq/Waterfront,98134,"42,380",B,4,1915
+B0800,47.607544,-122.340496,1415 Western Ave,Market Square,Pioneer Sq/Waterfront,98101,"45,247",B,7,1908
+B0801,47.593598,-122.333664,1014-1016 1st Ave S,Olympic Reprographics Building,Pioneer Sq/Waterfront,98134,"46,200",B,4,1907
+B0802,47.60025,-122.331177,220 2nd Ave S,Pacific Commercial Building,Pioneer Sq/Waterfront,98104,"46,296",B,5,1900
+B0803,47.605736,-122.337624,1113-1123 1st Ave,Colonial Grand Pacific Building,Pioneer Sq/Waterfront,98101,"50,000",B,4,1888
+B0804,47.601974,-122.334511,605 1st Ave,Mutual Life Building,Pioneer Sq/Waterfront,98104,"50,000",B,6,1965
+B0805,47.603073,-122.336807,815 Western Ave,Commuter Building,Pioneer Sq/Waterfront,98104,"53,200",B,3,1910
+B0806,47.597017,-122.333669,542 1st Ave S,Reedo Building,Pioneer Sq/Waterfront,98104,"53,636",B,4,1904
+B0807,47.59624,-122.333622,568-570 1st Ave S,Provident Building,Pioneer Sq/Waterfront,98104,"56,107",B,6,1910
+B0808,47.592653,-122.328304,1064 4th Ave S,Pacific Office Automation,Pioneer Sq/Waterfront,98134,"56,700",B,3,1910
+B0809,47.601454,-122.332453,157-159 Yesler Way,Interurban Building,Pioneer Sq/Waterfront,98104,"60,088",B,6,1890
+B0810,47.598503,-122.333744,100 S King St,Westland Building,Pioneer Sq/Waterfront,98104,"63,857",B,6,1907
+B0811,47.595574,-122.324716,800 Maynard Ave S,RDA Building,Pioneer Sq/Waterfront,98134,"66,263",B,4,1920
+B0812,47.593964,-122.333674,1000 1st Ave S,Palmer Court Building,Pioneer Sq/Waterfront,98134,"70,350",B,6,1905
+B0813,47.599058,-122.332583,157-159 S Jackson St,Washington Shoe Building,Pioneer Sq/Waterfront,98104,"73,200",B,6,1900
+B0814,47.601384,-122.329265,110 Prefontaine Pl S,Prefontaine Building,Pioneer Sq/Waterfront,98104,"73,470",B,7,1907
+B0815,47.602223,-122.335799,615-621 Western Ave,615-621 Western,Pioneer Sq/Waterfront,98104,"74,504",B,6,1910
+B0816,47.598962,-122.33379,101-111 S Jackson St,Pioneer Square,Pioneer Sq/Waterfront,98104,"78,564",B,5,1904
+B0817,47.598102,-122.333678,500 1st Ave S,101 King Street,Pioneer Sq/Waterfront,98104,"81,557",B,6,1910
+B0818,47.602392,-122.336084,71 Columbia St,Polson Building,Pioneer Sq/Waterfront,98104,"87,527",B,6,1910
+B0819,47.606007,-122.339455,51 University St,51 University,Pioneer Sq/Waterfront,98101,"96,402",B,6,1918
+B0820,47.605728,-122.339195,1201 Western Ave,1201 Western,Pioneer Sq/Waterfront,98101,"104,478",B,7,1910
+B0821,47.599437,-122.332591,308-316 Occidental Ave S,Occidental Mall,Pioneer Sq/Waterfront,98104,"113,424",B,5,1908
+B0822,47.604767,-122.337393,1000-1020 Western Ave,National Building,Pioneer Sq/Waterfront,98104,"128,763",B,6,1904
+B0823,47.598549,-122.331985,401 2nd Ave S,Northcoast Building,Pioneer Sq/Waterfront,98104,"144,000",B,7,1907
+B0824,47.604381,-122.337584,1001-1011 Western Ave,Waterfront Place Building,Pioneer Sq/Waterfront,98104,"178,269",B,13,1984
+B0825,47.598531,-122.334596,411 1st Ave S,411 First,Pioneer Sq/Waterfront,98104,"178,887",B,7,1906
+B0826,47.598276,-122.335226,83 S King St,83 King,Pioneer Sq/Waterfront,98104,"184,083",B,8,1904
+B0827,47.603718,-122.337395,901-999 Western Ave,Maritime Building,Pioneer Sq/Waterfront,98104,"186,974",B,8,1910
+B0828,47.603501,-122.335247,811 1st Ave,Colman Building,Pioneer Sq/Waterfront,98104,"205,521",B,6,1904
+B0829,47.604099,-122.336487,909 1st Ave,Jackson Federal Office Building,Pioneer Sq/Waterfront,98104,"289,747",B,8,1933
+B0830,47.599603,-122.333241,311 Occidental Ave S,Occidental Bldg,Pioneer Sq/Waterfront,98104,"30,000",C,3,1939
+B0831,47.59618,-122.325388,624-628 S Dearborn St,The Dearborn Bldg,Pioneer Sq/Waterfront,98104,"30,000",C,2,1970
+B0832,47.596396,-122.333628,562 1st Ave S,FB & P Bldg,Pioneer Sq/Waterfront,98104,"31,500",C,7,1930
+B0833,47.593651,-122.328378,1020 4th Ave S,US Salvation Army Adult Rehabilitation Center,Pioneer Sq/Waterfront,98134,"33,729",C,3,1982
+B0834,47.600482,-122.331231,313 2nd Ave S,,Pioneer Sq/Waterfront,98104,"34,105",C,4,1905
+B0835,47.600582,-122.333835,206 1st Ave S,Buttnick/City Loan Bldg,Pioneer Sq/Waterfront,98104,"35,000",C,5,1930
+B0836,47.597214,-122.334134,558 1st Ave S,FB & P Bldg,Pioneer Sq/Waterfront,98104,"37,000",C,5,1910
+B0837,47.602682,-122.335546,83 Columbia St,Journal of Commerce Bldg,Pioneer Sq/Waterfront,98104,"40,000",C,4,1910
+B0838,47.595985,-122.333572,590 1st Ave S,Johnson Hardware Bldg,Pioneer Sq/Waterfront,98104,"42,600",C,2,1903
+B0839,47.599899,-122.333836,105 S Main St,Globe Bldg,Pioneer Sq/Waterfront,98104,"54,782",C,4,1900
+B0840,47.601399,-122.332048,423 2nd Ave W,,Pioneer Sq/Waterfront,98104,"56,176",C,4,1983
+B0841,47.595104,-122.327169,815 Airport Way S,INS Building,Pioneer Sq/Waterfront,98134,"67,777",C,4,1930
+B0842,47.600163,-122.333936,208-222 1st Ave S,Grand Central Building,Pioneer Sq/Waterfront,98104,"72,495",C,4,1900
+B0843,47.177675,-122.288679,1450 5th St SE,Good Samaritan Medical Office Building,Puyallup,98372,"83,268",A,4,2011
+B0844,47.175112,-122.292954,1703 S Meridian,Meridian Medical II Bldg,Puyallup,98371,"30,900",B,3,2000
+B0845,47.175767,-122.290335,1701 3rd St SE,Rieder Medical Center,Puyallup,98372,"31,650",B,3,2007
+B0846,47.192181,-122.294189,201 W Main,,Puyallup,98371,"35,258",B,2,1906
+B0847,47.176951,-122.28868,400 15th Ave SE,,Puyallup,98372,"37,623",B,2,2004
+B0848,47.192409,-122.28084,1011 E Main,Puyallup Executive Park,Puyallup,98372,"40,327",B,4,1989
+B0849,47.176076,-122.28887,402 15th Ave SE,,Puyallup,98372,"42,835",B,2,1995
+B0850,47.189303,-122.293438,333 S Meridian,Puyallup City Hall,Puyallup,98371,"50,000",B,5,1941
+B0851,47.159576,-122.28081,1019 39th Ave SE,West Building,Puyallup,98374,"152,167",B,2,1985
+B0852,47.158852,-122.279875,1015 39th Ave SE,South Bldg,Puyallup,98374,"174,335",B,2,1985
+B0853,47.191027,-122.29008,320 Spring St,Good Samaritan Mental Health Service,Puyallup,98372,"33,856",C,2,1948
+B0854,47.190928,-122.289984,325 E Pioneer,,Puyallup,98372,"33,856",C,2,1952
+B0855,47.660825,-122.385879,2320 W Commodore Way,Salmon Bay Landing,Queen Anne/Magnolia,98199,"31,866",A,3,2009
+B0856,47.619483,-122.344605,120 6th Ave N,EMP Administrative Office,Queen Anne/Magnolia,98109,"48,883",A,4,2013
+B0857,47.62252,-122.363808,401 Elliott Ave W,Elliott West 2,Queen Anne/Magnolia,98119,"84,765",A,4,2000
+B0858,47.619076,-122.359573,101 Elliott Ave W,101 Elliott,Queen Anne/Magnolia,98119,"101,738",A,5,1986
+B0859,47.621857,-122.36306,351 Elliott Ave W,Elliott West 1,Queen Anne/Magnolia,98119,"104,643",A,5,2000
+B0860,47.623127,-122.364601,501 Elliott Ave W,Elliott West 3,Queen Anne/Magnolia,98119,"110,000",A,4,2000
+B0861,47.625896,-122.368156,645 Elliott Ave W,635 Elliott North,Queen Anne/Magnolia,98119,"145,120",A,4,2009
+B0862,47.619829,-122.360471,201 Elliott Ave W,The Labs @201 Elliott,Queen Anne/Magnolia,98119,"151,255",A,5,1925
+B0863,47.622731,-122.360616,450 3rd Ave W,Third & Harrison,Queen Anne/Magnolia,98119,"183,799",A,5,2017
+B0864,47.617691,-122.357742,3131 Elliott Ave,3131 Elliott Ave,Queen Anne/Magnolia,98121,"189,849",A,7,1986
+B0865,47.619156,-122.348007,140 4th Ave N,Komo Plaza East,Queen Anne/Magnolia,98109,"191,232",A,5,2000
+B0866,47.62293,-122.345552,500 5th Ave N,Bill & Melinda Gates Foundation - Bldg A,Queen Anne/Magnolia,98109,"300,000",A,6,2011
+B0867,47.62293,-122.345552,500 5th Ave N,Bill & Melinda Gates Foundation - Bldg B,Queen Anne/Magnolia,98109,"300,000",A,6,2011
+B0868,47.64792,-122.353521,192 Nickerson St,Canal Place Office D,Queen Anne/Magnolia,98109,"30,000",B,3,1981
+B0869,47.648416,-122.354618,150 Nickerson St,Canal Place Office B,Queen Anne/Magnolia,98109,"30,029",B,3,1981
+B0870,47.660364,-122.386205,2303 W Commodore Way,2303 W Commodore Way,Queen Anne/Magnolia,98199,"30,152",B,3,2007
+B0871,47.648472,-122.353813,180 Nickerson St,Canal Place Office C,Queen Anne/Magnolia,98109,"32,443",B,3,1981
+B0872,47.649174,-122.355484,130 Nickerson St,Canal Place Office A,Queen Anne/Magnolia,98109,"32,912",B,3,1981
+B0873,47.618383,-122.358672,3161 Elliott Ave,Diamond Building,Queen Anne/Magnolia,98121,"34,030",B,3,1926
+B0874,47.624828,-122.35762,18 W Mercer St,18 West Mercer,Queen Anne/Magnolia,98119,"34,628",B,5,1984
+B0875,47.649796,-122.356812,4 Nickerson St,4 Nickerson,Queen Anne/Magnolia,98109,"39,108",B,4,1986
+B0876,47.618823,-122.357214,111 Queen Anne Ave N,Queen Anne Building,Queen Anne/Magnolia,98109,"47,210",B,5,1985
+B0877,47.62484,-122.348495,400 Mercer St,400 Mercer,Queen Anne/Magnolia,98109,"47,977",B,6,1987
+B0878,47.620509,-122.358585,221 1st Ave W,Scripps Building,Queen Anne/Magnolia,98119,"48,500",B,4,1973
+B0879,47.624904,-122.360297,220 W Mercer St,Queen Anne Square West,Queen Anne/Magnolia,98119,"49,628",B,5,1982
+B0880,47.620016,-122.357246,201 Queen Anne Ave N,Queen Anne Plaza,Queen Anne/Magnolia,98109,"52,036",B,4,1985
+B0881,47.621368,-122.359726,200 W Thomas St,200 West Thomas,Queen Anne/Magnolia,98119,"65,720",B,5,1973
+B0882,47.623003,-122.358301,100 W Harrison St,West Harrison North Tower,Queen Anne/Magnolia,98119,"65,929",B,5,1970
+B0883,47.620113,-122.357674,200 1st Ave W,First West Building,Queen Anne/Magnolia,98109,"66,470",B,5,1971
+B0884,47.623003,-122.358301,100 W Harrison St,West Harrison-South Tower,Queen Anne/Magnolia,98119,"69,940",B,5,1970
+B0885,47.634656,-122.376572,1631 15th Ave W,Interbay Work Lofts,Queen Anne/Magnolia,98119,"82,679",B,3,2013
+B0886,47.619392,-122.356377,190 Queen Anne Ave N,190 Queen Anne,Queen Anne/Magnolia,98109,"84,077",B,5,1974
+B0887,47.619133,-122.358738,151 Western Ave W,Northwest Work Lofts A,Queen Anne/Magnolia,98119,"94,360",B,4,1927
+B0888,47.618838,-122.348696,100 4th Ave N,KOMO Plaza West,Queen Anne/Magnolia,98109,"99,919",B,6,2002
+B0889,47.624818,-122.359832,200 W Mercer St,Queen Anne Square East,Queen Anne/Magnolia,98119,"103,242",B,5,1982
+B0890,47.620945,-122.3619,333 Elliott Ave W,333 Elliott,Queen Anne/Magnolia,98119,"137,500",B,5,2008
+B0891,47.618248,-122.35743,3131 Western Ave,NorthWest Work Lofts M,Queen Anne/Magnolia,98121,"155,200",B,5,1927
+B0892,47.617771,-122.356674,3101 Western Ave,3101 Western Building,Queen Anne/Magnolia,98121,"187,074",B,8,1984
+B0893,47.621616,-122.361237,300 Elliott Ave W,Elliott Bay Office Park,Queen Anne/Magnolia,98119,"226,159",B,5,1981
+B0894,47.623061,-122.359085,400-424 2nd Ave W,West Harrison West Tower,Queen Anne/Magnolia,98119,"241,875",B,7,2000
+B0895,47.622379,-122.361023,300 W Harrison St,,Queen Anne/Magnolia,98119,"31,945",C,5,1955
+B0896,47.620399,-122.34671,223 Taylor Ave N,,Queen Anne/Magnolia,98109,"38,286",C,2,1953
+B0897,47.619604,-122.358958,168 Western Ave W,Bayview Work Lofts,Queen Anne/Magnolia,98119,"38,984",C,3,1930
+B0898,47.655638,-122.381109,1900 W Nickerson St,Fisherman's Terminal Bldg,Queen Anne/Magnolia,98119,"63,773",C,2,1989
+B0899,47.622852,-122.355797,415 1st Ave N,USPS Queen Anne Station,Queen Anne/Magnolia,98109,"71,648",C,4,1964
+B0900,47.69271075,-122.1510709,10201-10301 Willows Rd NE,Project X,Redmond,98052,650000,A,6,2021
+B0901,47.633523,-122.131892,2700 156th Ave NE,RidgePointe Corporate Center,Redmond,98008,"50,376",A,3,2002
+B0902,47.69783,-122.153618,10865 Willows Rd NE,Willow Creek E,Redmond,98052,"66,449",A,3,1998
+B0903,47.697788,-122.154724,10915 Willows Rd NE,Willow Creek F,Redmond,98052,"66,449",A,3,1998
+B0904,47.677722,-122.091654,18600 NE Union Hill Rd,Millennium Corporate E,Redmond,98052,"80,751",A,2,2000
+B0905,47.67658,-122.097468,18200 NE Union Hill Rd,Millennium Corporate A,Redmond,98052,"82,451",A,2,1999
+B0906,47.676884,-122.131275,8383 158th Ave NE,Opportunity Building,Redmond,98052,"87,558",A,4,1983
+B0907,47.677101,-122.096106,18300 NE Union Hill Rd,Millennium Corporate B,Redmond,98052,"87,791",A,2,2000
+B0908,47.677637,-122.090761,18700 NE Union Hill Rd,Millennium Corporate F,Redmond,98052,"87,897",A,2,2000
+B0909,47.677484,-122.093199,18500 NE Union Hill Rd,Millennium Corporate D,Redmond,98052,"99,898",A,3,2000
+B0910,47.677123,-122.094669,18400 NE Union Hill Rd,Millennium Corporate C,Redmond,98052,"99,945",A,3,2000
+B0911,47.663455,-122.096329,18300 Redmond Way,Redmond Technology Center,Redmond,98052,"100,978",A,5,2008
+B0912,47.67328,-122.129113,15809 Bear Creek Pkwy,The Offices at Riverpark,Redmond,98052,"106,281",A,5,2008
+B0913,47.644063,-122.126983,3720 159th Ave,Microsoft - Bldg 34,Redmond,98052,"107,096",A,4,1999
+B0914,47.640832,-122.127686,3460 157th Ave NE,Microsoft - Bldg 8,Redmond,98052,"124,657",A,2,1988
+B0915,47.642357,-122.124517,16070 NE 36th Way,Microsoft - Bldg 33,Redmond,98052,"125,000",A,5,2001
+B0916,47.639611,-122.128397,3350 157th Ave NE,Microsoft - Bldg 9,Redmond,98052,"125,537",A,2,1989
+B0917,47.645283,-122.125584,3940 159th Ave,Microsoft - Bldg 35,Redmond,98052,"130,156",A,4,1999
+B0918,47.638205,-122.125912,16071 NE 36th Way,Microsoft - Bldg 37,Redmond,98052,"217,112",A,4,1988
+B0919,47.636829,-122.130577,3009 157th Pl NE,Microsoft - Bldg 27,Redmond,98052,"233,382",A,3,1995
+B0920,47.636332,-122.12822,3028 157th Pl NE,Microsoft - Bldg 28,Redmond,98052,"30,000",B,3,1995
+B0921,47.681828,-122.135468,15365-15387 NE 90th St,Pacific Business & Tech Center T,Redmond,98052,"32,824",B,2,1988
+B0922,47.667856,-122.094657,6801 185th Ave NE,NW Technical Center A2,Redmond,98052,"33,362",B,2,2009
+B0923,47.666245,-122.092989,18578 NE 67th Ct,Redmond East 5,Redmond,98052,"35,586",B,2,1989
+B0924,47.682003,-122.146515,14560 NE 87th St,West Willows Tech Center 3,Redmond,98052,"36,000",B,2,1995
+B0925,47.668002,-122.095436,18390 NE 68th St,NW Technical Center A1,Redmond,98052,"36,062",B,2,2009
+B0926,47.709702,-122.162445,12277 134th Ct NE,Willows Ridge Tech B,Redmond,98052,"36,450",B,2,1985
+B0927,47.67638,-122.122154,8201 164th Ave NE,Redmond Town Square,Redmond,98052,"38,000",B,3,2000
+B0928,47.704632,-122.154404,11601 Willows Rd NE,Quadrant Willows F,Redmond,98052,"39,670",B,2,2000
+B0929,47.677169,-122.126246,8301 161st Ave NE,Redmond Medical Center,Redmond,98052,"41,153",B,3,1985
+B0930,47.642998,-122.131363,15660 NE 36th St,Microsoft - Bldg 19,Redmond,98052,"41,648",B,2,1991
+B0931,47.682237,-122.123762,8980 161st Ave NE,Evergreen Medical Facility,Redmond,98052,"42,240",B,4,2011
+B0932,47.674604,-122.133771,8271-8279 154th Ave NE,Westpark D,Redmond,98052,"42,779",B,2,1990
+B0933,47.696312,-122.153412,10735 Willows Rd NE,Willow Creek C,Redmond,98052,"43,753",B,2,1998
+B0934,47.645407,-122.12788,3925 NE 39th Ave,Microsoft - Bldg 21,Redmond,98052,"43,906",B,2,1991
+B0935,47.662465,-122.093304,6222 185th Ave NE,Redmond East 18,Redmond,98052,"45,198",B,2,1998
+B0936,47.682263,-122.135772,15400 NE 90th St,Unisea Bldg,Redmond,98052,"45,769",B,4,1991
+B0937,47.705508,-122.154546,11611 Willows Rd NE,Quadrant Willows B,Redmond,98052,"46,000",B,2,2000
+B0938,47.662408,-122.092381,6244 185th Ave NE,Redmond East 19,Redmond,98052,"47,834",B,2,1997
+B0939,47.671146,-122.123489,16250 NE 74th St,Lake WA School District,Redmond,98052,"49,642",B,3,1997
+B0940,47.697155,-122.152756,10785 Willows Rd NE,Willow Creek D,Redmond,98052,"50,402",B,2,1998
+B0941,47.694695,-122.152229,10545 Willows Rd NE,Willow Creek A,Redmond,98052,"51,286",B,2,1999
+B0942,47.677066,-122.135348,8331-8343 154th Ave NE,Westpark E,Redmond,98052,"51,303",B,2,1989
+B0943,47.701204,-122.153491,11261 Willows Rd NE,Quadrant Willows D,Redmond,98052,"55,204",B,2,2000
+B0944,47.695663,-122.152779,10675 Willows Rd NE,Willow Creek B,Redmond,98052,"55,753",B,2,1997
+B0945,47.639911,-122.125579,16041 NE 36th Way,Microsoft - Bldg 3,Redmond,98052,"56,054",B,2,1986
+B0946,47.63921,-122.126276,16061 NE 36th Way,Microsoft - Bldg 6,Redmond,98052,"56,359",B,2,1986
+B0947,47.640578,-122.124932,16031 NE 36th Way,Microsoft - Bldg 4,Redmond,98052,"56,468",B,2,1986
+B0948,47.641317,-122.125607,16011 NE 36th St,Microsoft,Redmond,98052,"56,562",B,2,1986
+B0949,47.640602,-122.126266,16021 NE 36th Way,Microsoft - Bldg 2,Redmond,98052,"56,578",B,2,1986
+B0950,47.639268,-122.124935,16051 NE 36th Way,Microsoft - Bldg 5,Redmond,98052,"56,880",B,2,1986
+B0951,47.643978,-122.129332,3860 NE 39th St,Microsoft - Bldg 18,Redmond,98052,"58,165",B,3,1991
+B0952,47.700154,-122.153875,11121 Willows Rd NE,Quadrant Willows E,Redmond,98052,"58,961",B,3,2000
+B0953,47.681984,-122.148239,14520 NE 87th St,West Willows Tech Center 2,Redmond,98052,"59,830",B,2,1995
+B0954,47.702213,-122.154144,11351 Willows Rd NE,Universal Avionics Building,Redmond,98052,"62,854",B,2,1998
+B0955,47.703525,-122.153934,11431 Willows Rd NE,Quadrant Willows A,Redmond,98052,"64,269",B,2,1998
+B0956,47.639633,-122.131383,3635 156th Ave NE,Microsoft - Bldg 11,Redmond,98052,"70,851",B,2,1988
+B0957,47.701093,-122.154951,11241 Willows Rd NE,Quadrant Willows C,Redmond,98052,"71,737",B,3,1998
+B0958,47.668778,-122.121933,7277 164th Ave NE,AT&T 2,Redmond,98052,"73,007",B,4,1998
+B0959,47.672757,-122.107447,17411 NE Union Hill Rd,Redmond Junction at Bear Creek - Blg A,Redmond,98052,"73,029",B,2,1988
+B0960,47.669232,-122.123404,16221 NE 72nd Way,Redmond Town Center 3,Redmond,98052,"78,487",B,3,1998
+B0961,47.668809,-122.116889,16671 NE 72nd Way,Redmond Town Center 6,Redmond,98052,"80,582",B,3,1998
+B0962,47.687096,-122.15255,9805 Willows Rd NE,Bldg C,Redmond,98052,"80,705",B,3,1999
+B0963,47.641482,-122.131491,3600 156th Ave NE,Microsoft - Bldg 24,Redmond,98052,"84,138",B,2,1993
+B0964,47.676396,-122.099067,18100 NE Union Hill Rd,Swedish Redmond,Redmond,98052,"84,559",B,3,2010
+B0965,47.663511,-122.092968,6464 185th Ave NE,Redmond East 17,Redmond,98052,"85,737",B,2,1992
+B0966,47.669304,-122.11771,7333 168th Ave NE,Redmond Town Center 5,Redmond,98052,"95,654",B,4,2000
+B0967,47.694019,-122.152977,10525 Willows Rd NE,Willow Creek G,Redmond,98052,"97,166",B,3,1981
+B0968,47.673996,-122.10688,17425 NE Union Hill Rd,Redmond Junction at Bear Creek - Blg B,Redmond,98052,"98,246",B,2,1980
+B0969,47.679111,-122.130898,15670 NE 85th St,Redmond City Hall,Redmond,98052,"107,212",B,4,2005
+B0970,47.638532,-122.1277,3240 157th Ave NE,Microsoft - Bldg 10,Redmond,98052,"112,617",B,2,1990
+B0971,47.645258,-122.122934,3910 163rd Ave NE,Microsoft - Bldg 30,Redmond,98052,"114,354",B,3,1996
+B0972,47.669315,-122.117577,7332 166th Ave NE,Redmond Town Center 4,Redmond,98052,"118,698",B,4,1998
+B0973,47.642823,-122.123315,3620 163rd Ave NE,Microsoft - Bldg 32,Redmond,98052,"123,249",B,3,1996
+B0974,47.668778,-122.121933,7277 164th Ave NE,AT&T 1,Redmond,98052,"132,759",B,5,1997
+B0975,47.689243,-122.15049,9931 Willows Rd NE,Willows Commerce Park II E,Redmond,98052,"133,382",B,3,1999
+B0976,47.637493,-122.129228,3089 157th Pl NE,Microsoft Bldg - 26,Redmond,98052,"214,922",B,3,1995
+B0977,47.708939,-122.160408,12034 134th Ct NE,Zetron Headquarters,Redmond,98052,"227,267",B,3,1996
+B0978,47.645181,-122.130933,15700 NE 39th St,Microsoft - Bldg 25,Redmond,98052,"264,000",B,4,1994
+B0979,47.641125,-122.12384,16255 NE 36th Way,Microsoft - Bldg 36,Redmond,98052,"265,936",B,5,1986
+B0980,47.643122,-122.129091,3600 159th Way NE,Microsoft - Bldg 16 & 17,Redmond,98052,"323,862",B,3,1993
+B0981,47.674277,-122.11743,16710-16720 NE 179th St,Redmond Office Center (por),Redmond,98052,"32,508",C,2,1986
+B0982,47.45609272,-122.2355815,1201 SW 27th St,,Renton/Tukwila,98057,104288,B,3,
+B0983,47.52349908,-122.3010521,8900 E Marginal Way S,8900 East Marginal Way,Renton/Tukwila,98108,38516,C,1,
+B0984,47.446748,-122.22556,600 SW 39th St,Time Square 600,Renton/Tukwila,98057,"56,475",A,2,1985
+B0985,47.446167,-122.226322,660 SW 39th St,Time Square 660,Renton/Tukwila,98057,"57,154",A,2,1984
+B0986,47.446109,-122.224895,500 SW 39th St,Time Square 500,Renton/Tukwila,98057,"57,186",A,2,1986
+B0987,47.446748,-122.228715,800 SW 39th St,Time Square 800,Renton/Tukwila,98057,"60,320",A,2,1984
+B0988,47.446182,-122.226998,700 SW 39th St,Time Square 700,Renton/Tukwila,98057,"93,152",A,2,1985
+B0989,47.459858,-122.224896,2201 Lind Ave SW,PSSA Southgate Office Plaza I,Renton/Tukwila,98057,"112,090",A,3,1987
+B0990,47.474804,-122.204699,1055 S Grady Way,Renton City Hall,Renton/Tukwila,98057,"122,838",A,7,1987
+B0991,47.471638,-122.209511,707 S Grady Way,Triton Towers Three,Renton/Tukwila,98057,"132,730",A,7,1986
+B0992,47.470249,-122.209541,700 S Renton Village Pl,Triton Tower Two,Renton/Tukwila,98057,"137,655",A,7,1986
+B0993,47.455343,-122.238378,2921 Naches Ave SW,Group Health A,Renton/Tukwila,98057,"142,630",A,3,2017
+B0994,47.461872,-122.225014,2001 Lind Ave SW,Southgate Office Plaza II,Renton/Tukwila,98057,"156,492",A,5,1991
+B0995,47.465332,-122.224571,1601 Lind Ave SW,FAA Building,Renton/Tukwila,98057,"199,572",A,5,1990
+B0996,47.50259,-122.201615,1101 Lake Washington Blvd N,Southport On Lake Washington 3,Renton/Tukwila,98056,"213,221",A,9,2019
+B0997,47.50259,-122.201615,1101 Lake Washington Blvd N,Southport On Lake Washington 1,Renton/Tukwila,98056,"244,380",A,9,2018
+B0998,47.50259,-122.201615,1101 Lake Washington Blvd N,Southport On Lake Washington 2,Renton/Tukwila,98056,"244,492",A,9,2018
+B0999,47.445144,-122.224691,501 SW 39th St,Orillia Office Bldg,Renton/Tukwila,98057,"30,000",B,2,1986
+B1000,47.463024,-122.253845,6400 Southcenter Blvd,6400 Corporate Center,Renton/Tukwila,98188,"30,496",B,2,1970
+B1001,47.470704,-122.234198,1000 Oakesdale Ave SW,1000 Oakesdale,Renton/Tukwila,98057,"30,683",B,1,1989
+B1002,47.448928,-122.256363,375 Corporate Dr S,Southcenter Corporate Square 12,Renton/Tukwila,98188,"30,912",B,2,1987
+B1003,47.462838,-122.254646,6300 Southcenter Blvd,Minolta Building,Renton/Tukwila,98188,"31,322",B,2,1980
+B1004,47.473938,-122.242099,604 Oakesdale Ave SW,Oakesdale Center B,Renton/Tukwila,98057,"31,768",B,2,2000
+B1005,47.474308,-122.235481,606 Oakesdale Ave SW,Oakesdale Center C,Renton/Tukwila,98057,"31,768",B,2,2000
+B1006,47.467338,-122.20731,1400 Talbot Rd S,Renton Plaza,Renton/Tukwila,98055,"32,315",B,5,1978
+B1007,47.470997,-122.245705,1201 Monster Rd SW,Millennium Centre,Renton/Tukwila,98057,"32,500",B,4,2001
+B1008,47.473623,-122.2364,600 Oakesdale Ave SW,Oakesdale Center D,Renton/Tukwila,98057,"32,671",B,1,2000
+B1009,47.465599,-122.268519,5200 Southcenter Blvd,Parkside Building,Renton/Tukwila,98188,"33,300",B,2,1986
+B1010,47.455346,-122.250956,411 Strander Blvd,Southcenter Professional Plaza,Renton/Tukwila,98188,"33,780",B,3,1973
+B1011,47.484825,-122.172696,3511 NE 2nd St,Kent Pullen Regional Center,Renton/Tukwila,98056,"34,900",B,1,2003
+B1012,47.453974,-122.239457,2985 Naches Ave SW,,Renton/Tukwila,98057,"36,000",B,1,2008
+B1013,47.472778,-122.233341,1201 SW 7th St,1201 SW Seventh,Renton/Tukwila,98057,"37,161",B,2,1986
+B1014,47.458679,-122.249313,130 Andover Park E,Park East,Renton/Tukwila,98188,"37,260",B,3,1970
+B1015,47.466966,-122.248715,6720-6740 Fort Dent Way,Fort Dent I,Renton/Tukwila,98188,"40,000",B,2,1987
+B1016,47.468319,-122.246407,7100 Fort Dent Way,Fort Dent III,Renton/Tukwila,98188,"40,922",B,2,1999
+B1017,47.480995,-122.206291,201 Wells Ave S,,Renton/Tukwila,98057,"41,361",B,2,2005
+B1018,47.450558,-122.184143,16950 116th Ave SE,Cascade Village A,Renton/Tukwila,98058,"41,664",B,1,1959
+B1019,47.521632,-122.314178,9125 15th Pl S,,Renton/Tukwila,98108,"45,418",B,2,1988
+B1020,47.458957,-122.247946,16000 Christensen Rd,Riverview Plaza II,Renton/Tukwila,98188,"46,373",B,3,1980
+B1021,47.458905,-122.24675,16040 Christensen Rd,Riverview Plaza I,Renton/Tukwila,98188,"48,134",B,3,1980
+B1022,47.473938,-122.242099,604 Oakesdale Ave SW,,Renton/Tukwila,98057,"49,657",B,1,2001
+B1023,47.469496,-122.231713,981 Powell Ave SW,981 Powell,Renton/Tukwila,98057,"49,750",B,3,1986
+B1024,47.471772,-122.255193,14675 Interurban Ave S,Teamsters Building,Renton/Tukwila,98168,"50,070",B,3,1983
+B1025,47.46426,-122.225408,1801 Lind Ave SW,Valley Office Park East,Renton/Tukwila,98057,"51,835",B,2,1980
+B1026,47.466407,-122.230453,900 SW 16th St,South 405 Place,Renton/Tukwila,98057,"52,007",B,3,2001
+B1027,47.46426,-122.225408,1801 Lind Ave SW,Valley Office Park North,Renton/Tukwila,98057,"52,016",B,2,1980
+B1028,47.46426,-122.225408,1801 Lind Ave SW,Valley Office Park South,Renton/Tukwila,98057,"52,252",B,2,1980
+B1029,47.46426,-122.225408,1801 Lind Ave SW,Valley Office Park West,Renton/Tukwila,98057,"52,540",B,2,1980
+B1030,47.442177,-122.222697,4130-4180 Lind Ave SW,South Lind Square C,Renton/Tukwila,98057,"55,375",B,1,1988
+B1031,47.468853,-122.252342,14900 Interurban Ave S,Southcenter Plaza,Renton/Tukwila,98188,"56,834",B,2,1981
+B1032,47.48115,-122.201774,200 Mill Ave S,The 200 Mill Building,Renton/Tukwila,98057,"56,848",B,8,1968
+B1033,47.474299,-122.220612,300 SW 7th St,Renton School District 403,Renton/Tukwila,98057,"58,385",B,2,1971
+B1034,47.493781,-122.193831,750 Houser Way N,750 Houser Way,Renton/Tukwila,98057,"58,680",B,2,1992
+B1035,47.441677,-122.236247,1412 SW 43rd St,IDC Medical Plaza,Renton/Tukwila,98057,"60,495",B,3,2004
+B1036,47.467995,-122.247477,6840-6842 Fort Dent Way,Fort Dent II,Renton/Tukwila,98188,"60,782",B,3,1991
+B1037,47.490345,-122.273735,12720 Gateway Dr S,Gateway Corporate Center 7,Renton/Tukwila,98168,"62,700",B,2,1987
+B1038,47.475865,-122.258259,14240 Interurban Ave S,Fairway Center B,Renton/Tukwila,98168,"63,063",B,2,1989
+B1039,47.455322,-122.261696,16400 Southcenter Pkwy,Southcenter Place,Renton/Tukwila,98188,"64,868",B,5,1979
+B1040,47.463066,-122.255531,6200 Southcenter Blvd,Tukwila City Hall,Renton/Tukwila,98188,"64,999",B,2,1970
+B1041,47.474287,-122.222611,440-500 S 7th St,The 500 Building,Renton/Tukwila,98057,"65,433",B,2,1967
+B1042,47.474243,-122.223938,550 SW 7th St,Earlington Place,Renton/Tukwila,98057,"66,000",B,3,1974
+B1043,47.493134,-122.293922,12201 Tukwila International Blvd,Intergate.West - Bldg B,Renton/Tukwila,98168,"68,040",B,4,1999
+B1044,47.471577,-122.233719,900 Oakesdale Ave SW,Blackriver 900 - Bldg B,Renton/Tukwila,98057,"70,238",B,3,1990
+B1045,47.494095,-122.294601,12101 Tukwila International Blvd,Intergate.West A,Renton/Tukwila,98168,"70,377",B,4,1999
+B1046,47.476046,-122.233369,500 Naches Ave SW,Rivertech Corporate Center,Renton/Tukwila,98057,"73,132",B,3,1990
+B1047,47.472576,-122.234512,800 Oakesdale Ave SW,Blackriver 800,Renton/Tukwila,98057,"75,093",B,3,1990
+B1048,47.45731,-122.24742,16300 Christensen Rd,Riverview Plaza III,Renton/Tukwila,98188,"76,648",B,3,1983
+B1049,47.491589,-122.193559,480 Houser Way N,480 Houser Way,Renton/Tukwila,98057,"78,567",B,2,1973
+B1050,47.443842,-122.213839,4011 Talbot Rd S,Talbot Professional Center,Renton/Tukwila,98055,"80,929",B,5,1952
+B1051,47.492236,-122.285507,12401 E Marginal Way S,Intergate East II A,Renton/Tukwila,98168,"83,414",B,2,2000
+B1052,47.491161,-122.285124,12501 E Marginal Way S,Intergate East II B,Renton/Tukwila,98168,"83,414",B,2,2000
+B1053,47.522739,-122.300519,9010 E Marginal Way S,Airport Office Center,Renton/Tukwila,98108,"83,618",B,3,1980
+B1054,47.444228,-122.214532,4033 Talbot Rd S,4033 Talbot,Renton/Tukwila,98055,"93,260",B,5,1992
+B1055,47.468037,-122.23027,919 SW Grady Way,Earlington Business Center - Bldg A,Renton/Tukwila,98057,"95,552",B,2,1980
+B1056,47.492008,-122.293541,12301 Tukwila International Blvd,Intergate.West C,Renton/Tukwila,98168,"98,234",B,3,1999
+B1057,47.514174,-122.301416,9725 E Marginal Way S,Boeing Developmental Center - Bldg 5,Renton/Tukwila,98108,"106,314",B,2,1962
+B1058,47.490722,-122.291936,12500 Tukwila International Blvd,Homeland Security Office,Renton/Tukwila,98168,"125,000",B,4,2005
+B1059,47.489571,-122.272339,12770 Gateway Dr S,Boeing Credit Union,Renton/Tukwila,98168,"125,250",B,6,1985
+B1060,47.469077,-122.211514,555 S Renton Village Pl,Triton Towers One,Renton/Tukwila,98057,"132,511",B,7,1980
+B1061,47.464789,-122.221671,1600 Lind Ave SW,The Landmark West,Renton/Tukwila,98057,"134,145",B,4,1986
+B1062,47.465214,-122.21994,1601 E Valley Rd,The Landmark East,Renton/Tukwila,98057,"139,758",B,4,1987
+B1063,47.514174,-122.301416,9725 E Marginal Way S,Boeing Developmental Center - Bldg 3,Renton/Tukwila,98108,"143,575",B,2,1961
+B1064,47.493452,-122.202754,635 Park Ave N,,Renton/Tukwila,98057,"146,721",B,7,1988
+B1065,47.492145,-122.205367,800 N 6th St,,Renton/Tukwila,98057,"152,485",B,7,1985
+B1066,47.514174,-122.301416,9725 E Marginal Way S,Boeing Developmental Center - Bldg 4,Renton/Tukwila,98108,"155,446",B,2,1961
+B1067,47.502264,-122.295644,11201 Tukwila International Blvd,Boeing Bldg 11-14 A,Renton/Tukwila,98168,"161,879",B,5,1988
+B1068,47.502264,-122.295644,11201 Tukwila International Blvd,Boeing Bldg 11-14 B,Renton/Tukwila,98168,"161,879",B,5,1988
+B1069,47.50816,-122.297358,2811 S 102nd St,Riverfront Tech Park,Renton/Tukwila,98168,"175,000",B,2,1987
+B1070,47.462583,-122.232778,1910 Oakesdale Ave SW,Boeing Aircraft Company,Renton/Tukwila,98057,"230,419",B,4,1998
+B1071,47.490927,-122.201802,535 Garden Ave N,South Bldg,Renton/Tukwila,98057,"235,000",B,7,1980
+B1072,47.464214,-122.23571,1301 SW 16th St,Boeing Longacres Park - Bldg 25-01,Renton/Tukwila,98057,"522,971",B,3,1993
+B1073,47.444306,-122.212129,3915 Talbot Rd S,Valley Professional Center North,Renton/Tukwila,98055,"45,304",C,4,1983
+B1074,47.490927,-122.201802,535 Garden Ave N,North Bldg,Renton/Tukwila,98057,"55,000",C,3,1980
+B1075,47.469677,-122.215012,15 S Grady Way,Evergreen Bldg,Renton/Tukwila,98057,"80,928",C,6,1968
+B1076,47.61771613,-122.3339366,1930 Boren Ave,1930 Boren Ave,Seattle CBD,98101,115000,A,10,2021
+B1077,47.60555574,-122.335566,1015 2nd Ave,Former Federal Reserve Bank SF,Seattle CBD,98104,180000,A,13,1950
+B1078,47.61557117,-122.3309372,1711 Boren Ave,WSCC Expansion - Site C,Seattle CBD,98101,500000,A,16,2022
+B1079,47.61451138,-122.3335615,808 Howell St,Watermark Credit Union Bldg,Seattle CBD,98101,48897,B,6,1929
+B1080,47.60701982,-122.3369357,1225 2nd Ave,The Galland Building,Seattle CBD,98101,70134,B,6,1906
+B1081,47.6104672,-122.3401043,1601-1611 2nd Ave,Broadacres Building,Seattle CBD,98101,123108,B,10,1908
+B1082,47.611527,-122.335966,1524-1530 5th Ave,O'Shea Building,Seattle CBD,98101,"52,000",A,4,1914
+B1083,47.610349,-122.335612,425 Pike St,Washington Fed Building,Seattle CBD,98101,"83,160",A,6,1984
+B1084,47.610306,-122.340897,101 Stewart St,First & Stewart Building,Seattle CBD,98101,"94,333",A,12,1986
+B1085,47.606682,-122.334526,1110 3rd Ave,Abraham Lincoln Building,Seattle CBD,98101,"130,876",A,14,1959
+B1086,47.611226,-122.337415,413 Pine St,5th & Pine,Seattle CBD,98101,"162,357",A,5,1973
+B1087,47.617549,-122.330194,1220 Howell St,Metropolitan Park North Tower,Seattle CBD,98101,"189,762",A,11,2000
+B1088,47.603219,-122.333454,719 2nd Ave,Millennium Tower,Seattle CBD,98104,"201,366",A,14,2001
+B1089,47.604007,-122.329973,600 4th Ave,Seattle City Hall,Seattle CBD,98104,"213,978",A,8,2001
+B1090,47.608119,-122.333168,1200 5th Ave,IBM Building,Seattle CBD,98101,"225,000",A,20,1964
+B1091,47.605923,-122.334625,1015 3rd Ave,,Seattle CBD,98104,"233,000",A,13,1953
+B1092,47.603596,-122.334433,801 2nd Ave,Norton Building,Seattle CBD,98104,"247,161",A,17,1959
+B1093,47.601989,-122.331727,502-506 2nd Ave,Smith Tower,Seattle CBD,98104,"256,481",A,42,1914
+B1094,47.608434,-122.335167,1325 4th Ave,Puget Sound Plaza,Seattle CBD,98101,"274,885",A,21,1960
+B1095,47.602411,-122.327936,300 5th Ave,Fifth & Yesler,Seattle CBD,98104,"280,364",A,17,2009
+B1096,47.602526,-122.328406,401 5th Ave,The Chinook Building,Seattle CBD,98104,"296,000",A,13,2007
+B1097,47.603989,-122.33493,821 2nd Ave,Exchange Building,Seattle CBD,98104,"300,508",A,22,1929
+B1098,47.614137,-122.334839,720 Olive Way,8th & Olive,Seattle CBD,98101,"301,725",A,20,1981
+B1099,47.611446,-122.332748,701 Pike St,One Convention Place,Seattle CBD,98101,"309,398",A,22,2000
+B1100,47.608944,-122.332016,1200 6th Ave,Park Place,Seattle CBD,98101,"315,911",A,21,1970
+B1101,47.616267,-122.33032,1100 Olive Way,Met Park West,Seattle CBD,98101,"337,680",A,18,1980
+B1102,47.607519,-122.334703,1215 4th Ave,Financial Center,Seattle CBD,98101,"339,418",A,28,1972
+B1103,47.612291,-122.337474,1601 5th Ave,Westlake Tower,Seattle CBD,98101,"369,996",A,25,1988
+B1104,47.616999,-122.329553,1730 Minor Ave,Met Park East,Seattle CBD,98101,"371,428",A,20,1988
+B1105,47.611236,-122.334991,520 Pike St,520 Pike Tower,Seattle CBD,98101,"396,821",A,29,1983
+B1106,47.606147,-122.336537,1191 2nd Ave,Second & Seneca,Seattle CBD,98101,"439,016",A,22,1991
+B1107,47.605659,-122.335114,1000 2nd Ave,1000 Second,Seattle CBD,98104,"448,076",A,41,1986
+B1108,47.608954,-122.334177,1301 5th Ave,Rainier Tower,Seattle CBD,98101,"538,529",A,40,1977
+B1109,47.605771,-122.331854,901 5th Ave,901 Fifth,Seattle CBD,98164,"540,589",A,41,1973
+B1110,47.613983,-122.335213,1700 7th Ave,1700 Seventh,Seattle CBD,98101,"551,798",A,24,2001
+B1111,47.606544,-122.33535,1111 3rd Ave,1111 Third,Seattle CBD,98101,"574,948",A,34,1980
+B1112,47.613239,-122.334404,1600 7th Ave,1600 Seventh,Seattle CBD,98101,"632,736",A,32,1976
+B1113,47.609645,-122.332135,600 University St,One Union Square,Seattle CBD,98101,"659,168",A,36,1981
+B1114,47.610154,-122.337423,1501 4th Ave,Century Square,Seattle CBD,98101,"661,640",A,30,1986
+B1115,47.606099,-122.33378,1001 4th Ave,Safeco Plaza,Seattle CBD,98154,"793,679",A,50,1969
+B1116,47.605753,-122.330402,800 5th Ave,800 Fifth,Seattle CBD,98104,"934,115",A,42,1981
+B1117,47.61085,-122.336674,1514-1520 4th Ave,Westlake Place,Seattle CBD,98101,"30,520",B,6,1907
+B1118,47.605251,-122.336211,1012 1st Ave,The Standard Building,Seattle CBD,98104,"31,407",B,5,1900
+B1119,47.609952,-122.339976,117-119 Pine St,AE Doyle Building,Seattle CBD,98101,"34,000",B,4,1919
+B1120,47.609625,-122.33567,1406-1408 4th Ave,1406-1408 Fourth,Seattle CBD,98101,"35,840",B,5,1907
+B1121,47.604234,-122.333197,801 3rd Ave,Seattle Metropolitan Credit Union Building,Seattle CBD,98104,"36,131",B,3,1907
+B1122,47.60219,-122.332058,520-528 2nd Ave,Collins Building,Seattle CBD,98104,"38,200",B,5,1900
+B1123,47.602273,-122.332168,528 2nd Ave,Collins Bldg,Seattle CBD,98104,"38,200",B,5,1889
+B1124,47.616267,-122.33032,1100 Olive Way,Seattle Children's Olive Lab Building,Seattle CBD,98101,"38,346",B,2,1946
+B1125,47.610423,-122.338061,1525 4th Ave,Gibraltar Tower,Seattle CBD,98101,"39,940",B,8,1918
+B1126,47.609587,-122.336668,1417 4th Ave,MiKen Building,Seattle CBD,98101,"46,859",B,8,1908
+B1127,47.609979,-122.338992,1516-1520 2nd Ave,The Chromer Building,Seattle CBD,98101,"50,680",B,4,1906
+B1128,47.603785,-122.33361,205 Columbia St,Columbia Building,Seattle CBD,98104,"51,338",B,3,1926
+B1129,47.603805,-122.332777,215 Columbia St,First American Title Building,Seattle CBD,98104,"52,271",B,5,1924
+B1130,47.610702,-122.336503,1500-1506 4th Ave,Seaboard Building,Seattle CBD,98101,"58,180",B,10,1909
+B1131,47.612538,-122.338052,414 Olive Way,Times Square Building,Seattle CBD,98101,"61,533",B,6,1916
+B1132,47.602711,-122.333316,615-619 2nd Ave,Broderick Building,Seattle CBD,98104,"70,188",B,7,1889
+B1133,47.6096,-122.337196,301 Pike St,Ross Building,Seattle CBD,98101,"73,336",B,3,1930
+B1134,47.60581,-122.336618,1101 2nd Ave,1101 Second,Seattle CBD,98101,"74,712",B,8,1967
+B1135,47.608185,-122.338966,110 Union St,Harold Poll Building,Seattle CBD,98101,"79,920",B,5,1910
+B1136,47.6098,-122.335934,1414 4th Ave,1414 4th Avenue Building,Seattle CBD,98101,"80,000",B,19,1996
+B1137,47.609856,-122.336823,1425 4th Ave,Joshua Green Building,Seattle CBD,98101,"86,015",B,10,1909
+B1138,47.610879,-122.336058,1505 5th Ave,1505 Fifth,Seattle CBD,98101,"87,882",B,6,1926
+B1139,47.610369,-122.338879,217 Pine St,Olympic Tower,Seattle CBD,98101,"88,957",B,12,1931
+B1140,47.603024,-122.333649,705 2nd Ave,Hoge Building,Seattle CBD,98104,"97,249",B,17,1911
+B1141,47.611572,-122.335304,1511 6th Ave,Decatur Building,Seattle CBD,98101,"99,688",B,4,1921
+B1142,47.609188,-122.336815,1402 3rd Ave,Joseph Vance Building,Seattle CBD,98101,"112,686",B,14,1929
+B1143,47.610123,-122.336143,1424 4th Ave,Fourth And Pike,Seattle CBD,98101,"116,220",B,10,1926
+B1144,47.60927,-122.336323,1411 4th Ave,1411 Fourth,Seattle CBD,98101,"123,430",B,15,1928
+B1145,47.609773,-122.334536,500 Union St,Logan Building,Seattle CBD,98101,"128,998",B,10,1959
+B1146,47.609825,-122.338341,1511 3rd Ave,Melbourne Tower,Seattle CBD,98101,"130,893",B,10,1928
+B1147,47.606159,-122.335567,1100 2nd Ave,Second & Spring,Seattle CBD,98101,"136,000",B,5,1906
+B1148,47.607407,-122.33519,1200 3rd Ave,,Seattle CBD,98101,"150,055",B,13,1921
+B1149,47.613707,-122.335746,1809 7th Ave,Tower Building,Seattle CBD,98101,"153,672",B,17,1930
+B1150,47.607644,-122.335524,1218 3rd Ave,Seattle Tower,Seattle CBD,98101,"169,883",B,27,1928
+B1151,47.604636,-122.332766,810 3rd Ave,Central Building,Seattle CBD,98104,"191,784",B,8,1907
+B1152,47.604143,-122.332262,720 3rd Ave,Pacific Building,Seattle CBD,98104,"200,000",B,23,1971
+B1153,47.60954,-122.334206,1326 5th Ave,Skinner Building,Seattle CBD,98101,"221,264",B,8,1926
+B1154,47.607348,-122.337907,1300 1st Ave,Seattle Art Museum (Office),Seattle CBD,98101,"243,500",B,6,2005
+B1155,47.612763,-122.337122,509 Olive Way,Medical Dental Bldg,Seattle CBD,98101,"297,234",B,18,1925
+B1156,47.603482,-122.332912,710 2nd Ave,Dexter Horton Building,Seattle CBD,98104,"335,005",B,15,1922
+B1157,47.604568,-122.335365,915 2nd Ave,Henry M Jackson Bldg,Seattle CBD,98174,"600,000",B,34,1973
+B1158,47.604147,-122.334139,820 2nd Ave,Marion Building,Seattle CBD,98104,"31,386",C,2,1906
+B1159,47.605507,-122.336338,107 Spring St,Holyoke Building,Seattle CBD,98104,"33,880",C,5,1889
+B1160,47.609406,-122.339348,1501 2nd Ave,Eitel Building,Seattle CBD,98101,"35,003",C,7,1904
+B1161,47.610209,-122.338531,1519-1521 3rd Ave,Fischer Studio Building,Seattle CBD,98101,"51,880",C,8,1913
+B1162,47.613703,-122.336814,603 Stewart St,Lloyd Bldg,Seattle CBD,98101,"63,409",C,10,1929
+B1163,47.602224,-122.33352,600 1st Ave,Pioneer Bldg,Seattle CBD,98104,"72,000",C,6,1892
+B1164,47.601921,-122.328133,400 Yesler Way,,Seattle CBD,98104,"114,395",C,7,1909
+B1165,47.603111,-122.329399,500 4th Ave,Administration building,Seattle CBD,98104,"163,021",C,7,1971
+B1166,47.616649,-122.332612,1099 Stewart St,Hill7,Seattle CBD,98101,"285,680",Trophy,11,2015
+B1167,47.605536,-122.331187,801 5th Ave,F5 Tower,Seattle CBD,98104,"515,518",Trophy,48,2017
+B1168,47.604234,-122.333197,801 3rd Ave,The Net,Seattle CBD,98104,"675,000",Trophy,29,
+B1169,47.606619,-122.336748,1201 2nd Ave,2&U,Seattle CBD,98101,"685,000",Trophy,38,2019
+B1170,47.609366,-122.334951,1301-1333 5th Ave,Rainier Square Development,Seattle CBD,98101,"722,416",Trophy,37,2020
+B1171,47.606304,-122.331089,505 Madison St,Madison Centre,Seattle CBD,98104,"764,000",Trophy,37,2017
+B1172,47.605654,-122.332552,925 4th Ave,The Tower at Fourth & Madison,Seattle CBD,98104,"845,533",Trophy,40,2002
+B1173,47.607746,-122.337944,1301 2nd Ave,Russell Investments Center,Seattle CBD,98101,"886,000",Trophy,42,2006
+B1174,47.610636,-122.334828,1420 5th Ave,U.S. Bank Centre,Seattle CBD,98101,"943,575",Trophy,44,1989
+B1175,47.441364,-122.295126,18000 International Blvd,South Tower,Seatac/Burien,98188,"209,904",A,12,1975
+B1176,47.441943,-122.295053,17930 International Blvd,North Tower,Seatac/Burien,98188,"217,688",A,12,1980
+B1177,47.428555,-122.296333,19415 International Blvd,Airport Plaza Building,Seatac/Burien,98188,"31,032",B,4,1971
+B1178,47.387995,-122.29695,23835 Pacific Hwy S,Outreach Center,Seatac/Burien,98032,"32,812",B,2,2005
+B1179,47.467278,-122.344902,15111 8th Ave SW,Burien Pacific Professional,Seatac/Burien,98166,"34,979",B,3,1962
+B1180,47.457501,-122.341685,16069 Sylvester Rd SW,,Seatac/Burien,98166,"38,388",B,3,2005
+B1181,47.42741,-122.296608,19521 International Blvd,Horizon Air Headquarters,Seatac/Burien,98188,"46,063",B,2,1984
+B1182,47.414589,-122.298393,20833 International Blvd,Alaska Airlines Gold Coast Center,Seatac/Burien,98198,"52,745",B,3,1993
+B1183,47.456807,-122.343687,16259 Sylvester Rd SW,Three Tree Medical Arts Bldg,Seatac/Burien,98166,"60,161",B,5,1992
+B1184,47.431915,-122.299171,2651 S 192nd St,Alaska Air. Training,Seatac/Burien,98188,"63,771",B,1,1986
+B1185,47.516235,-122.353439,9650 15th Ave SW,White Center Building,Seatac/Burien,98106,"65,064",B,2,2005
+B1186,47.419582,-122.298782,20313 28th Ave S,McGee Building,Seatac/Burien,98198,"71,500",B,3,1981
+B1187,47.429337,-122.293777,19300 International Blvd,Alaska Airline Headquarters,Seatac/Burien,98188,"74,526",B,2,1976
+B1188,47.433622,-122.272915,4800 S 188th St,SeaTac City Hall,Seatac/Burien,98188,"105,000",B,3,1978
+B1189,47.442562,-122.294623,17900 International Blvd,SeaTac Office Center III,Seatac/Burien,98188,"113,918",B,4,1974
+B1190,47.409656,-122.30524,2200 S 216th St,FAA/GSA Building,Seatac/Burien,98198,"281,805",B,5,2018
+B1191,47.917646,-122.278763,3003 W Casino Rd,Boeing Everett Delivery Center,S Everett/Harbor Point,98204,"180,000",A,3,2013
+B1192,47.914927,-122.271631,9819 Airport Rd,BOMARC Business Park - Bldg 45-80,S Everett/Harbor Point,98204,"264,515",A,3,1993
+B1193,47.921295,-122.263283,2121 W Casino Rd,WSIPC Bldg,S Everett/Harbor Point,98204,"31,841",B,2,1980
+B1194,47.887314,-122.284325,12138 Mukilteo Speedway,,S Everett/Harbor Point,98275,"32,475",B,3,2005
+B1195,47.929099,-122.258525,1802 75th St SW,Snohomish County PUD No.1 Operation Ctr,S Everett/Harbor Point,98203,"32,645",B,3,1980
+B1196,47.888855,-122.294096,12121 Harbour Reach Dr,North Campus A,S Everett/Harbor Point,98275,"33,387",B,2,2001
+B1197,47.908813,-122.218346,1010 SE Everett Mall Way,Everett Mall Office I,S Everett/Harbor Point,98208,"51,991",B,2,1980
+B1198,47.876316,-122.245087,808 134th St SW,Quadrant I-5 Corporate B,S Everett/Harbor Point,98204,"68,575",B,2,1999
+B1199,47.881408,-122.207878,12800 Bothell Everett Hwy,Providence Mill Creek Campus,S Everett/Harbor Point,98208,"69,285",B,2,1995
+B1200,47.941848,-122.283583,6400 36th Ave W,,S Everett/Harbor Point,98203,"71,546",B,1,1992
+B1201,47.909412,-122.219429,1000 SE Everett Mall Way,Everett Mall Office Park II,S Everett/Harbor Point,98208,"71,994",B,4,1986
+B1202,47.876106,-122.243408,728 134th St SW,Quadrant I-5 Corporate A,S Everett/Harbor Point,98204,"74,974",B,2,1998
+B1203,47.904644,-122.238197,332 SW Everett Mall Way,Union Bank Admin Bldg,S Everett/Harbor Point,98204,"89,672",B,4,1993
+B1204,47.9086,-122.265663,9901 24th Pl W,9901 24th,S Everett/Harbor Point,98204,"93,532",B,2,2006
+B1205,47.90929,-122.220322,906 SE Everett Mall Way,Everett Mall Office Park III,S Everett/Harbor Point,98208,"115,736",B,6,1988
+B1206,47.897032,-122.321938,6500 Harbour Heights Pkwy,Harbour Pointe Tech Center,S Everett/Harbor Point,98275,"330,000",B,4,1986
+B1207,47.928764,-122.222923,7600 Evergreen Way,Puget Square,S Everett/Harbor Point,98203,"30,384",C,1,1980
+B1208,47.911914,-122.217384,1121 SE Everett Mall Way,GTE Data Services,S Everett/Harbor Point,98208,"35,000",C,2,1969
+B1209,47.884477,-122.232897,12425 Meridian Ave S,,S Everett/Harbor Point,98204,"39,462",C,1,1973
+B1210,47.10467296,-122.3574827,16611 Canyon Rd E,Fredrickson Plaza - Bldg 3,Spanaway,98375,38000,B,2,
+B1211,47.105838,-122.292244,16193-16515 Meridian E,Meridian Professional,Spanaway,98375,"30,173",B,2,1992
+B1212,47.155251,-122.286584,3801 5th St SE,,Spanaway,98374,"31,614",B,2,2004
+B1213,47.13256,-122.291296,13613 Meridian E,,Spanaway,98373,"62,500",B,2,2008
+B1214,47.55717017,-122.3342442,5001 1st Ave S,Hudson & First,S Seattle,98134,400000,A,1,
+B1215,47.55143559,-122.3269612,5701 6th Ave S,Atrium Bldg,S Seattle,98108,136225,C,2,1973
+B1216,47.573248,-122.346001,910 SW Spokane St,Harley and Lela Franco Maritime Center,S Seattle,98134,"48,000",A,2,2013
+B1217,47.567848,-122.364372,4025 Delridge Way SW,West Seattle Corporate Center,S Seattle,98106,"120,755",A,5,1990
+B1218,47.590182,-122.334266,1501 1st Ave S,Home Plate Center North,S Seattle,98134,"157,816",A,6,2012
+B1219,47.589093,-122.335802,1531 Utah Ave S,Stadium Innovation Center,S Seattle,98134,"173,758",A,6,2010
+B1220,47.588877,-122.334679,1521 1st Ave S,Home Plate Center South,S Seattle,98134,"189,602",A,7,2013
+B1221,47.559034,-122.341399,4645 E Marginal Way S,Federal Center South,S Seattle,98134,"208,000",A,3,2012
+B1222,47.547143,-122.328884,6100 4th Ave S,Benaroya 6100,S Seattle,98108,"227,530",A,5,1975
+B1223,47.592781,-122.317197,1200 12th Ave S,Pacific Tower at 1200 12th,S Seattle,98144,"304,047",A,16,1932
+B1224,47.547318,-122.387642,6041 California Ave SW,6041 California,S Seattle,98136,"32,287",B,4,1991
+B1225,47.585944,-122.303404,1900 Rainier Ave S,Rotary Support Center for Families,S Seattle,98144,"33,506",B,3,2009
+B1226,47.572735,-122.37043,3400 Harbor Ave SW,ActivSpace at West Seattle,S Seattle,98106,"35,176",B,5,2004
+B1227,47.556729,-122.333241,5030 1st Ave S,5030 First,S Seattle,98134,"39,646",B,3,2000
+B1228,47.55794,-122.331233,210 S Hudson St,Innovation Center,S Seattle,98134,"40,000",B,3,2010
+B1229,47.572712,-122.386398,3400 California Ave SW,3400 California SW,S Seattle,98116,"40,304",B,3,1984
+B1230,47.58889,-122.328303,1550 4th Ave S,1550 Building,S Seattle,98134,"47,368",B,2,1974
+B1231,47.556145,-122.333298,5050 1st Ave S,5050 Building,S Seattle,98134,"50,008",B,1,1938
+B1232,47.567028,-122.364021,4045 Delridge Way SW,Delridge Building,S Seattle,98106,"51,802",B,3,1960
+B1233,47.523936,-122.318488,1040 S Henderson St,1040 South Henderson,S Seattle,98108,"54,170",B,2,1994
+B1234,47.589609,-122.333726,1518 1st Ave S,Taylor Edwards Building,S Seattle,98134,"57,148",B,6,1918
+B1235,47.587054,-122.334682,1741 1st Ave S,Star Building,S Seattle,98134,"57,416",B,4,1921
+B1236,47.588536,-122.34112,1519 Alaskan Way S,U.S. Coast Guard Shore Operations,S Seattle,98134,"58,000",B,4,2006
+B1237,47.593124,-122.309021,1130 Rainier Ave S,1130 Rainier,S Seattle,98144,"62,200",B,2,1914
+B1238,47.591736,-122.335007,1201 1st Ave S,1201 Building,S Seattle,98134,"63,360",B,3,1920
+B1239,47.597283,-122.315866,1225 S Weller St,Weller Building,S Seattle,98144,"74,832",B,5,2001
+B1240,47.570956,-122.297071,3639 Martin Luther King Jr Way S,ACRS Headquarters,S Seattle,98108,"82,000",B,2,2008
+B1241,47.540681,-122.337973,200 SW Michigan St,Seattle Mart,S Seattle,98106,"82,218",B,3,1929
+B1242,47.583457,-122.322844,2203 Airport Way S,Park 90/5 - Bldg F,S Seattle,98134,"100,000",B,4,1985
+B1243,47.583607,-122.333734,2200 1st Ave S,2200 First,S Seattle,98134,"102,462",B,4,1909
+B1244,47.559739,-122.385295,4700-4754 42nd Ave SW,4700-4754 42nd,S Seattle,98116,"146,019",B,6,1987
+B1245,47.552125,-122.326294,5601 6th Ave S,Georgetown Squared,S Seattle,98108,"280,563",B,5,1982
+B1246,47.58407,-122.301334,2100 24th Ave S,,S Seattle,98144,"39,202",C,3,2003
+B1247,47.54689,-122.287186,3600 S Graham St,Dept. Social Health Services,S Seattle,98118,"41,262",C,2,1982
+B1248,47.587555,-122.321037,1700 Airport Way S,,S Seattle,98134,"50,315",C,2,1914
+B1249,47.513044,-122.290401,3301 S Norfolk St,Administrative Offices,S Seattle,98118,"71,065",C,2,1952
+B1250,47.560176,-122.383774,4744 41st Ave SW,City Watch Apartments,S Seattle,98116,"91,749",C,5,1991
+B1251,47.864254,-121.991818,14692 179th Ave SE,Monroe Medical Center,S Snohomish County,98272,"31,151",B,1,1981
+B1252,47.869907,-122.010456,14090 Fryelands Blvd SE,Lake Tye Bldg,S Snohomish County,98272,"45,504",B,3,2005
+B1253,47.862876,-121.990084,14841 179th Ave SE,Sky River Medical Center,S Snohomish County,98272,"48,803",B,3,2005
+B1254,47.851684,-121.988634,1355 W Main St,,S Snohomish County,98272,"46,617",C,1,2006
+B1255,47.62249509,-122.1750991,1229 124th Ave NE,The Spring District - Block 24,Suburban Bellevue,98005,166614,A,9,2017
+B1256,47.620665,-122.179563,NE 12th St & 120th Ave NE,Pine Forest Phase II,Suburban Bellevue,98005,207200,A,8,
+B1257,47.620665,-122.179563,NE 12th St & 120th Ave NE,Pine Forest Phase III,Suburban Bellevue,98005,252000,A,9,
+B1258,47.62641544,-122.1857048,1835 116th Ave NE,116th Medical Development,Suburban Bellevue,98004,35100,B,3,
+B1259,47.61610458,-122.1371809,152nd Ave NE,Esterra Park - One,Suburban Bellevue,98007,172000,B,6,2015
+B1260,47.603845,-122.131094,655 156th Ave SE,Lake Hills Village A,Suburban Bellevue,98007,"44,000",A,3,2010
+B1261,47.621629,-122.17652,1231 124th Ave NE,UW Global Innovation Exchange Building,Suburban Bellevue,98005,"100,000",A,3,2017
+B1262,47.621196,-122.186081,1231 116th Ave NE,Overlake Medical Pavilion,Suburban Bellevue,98004,"190,000",A,9,2011
+B1263,47.621113,-122.175803,1227 124th Ave NE,The Spring District - Block 16,Suburban Bellevue,98005,"311,233",A,11,2020
+B1264,47.622357,-122.190005,1200 112th Ave NE,Commons B,Suburban Bellevue,98004,"30,841",B,2,1972
+B1265,47.595753,-122.192967,1715 114th Ave SE,Woodridge Building,Suburban Bellevue,98004,"30,909",B,2,1974
+B1266,47.597918,-122.188439,1500 114th Ave SE,K2,Suburban Bellevue,98004,"31,062",B,2,1974
+B1267,47.619873,-122.182919,9 Lake Bellevue Dr,Nine Lake Bellevue,Suburban Bellevue,98005,"31,200",B,2,1982
+B1268,47.606491,-122.186012,335 116th Ave SE,Master Builders Association,Suburban Bellevue,98004,"31,265",B,4,1983
+B1269,47.622981,-122.18773,1417 116th Ave NE,Washington Park West,Suburban Bellevue,98004,"32,064",B,2,1979
+B1270,47.622452,-122.159729,13555 NE Bel Red Rd,Avidex Building,Suburban Bellevue,98005,"32,333",B,2,1978
+B1271,47.598342,-122.188187,1450 114th Ave SE,Conifer Building,Suburban Bellevue,98004,"33,087",B,2,1975
+B1272,47.62736,-122.13728,1951 152nd Pl NE,Five Corners,Suburban Bellevue,98007,"33,362",B,2,2008
+B1273,47.621267,-122.166906,13033 Bel Red Rd,Bel-Red Professional Center,Suburban Bellevue,98005,"33,798",B,2,2006
+B1274,47.596959,-122.189794,1621 114th Ave SE,Arbor Building,Suburban Bellevue,98004,"33,966",B,2,1974
+B1275,47.627216,-122.159721,13431 NE 20th St,Columbia Plaza C,Suburban Bellevue,98005,"34,066",B,2,2000
+B1276,47.630686,-122.127883,2333 158th Ct NE,Bellevue Technology Center A,Suburban Bellevue,98008,"34,324",B,1,1973
+B1277,47.602319,-122.185594,11711 SE 8th St,Bellevue Gateway 405,Suburban Bellevue,98005,"34,703",B,3,1985
+B1278,47.628864,-122.18203,2035 120th Ave NE,2035 120th,Suburban Bellevue,98005,"35,000",B,2,1996
+B1279,47.619206,-122.182345,15 Lake Bellevue Dr,15 Lake Bellevue,Suburban Bellevue,98005,"35,200",B,2,1999
+B1280,47.610491,-122.207423,1 100th Ave NE,Tantallon Building,Suburban Bellevue,98004,"35,466",B,3,2001
+B1281,47.607681,-122.183548,325 118th Ave SE,Belle-View South,Suburban Bellevue,98005,"37,011",B,3,1984
+B1282,47.599441,-122.187409,1300 114th Ave SE,Madrona Building,Suburban Bellevue,98004,"37,069",B,2,1983
+B1283,47.596331,-122.190088,1687 114th Ave SE,Maplewood,Suburban Bellevue,98004,"37,223",B,2,1997
+B1284,47.605873,-122.18763,405 114th Ave SE,Cordova Building,Suburban Bellevue,98004,"37,368",B,3,1982
+B1285,47.627235,-122.190025,1800 112th Ave NE,Park Heights,Suburban Bellevue,98004,"37,417",B,3,1981
+B1286,47.623176,-122.186143,1407 116th Ave NE,Washington Park East,Suburban Bellevue,98004,"37,790",B,2,1978
+B1287,47.609183,-122.175863,12241 Main St,,Suburban Bellevue,98005,"38,477",B,2,2009
+B1288,47.614865,-122.185697,515 116th Ave NE,Lincoln Center Office 515,Suburban Bellevue,98004,"40,006",B,2,1975
+B1289,47.628104,-122.132296,2018 156th Ave NE,Bellevue Technology Center F,Suburban Bellevue,98007,"40,788",B,3,2000
+B1290,47.610622,-122.178329,12111 NE 1st St,Eastridge Corporate Ctr - Bldg D,Suburban Bellevue,98005,"40,874",B,3,1984
+B1291,47.610558,-122.181747,11811 NE 1st St,Eastridge Corporate Center A,Suburban Bellevue,98005,"41,534",B,3,1982
+B1292,47.617306,-122.133011,805 156th Ave NE,,Suburban Bellevue,98007,"43,000",B,1,1966
+B1293,47.610546,-122.179413,12011 NE 1st St,Eastridge Corporate Center C,Suburban Bellevue,98005,"44,670",B,3,1984
+B1294,47.628883,-122.129761,2002 156th Ave NE,Bellevue Technology Center H,Suburban Bellevue,98007,"45,000",B,3,2000
+B1295,47.629235,-122.13089,2010 156th Ave NE,Bellevue Technology Center G,Suburban Bellevue,98007,"45,000",B,3,2000
+B1296,47.632702,-122.129593,2035 158th Ct NE,Bellevue Technology Center D2,Suburban Bellevue,98008,"45,394",B,3,2000
+B1297,47.620579,-122.168312,12835 Bel Red Rd,Executive Plaza,Suburban Bellevue,98005,"45,668",B,1,1975
+B1298,47.604197,-122.189402,11225 SE 6th St,Lincoln Plaza C,Suburban Bellevue,98004,"49,238",B,2,1988
+B1299,47.603107,-122.189362,11245 SE 6th St,Lincoln Plaza B,Suburban Bellevue,98004,"49,602",B,2,1988
+B1300,47.603562,-122.190042,11235 SE 6th St,Lincoln Plaza A,Suburban Bellevue,98004,"49,660",B,2,1988
+B1301,47.623966,-122.160645,13427 NE 16th St,Heritage Corporate Center,Suburban Bellevue,98005,"52,376",B,2,2000
+B1302,47.605034,-122.187294,11400 SE 6th St,Brookside Office Center,Suburban Bellevue,98004,"53,613",B,3,1981
+B1303,47.619287,-122.180926,40 Lake Bellevue Dr,40 Lake Bellevue,Suburban Bellevue,98005,"54,000",B,3,1988
+B1304,47.612004,-122.179703,150 120th Ave NE,Ridgewood Corporate Square F,Suburban Bellevue,98005,"54,517",B,4,1990
+B1305,47.611447,-122.18274,11900 NE 1st St,Ridgewood Corporate Square G,Suburban Bellevue,98005,"57,000",B,3,1990
+B1306,47.610645,-122.180641,11911 NE 1st St,Eastridge Corporate Center B,Suburban Bellevue,98005,"57,550",B,3,1982
+B1307,47.600849,-122.189362,11201 SE 8th St,Gateway 112,Suburban Bellevue,98004,"57,551",B,2,1979
+B1308,47.622357,-122.190005,1200 112th Ave NE,The Commons Bldg B,Suburban Bellevue,98004,"63,457",B,3,1972
+B1309,47.629019,-122.131659,15800 Northup Way,Bellevue Tech E,Suburban Bellevue,98007,"63,702",B,2,1980
+B1310,47.600964,-122.184761,915 118th Ave SE,Gateway II - fka Swift Gateway,Suburban Bellevue,98005,"64,373",B,3,1988
+B1311,47.595978,-122.189316,1800 114th Ave SE,Aspenwood Building,Suburban Bellevue,98004,"67,500",B,3,1997
+B1312,47.607605,-122.186394,301 116th Ave SE,I-405 Corporate Center,Suburban Bellevue,98004,"68,131",B,5,1979
+B1313,47.621421,-122.187789,1037 116th Ave NE,Overlake Hospital,Suburban Bellevue,98004,"68,769",B,6,1987
+B1314,47.594669,-122.189659,1756 114th Ave SE,Edifecs Building,Suburban Bellevue,98004,"70,398",B,3,1983
+B1315,47.594707,-122.192062,1745 114th Ave SE,Mercer Pointe at Bellefield,Suburban Bellevue,98004,"71,329",B,2,1983
+B1316,47.602226,-122.188507,11400 SE 8th St,Gateway One,Suburban Bellevue,98004,"110,250",B,4,1986
+B1317,47.625717,-122.190056,1750 112th Ave NE,Hidden Valley Office Park,Suburban Bellevue,98004,"119,098",B,2,1978
+B1318,47.621368,-122.186882,1135 116th Ave NE,Overlake Medical Tower,Suburban Bellevue,98004,"197,967",B,6,2000
+B1319,47.621395,-122.18792,1035 116th Ave NE,Overlake Hospital Medical Center,Suburban Bellevue,98004,"393,428",B,5,1960
+B1320,47.616424,-122.129152,15821 NE 8th St,West Bldg,Suburban Bellevue,98008,"42,834",C,2,1979
+B1321,47.620429,-122.1756,1121 124th Ave NE,Bellevue Distribution Center - Bldg 6,Suburban Bellevue,98005,"42,966",C,3,1959
+B1322,47.624756,-122.174255,1750 124th Ave NE,124th Plaza,Suburban Bellevue,98005,"52,036",C,1,1982
+B1323,47.24086208,-122.4366349,2250 Commerce St,Brewery Blocks,Tacoma CBD,98402,75000,A,4,2020
+B1324,47.248785,-122.4420435,Fawcett Ave @ 15th St,Mid Town Tacoma,Tacoma CBD,98402,143295,A,1,
+B1325,47.2469153,-122.4491655,1600 S J St,Olympus Medical Center,Tacoma CBD,98405,73000,B,3,
+B1326,47.250769,-122.451813,1202 Martin Luther King Jr Way,Hilltop Regional Health Center,Tacoma CBD,98405,"57,350",A,3,2013
+B1327,47.251829,-122.438558,1250 Pacific Ave,Pacific Plaza,Tacoma CBD,98402,"99,937",A,8,2009
+B1328,47.246325,-122.44929,1608 S J St,Franciscan Medical Building,Tacoma CBD,98405,"120,000",A,5,2013
+B1329,47.251361,-122.435958,1301 A St,Columbia Bank Center,Tacoma CBD,98402,"172,000",A,9,2001
+B1330,47.25539,-122.437543,909 A St,The Russell Bldg,Tacoma CBD,98402,"224,406",A,12,1988
+B1331,47.251659,-122.439384,1145 Broadway,Tacoma Financial Center,Tacoma CBD,98402,"234,264",A,17,1984
+B1332,47.252087,-122.437538,1201 Pacific Ave,Wells Fargo Plaza,Tacoma CBD,98402,"348,000",A,22,1970
+B1333,47.252989,-122.436668,1113-1115 A St,Watermark Bldg,Tacoma CBD,98402,"30,000",B,2,1923
+B1334,47.2531,-122.44399,955 Tacoma Ave S,,Tacoma CBD,98402,"30,000",B,3,1968
+B1335,47.254117,-122.443613,920 Fawcett Ave,Vincent Gadbow Bldg,Tacoma CBD,98402,"31,720",B,3,1980
+B1336,47.251908,-122.440094,1142 Broadway,On Broadway Bldg,Tacoma CBD,98402,"32,000",B,4,1984
+B1337,47.250578,-122.442902,1304-1310 Fawcett Ave,Former Ford Bldg,Tacoma CBD,98402,"32,400",B,3,1919
+B1338,47.252441,-122.438828,1126 Pacific Ave,Pacific First Federal Bldg,Tacoma CBD,98402,"33,495",B,7,1980
+B1339,47.253098,-122.439705,1102 Commerce St,,Tacoma CBD,98402,"34,110",B,6,1980
+B1340,47.257332,-122.441181,708 Broadway,The Passages Bldg,Tacoma CBD,98402,"36,000",B,4,1889
+B1341,47.257287,-122.445047,621 Tacoma Ave S,First Tower,Tacoma CBD,98402,"36,169",B,5,1960
+B1342,47.245032,-122.446709,1802 Yakima Ave,,Tacoma CBD,98405,"37,911",B,3,1990
+B1343,47.245544,-122.446962,1708 Yakima Ave,,Tacoma CBD,98405,"39,126",B,3,1991
+B1344,47.246169,-122.447838,1624 S I St,,Tacoma CBD,98405,"40,320",B,4,1977
+B1345,47.247339,-122.438512,1551 Broadway,Carlton Center Bldg,Tacoma CBD,98402,"42,804",B,6,1950
+B1346,47.254296,-122.438345,1001 Pacific Ave,Pacific Building,Tacoma CBD,98402,"43,228",B,4,1941
+B1347,47.260548,-122.438812,535 Dock St,The Dock,Tacoma CBD,98402,"43,627",B,2,1985
+B1348,47.254877,-122.440941,302 S 9th St,Ninth and Broadway,Tacoma CBD,98402,"43,712",B,3,1920
+B1349,47.249447,-122.438826,1331 Broadway,Sound Credit Union Building,Tacoma CBD,98402,"44,000",B,4,1979
+B1350,47.256648,-122.453444,1112 6th Ave,Tacoma Medical Center,Tacoma CBD,98405,"49,296",B,3,1992
+B1351,47.247543,-122.436551,1701 Pacific Ave,,Tacoma CBD,98402,"55,003",B,4,2002
+B1352,47.25419,-122.440744,930-936 Broadway,Kress Bldg,Tacoma CBD,98402,"58,111",B,3,1920
+B1353,47.255874,-122.43825,820 A St,Bank of America Plaza Bldg,Tacoma CBD,98402,"64,152",B,7,1980
+B1354,47.249801,-122.438164,1498 Pacific Ave,Umpqua Bank Bldg,Tacoma CBD,98402,"68,500",B,5,2004
+B1355,47.25475,-122.438495,913-921 Pacific Ave,Provident Bldg,Tacoma CBD,98402,"74,360",B,6,1903
+B1356,47.2576,-122.440062,625 Commerce St,Old City Hall,Tacoma CBD,98402,"81,072",B,5,1918
+B1357,47.25354,-122.439089,950 Pacific Ave,Commerce Bldg,Tacoma CBD,98402,"86,610",B,12,1910
+B1358,47.252699,-122.438191,1119 Pacific Ave,Heritage Bank Building,Tacoma CBD,98402,"86,739",B,16,1912
+B1359,47.252952,-122.440421,1102 Broadway,Columbia Bank Bldg,Tacoma CBD,98402,"88,470",B,5,1906
+B1360,47.250549,-122.439133,1313 Broadway,The Bank of New York Mellon,Tacoma CBD,98402,"97,528",B,6,1977
+B1361,47.251342,-122.440094,1148-1160 Broadway,Cornerstone Building,Tacoma CBD,98402,"97,578",B,4,1918
+B1362,47.242711,-122.436658,2106-2108 Pacific Ave,Horizon Pacific Center,Tacoma CBD,98402,"98,046",B,6,1910
+B1363,47.253513,-122.440479,944-956 Broadway,Rhodes Center,Tacoma CBD,98402,"98,358",B,5,1919
+B1364,47.249535,-122.437343,1411-1427 Pacific Ave,Tacoma Technology Center,Tacoma CBD,98402,"99,698",B,10,1927
+B1365,47.25327,-122.438547,1101 Pacific Ave,Key Bank Plaza,Tacoma CBD,98402,"100,000",B,4,1918
+B1366,47.250024,-122.443347,1305 Tacoma Ave S,,Tacoma CBD,98402,"120,000",B,3,1963
+B1367,47.248566,-122.440086,1501 Market St,Regence Blue Shield,Tacoma CBD,98402,"141,475",B,5,1992
+B1368,47.25379,-122.436898,1015 A St,,Tacoma CBD,98402,"174,280",B,12,1910
+B1369,47.245936,-122.43643,1717 Pacific Ave,,Tacoma CBD,98402,"185,462",B,2,1918
+B1370,47.252298,-122.439526,1127 Broadway,On Broadway Two,Tacoma CBD,98402,"30,000",C,2,1918
+B1371,47.254918,-122.447013,705 S 9th St,Atrium Court,Tacoma CBD,98405,"30,204",C,3,1960
+B1372,47.252561,-122.439605,1117 Broadway,Ted Brown Music Company,Tacoma CBD,98402,"30,890",C,5,1922
+B1373,47.262286,-122.447035,124 Tacoma Ave S,,Tacoma CBD,98402,"31,680",C,2,1980
+B1374,47.25745,-122.452476,521 Martin Luther King Jr Way,Tacoma Family Medicine,Tacoma CBD,98405,"31,845",C,4,1964
+B1375,47.251213,-122.443785,1143-1147 Tacoma Ave S,MLKHDA Building,Tacoma CBD,98402,"34,563",C,3,1990
+B1376,47.255858,-122.443328,737 Fawcett Ave,,Tacoma CBD,98402,"35,445",C,2,1967
+B1377,47.257414,-122.441935,711 St Helens Ave,Ledger Square,Tacoma CBD,98402,"35,644",C,2,1930
+B1378,47.248968,-122.437172,1501 Pacific Ave,United Way/Sprague Bldg,Tacoma CBD,98402,"41,525",C,4,1950
+B1379,47.255258,-122.443052,757 Fawcett Ave,,Tacoma CBD,98402,"43,166",C,4,1931
+B1380,47.251655,-122.440806,1149 Market St,Franciscan Health Care,Tacoma CBD,98402,"43,800",C,4,1951
+B1381,47.253523,-122.439804,955 Broadway,F.W. Woolworth Building,Tacoma CBD,98402,"46,000",C,4,1950
+B1382,47.246146,-122.437237,1704-1728 Pacific Ave,Russel T. Joy Building,Tacoma CBD,98402,"46,238",C,3,1918
+B1383,47.25379,-122.436898,1015 A St,True Blue Building,Tacoma CBD,98402,"61,459",C,12,1956
+B1384,47.252995,-122.437345,1102 A St,Historic Post Office/Court & Custom House,Tacoma CBD,98402,"87,500",C,5,1919
+B1385,47.253667,-122.441259,939 Market St,,Tacoma CBD,98402,"98,873",C,7,1919
+B1386,47.253634,-122.438241,1019 Pacific Ave,Washington Building,Tacoma CBD,98402,"124,400",C,17,1919
+B1387,47.259694,-122.453719,314 Martin Luther King Jr Way,Jackson Hall Medical Center,Tacoma CBD,98405,"469,979",C,5,1945
+B1388,47.22711988,-122.4341444,3580 Pacific Ave,,Tacoma Suburban,98418,280000,A,1,2018
+B1389,47.22374332,-122.4660108,15 Oregon Ave,Central Office Building,Tacoma Suburban,98409,34500,B,4,1981
+B1390,47.26631381,-122.4918077,4100 N 19th St,Madison Park Medical Center - Bldg B,Tacoma Suburban,98405,40000,B,2,
+B1391,47.24095947,-122.4265728,505-525 Puyallup Ave,505-525 Puyallup Ave,Tacoma Suburban,98421,46200,B,2,
+B1392,47.193294,-122.41098,1301 E 72nd St,Department of Social Services,Tacoma Suburban,98404,"30,000",B,1,1994
+B1393,47.275225,-122.466303,2215-2219 N 30th St,Old Town Professional Ctr,Tacoma Suburban,98407,"30,000",B,3,1982
+B1394,47.24297,-122.530456,7011 S 19th St,APA Bldgs A & B,Tacoma Suburban,98465,"30,460",B,2,1969
+B1395,47.23642,-122.40963,3009 E Portland Ave,,Tacoma Suburban,98404,"31,100",B,2,1999
+B1396,47.241994,-122.50191,4802 S 19th St,,Tacoma Suburban,98405,"31,840",B,2,1999
+B1397,47.245435,-122.528464,1628 S Mildred St,James Center Professional Plaza,Tacoma Suburban,98465,"34,800",B,2,1997
+B1398,47.242265,-122.475193,1901 S Cedar St,Cedar Medical Center,Tacoma Suburban,98405,"38,567",B,3,1982
+B1399,47.246896,-122.348146,6021 12th St E,Fife Business Center,Tacoma Suburban,98424,"39,206",B,2,2000
+B1400,47.26546,-122.412213,1 Sitcum Way,Port of Tacoma Bldg,Tacoma Suburban,98421,"42,100",B,2,1985
+B1401,47.237661,-122.477739,3209 S 23rd St,Allenmore Medical Plaza II,Tacoma Suburban,98405,"44,254",B,3,2005
+B1402,47.241785,-122.47867,1901 S Union Ave,Allenmore Medical Center - Bldg B,Tacoma Suburban,98405,"48,228",B,3,1976
+B1403,47.259979,-122.434842,326 E D St,Center for Urban Waters,Tacoma Suburban,98421,"48,341",B,3,2010
+B1404,47.237794,-122.476813,2202 S Cedar St,Allenmore Medical Plaza I,Tacoma Suburban,98405,"50,000",B,3,2001
+B1405,47.238652,-122.479592,3315 S 23rd St,Allenmore Terrace Office Bldg,Tacoma Suburban,98405,"54,242",B,3,1988
+B1406,47.218682,-122.472275,2702 S 42nd St,Tacoma Mall Plaza,Tacoma Suburban,98409,"59,890",B,3,1990
+B1407,47.244979,-122.381545,1323 34th Ave E,,Tacoma Suburban,98424,"63,000",B,1,1982
+B1408,47.241854,-122.378465,3700 Pacific Hwy E,Trans-Pacific Trade Center,Tacoma Suburban,98424,"68,355",B,4,1986
+B1409,47.242351,-122.477479,3124 S 19th St,Unico Allenmore Building C,Tacoma Suburban,98405,"70,000",B,3,2007
+B1410,47.246357,-122.379463,3600 Port Of Tacoma Rd,The Fabulich Center,Tacoma Suburban,98421,"72,000",B,5,1985
+B1411,47.227925,-122.484826,3628 S 35th St,Tacoma Power Shops Building,Tacoma Suburban,98409,"72,049",B,4,1970
+B1412,47.225903,-122.433641,3615 Pacific Ave,3615 Pacific Ave building,Tacoma Suburban,98418,"76,828",B,3,2005
+B1413,47.239554,-122.464239,2121 S State St,Centennial Place II,Tacoma Suburban,98405,"86,000",B,4,1986
+B1414,47.241785,-122.47867,1901 S Union Ave,Allenmore Medical Center - Bldg A,Tacoma Suburban,98405,"86,942",B,7,1976
+B1415,47.23769,-122.466713,2420 S State St,,Tacoma Suburban,98405,"95,992",B,2,1980
+B1416,47.240824,-122.464054,1949 S State St,Dept. of Social & Health Services,Tacoma Suburban,98405,"152,987",B,3,1986
+B1417,47.254123,-122.516532,630 S Pearl St,Former Senior Housing Facility,Tacoma Suburban,98406,"32,341",C,1,1964
+B1418,47.265445,-122.463584,1001 N J St,Knapp Business Bldg,Tacoma Suburban,98403,"40,000",C,3,1975
+B1419,47.234119,-122.447704,1015 Center St,Department of Corrections,Tacoma Suburban,98409,"43,740",C,3,1971
+B1420,47.241036,-122.429127,409 Puyallup Ave,Former Salvation Army Building,Tacoma Suburban,98421,"45,000",C,3,1929
+B1421,47.275002,-122.464306,2105-2111 N 30th St,,Tacoma Suburban,98403,"55,050",C,2,1970
+B1422,47.217633,-122.471163,4301 S Pine St,Tacoma Mall Office Building,Tacoma Suburban,98409,"117,558",C,7,1968
+B1423,47.154905,-122.501092,11307 Bridgeport Way SW,St. Clare Specialty Center,Univ. Place/Lakewood,98499,"42,000",A,2,2005
+B1424,47.177022,-122.481931,8811 S Tacoma Way,Town Plaza,Univ. Place/Lakewood,98499,"30,752",B,2,1980
+B1425,47.190704,-122.519354,7308 Bridgeport Way W,,Univ. Place/Lakewood,98499,"31,074",B,2,2005
+B1426,47.186099,-122.465093,2228 S 78th St,VC1 Call Center Building,Univ. Place/Lakewood,98409,"35,550",B,1,1977
+B1427,47.161251,-122.51435,5712 Main St SW,Lakewood Towne Center,Univ. Place/Lakewood,98499,"40,000",B,2,2008
+B1428,47.22674,-122.537691,3560-3562 Bridgeport Way W,,Univ. Place/Lakewood,98466,"40,754",B,3,2002
+B1429,47.161503,-122.51552,6000 Main St SW,Lakewood City Hall,Univ. Place/Lakewood,98499,"73,152",B,1,2002
+B1430,47.225835,-122.535949,3609 Market Pl W,Civic Center,Univ. Place/Lakewood,98466,"154,632",B,3,2011
+B1431,47.236479,-122.53623,2607 Bridgeport Way W,,Univ. Place/Lakewood,98466,"30,000",C,2,1972
+B1432,47.176795,-122.482928,8815 S Tacoma Way,South Tacoma Business Pk - Bldg I,Univ. Place/Lakewood,98499,"30,752",C,2,1980
+B1433,47.189748,-122.519818,7424 Bridgeport Way W,Bridgeport Professional Bldg,Univ. Place/Lakewood,98499,"31,294",C,3,1979
