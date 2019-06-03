@@ -71,3 +71,5 @@ To run Mongo, type:
 ~~~~
 mongod
 ~~~~
+
+You may also want to install a database viewer. We recommend Studio 3T or Robo 3T, which can be found here: https://robomongo.org/ 
