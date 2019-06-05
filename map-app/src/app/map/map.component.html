@@ -11,9 +11,20 @@
   </ul>
 
 </div>
-<div class="map"
+<!-- <div class="map"
      leaflet
      [leafletOptions]="options"
      [leafletLayers]="layers"
      (leafletMapReady)="onMapReady($event)">
-</div>
+</div> -->
+
+<mgl-map
+  [style]="'mapbox://styles/mapbox/dark-v9'"
+  [zoom]="[9]"
+  [center]="[-61.3710, 15.3150]"
+>
+<mgl-geojson-source
+   id="earthquakes"
+   [data]="json"
+ ></mgl-geojson-source>
+</mgl-map>

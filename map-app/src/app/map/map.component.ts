@@ -13,6 +13,7 @@ import { HttpClient } from '@angular/common/http';
 // Load basemap
 export class MapComponent implements OnInit {
   layers = [];
+  center = [15.3150, -61.3710];
   options = {
     layers: [
       tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
@@ -23,11 +24,11 @@ export class MapComponent implements OnInit {
   // Set placeholders for data overlay from buildings
   uniqBldgClasses: any;
   colors = {
-    'Completely Destroyed': "#bf0e00",
-    'Highly Damaged': "#c96900",
-    'Moderately Damaged': "#c8a400",
-    'Negligible to slight damage': "#8bc500",
-    'Unknown': "#666666"
+    'Completely Destroyed': '#bf0e00',
+    'Highly Damaged': '#c96900',
+    'Moderately Damaged': '#c8a400',
+    'Negligible to slight damage': '#8bc500',
+    Unknown: '#666666'
 
   };
 
@@ -43,7 +44,7 @@ export class MapComponent implements OnInit {
       console.log(this.uniqBldgClasses, 'uniqBldgClasses')
       this.layers = buildings.map((b) => {
 
-        return circle([b.lat, b.lng], { color: this.colors[b.main_damage || "Unknown"], radius: 50 })
+        return circle([b.lat, b.lng], { color: this.colors[b.main_damage || 'Unknown'], radius: 50 })
           .bindPopup(
             '<p>_id: ' + b._id + '</p>' +
             '<p>Class: ' + b.main_damage + '</p>' +
@@ -51,7 +52,12 @@ export class MapComponent implements OnInit {
             '<p>Lng: ' + b.lng + '</p>'
           );
       });
-    })
+    });
+
+    this.http.get('assets/Peak_Gust_mph.geojson').subscribe((json: any) => {
+      console.log(json, 'THIS IS THE JSON');
+      this.json = json;
+    });
   }
 
   // Use API to get buildings from db - not used
@@ -61,8 +67,8 @@ export class MapComponent implements OnInit {
 
   // Method to retrieve unique values of array
   uniq(a) {
-    var seen = {};
-    return a.filter(function(item) {
+    const seen = {};
+    return a.filter((item) => {
       return seen.hasOwnProperty(item) ? false : (seen[item] = true);
     });
   }
@@ -71,26 +77,27 @@ export class MapComponent implements OnInit {
   onMapReady(map: Map) {
     this.http.get('assets/Peak_Gust_mph.geojson').subscribe((json: any) => {
       console.log(json);
+      this.json = json;
       geoJSON(json, {
-        style: function(feature) {
+        style: (feature) => {
           switch (feature.properties.Name) {
-            case '40': return { color: "#00d4e5" , opacity: 0.0, fillOpacity: 0.05};
-            case '50': return { color: "#00d4e5" , opacity: 0.0, fillOpacity: 0.05};
-            case '60': return { color: "#00e1ba" , opacity: 0.0, fillOpacity: 0.05};
-            case '70': return { color: "#00e1ba" , opacity: 0.0, fillOpacity: 0.05};
-            case '80': return { color: "#00de7f" , opacity: 0.0, fillOpacity: 0.05};
-            case '90': return { color: "#00db0f" , opacity: 0.0, fillOpacity: 0.05};
-            case '100': return { color: "#25d500" , opacity: 0.0, fillOpacity: 0.05};
-            case '110': return { color: "#59d200" , opacity: 0.0, fillOpacity: 0.05};
-            case '120': return { color: "#8bce00" , opacity: 0.0, fillOpacity: 0.05};
-            case '130': return { color: "#bccb00" , opacity: 0.0, fillOpacity: 0.05};
-            case '140': return { color: "#c8a500" , opacity: 0.0, fillOpacity: 0.05};
-            case '150': return { color: "#c46900" , opacity: 0.0, fillOpacity: 0.05};
-            case '160': return { color: "#c46900" , opacity: 0.0, fillOpacity: 0.05};
-            case '170': return { color: "#c13a00" , opacity: 0.0, fillOpacity: 0.05};
-            case '180': return { color: "#c13a00" , opacity: 0.0, fillOpacity: 0.05};
-            case '190': return { color: "#bf0e00" , opacity: 0.0, fillOpacity: 0.05};
-            case '200': return { color: "#bf0e00" , opacity: 0.0, fillOpacity: 0.05};
+            case '40': return { color: '#00d4e5' , opacity: 0.0, fillOpacity: 0.05};
+            case '50': return { color: '#00d4e5' , opacity: 0.0, fillOpacity: 0.05};
+            case '60': return { color: '#00e1ba' , opacity: 0.0, fillOpacity: 0.05};
+            case '70': return { color: '#00e1ba' , opacity: 0.0, fillOpacity: 0.05};
+            case '80': return { color: '#00de7f' , opacity: 0.0, fillOpacity: 0.05};
+            case '90': return { color: '#00db0f' , opacity: 0.0, fillOpacity: 0.05};
+            case '100': return { color: '#25d500' , opacity: 0.0, fillOpacity: 0.05};
+            case '110': return { color: '#59d200' , opacity: 0.0, fillOpacity: 0.05};
+            case '120': return { color: '#8bce00' , opacity: 0.0, fillOpacity: 0.05};
+            case '130': return { color: '#bccb00' , opacity: 0.0, fillOpacity: 0.05};
+            case '140': return { color: '#c8a500' , opacity: 0.0, fillOpacity: 0.05};
+            case '150': return { color: '#c46900' , opacity: 0.0, fillOpacity: 0.05};
+            case '160': return { color: '#c46900' , opacity: 0.0, fillOpacity: 0.05};
+            case '170': return { color: '#c13a00' , opacity: 0.0, fillOpacity: 0.05};
+            case '180': return { color: '#c13a00' , opacity: 0.0, fillOpacity: 0.05};
+            case '190': return { color: '#bf0e00' , opacity: 0.0, fillOpacity: 0.05};
+            case '200': return { color: '#bf0e00' , opacity: 0.0, fillOpacity: 0.05};
           }
         }
       }).addTo(map);

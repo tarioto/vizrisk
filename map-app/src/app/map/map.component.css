@@ -8,8 +8,15 @@
 }
 
 .map {
+  /* height: 100vh;
+  z-index: 5; */
+
+}
+
+mgl-map {
   height: 100vh;
-  z-index: 5;
+  width: 100%;
+  /* z-index: 5; */
 }
 
 ul {
