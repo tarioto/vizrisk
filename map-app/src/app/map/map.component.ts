@@ -49,7 +49,7 @@ export class MapComponent implements OnInit {
             '<p>Lng: ' + b.lng + '</p>'
           );
       });
-    })
+    });
   }
 
   // Use API to get buildings from db - not used
