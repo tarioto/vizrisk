@@ -29,8 +29,8 @@ export class MapComponent implements OnInit {
     'Moderately Damaged': '#c8a400',
     'Negligible to slight damage': '#8bc500',
     Unknown: '#666666'
-
   };
+  json: any;
 
   // Binding HttpClient module to component
   constructor(private http: HttpClient) { }
@@ -38,11 +38,11 @@ export class MapComponent implements OnInit {
   // Process data from db - not used
   ngOnInit() {
     this.getBuildings().subscribe((buildings: any) => {
-      console.log(buildings, 'buildings')
-      const bldg_damage = Object.keys(this.colors);
-      this.uniqBldgClasses = this.uniq(bldg_damage);
-      console.log(this.uniqBldgClasses, 'uniqBldgClasses')
-      this.layers = buildings.map((b) => {
+      console.log(buildings, 'buildings');
+      const bldgDamage = Object.keys(this.colors);
+      this.uniqBldgClasses = this.uniq(bldgDamage);
+      console.log(this.uniqBldgClasses, 'uniqBldgClasses');
+      this.layers = buildings.map((b: any) => {
 
         return circle([b.lat, b.lng], { color: this.colors[b.main_damage || 'Unknown'], radius: 50 })
           .bindPopup(
@@ -55,7 +55,6 @@ export class MapComponent implements OnInit {
     });
 
     this.http.get('assets/Peak_Gust_mph.geojson').subscribe((json: any) => {
-      console.log(json, 'THIS IS THE JSON');
       this.json = json;
     });
   }
