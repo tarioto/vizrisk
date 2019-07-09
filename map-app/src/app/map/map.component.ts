@@ -22,6 +22,7 @@ export class MapComponent implements OnInit {
   };
   // Set placeholders for data overlay from buildings
   uniqBldgClasses: any;
+  uniqLocPerc: any;
   colors = {
     'Completely Destroyed': "#bf0e00",
     'Highly Damaged': "#c96900",
@@ -30,23 +31,59 @@ export class MapComponent implements OnInit {
     'Unknown': "#666666"
 
   };
+  colorsLoc = {
+    1.09: "#bf0e00",
+    1.07: "#c96900",
+    1.05: "#c8a400",
+    1.04: "#8bc500",
+    1.0: "#666666",
+    0.99: "#666666",
+    0.97: "#666666",
+    0.96: "#666666"
+
+  };
 
   // Binding HttpClient module to component
   constructor(private http: HttpClient) { }
 
-  // Process data from db - not used
-  ngOnInit() {
-    this.getBuildings().subscribe((buildings: any) => {
-      console.log(buildings, 'buildings')
-      const bldg_damage = Object.keys(this.colors);
-      this.uniqBldgClasses = this.uniq(bldg_damage);
-      console.log(this.uniqBldgClasses, 'uniqBldgClasses')
-      this.layers = buildings.map((b) => {
+  // // Process data from db
+  // ngOnInit() {
+  //   this.getBuildings().subscribe((buildings: any) => {
+  //     console.log(buildings, 'buildings')
+  //     const bldg_damage = Object.keys(this.colors);
+  //     this.uniqBldgClasses = this.uniq(bldg_damage);
+  //     console.log(this.uniqBldgClasses, 'uniqBldgClasses')
+  //     this.layers = buildings.map((b) => {
+  //
+  //       return circle([b.lat, b.lng], { color: this.colors[b.main_damage || "Unknown"], radius: 50 })
+  //         .bindPopup(
+  //           '<p>_id: ' + b._id + '</p>' +
+  //           '<p>Class: ' + b.main_damage + '</p>' +
+  //           '<p>Lat: ' + b.lat + '</p>' +
+  //           '<p>Lng: ' + b.lng + '</p>'
+  //         );
+  //     });
+  //   })
+  // }
+  //
+  // // Use API to get buildings from db - not used
+  // getBuildings() {
+  //   return this.http.get('/api/buildings');
+  // }
 
-        return circle([b.lat, b.lng], { color: this.colors[b.main_damage || "Unknown"], radius: 50 })
+  // Process data from db
+  ngOnInit() {
+    this.getLocations().subscribe((locations: any) => {
+      console.log(locations, 'locations')
+      const loc_perc = Object.keys(this.colorsLoc);
+      this.uniqLocPerc = this.uniq(loc_perc);
+      console.log(this.uniqLocPerc, 'uniqLocPerc')
+      this.layers = locations.map((b) => {
+
+        return circle([b.lat, b.lng], { color: this.colorsLoc[b.perc_increase], radius: 50 })
           .bindPopup(
             '<p>_id: ' + b._id + '</p>' +
-            '<p>Class: ' + b.main_damage + '</p>' +
+            '<p>Increase: ' + b.perc_increase + '</p>' +
             '<p>Lat: ' + b.lat + '</p>' +
             '<p>Lng: ' + b.lng + '</p>'
           );
@@ -55,8 +92,8 @@ export class MapComponent implements OnInit {
   }
 
   // Use API to get buildings from db - not used
-  getBuildings() {
-    return this.http.get('/api/buildings');
+  getLocations() {
+    return this.http.get('/api/locations');
   }
 
   // Method to retrieve unique values of array

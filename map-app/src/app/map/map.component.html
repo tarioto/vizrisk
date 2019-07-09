@@ -1,10 +1,29 @@
-<div class="legend">
+<!-- <div class="legend">
   <ul>
     <li *ngFor="let bldg of uniqBldgClasses">
       <div class="wrapper">
         <div class="square" [ngStyle]="{'background-color': colors[bldg]}"></div>
         <div>
           {{bldg}}
+        </div>
+      </div>
+    </li>
+  </ul>
+
+</div>
+<div class="map"
+     leaflet
+     [leafletOptions]="options"
+     [leafletLayers]="layers"
+     (leafletMapReady)="onMapReady($event)">
+</div> -->
+<div class="legend">
+  <ul>
+    <li *ngFor="let loc of uniqLocPerc">
+      <div class="wrapper">
+        <div class="square" [ngStyle]="{'background-color': colorsLoc[loc]}"></div>
+        <div>
+          {{loc}}
         </div>
       </div>
     </li>
