@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 import { MapComponent } from './map/map.component';
 
 @NgModule({
@@ -14,7 +15,11 @@ import { MapComponent } from './map/map.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    LeafletModule.forRoot()
+    LeafletModule.forRoot(),
+    NgxMapboxGLModule.withConfig({
+     accessToken: 'pk.eyJ1IjoidGltb3RoeS1hcmlvdG8iLCJhIjoiY2p3aWw3eTIxMDBobTRha3M2MGZ0b2t4NiJ9.PPEqq6_WNM2ngRwvSf9p2g'
+     // geocoderAccessToken: 'TOKEN'
+   })
   ],
   providers: [],
   bootstrap: [AppComponent]

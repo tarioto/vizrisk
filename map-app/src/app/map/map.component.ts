@@ -13,6 +13,7 @@ import { HttpClient } from '@angular/common/http';
 // Load basemap
 export class MapComponent implements OnInit {
   layers = [];
+  center = [15.3150, -61.3710];
   options = {
     layers: [
       tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
@@ -27,9 +28,10 @@ export class MapComponent implements OnInit {
     'Highly Damaged': '#c96900',
     'Moderately Damaged': '#c8a400',
     'Negligible to slight damage': '#8bc500',
-    'Unknown': '#666666'
+    Unknown: '#666666'
 
   };
+  json: any;
 
   // Binding HttpClient module to component
   constructor(private http: HttpClient) { }
@@ -60,7 +62,7 @@ export class MapComponent implements OnInit {
   // Method to retrieve unique values of array
   uniq(a) {
     const seen = {};
-    return a.filter(item => {
+    return a.filter((item) => {
       return seen.hasOwnProperty(item) ? false : (seen[item] = true);
     });
   }
