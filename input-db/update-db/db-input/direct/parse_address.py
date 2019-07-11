@@ -52,6 +52,12 @@ def update(bldg):
         # If there were elements beyond what I could parse, then add them all to an additional field
         address_dict["additional"] = parsed_address
 
+        # If town is not Roseau, then re-arrange keys to account for lack of suburbs
+        if address_dict["town"] != 'Roseau':
+            address_dict["place"] = address_dict["street"]
+            address_dict["street"] = address_dict["suburb"]
+            address_dict["suburb"] = None
+
         # Update building document
         Building.update_one({"_id": bid}, {"$set":{
                 "address_dict": dict(address_dict),
@@ -65,7 +71,6 @@ def update(bldg):
 
         # Print out excepted id
         print("updated: " + bid)
-        print(address_dict)
 
     # Catch any errors and print out id
     except Exception as e:
