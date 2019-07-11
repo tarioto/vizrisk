@@ -1,10 +1,30 @@
+<div class="legend">
+  <ul>
+    <li *ngFor="let bldg of uniqBldgClasses">
+      <div class="wrapper">
+        <div class="square" [ngStyle]="{'background-color': colors[bldg]}"></div>
+        <div>
+          {{bldg}}
+        </div>
+      </div>
+    </li>
+  </ul>
+
+</div>
+<!-- <div class="map"
+     leaflet
+     [leafletOptions]="options"
+     [leafletLayers]="layers"
+     (leafletMapReady)="onMapReady($event)">
+</div> -->
+<!-- change style string to another from mapbox studio -->
 <mgl-map
-  [style]="'mapbox://styles/awilson1233/cjwpel37h28cs1cp2ab75lx23'"
+  [style]="'mapbox://styles/awilson1233/cjxw7tpgd0dpt1co3upnhcxg4'"
   [zoom]="[9]"
   [center]="[-61.3710, 15.3150]"
 >
-<!-- <mgl-geojson-source
+<mgl-geojson-source
    id="earthquakes"
    [data]="json"
- ></mgl-geojson-source> -->
+ ></mgl-geojson-source>
 </mgl-map>
