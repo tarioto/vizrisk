@@ -10,7 +10,7 @@ db = client.viz_risk
 Building = db.buildings
 
 # Find all buildings to be quantified
-bldgObjs = Building.find({"main_damage": {"$ne":"Damaged"} }) # query to retrieve relevant building docs from db
+bldgObjs = Building.find({"$and":[{"main_damage":{"$ne":"Damaged"}},{"geo_result":None}]}) # query to retrieve relevant building docs from db
 nBldg = bldgObjs.count()
 
 # Connect to OSM and Google V3 APIs
