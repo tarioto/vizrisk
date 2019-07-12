@@ -8,43 +8,44 @@ db = client.viz_risk
 Building = db.buildings
 Suburb = db.suburbs
 
-# Find all suburbs to be quantified
+# Find all suburbes to be quantified
 burbObjs = Suburb.find() # query to retrieve relevant building docs from db
-nBurb = burbObjs.count()
+nPar = burbObjs.count()
 
 # Find distinct damage names to count from buildings
-dmgNames = Building.distinct("main_damage")
-nDmg = len(dmgNames)
+occNames = Building.distinct("occupancy")
+nOcc = len(occNames)
 
-# Update suburb collection
-def update(burb):
+
+# # Update building database
+def update(suburb):
 
     try:
 
         # Get suburb id
-        sid = burb["_id"]
+        sid = suburb["_id"]
 
         # Query all buildings within that suburb
-        burbBldgs = Building.find({"suburb":sid})
+        parBldgs = Building.find({"suburb":sid})
 
         # Count number of buildings in each damage category
-        damage_dict = dict.fromkeys(dmgNames)
+        occ_dict = dict.fromkeys(occNames)
 
         # For each damage category, store result in dictionary and update field in db dynamically
-        for dmgKey in dmgNames:
+        for occKey in occNames:
             # Get relevant building objects in db
-            retrievedBldgs = Building.find({"$and":[{"suburb":sid},{"main_damage":dmgKey}]})
-            countBldgs = retrievedBldgs.count()
+            retrievedOccs = Building.distinct("geo_result", {"$and":[{"suburb":sid},{"occupancy":occKey}]}) # restrict what is returned to geo_result
+            countOcc = len(retrievedOccs)
             # Update damage dictionary
-            damage_dict[dmgKey] = countBldgs
+            occ_dict[occKey] = countOcc
             # Update dynamic field
-            Suburb.update_one({"_id": sid}, {"$set":{
-                    dmgKey : int(countBldgs)
-                    }})
+            # Suburb.update_one({"_id": sid}, {"$set":{
+            #         dmgKey : int(countOcc)
+            #         }})
 
         # Update building document with entire damage dictionary
         Suburb.update_one({"_id": sid}, {"$set":{
-                "damage_dict" : dict(damage_dict)
+                "occupancy_dict" : dict(occ_dict)
                 }})
 
         # Print out excepted id

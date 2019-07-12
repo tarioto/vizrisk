@@ -13,10 +13,10 @@ parObjs = Parish.find() # query to retrieve relevant building docs from db
 nPar = parObjs.count()
 
 # Find distinct damage names to count from buildings
-dmgNames = Building.distinct("main_damage")
-nDmg = len(dmgNames)
+occNames = Building.distinct("occupancy")
+nOcc = len(occNames)
 
-# # Update parish collection
+# # Update building database
 def update(parish):
 
     try:
@@ -28,23 +28,23 @@ def update(parish):
         parBldgs = Building.find({"parish":pid})
 
         # Count number of buildings in each damage category
-        damage_dict = dict.fromkeys(dmgNames)
+        occ_dict = dict.fromkeys(occNames)
 
         # For each damage category, store result in dictionary and update field in db dynamically
-        for dmgKey in dmgNames:
+        for occKey in occNames:
             # Get relevant building objects in db
-            retrievedBldgs = Building.find({"$and":[{"parish":pid},{"main_damage":dmgKey}]})
-            countBldgs = retrievedBldgs.count()
+            retrievedOccs = Building.distinct("geo_result", {"$and":[{"parish":pid},{"occupancy":occKey}]}) # restrict what is returned to geo_result
+            countOcc = len(retrievedOccs)
             # Update damage dictionary
-            damage_dict[dmgKey] = countBldgs
+            occ_dict[occKey] = countOcc
             # Update dynamic field
-            Parish.update_one({"_id": pid}, {"$set":{
-                    dmgKey : int(countBldgs)
-                    }})
+            # Parish.update_one({"_id": pid}, {"$set":{
+            #         dmgKey : int(countOcc)
+            #         }})
 
         # Update building document with entire damage dictionary
         Parish.update_one({"_id": pid}, {"$set":{
-                "damage_dict" : dict(damage_dict)
+                "occupancy_dict" : dict(occ_dict)
                 }})
 
         # Print out excepted id

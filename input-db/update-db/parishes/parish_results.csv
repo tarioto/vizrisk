@@ -1,0 +1,5 @@
+_id,Damaged,Highly Damaged,Completely Destroyed,Moderately Damaged,Negligible to slight damage,damage_dict,occupancy_dict,reduced_occ_dict,businesses,community,emergency,government,healthcare,housing,schools,lifelines,tourism,unknown
+"Saint Paul Parish","0","976","571","869","172","[object BSON]","[object BSON]","[object BSON]","38","5","6","5","0","26","3","6","14","44"
+"Saint George Parish","0","1755","636","1440","539","[object BSON]","[object BSON]","[object BSON]","219","39","0","5","15","140","29","39","44","145"
+"Saint David Parish","0","21","299","69","12","[object BSON]","[object BSON]","[object BSON]","12","6","0","0","0","3","3","0","16","25"
+"Saint Patrick Parish","0","98","304","58","22","[object BSON]","[object BSON]","[object BSON]","9","5","0","0","0","5","3","0","3","29"

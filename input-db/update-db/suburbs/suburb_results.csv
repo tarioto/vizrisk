@@ -1,0 +1,12 @@
+_id,Damaged,Highly Damaged,Completely Destroyed,Moderately Damaged,Negligible to slight damage,damage_dict,occupancy_dict,businesses,community,emergency,government,healthcare,housing,schools,lifelines,tourism,unknown,reduced_occ_dict
+"None","0","1550","1429","1470","451","[object BSON]","[object BSON]","71","18","6","5","0","53","13","6","39","110","[object BSON]"
+"Fond Colé","0","117","75","57","32","[object BSON]","[object BSON]","0","0","0","0","0","3","0","0","0","0","[object BSON]"
+"Bath Estate","0","95","10","103","6","[object BSON]","[object BSON]","6","0","0","3","0","10","8","0","0","3","[object BSON]"
+"Elmshall","0","59","8","46","11","[object BSON]","[object BSON]","0","0","0","0","0","3","0","0","0","0","[object BSON]"
+"Kings Hill","0","211","55","107","14","[object BSON]","[object BSON]","3","0","0","0","0","3","0","0","0","14","[object BSON]"
+"Newtown","0","52","16","10","2","[object BSON]","[object BSON]","8","11","0","0","0","6","0","5","0","9","[object BSON]"
+"Goodwill","0","308","66","278","75","[object BSON]","[object BSON]","19","11","0","3","6","44","9","6","8","26","[object BSON]"
+"Potters Ville","0","227","50","220","105","[object BSON]","[object BSON]","172","15","0","0","10","33","10","26","28","70","[object BSON]"
+"Yampiece","0","43","3","17","2","[object BSON]","[object BSON]","0","0","0","0","0","16","0","0","0","0","[object BSON]"
+"Stockfarm","0","109","79","52","29","[object BSON]","[object BSON]","3","0","0","0","0","8","0","6","0","10","[object BSON]"
+"Tarish Pit","0","79","19","76","18","[object BSON]","[object BSON]","0","0","0","0","0","14","0","0","0","3","[object BSON]"
