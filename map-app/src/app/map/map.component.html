@@ -1,4 +1,14 @@
-<div class="map" id="map" class="match-parent"></div>
+<div class="map" id="map" class="match-parent">
+  <div class='toggle'>
+        <mat-checkbox
+        *ngFor="let layer of toggleableLayerIdsList"
+        [value]="layer"
+        [checked]= "isChecked"
+        (change)="toggleLayer(layer)">{{layer}}
+      </mat-checkbox>
+  </div>
+</div>
+
 <!-- <mgl-map
   [style]="'mapbox://styles/awilson1233/cjxw7tpgd0dpt1co3upnhcxg4'"
   [zoom]="[9]"
