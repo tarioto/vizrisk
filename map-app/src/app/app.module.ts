@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 import { MapComponent } from './map/map.component';
+import { OverlayComponent } from './map/overlay/overlay.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent
+    MapComponent,
+    OverlayComponent
   ],
   imports: [
     BrowserModule,
