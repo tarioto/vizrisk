@@ -1,9 +1,7 @@
-
 import { Component, OnInit } from '@angular/core';
 import { environment } from './../../environments/environment';
 import * as mapboxgl from 'mapbox-gl';
 
-// Create component
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
@@ -15,6 +13,25 @@ export class MapComponent implements OnInit {
   style = 'mapbox://styles/awilson1233/cjxw7tpgd0dpt1co3upnhcxg4';
   lat = 15.3150;
   lng = -61.3710;
+  layers: any;
+  currentSceneIndex = 0;
+  scenes = [
+    {
+      title: 'testing the scenes',
+      info: 'this will be a description of some stuff',
+      visableLayer: ''
+    },
+    {
+      title: 'second one',
+      info: 'this will be a description of some stuff or whatever',
+      visableLayer: ''
+    },
+    {
+      title: '3',
+      info: 'okay okay okay',
+      visableLayer: ''
+    }
+  ];
 
   constructor() { }
 
@@ -29,6 +46,38 @@ export class MapComponent implements OnInit {
     });
 
     console.log(this.map);
+
+    this.map.on('load', () => {
+      console.log(this.map.getStyle().layers);
+      this.layers = this.map.getStyle().layers;
+    });
+    this.map.on('click', 'dominica-damage-buildings', (e) => {
+      console.log(e.features[0]);
+      new mapboxgl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML(e.features[0].properties.agency_id)
+      .addTo(this.map);
+      });
+  }
+
+  toggleLayer(layer: any) {
+    if (this.map.getLayoutProperty(layer, 'visibility') === 'visible') {
+      this.map.setLayoutProperty(layer, 'visibility', 'none');
+    } else {
+      this.map.setLayoutProperty(layer, 'visibility', 'visible');
+    }
+  }
+
+  changeScene(direction) {
+    if (direction === 'next') {
+      if (this.currentSceneIndex < this.scenes.length - 1) {
+        this.currentSceneIndex += 1;
+      }
+    } else {
+      if (this.currentSceneIndex !== 0) {
+        this.currentSceneIndex -= 1;
+      }
+    }
   }
 
 }
