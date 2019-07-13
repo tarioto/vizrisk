@@ -1,7 +1,9 @@
 <div class="map" id="map" class="match-parent"></div>
-<!-- <mgl-map
-  [style]="'mapbox://styles/awilson1233/cjxw7tpgd0dpt1co3upnhcxg4'"
-  [zoom]="[9]"
-  [center]="[-61.3710, 15.3150]"
-  (load)="map = $event"
-></mgl-map> -->
+<app-overlay
+class="overlay"
+[currentSceneIndex]="currentSceneIndex"
+[scenes]="scenes"
+></app-overlay>
+
+<button type="button" name="button" (click)="changeScene('prev')">prev</button>
+<button type="button" name="button" (click)="changeScene('next')">next</button>
