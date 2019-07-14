@@ -14,7 +14,7 @@ import {FormControl} from '@angular/forms';
 
 export class MapComponent implements OnInit {
   map: mapboxgl.Map;
-  style = 'mapbox://styles/awilson1233/cjxw7tpgd0dpt1co3upnhcxg4';
+  style = 'mapbox://styles/awilson1233/cjy3dg55f2kxh1covpds8dnh5';
   lat = 15.4250;
   lng = -61.3710;
 
@@ -27,7 +27,7 @@ export class MapComponent implements OnInit {
     id: 'storm-track-8xi3zk',
     displayName: 'Storm Track'
     }, {
-    id: 'peak_gusts_mph',
+    id: 'peak-gust-mph',
     displayName: 'Peak Gusts (mph)'
     }, {
     id: 'dominica-population',
@@ -42,8 +42,8 @@ export class MapComponent implements OnInit {
     id: 'wind-hazards',
     displayName: 'Wind Hazards'
     }, {
-    id: 'dominica-damage-buildings',
-    displayName: 'Damaged Buildings (zoom to view)'
+    id: 'building-data-9b0ub5',
+    displayName: 'Damaged Buildings'
     }];
 
   constructor() { }
