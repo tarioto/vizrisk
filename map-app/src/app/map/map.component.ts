@@ -21,17 +21,17 @@ export class MapComponent implements OnInit {
     {
       title: 'testing the scenes',
       info: 'this will be a description of some stuff',
-      visableLayer: ''
+      visableLayer: 'storm-track-8xi3zk'
     },
     {
       title: 'second one',
       info: 'this will be a description of some stuff or whatever',
-      visableLayer: ''
+      visableLayer: 'hurricaneshelters'
     },
     {
       title: '3',
       info: 'okay okay okay',
-      visableLayer: ''
+      visableLayer: 'dominica-damage-buildings'
     }
   ];
 
@@ -82,11 +82,7 @@ export class MapComponent implements OnInit {
     console.log(this.map);
 
     this.map.on('load', () => {
-      console.log(this.map.getStyle().layers);
-      this.layers = this.map.getStyle().layers;
-      this.toggleableLayerIdsList.forEach(( layer) => {
-        this.map.setLayoutProperty(layer.id, 'visibility', 'none');
-      });
+      this.setCurrentLayer();
     });
 
     this.map.on('click', 'dominica-damage-buildings', (e) => {
@@ -112,12 +108,21 @@ export class MapComponent implements OnInit {
     if (direction === 'next') {
       if (this.currentSceneIndex < this.scenes.length - 1) {
         this.currentSceneIndex += 1;
+        this.setCurrentLayer();
       }
     } else {
       if (this.currentSceneIndex !== 0) {
         this.currentSceneIndex -= 1;
+        this.setCurrentLayer();
       }
     }
+  }
+
+  setCurrentLayer() {
+    this.toggleableLayerIdsList.forEach(( layer) => {
+      this.map.setLayoutProperty(layer.id, 'visibility', 'none');
+    });
+    this.toggleLayer(this.scenes[this.currentSceneIndex].visableLayer);
   }
 
 }
