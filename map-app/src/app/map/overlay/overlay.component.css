@@ -1,3 +1,14 @@
 .container {
-  padding: 20px;
+  margin: 30px;
 }
+
+.title {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: #cdcdcd;
+}
+
+.text {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: #cdcdcd;
+}
+

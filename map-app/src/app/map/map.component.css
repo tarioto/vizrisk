@@ -13,11 +13,11 @@
 
 .overlay {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 40%;
+  bottom: 8vh;
+  left: 2vh;
+  width: 35%;
   height: 40%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.199);
 }
 
 .toggle {
@@ -34,9 +34,12 @@
 
 ::ng-deep .mat-checkbox-label {
   color: #cdcdcd;
-
 }
 
 ::ng-deep .mat-checkbox .mat-checkbox-frame {
   border-color: #cdcdcd;
+}
+
+.buttons {
+  margin: 10px;
 }
