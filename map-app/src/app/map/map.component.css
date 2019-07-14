@@ -13,11 +13,12 @@
 }
 
 .overlay {
-  /* position: absolute;
+  /* position: absolute; */
   bottom: 0;
-  left: 0; */
+  left: 0;
+  padding-left: 2vh;
   width: 35%;
-  /* height: 100vh; */
+  height: 100vh;
   background-color: #181919;
   color: #B2B2B2;
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -62,6 +63,13 @@
 .mapboxgl-popup {
   max-width: 400px;
   font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+.button[disabled] {
+  background-color:#919191;
+}
+
+.button {
+  margin: 1vh;
 }
 
 ::ng-deep .mat-checkbox-label {

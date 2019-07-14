@@ -7,11 +7,37 @@
       <p>{{displayScene('info')}}</p>
     </mat-card-content>
     <mat-card-footer>
-      <button mat-button type="button" name="button" (click)="changeScene('prev')">prev</button>
-      <button mat-button type="button" name="button" (click)="changeScene('next')">next</button>
+      <div class="navigation">
+        <button mat-raised-button
+          [disabled]="prevDisabled"
+          class="button"
+          (click)="changeScene('prev')">prev
+        </button>
+        <button mat-raised-button
+          class="button"
+          [disabled]="nextDisabled"
+          (click)="changeScene('next')">next
+        </button>
+      </div>
     </mat-card-footer>
   </mat-card>
   <div class="map" id="map" class="match-parent"></div>
+  <!-- <div class="overlay">
+    <h1>{{displayScene('title')}}</h1>
+    <p>
+      {{displayScene('info')}}
+    </p> -->
+    <!-- <div class="navigation">
+    <button mat-raised-button
+    [disabled]="prevDisabled"
+    class="button"
+    (click)="changeScene('prev')">prev</button>
+    <button mat-raised-button
+    class="button"
+    [disabled]="nextDisabled"
+    (click)="changeScene('next')">next</button>
+    </div> -->
+  <!-- </div> -->
 <!-- <div class='toggle' >
     <mat-checkbox
       *ngFor="let layer of toggleableLayerIdsList"
