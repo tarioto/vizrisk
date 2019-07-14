@@ -60,14 +60,8 @@ export class MapComponent implements OnInit {
       displayName: 'Wind Hazards'
     }, {
       id: 'building-data-9b0ub5',
-<<<<<<< HEAD
-      displayName: 'Building Data'
-    }
-  ];
-=======
       displayName: 'Damaged Buildings'
     }];
->>>>>>> 1053c3dd9be478b522f5b9973a5c1a3cca3148f6
 
   constructor() { }
 
@@ -85,7 +79,7 @@ export class MapComponent implements OnInit {
     this.map.addControl(new mapboxgl.NavigationControl());
 
     console.log(this.map);
-    
+
     this.map.on('load', () => {
       this.toggleableLayerIdsList.forEach(( layer) => {
         console.log(this.map)
