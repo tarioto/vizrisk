@@ -162,4 +162,8 @@ export class MapComponent implements OnInit {
     this.toggleLayer(this.scenes[this.currentSceneIndex].visableLayer);
   }
 
+  displayScene(type: any) {
+    return this.scenes[this.currentSceneIndex][type];
+  }
+
 }

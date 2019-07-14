@@ -1,14 +1,15 @@
 <div class="container">
   <div class="map" id="map" class="match-parent"></div>
-  <app-overlay
-    class="overlay"
-    [currentSceneIndex]="currentSceneIndex"
-    [scenes]="scenes">
-  <!-- <div class="navigation">
-  <button type="button" name="button" (click)="changeScene('prev')">prev</button>
-  <button type="button" name="button" (click)="changeScene('next')">next</button>
-  </div> -->
-</app-overlay>
+  <div class="overlay">
+    <h1>{{displayScene('title')}}</h1>
+    <p>
+      {{displayScene('info')}}
+    </p>
+    <div class="navigation">
+    <button type="button" name="button" (click)="changeScene('prev')">prev</button>
+    <button type="button" name="button" (click)="changeScene('next')">next</button>
+    </div>
+  </div>
   <!-- <div class='toggle' >
     <mat-checkbox
       *ngFor="let layer of toggleableLayerIdsList"
