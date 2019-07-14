@@ -88,10 +88,7 @@ export class MapComponent implements OnInit {
     console.log(this.map);
 
     this.map.on('load', () => {
-      this.toggleableLayerIdsList.forEach(( layer) => {
-        console.log(this.map);
-        this.map.setLayoutProperty(layer.id, 'visibility', 'none');
-      });
+      this.setCurrentLayer();
     });
 
     this.map.on('click', 'dominica-damage-buildings', (e) => {
@@ -108,8 +105,8 @@ export class MapComponent implements OnInit {
       this.map.setLayoutProperty(layer, 'visibility', 'none');
     } else {
       this.map.setLayoutProperty(layer, 'visibility', 'visible');
-      console.log(this.toggleableLayerIdsList)
-      this.toggleableLayerIdsList[layer].checked = true;
+      console.log(this.toggleableLayerIdsList);
+      this.toggleableLayerIdsList.find((l) => l.id === layer).checked = true;
     }
   }
 
@@ -132,7 +129,7 @@ export class MapComponent implements OnInit {
       this.map.setLayoutProperty(layer.id, 'visibility', 'none');
     });
     this.toggleLayer(this.scenes[this.currentSceneIndex].visableLayer);
-    this.isChecked
+    this.isChecked;
   }
 
   displayScene(type: any) {
