@@ -6,8 +6,14 @@
       {{displayScene('info')}}
     </p>
     <div class="navigation">
-    <button mat-raised-button (click)="changeScene('prev')">prev</button>
-    <button mat-raised-button (click)="changeScene('next')">next</button>
+    <button mat-raised-button
+    [disabled]="prevDisabled"
+    class="button"
+    (click)="changeScene('prev')">prev</button>
+    <button mat-raised-button
+    class="button"
+    [disabled]="nextDisabled"
+    (click)="changeScene('next')">next</button>
     </div>
   </div>
 <!-- <div class='toggle' >

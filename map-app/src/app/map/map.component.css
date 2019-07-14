@@ -16,6 +16,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  padding-left: 2vh;
   width: 35%;
   height: 100%;
   background-color: #181919;
@@ -33,6 +34,13 @@
 .mapboxgl-popup {
   max-width: 400px;
   font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+.button[disabled] {
+  background-color:#919191;
+}
+
+.button {
+  margin: 1vh;
 }
 
 ::ng-deep .mat-checkbox-label {

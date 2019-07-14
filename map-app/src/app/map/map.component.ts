@@ -35,8 +35,8 @@ export class MapComponent implements OnInit {
     }
   ];
 
-  isChecked = false;
-
+  nextDisabled = false;
+  prevDisabled = true;
 
   toggleableLayerIds = new FormControl();
   toggleableLayerIdsList = [
@@ -83,8 +83,6 @@ export class MapComponent implements OnInit {
       center: [this.lng, this.lat]
     });
 
-    this.map.addControl(new mapboxgl.NavigationControl());
-
     console.log(this.map);
 
     this.map.on('load', () => {
@@ -107,21 +105,31 @@ export class MapComponent implements OnInit {
       this.map.setLayoutProperty(layer, 'visibility', 'none');
     } else {
       this.map.setLayoutProperty(layer, 'visibility', 'visible');
-      console.log(this.toggleableLayerIdsList)
-      this.toggleableLayerIdsList[layer].checked = true;
     }
   }
 
   changeScene(direction) {
     if (direction === 'next') {
+      this.prevDisabled = false;
       if (this.currentSceneIndex < this.scenes.length - 1) {
         this.currentSceneIndex += 1;
         this.setCurrentLayer();
+        if (this.currentSceneIndex === this.scenes.length - 1) {
+          this.nextDisabled = true;
+        } else {
+          this.nextDisabled = false;
+        }
       }
     } else {
       if (this.currentSceneIndex !== 0) {
+        this.nextDisabled = false;
         this.currentSceneIndex -= 1;
         this.setCurrentLayer();
+        if (this.currentSceneIndex > 0) {
+          this.prevDisabled = false;
+        } else if (this.currentSceneIndex === 0) {
+          this.prevDisabled = true;
+        }
       }
     }
   }
@@ -131,7 +139,6 @@ export class MapComponent implements OnInit {
       this.map.setLayoutProperty(layer.id, 'visibility', 'none');
     });
     this.toggleLayer(this.scenes[this.currentSceneIndex].visableLayer);
-    this.isChecked
   }
 
   displayScene(type: any) {
