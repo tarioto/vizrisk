@@ -45,12 +45,25 @@
   text-align: right;
 }
 
-.mat-button{
+.mat-raised-button{
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 1em;
   margin: 10px;
   background-color: #444444;
   color: #F5F5F5;
+}
+
+.button[disabled]{
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  margin: 10px;
+  background-color: #181919;
+  color: #181919;
+}
+
+
+.button {
+  margin: 1vh;
 }
 
 .toggle {
@@ -64,9 +77,7 @@
   max-width: 400px;
   font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
-.button[disabled] {
-  background-color:#919191;
-}
+
 
 .button {
   margin: 1vh;
