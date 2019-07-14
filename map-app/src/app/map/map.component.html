@@ -1,5 +1,10 @@
 <div class="container">
-  <div class="map" id="map" class="match-parent">  </div>
+  <div class="map" id="map" class="match-parent"></div>
+  <app-overlay
+    class="overlay"
+    [currentSceneIndex]="currentSceneIndex"
+    [scenes]="scenes"
+  ></app-overlay>
   <div class='toggle' >
     <mat-checkbox
       *ngFor="let layer of toggleableLayerIdsList"
@@ -7,6 +12,7 @@
       [checked]= "isChecked"
       (change)="toggleLayer(layer.id)">{{layer.displayName}}
     </mat-checkbox>
+    <button type="button" name="button" (click)="changeScene('prev')">prev</button>
+    <button type="button" name="button" (click)="changeScene('next')">next</button>
+  </div>
 </div>
-</div>
-
