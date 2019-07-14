@@ -19,14 +19,14 @@ export class MapComponent implements OnInit {
   currentSceneIndex = 0;
   scenes = [
     {
-      title: 'Here is a headline about hurricanes in the Caribbean...',
-      info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      visableLayer: ''
+      title: 'Imagine 90% of your country\'s buildings being damaged or destroyed in one night...',
+      info: 'This was the impact of Hurricane Maria on the island nation of Dominica on September 18, 2017.\n Despite contributing the least to climate change, Caribbean countries like Dominica are among the nations hardest hit by its effects. The 2017 Atlantic hurricane season, whose strongest storm was Maria, incurred more damage than any tropical cyclone season in recorded history. Climate experts have noted a heightened pattern of cyclonic activity since the mid-90s, as well as a southward trend in hurricane tracks towards the Lesser Antilles islands, which include Dominica.',
+      visableLayer: 'peak-gust-mph'
     },
     {
-      title: 'Here is a headline about Hurricane Maria...',
-      info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      visableLayer: 'peak-gust-mph'
+      title: 'In 2017, Hurricane Maria became the first recorded Category 5 storm to hit the island of Dominica....',
+      info: 'In addition to Dominica, Maria dealt severe damage to the islands of St. Croix and Puerto Rico, making it the third costliest hurricane in the history of the United States.',
+      visableLayer: ''
     },
     {
       title: 'Here is a headline about impact on Dominica from Hurricane Maria...',
@@ -51,7 +51,7 @@ export class MapComponent implements OnInit {
     {
       title: 'Here is a headline about mitigation measures...',
       info: 'okay okay okay',
-      visableLayer: ''
+      visableLayer: 'roads'
     }
   ];
 
@@ -79,6 +79,14 @@ export class MapComponent implements OnInit {
     }, {
       id: 'redcross-damageneedsassessment',
       displayName: 'Damage Needs Assessment (Red Cross)',
+      checked: false
+    }, {
+      id: 'roads',
+      displayName: 'Dominican Roads',
+      checked: false
+    }, {
+      id: 'dominica-coast',
+      displayName: 'Dominican Coastline',
       checked: false
     }, {
       id: 'wind-hazards',
