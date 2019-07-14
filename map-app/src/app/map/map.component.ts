@@ -99,7 +99,7 @@ export class MapComponent implements OnInit {
       container: 'map',
       style: this.style,
       zoom: 10,
-      minZoom: 10,
+      minZoom: 6,
       center: [this.lng, this.lat]
     });
 

@@ -23,6 +23,35 @@
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
+.mat-card-header {
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  font-style: italic;
+  color: #F5F5F5;
+}
+
+.mat-card-content{
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  margin: 10px;
+  color: #B2B2B2;
+}
+
+.mat-card-footer{
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  margin: 10px;
+  text-align: right;
+}
+
+.mat-button{
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  margin: 10px;
+  background-color: #444444;
+  color: #F5F5F5;
+}
+
 .toggle {
   width: 14vw;
   margin: 10px;
