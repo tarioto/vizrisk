@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from './../../environments/environment';
 import * as mapboxgl from 'mapbox-gl';
+import {FormControl} from '@angular/forms';
+
 
 @Component({
   selector: 'app-map',
@@ -11,7 +13,7 @@ import * as mapboxgl from 'mapbox-gl';
 export class MapComponent implements OnInit {
   map: mapboxgl.Map;
   style = 'mapbox://styles/awilson1233/cjxw7tpgd0dpt1co3upnhcxg4';
-  lat = 15.3150;
+  lat = 15.4250;
   lng = -61.3710;
   layers: any;
   currentSceneIndex = 0;
@@ -33,6 +35,34 @@ export class MapComponent implements OnInit {
     }
   ];
 
+  isChecked = false;
+
+
+  toggleableLayerIds = new FormControl();
+  toggleableLayerIdsList = [
+    {
+    id: 'storm-track-8xi3zk',
+    displayName: 'Storm Track'
+    }, {
+    id: 'peak_gusts_mph',
+    displayName: 'Peak Gusts (mph)'
+    }, {
+    id: 'dominica-population',
+    displayName: 'Population'
+    }, {
+    id: 'hurricaneshelters',
+    displayName: 'Hurricane Shelters'
+    }, {
+    id: 'redcross-damageneedsassessment',
+    displayName: 'Damage Needs Assessment (Red Cross)'
+    }, {
+    id: 'wind-hazards',
+    displayName: 'Wind Hazards'
+    }, {
+    id: 'dominica-damage-buildings',
+    displayName: 'Damaged Buildings (zoom to view)'
+    }];
+
   constructor() { }
 
   ngOnInit() {
@@ -41,16 +71,22 @@ export class MapComponent implements OnInit {
     this.map = new mapboxgl.Map({
       container: 'map',
       style: this.style,
-      zoom: 9,
+      zoom: 10,
       center: [this.lng, this.lat]
     });
+
+    this.map.addControl(new mapboxgl.NavigationControl());
 
     console.log(this.map);
 
     this.map.on('load', () => {
       console.log(this.map.getStyle().layers);
       this.layers = this.map.getStyle().layers;
+      this.toggleableLayerIdsList.forEach(( layer) => {
+        this.map.setLayoutProperty(layer.id, 'visibility', 'none');
+      });
     });
+
     this.map.on('click', 'dominica-damage-buildings', (e) => {
       console.log(e.features[0]);
       new mapboxgl.Popup()
@@ -58,6 +94,8 @@ export class MapComponent implements OnInit {
       .setHTML(e.features[0].properties.agency_id)
       .addTo(this.map);
       });
+
+
   }
 
   toggleLayer(layer: any) {

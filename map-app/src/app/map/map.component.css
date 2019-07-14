@@ -4,11 +4,11 @@
 }
 
 .map {
-  height: 92vh;
+  height: 100vh;
 }
 
 #map {
-  height: 92vh;
+  height: 100vh;
 }
 
 .overlay {
@@ -19,3 +19,10 @@
   height: 40%;
   background-color: rgba(255, 255, 255, 0.5);
 }
+
+.toggle {
+  width: 14vw;
+  margin: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px; }
