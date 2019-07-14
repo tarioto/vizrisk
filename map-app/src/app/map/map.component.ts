@@ -82,7 +82,7 @@ export class MapComponent implements OnInit {
 
     this.map.on('load', () => {
       this.toggleableLayerIdsList.forEach(( layer) => {
-        console.log(this.map)
+        console.log(this.map);
         this.map.setLayoutProperty(layer.id, 'visibility', 'none');
 
             // When a click event occurs on a feature in the places layer, open a popup at the

@@ -10,6 +10,7 @@ import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 import { MapComponent } from './map/map.component';
 import { OverlayComponent } from './map/overlay/overlay.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -54,8 +55,7 @@ import {
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent,
-    OverlayComponent
+    MapComponent
   ],
   imports: [
     BrowserModule,
@@ -68,6 +68,7 @@ import {
      // geocoderAccessToken: 'TOKEN'
    }),
     ReactiveFormsModule,
+    FlexLayoutModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
