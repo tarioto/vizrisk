@@ -1,6 +1,7 @@
 .match-parent {
-  width: 100%;
+  width: 65%;
   height: 100%;
+  float: right;
 }
 
 .map {
@@ -13,11 +14,13 @@
 
 .overlay {
   position: absolute;
-  bottom: 8vh;
-  left: 2vh;
+  bottom: 0;
+  left: 0;
   width: 35%;
-  height: 40%;
-  background-color: rgba(255, 255, 255, 0.199);
+  height: 100%;
+  background-color: #181919;
+  color: #B2B2B2;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
 .toggle {
@@ -38,8 +41,4 @@
 
 ::ng-deep .mat-checkbox .mat-checkbox-frame {
   border-color: #cdcdcd;
-}
-
-.buttons {
-  margin: 10px;
 }

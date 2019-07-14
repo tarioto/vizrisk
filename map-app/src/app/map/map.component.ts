@@ -19,8 +19,8 @@ export class MapComponent implements OnInit {
   currentSceneIndex = 0;
   scenes = [
     {
-      title: 'testing the scenes',
-      info: 'this will be a description of some stuff',
+      title: 'Here is some big headline statement....',
+      info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       visableLayer: 'storm-track-8xi3zk'
     },
     {
@@ -132,6 +132,10 @@ export class MapComponent implements OnInit {
     });
     this.toggleLayer(this.scenes[this.currentSceneIndex].visableLayer);
     this.isChecked
+  }
+
+  displayScene(type: any) {
+    return this.scenes[this.currentSceneIndex][type];
   }
 
 }
