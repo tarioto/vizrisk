@@ -6,12 +6,12 @@
     [scenes]="scenes"
   ></app-overlay>
   <div class='toggle' >
-    <mat-checkbox
+    <!-- <mat-checkbox
       *ngFor="let layer of toggleableLayerIdsList"
       [value]="layer.id"
       [checked]= "isChecked"
       (change)="toggleLayer(layer.id)">{{layer.displayName}}
-    </mat-checkbox>
+    </mat-checkbox> -->
     <button type="button" name="button" (click)="changeScene('prev')">prev</button>
     <button type="button" name="button" (click)="changeScene('next')">next</button>
   </div>
