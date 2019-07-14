@@ -58,16 +58,16 @@ export class MapComponent implements OnInit {
     }, {
       id: 'wind-hazards',
       displayName: 'Wind Hazards'
-    },
-    // {
-    //   id: 'dominica-damage-buildings',
-    //   displayName: 'Damaged Buildings (zoom to view)'
-    // },
-     {
+    }, {
       id: 'building-data-9b0ub5',
+<<<<<<< HEAD
       displayName: 'Building Data'
     }
   ];
+=======
+      displayName: 'Damaged Buildings'
+    }];
+>>>>>>> 1053c3dd9be478b522f5b9973a5c1a3cca3148f6
 
   constructor() { }
 
@@ -85,8 +85,46 @@ export class MapComponent implements OnInit {
     this.map.addControl(new mapboxgl.NavigationControl());
 
     console.log(this.map);
-
+    
     this.map.on('load', () => {
+      this.toggleableLayerIdsList.forEach(( layer) => {
+        console.log(this.map)
+        this.map.setLayoutProperty(layer.id, 'visibility', 'none');
+
+            // When a click event occurs on a feature in the places layer, open a popup at the
+    // location of the feature, with description HTML from its properties.
+        this.map.on('click', 'hurricaneshelters', function(e) {
+        console.log(e.features[0]);
+        const coordinates = e.features[0].geometry.coordinates.slice();
+        const description = e.features[0].properties;
+
+        console.log(coordinates);
+        console.log(description);
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        console.log(this.map)
+        new mapboxgl.Popup()
+        .setLngLat(coordinates)
+        .setHTML(description)
+        .addTo(this.map);
+        });
+
+        // Change the cursor to a pointer when the mouse is over the places layer.
+        // this.map.on('mouseenter', 'places', function() {
+        // this.map.getCanvas().style.cursor = 'pointer';
+        // });
+
+        // // Change it back to a pointer when it leaves.
+        // this.map.on('mouseleave', 'places', function() {
+        // this.map.getCanvas().style.cursor = '';
+        // });
+      });
+
       this.setCurrentLayer();
     });
 
