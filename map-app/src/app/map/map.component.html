@@ -1,4 +1,4 @@
-<!-- <div class="legend">
+<div class="legend" [ngStyle]="{'background-color': '#f5f5f5'}">
   <ul>
     <li *ngFor="let bldg of uniqBldgClasses">
       <div class="wrapper">
@@ -16,8 +16,8 @@
      [leafletOptions]="options"
      [leafletLayers]="layers"
      (leafletMapReady)="onMapReady($event)">
-</div> -->
-<div class="legend">
+</div>
+<!-- <div class="legend">
   <ul>
     <li *ngFor="let loc of uniqLocPerc">
       <div class="wrapper">
@@ -27,9 +27,9 @@
         </div>
       </div>
     </li>
-  </ul>
+  </ul> -->
 
-</div>
+<!-- </div> -->
 <div class="map"
      leaflet
      [leafletOptions]="options"

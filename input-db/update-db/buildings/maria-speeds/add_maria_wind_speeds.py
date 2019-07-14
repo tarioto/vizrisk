@@ -27,7 +27,7 @@ def update(df, i):
 
         # Update with parsed address before it is modified
         Building.update_one({"_id": bid}, {"$set":{
-                "wind_speed": float(wind_speed),
+                "wind_speed": int(wind_speed),
                 "active" : int(1) # add active for future queries
                 }})
 

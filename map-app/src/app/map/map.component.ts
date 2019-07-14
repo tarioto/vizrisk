@@ -24,10 +24,10 @@ export class MapComponent implements OnInit {
   uniqBldgClasses: any;
   uniqLocPerc: any;
   colors = {
-    'Completely Destroyed': "#bf0e00",
-    'Highly Damaged': "#c96900",
-    'Moderately Damaged': "#c8a400",
-    'Negligible to slight damage': "#8bc500",
+    'Completely Destroyed': "#db143c",
+    'Highly Damaged': "#ff8c00",
+    'Moderately Damaged': "#ffd700",
+    'Negligible to slight damage': "#3cb371",
     'Unknown': "#666666"
 
   };
@@ -47,49 +47,49 @@ export class MapComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   // // Process data from db
-  // ngOnInit() {
-  //   this.getBuildings().subscribe((buildings: any) => {
-  //     console.log(buildings, 'buildings')
-  //     const bldg_damage = Object.keys(this.colors);
-  //     this.uniqBldgClasses = this.uniq(bldg_damage);
-  //     console.log(this.uniqBldgClasses, 'uniqBldgClasses')
-  //     this.layers = buildings.map((b) => {
-  //
-  //       return circle([b.lat, b.lng], { color: this.colors[b.main_damage || "Unknown"], radius: 50 })
-  //         .bindPopup(
-  //           '<p>_id: ' + b._id + '</p>' +
-  //           '<p>Class: ' + b.main_damage + '</p>' +
-  //           '<p>Lat: ' + b.lat + '</p>' +
-  //           '<p>Lng: ' + b.lng + '</p>'
-  //         );
-  //     });
-  //   })
-  // }
-  //
-  // // Use API to get buildings from db - not used
-  // getBuildings() {
-  //   return this.http.get('/api/buildings');
-  // }
-
-  // Process data from db
   ngOnInit() {
-    this.getLocations().subscribe((locations: any) => {
-      console.log(locations, 'locations')
-      const loc_perc = Object.keys(this.colorsLoc);
-      this.uniqLocPerc = this.uniq(loc_perc);
-      console.log(this.uniqLocPerc, 'uniqLocPerc')
-      this.layers = locations.map((b) => {
+    this.getBuildings().subscribe((buildings: any) => {
+      console.log(buildings, 'buildings')
+      const bldg_damage = Object.keys(this.colors);
+      this.uniqBldgClasses = this.uniq(bldg_damage);
+      console.log(this.uniqBldgClasses, 'uniqBldgClasses')
+      this.layers = buildings.map((b) => {
 
-        return circle([b.lat, b.lng], { color: this.colorsLoc[b.perc_increase], radius: 50 })
+        return circle([b.lat, b.lng], { color: this.colors[b.main_damage || "Unknown"], radius: 50 })
           .bindPopup(
             '<p>_id: ' + b._id + '</p>' +
-            '<p>Increase: ' + b.perc_increase + '</p>' +
+            '<p>Class: ' + b.main_damage + '</p>' +
             '<p>Lat: ' + b.lat + '</p>' +
             '<p>Lng: ' + b.lng + '</p>'
           );
       });
     })
   }
+
+  // Use API to get buildings from db - not used
+  getBuildings() {
+    return this.http.get('/api/buildings');
+  }
+
+  // Process data from db
+  // ngOnInit() {
+  //   this.getLocations().subscribe((locations: any) => {
+  //     console.log(locations, 'locations')
+  //     const loc_perc = Object.keys(this.colorsLoc);
+  //     this.uniqLocPerc = this.uniq(loc_perc);
+  //     console.log(this.uniqLocPerc, 'uniqLocPerc')
+  //     this.layers = locations.map((b) => {
+  //
+  //       return circle([b.lat, b.lng], { color: this.colorsLoc[b.perc_increase], radius: 50 })
+  //         .bindPopup(
+  //           '<p>_id: ' + b._id + '</p>' +
+  //           '<p>Increase: ' + b.perc_increase + '</p>' +
+  //           '<p>Lat: ' + b.lat + '</p>' +
+  //           '<p>Lng: ' + b.lng + '</p>'
+  //         );
+  //     });
+  //   })
+  // }
 
   // Use API to get buildings from db - not used
   getLocations() {
