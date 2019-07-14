@@ -15,22 +15,36 @@ import {FormControl} from '@angular/forms';
 export class MapComponent implements OnInit {
   map: mapboxgl.Map;
   style = 'mapbox://styles/awilson1233/cjxw7tpgd0dpt1co3upnhcxg4';
-  lat = 15.3150;
+  lat = 15.4250;
   lng = -61.3710;
 
-  isChecked = true;
+  isChecked = false;
 
 
   toggleableLayerIds = new FormControl();
   toggleableLayerIdsList = [
-    'dominica-damage-buildings',
-    'dominica-population',
-    'hurricaneshelters',
-    'peak_gusts_mph',
-    'redcross-damageneedsassessment',
-    'storm-track-8xi3zk',
-    'wind-hazards'
-  ];
+    {
+    id: 'storm-track-8xi3zk',
+    displayName: 'Storm Track'
+    }, {
+    id: 'peak_gusts_mph',
+    displayName: 'Peak Gusts (mph)'
+    }, {
+    id: 'dominica-population',
+    displayName: 'Population'
+    }, {
+    id: 'hurricaneshelters',
+    displayName: 'Hurricane Shelters'
+    }, {
+    id: 'redcross-damageneedsassessment',
+    displayName: 'Damage Needs Assessment (Red Cross)'
+    }, {
+    id: 'wind-hazards',
+    displayName: 'Wind Hazards'
+    }, {
+    id: 'dominica-damage-buildings',
+    displayName: 'Damaged Buildings (zoom to view)'
+    }];
 
   constructor() { }
 
@@ -40,7 +54,7 @@ export class MapComponent implements OnInit {
     this.map = new mapboxgl.Map({
       container: 'map',
       style: this.style,
-      zoom: 9,
+      zoom: 10,
       center: [this.lng, this.lat]
     });
 
@@ -48,74 +62,20 @@ export class MapComponent implements OnInit {
 
     console.log(this.map);
 
-    this.map.on('load', this.onLoad);
-
-
-    //   for (let i = 0; i < toggleableLayerIds.length; i++) {
-    //     const id = toggleableLayerIds[i];
-
-    //     const link = document.createElement('a');
-    //     link.href = '#';
-    //     link.className = 'active';
-    //     link.textContent = id;
-
-    //     link.onclick = function(e) {
-    //     const clickedLayer = this.textContent;
-    //     console.log(clickedLayer);
-    //     e.preventDefault();
-    //     e.stopPropagation();
-
-    //     const visibility = this.map.getLayoutProperty(clickedLayer, 'visibility');
-
-    //     if (visibility === 'visible') {
-    //       this.map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-    //       this.className = '';
-    //     } else {
-    //       this.className = 'active';
-    //       this.map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-    //     }
-    //   };
-
-    //     const layers = document.getElementById('menu');
-    //     layers.appendChild(link);
-    //   }
-    // });
-
-    // for (let i = 0; i < toggleableLayerIds.length; i++) {
-    //   const id = toggleableLayerIds[i];
-
-    //   const link = document.createElement('a');
-    //   link.href = '#';
-    //   link.className = 'active';
-    //   link.textContent = id;
-
-    //   link.onclick = function(e) {
-    //   const clickedLayer = this.textContent;
-    //   console.log(clickedLayer);
-    //   e.preventDefault();
-    //   e.stopPropagation();
-
-    //   const visibility = this.map.getLayoutProperty(clickedLayer, 'visibility');
-
-    //   if (visibility === 'visible') {
-    //     this.map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-    //     this.className = '';
-    //   } else {
-    //     this.className = 'active';
-    //     this.map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-    //   }
-    // };
-  }
-
-  onLoad() {
-    this.toggleLayer()
-  }
-
-   toggleLayer(layer) {
-      this.map.on('load', () => {
-      this.map.getLayoutProperty(layer, 'visibility');
-      this.map.setLayoutProperty(layer, 'visibility', 'none');
+    this.map.on('load', () => {
+      this.toggleableLayerIdsList.forEach(( layer) => {
+        this.map.setLayoutProperty(layer.id, 'visibility', 'none');
+      });
     });
+
+  }
+
+  toggleLayer(layer: any) {
+    if (this.map.getLayoutProperty(layer, 'visibility') === 'visible') {
+      this.map.setLayoutProperty(layer, 'visibility', 'none');
+    } else {
+      this.map.setLayoutProperty(layer, 'visibility', 'visible');
+    }
   }
 
 }
