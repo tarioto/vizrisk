@@ -9,7 +9,7 @@
     <mat-checkbox
       *ngFor="let layer of toggleableLayerIdsList"
       [value]="layer.id"
-      [checked]= "isChecked"
+      [checked]= "layer.checked"
       (change)="toggleLayer(layer.id)">{{layer.displayName}}
     </mat-checkbox>
     <button mat-raised-button

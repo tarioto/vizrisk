@@ -42,25 +42,32 @@ export class MapComponent implements OnInit {
   toggleableLayerIdsList = [
     {
       id: 'storm-track-8xi3zk',
-      displayName: 'Storm Track'
+      displayName: 'Storm Track',
+      checked: false
     }, {
       id: 'peak-gust-mph',
-      displayName: 'Peak Gusts (mph)'
+      displayName: 'Peak Gusts (mph)',
+      checked: false,
     }, {
       id: 'dominica-population',
-      displayName: 'Population'
+      displayName: 'Population',
+      checked: false
     }, {
       id: 'hurricaneshelters',
-      displayName: 'Hurricane Shelters'
+      displayName: 'Hurricane Shelters',
+      checked: false
     }, {
       id: 'redcross-damageneedsassessment',
-      displayName: 'Damage Needs Assessment (Red Cross)'
+      displayName: 'Damage Needs Assessment (Red Cross)',
+      checked: false
     }, {
       id: 'wind-hazards',
-      displayName: 'Wind Hazards'
+      displayName: 'Wind Hazards',
+      checked: false
     }, {
       id: 'building-data-9b0ub5',
-      displayName: 'Damaged Buildings'
+      displayName: 'Damaged Buildings',
+      checked: false
     }];
 
   constructor() { }
@@ -100,6 +107,8 @@ export class MapComponent implements OnInit {
       this.map.setLayoutProperty(layer, 'visibility', 'none');
     } else {
       this.map.setLayoutProperty(layer, 'visibility', 'visible');
+      console.log(this.toggleableLayerIdsList)
+      this.toggleableLayerIdsList[layer].checked = true;
     }
   }
 
@@ -122,6 +131,7 @@ export class MapComponent implements OnInit {
       this.map.setLayoutProperty(layer.id, 'visibility', 'none');
     });
     this.toggleLayer(this.scenes[this.currentSceneIndex].visableLayer);
+    this.isChecked
   }
 
 }
