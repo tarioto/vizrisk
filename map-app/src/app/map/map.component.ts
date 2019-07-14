@@ -42,25 +42,32 @@ export class MapComponent implements OnInit {
   toggleableLayerIdsList = [
     {
       id: 'storm-track-8xi3zk',
-      displayName: 'Storm Track'
+      displayName: 'Storm Track',
+      checked: false
     }, {
       id: 'peak-gust-mph',
-      displayName: 'Peak Gusts (mph)'
+      displayName: 'Peak Gusts (mph)',
+      checked: false,
     }, {
       id: 'dominica-population',
-      displayName: 'Population'
+      displayName: 'Population',
+      checked: false
     }, {
       id: 'hurricaneshelters',
-      displayName: 'Hurricane Shelters'
+      displayName: 'Hurricane Shelters',
+      checked: false
     }, {
       id: 'redcross-damageneedsassessment',
-      displayName: 'Damage Needs Assessment (Red Cross)'
+      displayName: 'Damage Needs Assessment (Red Cross)',
+      checked: false
     }, {
       id: 'wind-hazards',
-      displayName: 'Wind Hazards'
+      displayName: 'Wind Hazards',
+      checked: false
     }, {
       id: 'building-data-9b0ub5',
-      displayName: 'Damaged Buildings'
+      displayName: 'Damaged Buildings',
+      checked: false
     }];
 
   constructor() { }
@@ -84,42 +91,7 @@ export class MapComponent implements OnInit {
       this.toggleableLayerIdsList.forEach(( layer) => {
         console.log(this.map);
         this.map.setLayoutProperty(layer.id, 'visibility', 'none');
-
-            // When a click event occurs on a feature in the places layer, open a popup at the
-    // location of the feature, with description HTML from its properties.
-        this.map.on('click', 'hurricaneshelters', function(e) {
-        console.log(e.features[0]);
-        const coordinates = e.features[0].geometry.coordinates.slice();
-        const description = e.features[0].properties;
-
-        console.log(coordinates);
-        console.log(description);
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
-
-        console.log(this.map)
-        new mapboxgl.Popup()
-        .setLngLat(coordinates)
-        .setHTML(description)
-        .addTo(this.map);
-        });
-
-        // Change the cursor to a pointer when the mouse is over the places layer.
-        // this.map.on('mouseenter', 'places', function() {
-        // this.map.getCanvas().style.cursor = 'pointer';
-        // });
-
-        // // Change it back to a pointer when it leaves.
-        // this.map.on('mouseleave', 'places', function() {
-        // this.map.getCanvas().style.cursor = '';
-        // });
       });
-
-      this.setCurrentLayer();
     });
 
     this.map.on('click', 'dominica-damage-buildings', (e) => {
@@ -129,8 +101,6 @@ export class MapComponent implements OnInit {
       .setHTML(e.features[0].properties.agency_id)
       .addTo(this.map);
       });
-
-
   }
 
   toggleLayer(layer: any) {
@@ -138,6 +108,8 @@ export class MapComponent implements OnInit {
       this.map.setLayoutProperty(layer, 'visibility', 'none');
     } else {
       this.map.setLayoutProperty(layer, 'visibility', 'visible');
+      console.log(this.toggleableLayerIdsList)
+      this.toggleableLayerIdsList[layer].checked = true;
     }
   }
 
@@ -160,6 +132,7 @@ export class MapComponent implements OnInit {
       this.map.setLayoutProperty(layer.id, 'visibility', 'none');
     });
     this.toggleLayer(this.scenes[this.currentSceneIndex].visableLayer);
+    this.isChecked
   }
 
   displayScene(type: any) {

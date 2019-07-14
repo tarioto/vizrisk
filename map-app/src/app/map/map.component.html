@@ -12,12 +12,20 @@
     </mat-card-footer>
   </mat-card>
   <div class="map" id="map" class="match-parent"></div>
-  <!-- <div class='toggle' >
+<!-- <div class='toggle' >
     <mat-checkbox
       *ngFor="let layer of toggleableLayerIdsList"
       [value]="layer.id"
-      [checked]= "isChecked"
+      [checked]= "layer.checked"
       (change)="toggleLayer(layer.id)">{{layer.displayName}}
     </mat-checkbox>
+    <button mat-raised-button
+    class='buttons'
+    color='#cdcdcd'
+    (click)="changeScene('prev')">prev</button>
+    <button mat-raised-button
+    class='buttons'
+    color='#cdcdcd'
+    (click)="changeScene('next')">next</button>
   </div> -->
 </div>
