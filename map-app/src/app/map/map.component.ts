@@ -12,7 +12,7 @@ import {FormControl} from '@angular/forms';
 
 export class MapComponent implements OnInit {
   map: mapboxgl.Map;
-  style = 'mapbox://styles/awilson1233/cjxw7tpgd0dpt1co3upnhcxg4';
+  style = 'mapbox://styles/awilson1233/cjy3dg55f2kxh1covpds8dnh5';
   lat = 15.4250;
   lng = -61.3710;
   layers: any;
@@ -31,7 +31,7 @@ export class MapComponent implements OnInit {
     {
       title: '3',
       info: 'okay okay okay',
-      visableLayer: 'dominica-damage-buildings'
+      visableLayer: 'building-data-9b0ub5'
     }
   ];
 
@@ -41,27 +41,33 @@ export class MapComponent implements OnInit {
   toggleableLayerIds = new FormControl();
   toggleableLayerIdsList = [
     {
-    id: 'storm-track-8xi3zk',
-    displayName: 'Storm Track'
+      id: 'storm-track-8xi3zk',
+      displayName: 'Storm Track'
     }, {
-    id: 'peak_gusts_mph',
-    displayName: 'Peak Gusts (mph)'
+      id: 'peak-gust-mph',
+      displayName: 'Peak Gusts (mph)'
     }, {
-    id: 'dominica-population',
-    displayName: 'Population'
+      id: 'dominica-population',
+      displayName: 'Population'
     }, {
-    id: 'hurricaneshelters',
-    displayName: 'Hurricane Shelters'
+      id: 'hurricaneshelters',
+      displayName: 'Hurricane Shelters'
     }, {
-    id: 'redcross-damageneedsassessment',
-    displayName: 'Damage Needs Assessment (Red Cross)'
+      id: 'redcross-damageneedsassessment',
+      displayName: 'Damage Needs Assessment (Red Cross)'
     }, {
-    id: 'wind-hazards',
-    displayName: 'Wind Hazards'
-    }, {
-    id: 'dominica-damage-buildings',
-    displayName: 'Damaged Buildings (zoom to view)'
-    }];
+      id: 'wind-hazards',
+      displayName: 'Wind Hazards'
+    },
+    // {
+    //   id: 'dominica-damage-buildings',
+    //   displayName: 'Damaged Buildings (zoom to view)'
+    // },
+     {
+      id: 'building-data-9b0ub5',
+      displayName: 'Buildilng Data'
+    }
+  ];
 
   constructor() { }
 
@@ -73,7 +79,6 @@ export class MapComponent implements OnInit {
       style: this.style,
       zoom: 10,
       minZoom: 10,
-      maxZoom: 10,
       center: [this.lng, this.lat]
     });
 
