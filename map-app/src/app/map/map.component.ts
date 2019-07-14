@@ -128,6 +128,7 @@ export class MapComponent implements OnInit {
         if (this.currentSceneIndex > 0) {
           this.prevDisabled = false;
         } else if (this.currentSceneIndex === 0) {
+          console.log(this.currentSceneIndex)
           this.prevDisabled = true;
         }
       }
