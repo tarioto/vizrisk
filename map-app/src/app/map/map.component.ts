@@ -19,19 +19,39 @@ export class MapComponent implements OnInit {
   currentSceneIndex = 0;
   scenes = [
     {
-      title: 'Here is some big headline statement....',
+      title: 'Here is a headline about hurricanes in the Caribbean...',
       info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      visableLayer: 'storm-track-8xi3zk'
+      visableLayer: ''
     },
     {
-      title: 'second one',
+      title: 'Here is a headline about Hurricane Maria...',
+      info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      visableLayer: 'peak-gust-mph'
+    },
+    {
+      title: 'Here is a headline about impact on Dominica from Hurricane Maria...',
       info: 'this will be a description of some stuff or whatever',
       visableLayer: 'hurricaneshelters'
     },
     {
-      title: '3',
-      info: 'okay okay okay',
+      title: 'Here is a headline about building damage in Dominica...',
+      info: 'this will be a description of some stuff or whatever',
       visableLayer: 'building-data-9b0ub5'
+    },
+    {
+      title: 'Here is a headline about building damage in Roseau...',
+      info: 'this will be a description of some stuff or whatever',
+      visableLayer: 'building-data-9b0ub5'
+    },
+    {
+      title: 'Here is a headline about wind hazard in Dominica...',
+      info: 'this will be a description of some stuff or whatever',
+      visableLayer: 'wind-hazards'
+    },
+    {
+      title: 'Here is a headline about mitigation measures...',
+      info: 'okay okay okay',
+      visableLayer: ''
     }
   ];
 
