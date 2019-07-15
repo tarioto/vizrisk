@@ -97,7 +97,7 @@ export class MapComponent implements OnInit {
           series: [{
             data: [{y: 294, color: 'mediumseagreen'}, {y: 966, color: 'gold'}, {y: 1300, color: 'darkorange'}, {y: 381, color: 'crimson'}],
             type: 'column',
-            lineWidth: 0,
+            borderWidth: 0,
             plotOptions: {
               column: {
                 colorByPoint: true
@@ -110,7 +110,7 @@ export class MapComponent implements OnInit {
             }
           },
           title: {
-            text: "Number of buildings"
+            text: "Number of damaged Dominica buildings in Hurricane Maria"
           },
           legend: {
             enabled: false
