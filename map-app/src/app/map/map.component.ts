@@ -13,8 +13,8 @@ import { FormControl } from '@angular/forms';
 export class MapComponent implements OnInit {
   map: mapboxgl.Map;
   style = 'mapbox://styles/awilson1233/cjy3dg55f2kxh1covpds8dnh5';
-  lat = 15.4250;
-  lng = -61.3710;
+  lat = 15.308563;
+  lng = -61.377716;
   layers: any;
   currentSceneIndex = 0;
   scenes = [
@@ -23,7 +23,7 @@ export class MapComponent implements OnInit {
       info: `This was the impact of Hurricane Maria on the island nation of Dominica on September 18, 2017.\n \n
       Despite contributing the least to climate change, Caribbean countries like Dominica are among the nations hardest hit by its effects. The 2017 Atlantic hurricane season, whose strongest storm was Maria, incurred more damage than any tropical cyclone season in recorded history. Climate experts have noted a heightened pattern of cyclonic activity since the mid-90s, as well as a southward trend in hurricane tracks towards the Lesser Antilles islands, which include Dominica.`,
       visibleLayer: 'dominica-coast',
-      zoom: 6
+      zoom: 5
     },
     {
       title: 'In 2017, Hurricane Maria became the first recorded Category 5 storm to hit the island of Dominica....',
@@ -120,8 +120,8 @@ export class MapComponent implements OnInit {
     this.map = new mapboxgl.Map({
       container: 'map',
       style: this.style,
-      zoom: 10,
-      minZoom: 6,
+      zoom: 5,
+      minZoom: 4,
       center: [this.lng, this.lat]
     });
 
@@ -131,6 +131,7 @@ export class MapComponent implements OnInit {
       this.toggleableLayerIdsList.forEach((layer) => {
         this.map.setLayoutProperty(layer.id, 'visibility', 'none');
       });
+      this.map.setLayoutProperty('dominica-coast', 'visibility', 'visible') // Highlight coastline by default
     });
 
     this.map.on('click', 'dominica-damage-buildings', (e) => {
@@ -188,7 +189,7 @@ export class MapComponent implements OnInit {
   }
 
   setZoomExtent() {
-    this.map.setZoom(this.scenes[this.currentSceneIndex].zoom)
+    this.map.zoomTo(this.scenes[this.currentSceneIndex].zoom)
   }
 
   displayScene(type: any) {
