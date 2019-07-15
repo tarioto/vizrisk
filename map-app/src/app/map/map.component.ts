@@ -330,6 +330,16 @@ export class MapComponent implements OnInit {
 
     this.scenes[this.currentSceneIndex].visibleLayer.forEach((layer) => {
       this.toggleLayer(layer);
+      if (this.currentSceneIndex === 5) {
+        this.scenes[5].visibleLayer.forEach((mitLayer) => {
+          this.map.setLayoutProperty(mitLayer, 'visibility', 'visible');
+        });
+      } else if (this.currentSceneIndex !== 5) {
+        this.setZoomExtent();
+        this.scenes[5].visibleLayer.forEach((mitLayer) => {
+          this.map.setLayoutProperty(mitLayer, 'visibility', 'none');
+        });
+      }
     });
 }
 
