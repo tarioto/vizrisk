@@ -46,8 +46,8 @@
 }
 
 .diplaced-idps {
-  background-color: #181919;
   align-content: center;
+  float: left;
 }
 .text{
   float: right;
@@ -73,7 +73,6 @@
   margin-top: 0px;
   margin-bottom: 0px;
   display: inline;
-  /* height: 10vh; */
   padding-bottom: 0px;
   padding-top: 10px;
   color: #B2B2B2;
