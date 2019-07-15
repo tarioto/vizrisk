@@ -99,7 +99,7 @@ export class MapComponent implements OnInit {
     // },
     {
       title: 'Over 90% of the country\'s housing stock was damaged...',
-      info: 'The chart below shows that a significant proportion of the damaged buildings were highly damaged or completely destroyed. he housing stock on the east coast of Dominica, particularly the village of La Plaine, was particularly hard hit by Hurricane Maria. \n \n It is estimated that total damage to the housing sector alone is nearly US$360 million. In addition, losses resulting from this damage are estimated at US$29 million, which includes loss of rental income, demolition costs, debris removal and clean up, and shelter costs. \n \n In the GFDRR\'s proposed budget for recovery, a total of US$520 million is dedicated to housing. The group recommends that much of this budget be spent in the medium-term following the hurricane, which is in years 2019-2022. \n \n Rebuilding residential buildings using stricter building codes and connecting the most vulnerable communities through improved infrastructure can enable more efficient recovery and resilience in future hurricanes.',
+      info: 'The chart below shows that a significant proportion of the damaged buildings were highly damaged or completely destroyed. The widespread damage left thousdands of people homeless. As the map shows, the coastlines are much more vulnerable to hurricane damage with a particularly high concentration of severely damaged housing stock on the east coast of Dominica. \n \n It is estimated that total damage to the housing sector alone is nearly US$360 million. In addition, losses resulting from this damage are estimated at US$29 million, which includes loss of rental income, demolition costs, debris removal and clean up, and shelter costs. \n \n In the GFDRR\'s proposed budget for recovery, a total of US$520 million is dedicated to housing. The group recommends that much of this budget be spent in the medium-term following the hurricane, which is in years 2019-2022. \n \n Rebuilding residential buildings using stricter building codes and connecting the most vulnerable communities through improved infrastructure can enable more efficient recovery and resilience in future hurricanes.',
       attribution: [{
         link: 'https://www.gfdrr.org/en/dominica-pdna-hurricanemaria',
         label: 'Dominica: Post-Disaster Needs Assessment following Hurricane Maria. GFDRR. 2018'
@@ -153,8 +153,8 @@ export class MapComponent implements OnInit {
       }
     },
     {
-      title: 'Here is a headline about building damage in Roseau...',
-      info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'In Roseau, the capital city of Dominica...',
+      info: 'A large proportion of the buildings were either moderately or highly damaged. Much of the island nation\'s businesses, hotels, and commerce is located in Roseau.',
       attribution: [{
         link: '',
         label: ''
