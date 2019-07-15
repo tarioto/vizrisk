@@ -214,7 +214,7 @@ export class MapComponent implements OnInit {
       legend: {
         exists: true,
         colors: ['#ADCBFF', '#94BDFF', '#7AABFF', '#669EFF', '#4287FF'],
-        labels: ['1', '2', '3', '4', '5']
+        labels: ['Very Low', 'Low', 'Moderate', 'High', 'Very High']
       }
     },
     {
@@ -236,7 +236,7 @@ export class MapComponent implements OnInit {
       legend: {
         exists: false,
         colors: ['#ADCBFF', '#94BDFF', '#7AABFF', '#669EFF', '#4287FF'],
-        labels: ['1', '2', '3', '4', '5']
+        labels: ['Very Low', 'Low', 'Moderate', 'High', 'Very High']
       }
     }
   ];
