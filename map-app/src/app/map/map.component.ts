@@ -21,8 +21,11 @@ export class MapComponent implements OnInit {
     {
       title: 'Imagine 90% of your country\'s buildings being damaged or destroyed in one night...',
       info: `This was the impact of Hurricane Maria on the island nation of Dominica on September 18, 2017.\n
-      Despite contributing the least to climate change, Caribbean countries like Dominica are among the nations hardest hit by its effects. The 2017 Atlantic hurricane season, whose strongest storm was Maria, incurred more damage than any tropical cyclone season in recorded history. Climate experts have noted a heightened pattern of cyclonic activity since the mid-90s, as well as a southward trend in hurricane tracks towards the Lesser Antilles islands, which include Dominica. \n \n
-      Source: "Update on National Hurricane Center Products and Services for 2017" (PDF). National Hurricane Center. May 23, 2017. Retrieved June 21, 2019.`,
+      Despite contributing the least to climate change, Caribbean countries like Dominica are among the nations hardest hit by its effects. The 2017 Atlantic hurricane season, whose strongest storm was Maria, incurred more damage than any tropical cyclone season in recorded history. Climate experts have noted a heightened pattern of cyclonic activity since the mid-90s, as well as a southward trend in hurricane tracks towards the Lesser Antilles islands, which include Dominica.`,
+      attribution: [{
+        link: 'test',
+        label: '"Update on National Hurricane Center Products and Services for 2017" (PDF). National Hurricane Center. May 23, 2017. Retrieved June 21, 2019.'
+      }],
       visibleLayer: 'dominica-coast',
       zoom: 4.5,
       center: {lon: -71.967749, lat: 19.232773}
@@ -31,8 +34,11 @@ export class MapComponent implements OnInit {
       title: 'In 2017, Hurricane Maria became the first recorded Category 5 storm to hit the island of Dominica....',
       info: `In addition to Dominica, Maria dealt severe damage to the islands of St. Croix and Puerto Rico, making it the third costliest hurricane in the history of the United States. Maria had a peak intensity of more than 172 mph, and was at about 166 mph when it made landfall on Dominica. But Maria also had a rapid increase in intensity during its duration of almost 75 mph within 24 hours, the sixth-fastest hurricane intensification ever in the Atlantic basin. \n
         In addition to severe winds, Maria brought 22.8 inches of rain to Dominica, and brought about at least 31 deaths and 34 missing persons. In the wake of the hurricane, total damages for the island were estimated to be on the order of $1.3 billion. \n
-        The map shows the intensity of Maria’s winds across the Caribbean. While Maria’s intensity weakened as the storm moved further northwest, damage continued to be devastating. \n \n
-        Source: Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017. `,
+        The map shows the intensity of Maria’s winds across the Caribbean. While Maria’s intensity weakened as the storm moved further northwest, damage continued to be devastating.`,
+      attribution: [{
+        link: 'test',
+        label: 'Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017.'
+      }],
       visibleLayer: 'peak-gust-mph',
       zoom: 5.5,
       center: {lon: -63.509315, lat: 17.608075}
@@ -40,6 +46,10 @@ export class MapComponent implements OnInit {
     // {
     //   title: 'Here is a headline about impact on Dominica from Hurricane Maria...',
     //   info: 'this will be a description of some stuff or whatever',
+    // attribution: [{
+    //   link: '',
+    //   label: ''
+    // }],
     //   visibleLayer: 'hurricaneshelters',
     //   zoom: 10.5,
     //   center: {lon: -61.351322, lat: 15.428929}
@@ -47,6 +57,10 @@ export class MapComponent implements OnInit {
     {
       title: 'Here is a headline about building damage in Dominica...',
       info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      attribution: [{
+        link: '',
+        label: ''
+      }],
       visibleLayer: 'building-data-9b0ub5',
       zoom: 10.5,
       center: {lon: -61.351322, lat: 15.428929}
@@ -54,6 +68,10 @@ export class MapComponent implements OnInit {
     {
       title: 'Here is a headline about building damage in Roseau...',
       info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      attribution: [{
+        link: '',
+        label: ''
+      }],
       visibleLayer: 'building-data-9b0ub5',
       zoom: 14.5,
       center: {lon: -61.377716, lat: 15.308563}
@@ -63,6 +81,10 @@ export class MapComponent implements OnInit {
       info: `While Dominica is recovering from Hurricane Maria, the country also needs to be look forwarding and fortifying itself against future hurricane seasons.\n
       The map shows an overview of the degree of windstorm susceptibility across the island (USAID 2006). With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands. \n \n
       Source: Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017. `,
+      attribution: [{
+        link: '',
+        label: ''
+      }],
       visibleLayer: 'wind-hazards',
       zoom: 10.5,
       center: {lon: -61.351322, lat: 15.428929}
@@ -73,6 +95,10 @@ export class MapComponent implements OnInit {
       - Nature based solutions. Coral reefs and mangroves can absorb 98% of the wave energy from an incoming storm. One of the most efficient ways to accomplish this is to plant more trees to prevent erosion. [need reference] \n
       - Investing in infrastructure. One of the recommendations from the PDNA is to significantly invest in improving infrastructure. Improving roads and transportation networks can improve post-disaster relief efforts & access to temporary shelters. \n
       - Improving building codes and construction practices. One of the other targeted areas for investment is housing, as this sector accounted for a third of damage sustained during the hurricane. Dominica is already working on improving its building codes; one of the proposed improvements is to have steeper roof angles & to use screws instead of nails to strengthen frames. [need ref]`,
+      attribution: [{
+        link: '',
+        label: ''
+      }],
       visibleLayer: 'dominica-coast-blue',
       zoom: 10.5,
       center: {lon: -61.351322, lat: 15.428929}

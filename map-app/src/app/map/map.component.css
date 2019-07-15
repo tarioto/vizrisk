@@ -91,3 +91,8 @@
 ::ng-deep .mat-checkbox .mat-checkbox-frame {
   border-color: #cdcdcd;
 }
+
+.attribution {
+  color: white;
+  font-size: .5em;
+}
