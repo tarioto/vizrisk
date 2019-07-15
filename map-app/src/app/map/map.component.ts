@@ -33,7 +33,7 @@ export class MapComponent implements OnInit {
   currentSceneIndex = 0;
   scenes = [
     {
-      title: 'Imagine 90% of your country\'s buildings being damaged or destroyed in one night...',
+      title: 'Imagine 90% of your country\'s buildings being damaged or destroyed in one night... TEST',
       info: `This was the impact of Hurricane Maria on the island nation of Dominica on September 18, 2017.\n
       Despite contributing the least to climate change, Caribbean countries like Dominica are among the nations hardest hit by its effects. The 2017 Atlantic hurricane season, whose strongest storm was Maria, incurred more damage than any tropical cyclone season in recorded history. Climate experts have noted a heightened pattern of cyclonic activity since the mid-90s, as well as a southward trend in hurricane tracks towards the Lesser Antilles islands, which include Dominica.`,
       attribution: [{
@@ -125,7 +125,7 @@ export class MapComponent implements OnInit {
     // },
     {
       title: 'Over 90% of the country\'s housing stock was damaged...',
-      info: 'The chart below shows that a significant proportion of the damaged buildings were highly damaged or completely destroyed. he housing stock on the east coast of Dominica, particularly the village of La Plaine, was particularly hard hit by Hurricane Maria. \n \n It is estimated that total damage to the housing sector alone is nearly US$360 million. In addition, losses resulting from this damage are estimated at US$29 million, which includes loss of rental income, demolition costs, debris removal and clean up, and shelter costs. \n \n In the GFDRR\'s proposed budget for recovery, a total of US$520 million is dedicated to housing. The group recommends that much of this budget be spent in the medium-term following the hurricane, which is in years 2019-2022. \n \n Rebuilding residential buildings using stricter building codes and connecting the most vulnerable communities through improved infrastructure can enable more efficient recovery and resilience in future hurricanes.',
+      info: 'The chart below shows that a significant proportion of the damaged buildings were highly damaged or completely destroyed. The widespread damage left thousdands of people homeless. As the map shows, the coastlines are much more vulnerable to hurricane damage with a particularly high concentration of severely damaged housing stock on the east coast of Dominica. \n \n It is estimated that total damage to the housing sector alone is nearly US$360 million. In addition, losses resulting from this damage are estimated at US$29 million, which includes loss of rental income, demolition costs, debris removal and clean up, and shelter costs. \n \n In the GFDRR\'s proposed budget for recovery, a total of US$520 million is dedicated to housing. The group recommends that much of this budget be spent in the medium-term following the hurricane, which is in years 2019-2022. \n \n Rebuilding residential buildings using stricter building codes and connecting the most vulnerable communities through improved infrastructure can enable more efficient recovery and resilience in future hurricanes.',
       attribution: [{
         link: 'https://www.gfdrr.org/en/dominica-pdna-hurricanemaria',
         label: 'Dominica: Post-Disaster Needs Assessment following Hurricane Maria. GFDRR. 2018'
@@ -179,8 +179,8 @@ export class MapComponent implements OnInit {
       }
     },
     {
-      title: 'Here is a headline about building damage in Roseau...',
-      info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'In Roseau, the capital city of Dominica...',
+      info: 'A large proportion of the buildings were either moderately or highly damaged. Much of the island nation\'s businesses, hotels, and commerce is located in Roseau.',
       attribution: [{
         link: '',
         label: ''
@@ -200,10 +200,14 @@ export class MapComponent implements OnInit {
     {
       title: 'Dominica and other Caribbean countries will continue to experience hurricanes in the future...',
       info: `While Dominica is recovering from Hurricane Maria, the country also needs to be look forwarding and fortifying itself against future hurricane seasons.\n
-      The map shows an overview of the degree of windstorm susceptibility across the island (USAID 2006). With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands.`,
+      The map shows an overview of the degree of windstorm susceptibility across the island (USAID 2006). With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands*.`,
       attribution: [{
-        link: '',
-        label: 'Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017.'
+        link: 'http://charim-geonode.net/layers/geonode:wind_5c',
+        label: 'This wind hazard map was produced in 2006 as part of a USAID-funded project'
+      },
+      {
+        link: 'https://www.researchgate.net/publication/224327492_Engineering_Perspectives_on_Reducing_Hurricane_Damage_to_Housing_in_CARICOM_Caribbean_Islands',
+        label: '*Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017.'
       }],
       visibleLayer: ['wind-hazards'],
       zoom: 10.5,
