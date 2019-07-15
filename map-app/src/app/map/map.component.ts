@@ -201,7 +201,7 @@ export class MapComponent implements OnInit {
         link: 'https://www.bloomberg.com/news/articles/2018-05-10/dominica-plans-to-be-the-world-s-first-climate-resilient-country',
         label: '"The Quest to Hurricane-Proof and Island". Nikki Ekstein. Bloomberg. May 10, 2018. Retrieved June 23, 2019.'
       }],
-      visibleLayer: 'dominica-coast-blue',
+      visibleLayer: ['dominica-coast-blue', 'hurricaneshelters', 'roads'],
       zoom: 10.5,
       center: { lon: -61.351322, lat: 15.428929 },
       chart: {
@@ -328,7 +328,16 @@ export class MapComponent implements OnInit {
       this.map.setLayoutProperty(layer.id, 'visibility', 'none');
     });
     this.toggleLayer(this.scenes[this.currentSceneIndex].visibleLayer);
-  }
+    if (this.currentSceneIndex === 5) {
+      this.scenes[5].visibleLayer.forEach((layer) => {
+        this.toggleLayer(layer);
+      });
+    } else if (this.currentSceneIndex !== 5) {
+      this.scenes[5].visibleLayer.forEach((layer) => {
+        this.map.setLayoutProperty(layer, 'visibility', 'none');
+      });
+    }
+}
 
   setZoomExtent() {
     this.map.setCenter(this.scenes[this.currentSceneIndex].center)
