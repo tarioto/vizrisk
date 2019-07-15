@@ -21,7 +21,8 @@ export class MapComponent implements OnInit {
     {
       title: 'Imagine 90% of your country\'s buildings being damaged or destroyed in one night...',
       info: `This was the impact of Hurricane Maria on the island nation of Dominica on September 18, 2017.\n
-      Despite contributing the least to climate change, Caribbean countries like Dominica are among the nations hardest hit by its effects. The 2017 Atlantic hurricane season, whose strongest storm was Maria, incurred more damage than any tropical cyclone season in recorded history. Climate experts have noted a heightened pattern of cyclonic activity since the mid-90s, as well as a southward trend in hurricane tracks towards the Lesser Antilles islands, which include Dominica.`,
+      Despite contributing the least to climate change, Caribbean countries like Dominica are among the nations hardest hit by its effects. The 2017 Atlantic hurricane season, whose strongest storm was Maria, incurred more damage than any tropical cyclone season in recorded history. Climate experts have noted a heightened pattern of cyclonic activity since the mid-90s, as well as a southward trend in hurricane tracks towards the Lesser Antilles islands, which include Dominica. \n \n
+      Source: "Update on National Hurricane Center Products and Services for 2017" (PDF). National Hurricane Center. May 23, 2017. Retrieved June 21, 2019.`,
       visibleLayer: 'dominica-coast',
       zoom: 5,
       center: {lon: -71.967749, lat: 19.232773}
@@ -30,7 +31,8 @@ export class MapComponent implements OnInit {
       title: 'In 2017, Hurricane Maria became the first recorded Category 5 storm to hit the island of Dominica....',
       info: `In addition to Dominica, Maria dealt severe damage to the islands of St. Croix and Puerto Rico, making it the third costliest hurricane in the history of the United States. Maria had a peak intensity of more than 172 mph, and was at about 166 mph when it made landfall on Dominica. But Maria also had a rapid increase in intensity during its duration of almost 75 mph within 24 hours, the sixth-fastest hurricane intensification ever in the Atlantic basin. \n
         In addition to severe winds, Maria brought 22.8 inches of rain to Dominica, and brought about at least 31 deaths and 34 missing persons. In the wake of the hurricane, total damages for the island were estimated to be on the order of $1.3 billion. \n
-        The map shows the intensity of Maria’s winds across the Caribbean. While Maria’s intensity weakened as the storm moved further northwest, damage continued to be devastating. `,
+        The map shows the intensity of Maria’s winds across the Caribbean. While Maria’s intensity weakened as the storm moved further northwest, damage continued to be devastating. \n \n
+        Source: Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017. `,
       visibleLayer: 'peak-gust-mph',
       zoom: 5.5,
       center: {lon: -63.509315, lat: 17.608075}
@@ -59,7 +61,8 @@ export class MapComponent implements OnInit {
     {
       title: 'Dominica and other Caribbean countries will continue to experience hurricanes in the future...',
       info: `While Dominica is recovering from Hurricane Maria, the country also needs to be look forwarding and fortifying itself against future hurricane seasons.\n
-      The map (CREDIT SOURCE) shows an overview of the degree of windstorm susceptibility across the island. With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands.`,
+      The map shows an overview of the degree of windstorm susceptibility across the island (USAID 2006). With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands. \n \n
+      Source: Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017. `,
       visibleLayer: 'wind-hazards',
       zoom: 10.5,
       center: {lon: -61.351322, lat: 15.428929}
