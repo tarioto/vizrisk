@@ -362,7 +362,6 @@ export class MapComponent implements OnInit {
     this.scenes[this.currentSceneIndex].visibleLayer.forEach((layer) => {
       this.toggleLayer(layer);
       if (this.currentSceneIndex === 6) {
-        console.log('angela')
         this.scenes[6].visibleLayer.forEach((mitLayer) => {
           this.map.setLayoutProperty(mitLayer, 'visibility', 'visible');
         });
