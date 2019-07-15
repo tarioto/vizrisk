@@ -304,36 +304,29 @@ export class MapComponent implements OnInit {
         chartOptions: {
           series: [
             {
-              data: [6, 6, 5, 2],
-              name: 'Category 1',
-              type: 'column',
-              color: 'dodgerblue',
-              borderWidth: 0,
-            },
-            {
-              data: [5, 3, 3, 5],
-              name: 'Category 2',
+              data: [12.3, 7.4, 9.9, 12.8, 5.6],
+              name: 'Negligible to slight damage',
               type: 'column',
               color: 'mediumseagreen',
               borderWidth: 0,
             },
             {
-              data: [3, 3, 3, 4],
-              name: 'Category 3',
+              data: [34.4, 31.1, 31.3, 38.1, 14.3],
+              name: 'Moderately damaged',
               type: 'column',
               color: 'gold',
               borderWidth: 0,
             },
             {
-              data: [6, 4, 7, 0],
-              name: 'Category 4',
+              data: [43.3, 46.0, 39.4, 26.8, 15.0],
+              name: 'Highly damaged',
               type: 'column',
               color: 'darkorange',
               borderWidth: 0,
             },
             {
-              data: [3, 3, 5, 3],
-              name: 'Category 5',
+              data: [10.0, 15.4, 19.3, 22.2, 65.1],
+              name: 'Completely destroyed',
               type: 'column',
               color: 'crimson',
               borderWidth: 0,
@@ -345,13 +338,13 @@ export class MapComponent implements OnInit {
             }
           },
           title: {
-            text: 'Hurricane intensity and frequency since 1960'
+            text: 'Proportion of building damage by max wind speed'
           },
           legend: {
             enabled: true
           },
           xAxis: {
-            categories: ['1960 - 1979', '1980 - 1999', '2000 - 2009', '2010 - 2019'],
+            categories: ['140 mph', '150 mph', '160 mph', '170 mph', '180 mph'],
             labels: {
               style: {
                 fontSize: '16px'
@@ -361,6 +354,10 @@ export class MapComponent implements OnInit {
           yAxis: {
             title: {
               text: false
+            },
+            max: 100,
+            labels: {
+              format: '{value}%'
             }
           },
           plotOptions: {
