@@ -42,7 +42,7 @@ export class MapComponent implements OnInit {
       }],
       visibleLayer: 'dominica-coast',
       zoom: 4.5,
-      center: {lon: -71.967749, lat: 19.232773},
+      center: { lon: -71.967749, lat: 19.232773 },
       chart: {
         exists: false
       },
@@ -63,21 +63,7 @@ export class MapComponent implements OnInit {
       }],
       visibleLayer: 'peak-gust-mph',
       zoom: 5.5,
-      center: {lon: -63.509315, lat: 17.608075},
-      chart: {
-        exists: true,
-        chartOptions: {
-          series: [{
-            data: [1, 2, 3],
-            type: 'column'
-          }],
-          chart: {
-            style: {
-              fontFamily: 'Helvetica Neue'
-            }
-          }
-        }
-      },
+      center: { lon: -63.509315, lat: 17.608075 },
       legend: {
         exists: false,
         colors: ['#666666', '#3cb371', '#ffd700', '#ff8c00', '#dc143c'],
@@ -104,9 +90,45 @@ export class MapComponent implements OnInit {
       }],
       visibleLayer: 'building-data-9b0ub5',
       zoom: 10.5,
-      center: {lon: -61.351322, lat: 15.428929},
+      center: { lon: -61.351322, lat: 15.428929 },
       chart: {
-        exists: false
+        exists: true,
+        chartOptions: {
+          series: [{
+            data: [{y: 294, color: 'mediumseagreen'}, {y: 966, color: 'gold'}, {y: 1300, color: 'darkorange'}, {y: 381, color: 'crimson'}],
+            type: 'column',
+            lineWidth: 0,
+            plotOptions: {
+              column: {
+                colorByPoint: true
+              }
+            },
+          }],
+          chart: {
+            style: {
+              fontFamily: 'Helvetica Neue'
+            }
+          },
+          title: {
+            text: "Number of buildings"
+          },
+          legend: {
+            enabled: false
+          },
+          xAxis: {
+            categories: ["Negligible to slight damage", "Moderately damaged", "Highly damaged", "Completely destroyed"],
+            labels : {
+              style: {
+                fontSize: '16px'
+              }
+            }
+          },
+          yAxis: {
+            title: {
+              text: false
+            }
+          }
+        }
       },
       legend: {
         exists: true,
@@ -123,7 +145,7 @@ export class MapComponent implements OnInit {
       }],
       visibleLayer: 'building-data-9b0ub5',
       zoom: 14.5,
-      center: {lon: -61.377716, lat: 15.308563},
+      center: { lon: -61.377716, lat: 15.308563 },
       chart: {
         exists: false
       },
@@ -144,13 +166,13 @@ export class MapComponent implements OnInit {
       }],
       visibleLayer: 'wind-hazards',
       zoom: 10.5,
-      center: {lon: -61.351322, lat: 15.428929},
+      center: { lon: -61.351322, lat: 15.428929 },
       chart: {
         exists: false
       },
       legend: {
         exists: true,
-        colors: [ '#ADCBFF', '#94BDFF', '#7AABFF', '#669EFF', '#4287FF'],
+        colors: ['#ADCBFF', '#94BDFF', '#7AABFF', '#669EFF', '#4287FF'],
         labels: ['1', '2', '3', '4', '5']
       }
     },
@@ -166,13 +188,13 @@ export class MapComponent implements OnInit {
       }],
       visibleLayer: 'dominica-coast-blue',
       zoom: 10.5,
-      center: {lon: -61.351322, lat: 15.428929},
+      center: { lon: -61.351322, lat: 15.428929 },
       chart: {
         exists: false
       },
       legend: {
         exists: false,
-        colors: [ '#ADCBFF', '#94BDFF', '#7AABFF', '#669EFF', '#4287FF'],
+        colors: ['#ADCBFF', '#94BDFF', '#7AABFF', '#669EFF', '#4287FF'],
         labels: ['1', '2', '3', '4', '5']
       }
     }
