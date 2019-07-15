@@ -130,7 +130,7 @@ export class MapComponent implements OnInit {
         }
       },
       table: {
-        exists: true,
+        exists: false,
         data: [[]]
       },
       legend: {
@@ -219,6 +219,9 @@ export class MapComponent implements OnInit {
       visibleLayer: ['building-data-9b0ub5'],
       zoom: 10.5,
       center: { lon: -61.351322, lat: 15.428929 },
+      table: {
+        exists: true
+      },
       chart: {
         exists: true,
         chartOptions: {
