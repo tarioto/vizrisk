@@ -44,7 +44,7 @@ export class MapComponent implements OnInit {
         link: 'https://www.researchgate.net/publication/224327492_Engineering_Perspectives_on_Reducing_Hurricane_Damage_to_Housing_in_CARICOM_Caribbean_Islands',
         label: '"Update on National Hurricane Center Products and Services for 2017" (PDF). National Hurricane Center. May 23, 2017. Retrieved June 21, 2019.'
       }],
-      visibleLayer: 'dominica-coast',
+      visibleLayer: ['dominica-coast'],
       zoom: 4.5,
       center: { lon: -71.967749, lat: 19.232773 },
       chart: {
@@ -74,7 +74,7 @@ export class MapComponent implements OnInit {
         link: 'https://www.researchgate.net/publication/224327492_Engineering_Perspectives_on_Reducing_Hurricane_Damage_to_Housing_in_CARICOM_Caribbean_Islands',
         label: 'Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017.'
       }],
-      visibleLayer: 'peak-gust-mph',
+      visibleLayer: ['peak-gust-mph'],
       zoom: 5.5,
       center: { lon: -63.509315, lat: 17.608075 },
       chart: {
@@ -104,7 +104,7 @@ export class MapComponent implements OnInit {
         link: '',
         label: ''
       }],
-      visibleLayer: 'building-data-9b0ub5',
+      visibleLayer: ['building-data-9b0ub5'],
       zoom: 10.5,
       center: { lon: -61.351322, lat: 15.428929 },
       chart: {
@@ -159,7 +159,7 @@ export class MapComponent implements OnInit {
         link: '',
         label: ''
       }],
-      visibleLayer: 'building-data-9b0ub5',
+      visibleLayer: ['building-data-9b0ub5'],
       zoom: 14.5,
       center: { lon: -61.377716, lat: 15.308563 },
       chart: {
@@ -179,7 +179,7 @@ export class MapComponent implements OnInit {
         link: '',
         label: 'Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017.'
       }],
-      visibleLayer: 'wind-hazards',
+      visibleLayer: ['wind-hazards'],
       zoom: 10.5,
       center: { lon: -61.351322, lat: 15.428929 },
       chart: {
@@ -316,7 +316,7 @@ export class MapComponent implements OnInit {
         if (this.currentSceneIndex > 0) {
           this.prevDisabled = false;
         } else if (this.currentSceneIndex === 0) {
-          console.log(this.currentSceneIndex)
+          console.log(this.currentSceneIndex);
           this.prevDisabled = true;
         }
       }
@@ -327,21 +327,15 @@ export class MapComponent implements OnInit {
     this.toggleableLayerIdsList.forEach((layer) => {
       this.map.setLayoutProperty(layer.id, 'visibility', 'none');
     });
-    this.toggleLayer(this.scenes[this.currentSceneIndex].visibleLayer);
-    if (this.currentSceneIndex === 5) {
-      this.scenes[5].visibleLayer.forEach((layer) => {
-        this.toggleLayer(layer);
-      });
-    } else if (this.currentSceneIndex !== 5) {
-      this.scenes[5].visibleLayer.forEach((layer) => {
-        this.map.setLayoutProperty(layer, 'visibility', 'none');
-      });
-    }
+
+    this.scenes[this.currentSceneIndex].visibleLayer.forEach((layer) => {
+      this.toggleLayer(layer);
+    });
 }
 
   setZoomExtent() {
-    this.map.setCenter(this.scenes[this.currentSceneIndex].center)
-    this.map.zoomTo(this.scenes[this.currentSceneIndex].zoom)
+    this.map.setCenter(this.scenes[this.currentSceneIndex].center);
+    this.map.zoomTo(this.scenes[this.currentSceneIndex].zoom);
   }
 
   displayScene(type: any) {
