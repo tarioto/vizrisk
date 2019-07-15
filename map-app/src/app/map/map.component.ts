@@ -21,12 +21,12 @@ export class MapComponent implements OnInit {
     {
       title: 'Imagine 90% of your country\'s buildings being damaged or destroyed in one night...',
       info: 'This was the impact of Hurricane Maria on the island nation of Dominica on September 18, 2017.\n Despite contributing the least to climate change, Caribbean countries like Dominica are among the nations hardest hit by its effects. The 2017 Atlantic hurricane season, whose strongest storm was Maria, incurred more damage than any tropical cyclone season in recorded history. Climate experts have noted a heightened pattern of cyclonic activity since the mid-90s, as well as a southward trend in hurricane tracks towards the Lesser Antilles islands, which include Dominica.',
-      visableLayer: 'peak-gust-mph'
+      visableLayer: ''
     },
     {
       title: 'In 2017, Hurricane Maria became the first recorded Category 5 storm to hit the island of Dominica....',
       info: 'In addition to Dominica, Maria dealt severe damage to the islands of St. Croix and Puerto Rico, making it the third costliest hurricane in the history of the United States.',
-      visableLayer: ''
+      visableLayer: 'peak-gust-mph'
     },
     {
       title: 'Here is a headline about impact on Dominica from Hurricane Maria...',
@@ -44,13 +44,17 @@ export class MapComponent implements OnInit {
       visableLayer: 'building-data-9b0ub5'
     },
     {
-      title: 'Here is a headline about wind hazard in Dominica...',
-      info: 'this will be a description of some stuff or whatever',
+      title: 'Dominica and other Caribbean countries will continue to experience hurricanes in the future...',
+      info: `While Dominica is recovering from Hurricane Maria, the country also needs to be look forwarding and fortifying itself against future hurricane seasons.\n
+      The map (CREDIT SOURCE) shows an overview of the degree of windstorm susceptibility across the island. With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands.`,
       visableLayer: 'wind-hazards'
     },
     {
-      title: 'Here is a headline about mitigation measures...',
-      info: 'okay okay okay',
+      title: 'Fortunately, Dominica is thinking pro-actively about how they can better mitigate risks in the next hurricane...',
+      info: `Thus, Dominica needs to incorporate resilient strategies into their recovery. As part of this effort they are pursuing various strategies, such as: \n
+      - Nature based solutions. Coral reefs and mangroves can absorb 98% of the wave energy from an incoming storm. One of the most efficient ways to accomplish this is to plant more trees to prevent erosion. [need reference] \n
+      - Investing in infrastructure. One of the recommendations from the PDNA is to significantly invest in improving infrastructure. Improving roads and transportation networks can improve post-disaster relief efforts & access to temporary shelters. \n
+      - Improving building codes and construction practices. One of the other targeted areas for investment is housing, as this sector accounted for a third of damage sustained during the hurricane. Dominica is already working on improving its building codes; one of the proposed improvements is to have steeper roof angles & to use screws instead of nails to strengthen frames. [need ref]`,
       visableLayer: 'roads'
     }
   ];
