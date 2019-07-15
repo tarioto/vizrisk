@@ -73,6 +73,9 @@ export class MapComponent implements OnInit {
       visibleLayer: 'peak-gust-mph',
       zoom: 5.5,
       center: { lon: -63.509315, lat: 17.608075 },
+      chart: {
+        exists: false
+      },
       legend: {
         exists: false,
         colors: ['#666666', '#3cb371', '#ffd700', '#ff8c00', '#dc143c'],
