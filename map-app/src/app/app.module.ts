@@ -11,6 +11,7 @@ import { MapComponent } from './map/map.component';
 import { OverlayComponent } from './map/overlay/overlay.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HighchartsChartModule } from 'highcharts-angular';
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -50,12 +51,14 @@ import {
   MatTooltipModule,
   MatTreeModule,
 } from '@angular/material';
+import { MariaLegendComponent } from './map/maria-legend/maria-legend.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent
+    MapComponent,
+    MariaLegendComponent
   ],
   imports: [
     BrowserModule,
@@ -69,6 +72,7 @@ import {
    }),
     ReactiveFormsModule,
     FlexLayoutModule,
+    HighchartsChartModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
