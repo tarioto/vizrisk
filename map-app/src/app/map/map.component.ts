@@ -86,6 +86,32 @@ export class MapComponent implements OnInit {
         labels: ['Unknown damage', 'Negligible to slight damage', 'Moderately damaged', 'Highly damaged', 'Completely destroyed']
       }
     },
+    {
+      title: 'In 2017, Hurricane Maria became the first recorded Category 5 storm to hit the island of Dominica....',
+      info: `In addition to Dominica, Maria dealt severe damage to the islands of St. Croix and Puerto Rico, making it the third costliest hurricane in the history of the United States. Maria had a peak intensity of more than 172 mph, and was at about 166 mph when it made landfall on Dominica. But Maria also had a rapid increase in intensity during its duration of almost 75 mph within 24 hours, the sixth-fastest hurricane intensification ever in the Atlantic basin. \n
+        In addition to severe winds, Maria brought 22.8 inches of rain to Dominica, and brought about at least 31 deaths and 34 missing persons. In the wake of the hurricane, total damages for the island were estimated to be on the order of $1.3 billion. \n
+        The map shows the intensity of Maria’s winds across the Caribbean. While Maria’s intensity weakened as the storm moved further northwest, damage continued to be devastating.`,
+      attribution: [
+      {
+        link: 'https://www.nhc.noaa.gov/data/tcr/AL152017_Maria.pdf',
+        label: 'National Hurricane Center Tropical Cyclone Report: Hurricane Maria. NOAA. 2017.'
+      },
+      {
+        link: 'https://www.researchgate.net/publication/224327492_Engineering_Perspectives_on_Reducing_Hurricane_Damage_to_Housing_in_CARICOM_Caribbean_Islands',
+        label: 'Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017.'
+      }],
+      visibleLayer: ['displaced-pop2'],
+      zoom: 10.5,
+      center: { lon: -61.351322, lat: 15.428929 },
+      chart: {
+        exists: false
+      },
+      legend: {
+        exists: false,
+        // colors: ['#666666', '#3cb371', '#ffd700', '#ff8c00', '#dc143c'],
+        // labels: ['Unknown damage', 'Negligible to slight damage', 'Moderately damaged', 'Highly damaged', 'Completely destroyed']
+      }
+    },
     // {
     //   title: 'Here is a headline about impact on Dominica from Hurricane Maria...',
     //   info: 'this will be a description of some stuff or whatever',
@@ -249,6 +275,10 @@ export class MapComponent implements OnInit {
       displayName: 'Wind Hazards',
       checked: false
     }, {
+      id: 'displaced-pop2',
+      displayName: 'Displaced Population',
+      checked: false
+    }, {
       id: 'building-data-9b0ub5',
       displayName: 'Damaged Buildings',
       checked: false
@@ -287,6 +317,7 @@ export class MapComponent implements OnInit {
 
   toggleLayer(layer: any) {
     if (this.map.getLayoutProperty(layer, 'visibility') === 'visible') {
+      console.log(this.map.getLayoutProperty('displaced-pop2', 'visibility'));
       this.map.setLayoutProperty(layer, 'visibility', 'none');
     } else {
       this.map.setLayoutProperty(layer, 'visibility', 'visible');
@@ -330,13 +361,14 @@ export class MapComponent implements OnInit {
 
     this.scenes[this.currentSceneIndex].visibleLayer.forEach((layer) => {
       this.toggleLayer(layer);
-      if (this.currentSceneIndex === 5) {
-        this.scenes[5].visibleLayer.forEach((mitLayer) => {
+      if (this.currentSceneIndex === 6) {
+        console.log('angela')
+        this.scenes[6].visibleLayer.forEach((mitLayer) => {
           this.map.setLayoutProperty(mitLayer, 'visibility', 'visible');
         });
-      } else if (this.currentSceneIndex !== 5) {
+      } else if (this.currentSceneIndex !== 6) {
         this.setZoomExtent();
-        this.scenes[5].visibleLayer.forEach((mitLayer) => {
+        this.scenes[6].visibleLayer.forEach((mitLayer) => {
           this.map.setLayoutProperty(mitLayer, 'visibility', 'none');
         });
       }
