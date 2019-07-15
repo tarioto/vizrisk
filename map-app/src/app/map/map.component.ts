@@ -326,8 +326,12 @@ export class MapComponent implements OnInit {
       this.scenes[5].visibleLayer.forEach((layer) => {
         this.toggleLayer(layer);
       });
+    } else if (this.currentSceneIndex !== 5) {
+      this.scenes[5].visibleLayer.forEach((layer) => {
+        this.map.setLayoutProperty(layer, 'visibility', 'none');
+      });
     }
-  }
+}
 
   setZoomExtent() {
     this.map.setCenter(this.scenes[this.currentSceneIndex].center)
