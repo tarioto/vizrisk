@@ -380,7 +380,7 @@ export class MapComponent implements OnInit {
       The map shows an overview of the degree of windstorm susceptibility across the island (USAID 2006). With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands*.`,
       attribution: [{
         link: 'http://charim-geonode.net/layers/geonode:wind_5c',
-        label: 'This wind hazard map was produced in 2006 as part of a USAID-funded project'
+        label: 'CIPA. (2006). Development of a Landslide Hazard Map and Multi-Hazard Assessment for Dominica, West Indies. US-AID/COTS programme.'
       },
       {
         link: 'https://www.researchgate.net/publication/224327492_Engineering_Perspectives_on_Reducing_Hurricane_Damage_to_Housing_in_CARICOM_Caribbean_Islands',
