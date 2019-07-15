@@ -13,8 +13,8 @@ import { FormControl } from '@angular/forms';
 export class MapComponent implements OnInit {
   map: mapboxgl.Map;
   style = 'mapbox://styles/awilson1233/cjy3dg55f2kxh1covpds8dnh5';
-  lat = 15.308563;
-  lng = -61.377716;
+  lat = 19.232773;
+  lng = -71.967749;
   layers: any;
   currentSceneIndex = 0;
   scenes = [
@@ -23,7 +23,8 @@ export class MapComponent implements OnInit {
       info: `This was the impact of Hurricane Maria on the island nation of Dominica on September 18, 2017.\n \n
       Despite contributing the least to climate change, Caribbean countries like Dominica are among the nations hardest hit by its effects. The 2017 Atlantic hurricane season, whose strongest storm was Maria, incurred more damage than any tropical cyclone season in recorded history. Climate experts have noted a heightened pattern of cyclonic activity since the mid-90s, as well as a southward trend in hurricane tracks towards the Lesser Antilles islands, which include Dominica.`,
       visibleLayer: 'dominica-coast',
-      zoom: 5
+      zoom: 5,
+      center: {lon: -71.967749, lat: 19.232773}
     },
     {
       title: 'In 2017, Hurricane Maria became the first recorded Category 5 storm to hit the island of Dominica....',
@@ -31,32 +32,37 @@ export class MapComponent implements OnInit {
         In addition to severe winds, Maria brought 22.8 inches of rain to Dominica, and brought about at least 31 deaths and 34 missing persons. In the wake of the hurricane, total damages for the island were estimated to be on the order of $1.3 billion. \n \n
         The map shows the intensity of Maria’s winds across the Caribbean. While Maria’s intensity weakened as the storm moved further northwest, damage continued to be devastating. `,
       visibleLayer: 'peak-gust-mph',
-      zoom: 6
+      zoom: 6,
+      center: {lon: -61.377716, lat: 15.308563}
     },
     {
       title: 'Here is a headline about impact on Dominica from Hurricane Maria...',
       info: 'this will be a description of some stuff or whatever',
       visibleLayer: 'hurricaneshelters',
-      zoom: 10
+      zoom: 10.5,
+      center: {lon: -61.351322, lat: 15.428929}
     },
     {
       title: 'Here is a headline about building damage in Dominica...',
       info: 'this will be a description of some stuff or whatever',
       visibleLayer: 'building-data-9b0ub5',
-      zoom: 10
+      zoom: 10.5,
+      center: {lon: -61.351322, lat: 15.428929}
     },
     {
       title: 'Here is a headline about building damage in Roseau...',
       info: 'this will be a description of some stuff or whatever',
       visibleLayer: 'building-data-9b0ub5',
-      zoom: 14
+      zoom: 14,
+      center: {lon: -61.377716, lat: 15.308563}
     },
     {
       title: 'Dominica and other Caribbean countries will continue to experience hurricanes in the future...',
       info: `While Dominica is recovering from Hurricane Maria, the country also needs to be look forwarding and fortifying itself against future hurricane seasons.\n \n
       The map (CREDIT SOURCE) shows an overview of the degree of windstorm susceptibility across the island. With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands.`,
       visibleLayer: 'wind-hazards',
-      zoom: 10
+      zoom: 10.5,
+      center: {lon: -61.351322, lat: 15.428929}
     },
     {
       title: 'Fortunately, Dominica is thinking pro-actively about how they can better mitigate risks in the next hurricane...',
@@ -65,7 +71,8 @@ export class MapComponent implements OnInit {
       - Investing in infrastructure. One of the recommendations from the PDNA is to significantly invest in improving infrastructure. Improving roads and transportation networks can improve post-disaster relief efforts & access to temporary shelters. \n
       - Improving building codes and construction practices. One of the other targeted areas for investment is housing, as this sector accounted for a third of damage sustained during the hurricane. Dominica is already working on improving its building codes; one of the proposed improvements is to have steeper roof angles & to use screws instead of nails to strengthen frames. [need ref]`,
       visibleLayer: 'roads',
-      zoom: 10
+      zoom: 10.5,
+      center: {lon: -61.351322, lat: 15.428929}
     }
   ];
 
@@ -121,7 +128,7 @@ export class MapComponent implements OnInit {
       container: 'map',
       style: this.style,
       zoom: 5,
-      minZoom: 4,
+      minZoom: 5,
       center: [this.lng, this.lat]
     });
 
@@ -189,6 +196,7 @@ export class MapComponent implements OnInit {
   }
 
   setZoomExtent() {
+    this.map.setCenter(this.scenes[this.currentSceneIndex].center)
     this.map.zoomTo(this.scenes[this.currentSceneIndex].zoom)
   }
 
