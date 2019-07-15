@@ -37,7 +37,7 @@ export class MapComponent implements OnInit {
       info: `This was the impact of Hurricane Maria on the island nation of Dominica on September 18, 2017.\n
       Despite contributing the least to climate change, Caribbean countries like Dominica are among the nations hardest hit by its effects. The 2017 Atlantic hurricane season, whose strongest storm was Maria, incurred more damage than any tropical cyclone season in recorded history. Climate experts have noted a heightened pattern of cyclonic activity since the mid-90s, as well as a southward trend in hurricane tracks towards the Lesser Antilles islands, which include Dominica.`,
       attribution: [{
-        link: 'After Maria’s Devastation, Can Dominica Be a Destination Again?',
+        link: 'https://www.nytimes.com/2018/03/19/travel/dominica-hurricane-maria-recovery.html',
         label: '"After Maria’s Devastation, Can Dominica Be a Destination Again?" Matt Gross. New York Times. March 19, 2018. Retrieved July 14, 2019.'
       },
       {
