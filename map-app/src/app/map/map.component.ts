@@ -124,11 +124,11 @@ export class MapComponent implements OnInit {
     //   center: {lon: -61.351322, lat: 15.428929}
     // },
     {
-      title: 'Here is a headline about building damage in Dominica...',
-      info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Over 90% of the country\'s housing stock was damaged...',
+      info: 'The chart below shows that a significant proportion of the damaged buildings were highly damaged or completely destroyed. he housing stock on the east coast of Dominica, particularly the village of La Plaine, was particularly hard hit by Hurricane Maria. \n \n It is estimated that total damage to the housing sector alone is nearly US$360 million. In addition, losses resulting from this damage are estimated at US$29 million, which includes loss of rental income, demolition costs, debris removal and clean up, and shelter costs. \n \n In the GFDRR\'s proposed budget for recovery, a total of US$520 million is dedicated to housing. The group recommends that much of this budget be spent in the medium-term following the hurricane, which is in years 2019-2022. \n \n Rebuilding residential buildings using stricter building codes and connecting the most vulnerable communities through improved infrastructure can enable more efficient recovery and resilience in future hurricanes.',
       attribution: [{
-        link: '',
-        label: ''
+        link: 'https://www.gfdrr.org/en/dominica-pdna-hurricanemaria',
+        label: 'Dominica: Post-Disaster Needs Assessment following Hurricane Maria. GFDRR. 2018'
       }],
       visibleLayer: ['building-data-9b0ub5'],
       zoom: 10.5,
