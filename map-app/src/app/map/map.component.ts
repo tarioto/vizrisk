@@ -322,7 +322,7 @@ export class MapComponent implements OnInit {
       this.map.setLayoutProperty(layer.id, 'visibility', 'none');
     });
     this.toggleLayer(this.scenes[this.currentSceneIndex].visibleLayer);
-    if (this.currentSceneIndex === this.scenes.length - 1) {
+    if (this.currentSceneIndex === 5) {
       this.scenes[5].visibleLayer.forEach((layer) => {
         this.toggleLayer(layer);
       });
