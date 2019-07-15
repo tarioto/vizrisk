@@ -101,10 +101,6 @@ export class MapComponent implements OnInit {
       displayName: 'Damage Needs Assessment (Red Cross)',
       checked: false
     }, {
-      id: 'mitigation-group',
-      displayName: 'Mitigation Measures',
-      checked: false
-    }, {
       id: 'dominica-coast',
       displayName: 'Dominican Coastline',
       checked: false
