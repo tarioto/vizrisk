@@ -52,13 +52,15 @@ import {
   MatTreeModule,
 } from '@angular/material';
 import { MariaLegendComponent } from './map/maria-legend/maria-legend.component';
+import { SummaryTableComponent } from './map/summary-table/summary-table.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
-    MariaLegendComponent
+    MariaLegendComponent,
+    SummaryTableComponent
   ],
   imports: [
     BrowserModule,

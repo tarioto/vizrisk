@@ -50,6 +50,10 @@ export class MapComponent implements OnInit {
       chart: {
         exists: false
       },
+      table: {
+        exists: true,
+        data: [[]]
+      },
       legend: {
         exists: false,
         // colors: ['#666666', '#3cb371', '#ffd700', '#ff8c00', '#dc143c'],
