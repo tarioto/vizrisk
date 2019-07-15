@@ -10,7 +10,7 @@ pipelines:
             - npm install
             - npm run build-prod
           artifacts:
-            - dist/**
+            - map-app/dist/**
       - step:
           image: atlassian/pipelines-awscli
           script:
