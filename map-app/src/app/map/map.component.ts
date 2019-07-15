@@ -41,6 +41,10 @@ export class MapComponent implements OnInit {
         label: '"After Maria’s Devastation, Can Dominica Be a Destination Again?" Matt Gross. New York Times. March 19, 2018. Retrieved July 14, 2019.'
       },
       {
+        link: 'https://www.ncdc.noaa.gov/ibtracs/index.php?name=ibtracs-data',
+        label: 'CITATION PENDING FOR 1960-PRESENT HURRICANES'
+      },
+      {
         link: 'https://www.researchgate.net/publication/224327492_Engineering_Perspectives_on_Reducing_Hurricane_Damage_to_Housing_in_CARICOM_Caribbean_Islands',
         label: '"Update on National Hurricane Center Products and Services for 2017" (PDF). National Hurricane Center. May 23, 2017. Retrieved June 21, 2019.'
       }],
@@ -48,7 +52,75 @@ export class MapComponent implements OnInit {
       zoom: 4.5,
       center: { lon: -71.967749, lat: 19.232773 },
       chart: {
-        exists: false
+        exists: true,
+        chartOptions: {
+          series: [
+            {
+              data: [4, 6, 5, 2],
+              name: 'Category 1',
+              type: 'column',
+              color: 'dodgerblue',
+              borderWidth: 0,
+            },
+            {
+              data: [2, 3, 3, 5],
+              name: 'Category 2',
+              type: 'column',
+              color: 'mediumseagreen',
+              borderWidth: 0,
+            },
+            {
+              data: [1, 3, 3, 4],
+              name: 'Category 3',
+              type: 'column',
+              color: 'gold',
+              borderWidth: 0,
+            },
+            {
+              data: [2, 4, 7, 0],
+              name: 'Category 4',
+              type: 'column',
+              color: 'darkorange',
+              borderWidth: 0,
+            },
+            {
+              data: [1, 3, 5, 3],
+              name: 'Category 5',
+              type: 'column',
+              color: 'crimson',
+              borderWidth: 0,
+            }
+          ],
+          chart: {
+            style: {
+              fontFamily: 'Helvetica Neue'
+            }
+          },
+          title: {
+            text: "Hurricane intensity and frequency since 1960"
+          },
+          legend: {
+            enabled: true
+          },
+          xAxis: {
+            categories: ["1960 - 1979", "1980 - 1999", "2000 - 2009", "2010 - 2019"],
+            labels: {
+              style: {
+                fontSize: '16px'
+              }
+            }
+          },
+          yAxis: {
+            title: {
+              text: false
+            }
+          },
+          plotOptions: {
+            column: {
+              stacking: 'normal'
+            }
+          }
+        }
       },
       table: {
         exists: true,
@@ -66,14 +138,14 @@ export class MapComponent implements OnInit {
         In addition to severe winds, Maria brought 22.8 inches of rain to Dominica, and brought about at least 31 deaths and 34 missing persons. In the wake of the hurricane, total damages for the island were estimated to be on the order of $1.3 billion. \n
         The map shows the intensity of Maria’s winds across the Caribbean. While Maria’s intensity weakened as the storm moved further northwest, damage continued to be devastating.`,
       attribution: [
-      {
-        link: 'https://www.nhc.noaa.gov/data/tcr/AL152017_Maria.pdf',
-        label: 'National Hurricane Center Tropical Cyclone Report: Hurricane Maria. NOAA. 2017.'
-      },
-      {
-        link: 'https://www.researchgate.net/publication/224327492_Engineering_Perspectives_on_Reducing_Hurricane_Damage_to_Housing_in_CARICOM_Caribbean_Islands',
-        label: 'Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017.'
-      }],
+        {
+          link: 'https://www.nhc.noaa.gov/data/tcr/AL152017_Maria.pdf',
+          label: 'National Hurricane Center Tropical Cyclone Report: Hurricane Maria. NOAA. 2017.'
+        },
+        {
+          link: 'https://www.researchgate.net/publication/224327492_Engineering_Perspectives_on_Reducing_Hurricane_Damage_to_Housing_in_CARICOM_Caribbean_Islands',
+          label: 'Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017.'
+        }],
       visibleLayer: ['peak-gust-mph'],
       zoom: 5.5,
       center: { lon: -63.509315, lat: 17.608075 },
@@ -137,7 +209,7 @@ export class MapComponent implements OnInit {
         exists: true,
         chartOptions: {
           series: [{
-            data: [{y: 294, color: 'mediumseagreen'}, {y: 966, color: 'gold'}, {y: 1300, color: 'darkorange'}, {y: 381, color: 'crimson'}],
+            data: [{ y: 294, color: 'mediumseagreen' }, { y: 966, color: 'gold' }, { y: 1300, color: 'darkorange' }, { y: 381, color: 'crimson' }],
             type: 'column',
             borderWidth: 0,
             plotOptions: {
@@ -159,7 +231,7 @@ export class MapComponent implements OnInit {
           },
           xAxis: {
             categories: ["Negligible to slight damage", "Moderately damaged", "Highly damaged", "Completely destroyed"],
-            labels : {
+            labels: {
               style: {
                 fontSize: '16px'
               }
@@ -376,7 +448,7 @@ export class MapComponent implements OnInit {
         });
       }
     });
-}
+  }
 
   setZoomExtent() {
     this.map.setCenter(this.scenes[this.currentSceneIndex].center);
