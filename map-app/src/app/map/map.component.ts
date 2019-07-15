@@ -35,10 +35,15 @@ export class MapComponent implements OnInit {
     {
       title: 'Imagine 90% of your country\'s buildings being damaged or destroyed in one night... TEST',
       info: `This was the impact of Hurricane Maria on the island nation of Dominica on September 18, 2017.\n
-      Despite contributing the least to climate change, Caribbean countries like Dominica are among the nations hardest hit by its effects. The 2017 Atlantic hurricane season, whose strongest storm was Maria, incurred more damage than any tropical cyclone season in recorded history. Climate experts have noted a heightened pattern of cyclonic activity since the mid-90s, as well as a southward trend in hurricane tracks towards the Lesser Antilles islands, which include Dominica.`,
+      Despite contributing the least to climate change, Caribbean countries like Dominica are among the nations
+      hardest hit by its effects. The 2017 Atlantic hurricane season, whose strongest storm was Maria, incurred
+      more damage than any tropical cyclone season in recorded history. Climate experts have noted a heightened
+      pattern of cyclonic activity since the mid-90s, as well as a southward trend in hurricane tracks towards
+      the Lesser Antilles islands, which include Dominica.`,
       attribution: [{
         link: 'https://www.nytimes.com/2018/03/19/travel/dominica-hurricane-maria-recovery.html',
-        label: '"After Maria’s Devastation, Can Dominica Be a Destination Again?" Matt Gross. New York Times. March 19, 2018. Retrieved July 14, 2019.'
+        label: `"After Maria’s Devastation, Can Dominica Be a Destination Again?" Matt Gross. New York Times.
+        March 19, 2018. Retrieved July 14, 2019.`
       },
       {
         link: 'https://www.ncdc.noaa.gov/ibtracs/index.php?name=ibtracs-data',
@@ -46,7 +51,8 @@ export class MapComponent implements OnInit {
       },
       {
         link: 'https://www.researchgate.net/publication/224327492_Engineering_Perspectives_on_Reducing_Hurricane_Damage_to_Housing_in_CARICOM_Caribbean_Islands',
-        label: '"Update on National Hurricane Center Products and Services for 2017" (PDF). National Hurricane Center. May 23, 2017. Retrieved June 21, 2019.'
+        label: `"Update on National Hurricane Center Products and Services for 2017" (PDF). National Hurricane
+        Center. May 23, 2017. Retrieved June 21, 2019.`
       }],
       visibleLayer: ['dominica-coast'],
       zoom: 4.5,
@@ -97,13 +103,13 @@ export class MapComponent implements OnInit {
             }
           },
           title: {
-            text: "Hurricane intensity and frequency since 1960"
+            text: 'Hurricane intensity and frequency since 1960'
           },
           legend: {
             enabled: true
           },
           xAxis: {
-            categories: ["1960 - 1979", "1980 - 1999", "2000 - 2009", "2010 - 2019"],
+            categories: ['1960 - 1979', '1980 - 1999', '2000 - 2009', '2010 - 2019'],
             labels: {
               style: {
                 fontSize: '16px'
@@ -134,9 +140,16 @@ export class MapComponent implements OnInit {
     },
     {
       title: 'In 2017, Hurricane Maria became the first recorded Category 5 storm to hit the island of Dominica....',
-      info: `In addition to Dominica, Maria dealt severe damage to the islands of St. Croix and Puerto Rico, making it the third costliest hurricane in the history of the United States. Maria had a peak intensity of more than 172 mph, and was at about 166 mph when it made landfall on Dominica. But Maria also had a rapid increase in intensity during its duration of almost 75 mph within 24 hours, the sixth-fastest hurricane intensification ever in the Atlantic basin. \n
-        In addition to severe winds, Maria brought 22.8 inches of rain to Dominica, and brought about at least 31 deaths and 34 missing persons. In the wake of the hurricane, total damages for the island were estimated to be on the order of $1.3 billion. \n
-        The map shows the intensity of Maria’s winds across the Caribbean. While Maria’s intensity weakened as the storm moved further northwest, damage continued to be devastating.`,
+      info: `In addition to Dominica, Maria dealt severe damage to the islands of St. Croix and Puerto Rico, making
+      it the third costliest hurricane in the history of the United States. Maria had a peak intensity of more than
+      172 mph, and was at about 166 mph when it made landfall on Dominica. But Maria also had a rapid increase in
+      intensity during its duration of almost 75 mph within 24 hours, the sixth-fastest hurricane intensification
+      ever in the Atlantic basin. \n
+        In addition to severe winds, Maria brought 22.8 inches of rain to Dominica, and brought about at least 31
+        deaths and 34 missing persons. In the wake of the hurricane, total damages for the island were estimated
+        to be on the order of $1.3 billion. \n
+        The map shows the intensity of Maria’s winds across the Caribbean. While Maria’s intensity weakened as the
+        storm moved further northwest, damage continued to be devastating.`,
       attribution: [
         {
           link: 'https://www.nhc.noaa.gov/data/tcr/AL152017_Maria.pdf',
@@ -379,7 +392,7 @@ export class MapComponent implements OnInit {
       this.toggleableLayerIdsList.forEach((layer) => {
         this.map.setLayoutProperty(layer.id, 'visibility', 'none');
       });
-      this.map.setLayoutProperty('dominica-coast', 'visibility', 'visible') // Highlight coastline by default
+      this.map.setLayoutProperty('dominica-coast', 'visibility', 'visible'); // Highlight coastline by default
     });
 
     this.map.on('click', 'dominica-damage-buildings', (e) => {
