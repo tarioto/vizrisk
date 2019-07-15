@@ -33,7 +33,7 @@ export class MapComponent implements OnInit {
   currentSceneIndex = 0;
   scenes = [
     {
-      title: 'Imagine 90% of your country\'s buildings being damaged or destroyed in one night...',
+      title: 'Imagine 90% of your country\'s buildings being damaged or destroyed in one night... TEST',
       info: `This was the impact of Hurricane Maria on the island nation of Dominica on September 18, 2017.\n
       Despite contributing the least to climate change, Caribbean countries like Dominica are among the nations hardest hit by its effects. The 2017 Atlantic hurricane season, whose strongest storm was Maria, incurred more damage than any tropical cyclone season in recorded history. Climate experts have noted a heightened pattern of cyclonic activity since the mid-90s, as well as a southward trend in hurricane tracks towards the Lesser Antilles islands, which include Dominica.`,
       attribution: [{
@@ -174,10 +174,14 @@ export class MapComponent implements OnInit {
     {
       title: 'Dominica and other Caribbean countries will continue to experience hurricanes in the future...',
       info: `While Dominica is recovering from Hurricane Maria, the country also needs to be look forwarding and fortifying itself against future hurricane seasons.\n
-      The map shows an overview of the degree of windstorm susceptibility across the island (USAID 2006). With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands.`,
+      The map shows an overview of the degree of windstorm susceptibility across the island (USAID 2006). With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands*.`,
       attribution: [{
-        link: '',
-        label: 'Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017.'
+        link: 'http://charim-geonode.net/layers/geonode:wind_5c',
+        label: 'This wind hazard map was produced in 2006 as part of a USAID-funded project'
+      },
+      {
+        link: 'https://www.researchgate.net/publication/224327492_Engineering_Perspectives_on_Reducing_Hurricane_Damage_to_Housing_in_CARICOM_Caribbean_Islands',
+        label: '*Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017.'
       }],
       visibleLayer: ['wind-hazards'],
       zoom: 10.5,
@@ -188,7 +192,7 @@ export class MapComponent implements OnInit {
       legend: {
         exists: true,
         colors: ['#ADCBFF', '#94BDFF', '#7AABFF', '#669EFF', '#4287FF'],
-        labels: ['1', '2', '3', '4', '5']
+        labels: ['Very Low', 'Low', 'Moderate', 'High', 'Very High']
       }
     },
     {
