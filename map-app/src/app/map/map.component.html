@@ -5,6 +5,12 @@
     </mat-card-header>
     <mat-card-content>
       <p>{{displayScene('info')}}</p>
+      <highcharts-chart
+        *ngIf="scenes[currentSceneIndex].chart.exists"
+        [Highcharts]="Highcharts"
+        [options]="scenes[currentSceneIndex].chart.chartOptions"
+        style="width: 100%; height: 400px; display: block;"
+      ></highcharts-chart>
       <a
       class="attribution"
       *ngFor="let attribution of scenes[currentSceneIndex].attribution"
@@ -28,6 +34,12 @@
     </mat-card-footer>
   </mat-card>
   <div class="map" id="map" class="match-parent"></div>
+  <app-maria-legend
+    class="legend"
+    *ngIf="scenes[currentSceneIndex].legend.exists"
+    [colors]="scenes[currentSceneIndex].legend.colors"
+    [labels]="scenes[currentSceneIndex].legend.labels">
+  </app-maria-legend>
   <!-- <div class="overlay">
     <h1>{{displayScene('title')}}</h1>
     <p>

@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from './../../environments/environment';
 import * as mapboxgl from 'mapbox-gl';
 import { FormControl } from '@angular/forms';
-
+import * as Highcharts from 'highcharts';
+import theme from 'highcharts/themes/dark-unica';
+theme(Highcharts);
 
 @Component({
   selector: 'app-map',
@@ -11,6 +13,18 @@ import { FormControl } from '@angular/forms';
 })
 
 export class MapComponent implements OnInit {
+  Highcharts: typeof Highcharts = Highcharts;
+  chartOptions: Highcharts.Options = {
+    series: [{
+      data: [1, 2, 3],
+      type: 'column'
+    }],
+    chart: {
+      style: {
+        fontFamily: 'Helvetica Neue'
+      }
+    }
+  };
   map: mapboxgl.Map;
   style = 'mapbox://styles/awilson1233/cjy3dg55f2kxh1covpds8dnh5';
   lat = 19.232773;
@@ -28,7 +42,15 @@ export class MapComponent implements OnInit {
       }],
       visibleLayer: 'dominica-coast',
       zoom: 4.5,
-      center: {lon: -71.967749, lat: 19.232773}
+      center: {lon: -71.967749, lat: 19.232773},
+      chart: {
+        exists: false
+      },
+      legend: {
+        exists: false,
+        // colors: ['#666666', '#3cb371', '#ffd700', '#ff8c00', '#dc143c'],
+        // labels: ['Unknown damage', 'Negligible to slight damage', 'Moderately damaged', 'Highly damaged', 'Completely destroyed']
+      }
     },
     {
       title: 'In 2017, Hurricane Maria became the first recorded Category 5 storm to hit the island of Dominica....',
@@ -41,7 +63,26 @@ export class MapComponent implements OnInit {
       }],
       visibleLayer: 'peak-gust-mph',
       zoom: 5.5,
-      center: {lon: -63.509315, lat: 17.608075}
+      center: {lon: -63.509315, lat: 17.608075},
+      chart: {
+        exists: true,
+        chartOptions: {
+          series: [{
+            data: [1, 2, 3],
+            type: 'column'
+          }],
+          chart: {
+            style: {
+              fontFamily: 'Helvetica Neue'
+            }
+          }
+        }
+      },
+      legend: {
+        exists: false,
+        colors: ['#666666', '#3cb371', '#ffd700', '#ff8c00', '#dc143c'],
+        labels: ['Unknown damage', 'Negligible to slight damage', 'Moderately damaged', 'Highly damaged', 'Completely destroyed']
+      }
     },
     // {
     //   title: 'Here is a headline about impact on Dominica from Hurricane Maria...',
@@ -63,7 +104,15 @@ export class MapComponent implements OnInit {
       }],
       visibleLayer: 'building-data-9b0ub5',
       zoom: 10.5,
-      center: {lon: -61.351322, lat: 15.428929}
+      center: {lon: -61.351322, lat: 15.428929},
+      chart: {
+        exists: false
+      },
+      legend: {
+        exists: true,
+        colors: ['#666666', '#3cb371', '#ffd700', '#ff8c00', '#dc143c'],
+        labels: ['Unknown damage', 'Negligible to slight damage', 'Moderately damaged', 'Highly damaged', 'Completely destroyed']
+      }
     },
     {
       title: 'Here is a headline about building damage in Roseau...',
@@ -74,7 +123,15 @@ export class MapComponent implements OnInit {
       }],
       visibleLayer: 'building-data-9b0ub5',
       zoom: 14.5,
-      center: {lon: -61.377716, lat: 15.308563}
+      center: {lon: -61.377716, lat: 15.308563},
+      chart: {
+        exists: false
+      },
+      legend: {
+        exists: true,
+        colors: ['#666666', '#3cb371', '#ffd700', '#ff8c00', '#dc143c'],
+        labels: ['Unknown damage', 'Negligible to slight damage', 'Moderately damaged', 'Highly damaged', 'Completely destroyed']
+      }
     },
     {
       title: 'Dominica and other Caribbean countries will continue to experience hurricanes in the future...',
@@ -87,7 +144,15 @@ export class MapComponent implements OnInit {
       }],
       visibleLayer: 'wind-hazards',
       zoom: 10.5,
-      center: {lon: -61.351322, lat: 15.428929}
+      center: {lon: -61.351322, lat: 15.428929},
+      chart: {
+        exists: false
+      },
+      legend: {
+        exists: true,
+        colors: [ '#ADCBFF', '#94BDFF', '#7AABFF', '#669EFF', '#4287FF'],
+        labels: ['1', '2', '3', '4', '5']
+      }
     },
     {
       title: 'Fortunately, Dominica is thinking pro-actively about how they can better mitigate risks in the next hurricane...',
@@ -101,7 +166,15 @@ export class MapComponent implements OnInit {
       }],
       visibleLayer: 'dominica-coast-blue',
       zoom: 10.5,
-      center: {lon: -61.351322, lat: 15.428929}
+      center: {lon: -61.351322, lat: 15.428929},
+      chart: {
+        exists: false
+      },
+      legend: {
+        exists: false,
+        colors: [ '#ADCBFF', '#94BDFF', '#7AABFF', '#669EFF', '#4287FF'],
+        labels: ['1', '2', '3', '4', '5']
+      }
     }
   ];
 
