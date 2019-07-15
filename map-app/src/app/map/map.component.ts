@@ -141,16 +141,9 @@ export class MapComponent implements OnInit {
     },
     {
       title: 'In 2017, Hurricane Maria became the first recorded Category 5 storm to hit the island of Dominica....',
-      info: `In addition to Dominica, Maria dealt severe damage to the islands of St. Croix and Puerto Rico, making
-      it the third costliest hurricane in the history of the United States. Maria had a peak intensity of more than
-      172 mph, and was at about 166 mph when it made landfall on Dominica. But Maria also had a rapid increase in
-      intensity during its duration of almost 75 mph within 24 hours, the sixth-fastest hurricane intensification
-      ever in the Atlantic basin. \n
-        In addition to severe winds, Maria brought 22.8 inches of rain to Dominica, and brought about at least 31
-        deaths and 34 missing persons. In the wake of the hurricane, total damages for the island were estimated
-        to be on the order of $1.3 billion. \n
-        The map shows the intensity of Maria’s winds across the Caribbean. While Maria’s intensity weakened as the
-        storm moved further northwest, damage continued to be devastating.`,
+      info: `Maria had a peak intensity of more than 172 mph, and was at about 166 mph when it made landfall on Dominica. But Maria also had a rapid increase in intensity during its duration of almost 75 mph within 24 hours, the sixth-fastest hurricane intensification ever in the Atlantic basin. \n
+        In addition to severe winds, Maria brought 22.8 inches of rain to Dominica, and brought about at least 31 deaths and 34 missing persons. In the wake of the hurricane, total damages for the island were estimated to be on the order of $1.3 billion. \n
+        The map shows the intensity of Maria’s winds across the Caribbean. While Maria’s intensity weakened as the storm moved further northwest, damage continued to be devastating.`,
       attribution: [
         {
           link: 'https://www.nhc.noaa.gov/data/tcr/AL152017_Maria.pdf',
