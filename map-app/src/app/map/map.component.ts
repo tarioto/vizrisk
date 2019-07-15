@@ -32,8 +32,8 @@ export class MapComponent implements OnInit {
         In addition to severe winds, Maria brought 22.8 inches of rain to Dominica, and brought about at least 31 deaths and 34 missing persons. In the wake of the hurricane, total damages for the island were estimated to be on the order of $1.3 billion. \n \n
         The map shows the intensity of Maria’s winds across the Caribbean. While Maria’s intensity weakened as the storm moved further northwest, damage continued to be devastating. `,
       visibleLayer: 'peak-gust-mph',
-      zoom: 6,
-      center: {lon: -61.377716, lat: 15.308563}
+      zoom: 5.5,
+      center: {lon: -63.509315, lat: 17.608075}
     },
     {
       title: 'Here is a headline about impact on Dominica from Hurricane Maria...',
