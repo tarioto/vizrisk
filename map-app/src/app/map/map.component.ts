@@ -24,7 +24,7 @@ export class MapComponent implements OnInit {
       Despite contributing the least to climate change, Caribbean countries like Dominica are among the nations hardest hit by its effects. The 2017 Atlantic hurricane season, whose strongest storm was Maria, incurred more damage than any tropical cyclone season in recorded history. Climate experts have noted a heightened pattern of cyclonic activity since the mid-90s, as well as a southward trend in hurricane tracks towards the Lesser Antilles islands, which include Dominica. \n \n
       Source: "Update on National Hurricane Center Products and Services for 2017" (PDF). National Hurricane Center. May 23, 2017. Retrieved June 21, 2019.`,
       visibleLayer: 'dominica-coast',
-      zoom: 5,
+      zoom: 4.5,
       center: {lon: -71.967749, lat: 19.232773}
     },
     {
@@ -126,8 +126,8 @@ export class MapComponent implements OnInit {
     this.map = new mapboxgl.Map({
       container: 'map',
       style: this.style,
-      zoom: 5,
-      minZoom: 5,
+      zoom: 4.5,
+      // minZoom: 4,
       center: [this.lng, this.lat]
     });
 
