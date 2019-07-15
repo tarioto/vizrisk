@@ -1,42 +1,42 @@
-<div fxLayout="row" fxLayoutAlign="space-between" style="white-space: pre-line">
-  <mat-card class="overlay content">
-    <mat-card-header>
-      <mat-card-title>{{displayScene('title')}}</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <p>{{displayScene('info')}}</p>
-      <highcharts-chart
-        *ngIf="scenes[currentSceneIndex].chart.exists"
-        [Highcharts]="Highcharts"
-        [options]="scenes[currentSceneIndex].chart.chartOptions"
-        style="width: 100%; height: 100%; display: block;"
-      ></highcharts-chart>
-      <app-summary-table></app-summary-table>
-      <ul>
-        <li *ngFor="let attribution of scenes[currentSceneIndex].attribution">
-          <a
-          class="attribution"
-          href="{{attribution.link}}">
-            {{attribution.label}}
-          </a>
-        </li>
-      </ul>
-    </mat-card-content>
-    <mat-card-footer>
-      <div class="navigation">
-        <button mat-raised-button
-          [disabled]="prevDisabled"
-          class="button"
-          (click)="changeScene('prev')">prev
-        </button>
-        <button mat-raised-button
-          class="button"
-          [disabled]="nextDisabled"
-          (click)="changeScene('next')">next
-        </button>
-      </div>
-    </mat-card-footer>
-  </mat-card>
+<div fxLayout="row" fxLayoutAlign="start">
+  <div fxLayout="column" fxLayoutAlign="space-between" class="overlay">
+    <mat-card class="content">
+      <mat-card-header>
+        <mat-card-title>{{displayScene('title')}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{displayScene('info')}}</p>
+        <highcharts-chart
+          *ngIf="scenes[currentSceneIndex].chart.exists"
+          [Highcharts]="Highcharts"
+          [options]="scenes[currentSceneIndex].chart.chartOptions"
+          style="width: 100%; height: 100%; display: block;"
+        ></highcharts-chart>
+        <app-summary-table></app-summary-table>
+        <ul>
+          <li *ngFor="let attribution of scenes[currentSceneIndex].attribution">
+            <a
+            class="attribution"
+            href="{{attribution.link}}">
+              {{attribution.label}}
+            </a>
+          </li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
+    <div class="navigation" fxLayout="row" fxLayoutAlign="end center">
+      <button mat-raised-button
+        [disabled]="prevDisabled"
+        class="button"
+        (click)="changeScene('prev')">prev
+      </button>
+      <button mat-raised-button
+        class="button"
+        [disabled]="nextDisabled"
+        (click)="changeScene('next')">next
+      </button>
+    </div>
+  </div>
   <div class="map" id="map" class="match-parent"></div>
   <!-- <div class="overlay">
     <h1>{{displayScene('title')}}</h1>
