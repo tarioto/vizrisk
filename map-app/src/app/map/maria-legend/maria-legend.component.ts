@@ -9,6 +9,7 @@ export class MariaLegendComponent implements OnInit {
   @Input() colors: string[];
   @Input() labels: string[];
 
+
   constructor() { }
 
   ngOnInit() {

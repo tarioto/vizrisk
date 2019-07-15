@@ -2,7 +2,22 @@
   <div *ngFor="let color of colors; index as i" fxLayout="row" fxLayoutAlign="start center">
     <div [ngStyle]="{'background-color': color}" class="square"></div>
     <div style="padding-left: 5px;">
-      {{labels[i]}}
+        {{labels[i]}}
+      </div>
     </div>
+  </div>
+
+<div *ngFor="let label of labels; index as i" fxLayout="row" fxLayoutAlign="start center" class='container2'>
+  <div *ngIf="label==='Total number of IDP individuals'" class='diplaced-idps' fxLayout="column" fxLayoutAlign="start center">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+  </div>
+  <div fxLayout="column" fxLayoutAlign="right" class="text">
+    <p class="text1"> Greater than 50 </p>
+    <p class="text2"> Less than 50 </p>
+    <p class="text3"> Greater than 20 </p>
+    <p class="text4"> Less than 5 </p>
   </div>
 </div>

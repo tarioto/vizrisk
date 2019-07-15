@@ -107,9 +107,9 @@ export class MapComponent implements OnInit {
         exists: false
       },
       legend: {
-        exists: false,
-        // colors: ['#666666', '#3cb371', '#ffd700', '#ff8c00', '#dc143c'],
-        // labels: ['Unknown damage', 'Negligible to slight damage', 'Moderately damaged', 'Highly damaged', 'Completely destroyed']
+        exists: true,
+        colors: ['#ea7b4300'],
+        labels: ['Total number of IDP individuals']
       }
     },
     // {
