@@ -1,26 +1,38 @@
 <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-  <!-- Position Column -->
-  <ng-container matColumnDef="position">
-    <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+  <!-- Suburb Column -->
+  <ng-container matColumnDef="suburb">
+    <mat-header-cell *matHeaderCellDef> Suburb </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.suburb}} </mat-cell>
   </ng-container>
 
-  <!-- Name Column -->
-  <ng-container matColumnDef="name">
-    <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+  <!-- Negligible to slight damage Column -->
+  <ng-container matColumnDef="negligible">
+    <mat-header-cell *matHeaderCellDef> Negligible to slight damage </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.negligible}} </mat-cell>
   </ng-container>
 
-  <!-- Weight Column -->
-  <ng-container matColumnDef="weight">
-    <mat-header-cell *matHeaderCellDef> Weight </mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{element.weight}} </mat-cell>
+  <!-- Moderately Damaged Column -->
+  <ng-container matColumnDef="moderately">
+    <mat-header-cell *matHeaderCellDef> Moderately Damaged </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.moderately}} </mat-cell>
   </ng-container>
 
-  <!-- Symbol Column -->
-  <ng-container matColumnDef="symbol">
-    <mat-header-cell *matHeaderCellDef> Symbol </mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{element.symbol}} </mat-cell>
+  <!-- Highly Damaged Column -->
+  <ng-container matColumnDef="highly">
+    <mat-header-cell *matHeaderCellDef> Highly Damaged </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.highly}} </mat-cell>
+  </ng-container>
+
+  <!-- Completely Destroyed Column -->
+  <ng-container matColumnDef="destroyed">
+    <mat-header-cell *matHeaderCellDef> Completely Destroyed </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.destroyed}} </mat-cell>
+  </ng-container>
+
+  <!-- Total Buildings Column -->
+  <ng-container matColumnDef="total">
+    <mat-header-cell *matHeaderCellDef> Total Buildings </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.total}} </mat-cell>
   </ng-container>
 
   <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
