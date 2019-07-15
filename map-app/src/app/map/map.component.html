@@ -1,5 +1,5 @@
 <div fxLayout="row" fxLayoutAlign="space-between" style="white-space: pre-line">
-  <mat-card class="overlay">
+  <mat-card class="overlay content">
     <mat-card-header>
       <mat-card-title>{{displayScene('title')}}</mat-card-title>
     </mat-card-header>
@@ -9,7 +9,7 @@
         *ngIf="scenes[currentSceneIndex].chart.exists"
         [Highcharts]="Highcharts"
         [options]="scenes[currentSceneIndex].chart.chartOptions"
-        style="width: 100%; height: 400px; display: block;"
+        style="width: 100%; height: 100%; display: block;"
       ></highcharts-chart>
       <ul>
         <li *ngFor="let attribution of scenes[currentSceneIndex].attribution">
@@ -37,12 +37,6 @@
     </mat-card-footer>
   </mat-card>
   <div class="map" id="map" class="match-parent"></div>
-  <app-maria-legend
-    class="legend"
-    *ngIf="scenes[currentSceneIndex].legend.exists"
-    [colors]="scenes[currentSceneIndex].legend.colors"
-    [labels]="scenes[currentSceneIndex].legend.labels">
-  </app-maria-legend>
   <!-- <div class="overlay">
     <h1>{{displayScene('title')}}</h1>
     <p>
@@ -76,3 +70,9 @@
     (click)="changeScene('next')">next</button>
   </div> -->
 </div>
+<app-maria-legend
+  class="legend"
+  *ngIf="scenes[currentSceneIndex].legend.exists"
+  [colors]="scenes[currentSceneIndex].legend.colors"
+  [labels]="scenes[currentSceneIndex].legend.labels">
+</app-maria-legend>

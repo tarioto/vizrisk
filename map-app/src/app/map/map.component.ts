@@ -170,11 +170,10 @@ export class MapComponent implements OnInit {
     {
       title: 'Dominica and other Caribbean countries will continue to experience hurricanes in the future...',
       info: `While Dominica is recovering from Hurricane Maria, the country also needs to be look forwarding and fortifying itself against future hurricane seasons.\n
-      The map shows an overview of the degree of windstorm susceptibility across the island (USAID 2006). With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands. \n \n
-      Source: Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017. `,
+      The map shows an overview of the degree of windstorm susceptibility across the island (USAID 2006). With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands.`,
       attribution: [{
         link: '',
-        label: ''
+        label: 'Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017.'
       }],
       visibleLayer: 'wind-hazards',
       zoom: 10.5,

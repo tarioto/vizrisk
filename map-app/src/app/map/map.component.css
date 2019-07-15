@@ -1,7 +1,6 @@
 .match-parent {
   width: 65%;
   height: 100vh;
-  float: right;
 }
 
 .map {
@@ -18,7 +17,7 @@
   left: 0;
   padding-left: 2vh; */
   width: 35%;
-  /* height: 100vh; */
+  max-height: 95.8vh;
   background-color: #181919;
   color: #B2B2B2;
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -32,21 +31,21 @@
   margin-bottom: 20px;
 }
 
-.mat-card-content{
+.mat-card-content {
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 1.1em;
   margin: 10px;
   color: #B2B2B2;
 }
 
-.mat-card-footer{
+.mat-card-footer {
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 1em;
   margin: 10px;
   text-align: right;
 }
 
-.mat-raised-button{
+.mat-raised-button {
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 1em;
   margin: 10px;
@@ -54,7 +53,7 @@
   color: #F5F5F5;
 }
 
-.button[disabled]{
+.button[disabled] {
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 1em;
   margin: 10px;
