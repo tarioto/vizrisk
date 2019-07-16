@@ -375,7 +375,7 @@ export class MapComponent implements OnInit {
           legend: {
             enabled: true
           },
-          yAxis: {
+          xAxis: {
             categories: ['Bath Estate', 'Elmshall', 'Fond Cole', 'Goodwill', 'King Hill', 'Newtown', 'Potters Ville', 'Stockfarm', 'Tarish Pit', 'Yampiece'],
             labels: {
               style: {
@@ -383,7 +383,7 @@ export class MapComponent implements OnInit {
               }
             }
           },
-          xAxis: {
+          yAxis: {
             title: {
               text: 'Number of damaged buildings'
             }
