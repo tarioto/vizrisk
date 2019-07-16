@@ -9,13 +9,11 @@ pipelines:
           script:
             - cd map-app
             - npm install
-            - ls
             - npm run build-prod
-            - ls
           artifacts:
             - map-app/dist/**
       - step:
           image: atlassian/pipelines-awscli
           script:
-            - aws s3 sync --delete dist s3://understanding-risk
+            - aws s3 sync --delete map-app/dist s3://understanding-risk
           deployment: production
