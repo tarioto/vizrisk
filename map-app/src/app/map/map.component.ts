@@ -397,7 +397,7 @@ export class MapComponent implements OnInit {
         data: [[]]
       },
       legend: {
-        exists: false,
+        exists: true,
         colors: ['#ADCBFF', '#94BDFF', '#7AABFF', '#669EFF', '#4287FF'],
         labels: ['Very Low', 'Low', 'Moderate', 'High', 'Very High']
       }
