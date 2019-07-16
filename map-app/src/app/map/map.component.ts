@@ -143,9 +143,9 @@ export class MapComponent implements OnInit {
     },
     // 2. HURRICANE MARIA INTRO SLIDE
     {
-      title: 'In 2017, Hurricane Maria became the first recorded Category 5 storm to hit the island of Dominica....',
+      title: 'In 2017, Hurricane Maria became the first recorded Category 5 storm to hit the island of Dominica...',
       info: `Maria had a peak intensity of more than 172 mph, and was at about 166 mph when it made landfall on Dominica. But Maria also had a rapid increase in intensity during its duration of almost 75 mph within 24 hours, the sixth-fastest hurricane intensification ever in the Atlantic basin. \n
-        In addition to severe winds, Maria brought 22.8 inches of rain to Dominica, and brought about at least 31 deaths and 34 missing persons. In the wake of the hurricane, total damages for the island were estimated to be on the order of $1.3 billion. \n
+        In addition to severe winds, Maria brought 22.8 inches of rain to Dominica, and resulted in at least 31 deaths and 34 missing persons. In the wake of the hurricane, total damages for the island were estimated to be on the order of $1.3 billion. \n
         The map shows the intensity of Maria’s winds across the Caribbean. While Maria’s intensity weakened as the storm moved further northwest, damage continued to be devastating.`,
       attribution: [
         {
@@ -174,8 +174,8 @@ export class MapComponent implements OnInit {
     },
     // 3. OVERVIEW OF IMPACT OF HURRICANE MARIA ON IMPACT SCENE
     {
-      title: 'Hurricane Maria resulted in damages and losses equivalent to 226\% of the country\'s gross domestic product (GDP)',
-      info: 'Hurricane Maria caused significant negative impacts on the nation\'s economy, further delaying recovery and exacerbating human and social impacts. The PDNA published by the GFDRR estimates that \'a total of EC$94.9 million in income and 3.1 million work days\` has been lost as a result of the hurricane. Furthermore, \'critical employment sectors such as agriculture and tourism will take up to 12 months to resume regular operations\'. \n \n Combined with the structural damage shown in the previous slide, Hurricane Maria has displaced over 1,000 people from their homes. The spatial distribution of the internally displaced population (IDP) is shown on the map, with the most displacement concentrated in the coastlines. \n \n Overall, the GFDRR predicted a substantial increase in poverty head count from 28.8\% to 42.8\%. For long-term resilience for future hurricane seasons, both structural and economic resilience would be reduce poverty impacts.',
+      title: 'Hurricane Maria resulted in damages and losses equivalent to 226\% of the country\'s gross domestic product...',
+      info: 'Hurricane Maria caused significant negative consequences on the nation\'s economy, further delaying recovery and exacerbating human and social impacts. The PDNA published by the GFDRR estimates that \"a total of EC$94.9 million in income and 3.1 million work days\" has been lost as a result of the hurricane. Furthermore, \"critical employment sectors such as agriculture and tourism will take up to 12 months to resume regular operations\". \n \n Combined with the structural damage shown in the previous slide, Hurricane Maria has displaced over 1,000 people from their homes. The spatial distribution of the internally displaced population (IDP) is shown on the map, with the most displacement concentrated in the coastlines. \n \n Overall, the GFDRR predicted a substantial increase in poverty head count from 28.8\% to 42.8\%. For long-term resilience in future hurricane seasons, both structural and economic mitigations would be reduce poverty impacts.',
       attribution: [
       {
         link: 'https://www.nhc.noaa.gov/data/tcr/AL152017_Maria.pdf',
@@ -241,7 +241,7 @@ export class MapComponent implements OnInit {
     // 4. OVERVIEW OF DOMINICA BUILDING DAMAGE SCENE (PARISH LEVEL)
     {
       title: 'Over 90% of the country\'s housing stock was damaged...',
-      info: 'The chart below shows that a significant proportion of the damaged buildings were highly damaged or completely destroyed. The widespread damage left thousdands of people homeless. As the map shows, the coastlines are much more vulnerable to hurricane damage with a particularly high concentration of severely damaged housing stock on the east coast of Dominica. \n \n It is estimated that total damage to the housing sector alone is nearly US$360 million. In addition, losses resulting from this damage are estimated at US$29 million, which includes loss of rental income, demolition costs, debris removal and clean up, and shelter costs. \n \n In the GFDRR\'s proposed budget for recovery, a total of US$520 million is dedicated to housing. The group recommends that much of this budget be spent in the medium-term following the hurricane, which is in years 2019-2022. \n \n Rebuilding residential buildings using stricter building codes and connecting the most vulnerable communities through improved infrastructure can enable more efficient recovery and resilience in future hurricanes.',
+      info: 'The chart below shows that a significant proportion of the damaged buildings were highly damaged or completely destroyed. The widespread damage left thousdands of people homeless. As the map shows, the coastlines are much more vulnerable to hurricane damage with a particularly high concentration of severely damaged housing stock on the east coast of Dominica. \n \n It is estimated that total damage to the housing sector alone is nearly US$360 million. In addition, losses resulting from this damage are estimated at US$29 million, which includes loss of rental income, demolition costs, debris removal and clean up, and shelter costs. \n \n In the GFDRR\'s proposed budget for recovery, a total of US$520 million is dedicated to housing. The group recommends that much of this budget be spent in the medium-term following the hurricane, which is in years 2019-2022. \n \n Rebuilding residential buildings using stricter building codes and connecting the most vulnerable communities through improved infrastructure could enable more efficient recovery and therefore resilience in future hurricanes.',
       attribution: [
         {
         link: 'https://www.gfdrr.org/sites/default/files/publication/dominica-pdna-maria.pdf',
@@ -310,7 +310,7 @@ export class MapComponent implements OnInit {
     // 5. OVERVIEW OF DAMAGED BUILDINGS TO ROSEAU (SUBURB LEVEL)
     {
       title: 'In Roseau, the capital city of Dominica...',
-      info: 'A large proportion of the buildings were either moderately or highly damaged. Much of the island nation\'s businesses, hotels, and commerce is located in Roseau.',
+      info: 'A large proportion of the buildings were either moderately or highly damaged. Much of the island nation\'s businesses, hotels, and commerce is located in Roseau. \n \n The damage by suburb is summarized below.',
       attribution: [
         {
         link: 'https://www.gfdrr.org/sites/default/files/publication/dominica-pdna-maria.pdf',
@@ -399,8 +399,8 @@ export class MapComponent implements OnInit {
     },
     // 6. VULNERABILITY OF BUILDINGS TO HIGH WIND SCENE
     {
-      title: 'We can correlate the building damage to the hazard...',
-      info: 'By obtaining the wind speeds at each location, we can predict the level of structural damage for future hurricanes and windstorms. Beyond 180 mph, there is a 2 in 3 chance that the building may be completely destroyed. Such correlations from damage to hazard can provide a useful structural vulnerability benchmark, and can guide building code modifications to target certain wind speed levels.',
+      title: 'We can correlate the building damage to the anticipated hazard...',
+      info: 'Risk analysts use \"fragility curves\" to predict how a given hazard is likely to relate to damage. By obtaining the wind speeds and resulting damage at each location, we can show how the two correlate and improve our understanding for future hurricanes and windstorms. Beyond 180 mph, there was a 2 in 3 chance that the building would be completely destroyed. Such correlations from damage to hazard can provide a useful structural vulnerability benchmark, and can guide building code modifications to target certain wind speed levels.',
       attribution: [
         {
         link: 'https://www.gfdrr.org/sites/default/files/publication/dominica-pdna-maria.pdf',
@@ -498,9 +498,9 @@ export class MapComponent implements OnInit {
     // 7. WIND HAZARD MAP SCENE
     {
       title: 'Dominica will continue to experience hurricanes in the future...',
-      info: `While Dominica recovers from Hurricane Maria, the country should also look forward and fortifying itself against future hurricane seasons.\n
-      The map shows an overview of the degree of windstorm susceptibility across the island (USAID 2006). High wind speeds are expected throughout the inland parts of the island, whereas the coastlines may be more susceptible to other hurricane effects such as flooding and stom surge.
-      With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands*.
+      info: `While Dominica recovers from Hurricane Maria, the country must also look towards fortifying itself in advance of future hurricane seasons.\n \n
+      The map shows an overview of the degree of windstorm susceptibility across the island (USAID 2006). High wind speeds are expected throughout the inland parts of the island, whereas the coastlines may be more susceptible to other hurricane effects such as flooding and stom surge. This, combined with tendency of populations to grow along the coastline, can result in more significant impact on coastal communities.
+      With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands.
       Dominica should prepare to adopt building code changes that factor in the site-specific hazard, and ensure that these code changes have factored in climate change projections and how such changes will affect the hurricane hazard.
       `,
       attribution: [{
@@ -529,8 +529,8 @@ export class MapComponent implements OnInit {
     },
     // 8. MITIGATION MEASURES SCENE
     {
-      title: 'Fortunately, Dominica is looking to \'build back better\'...',
-      info: `Thus, Dominica needs to incorporate resilient strategies into their recovery. As part of this effort they are pursuing various strategies, such as: \n \n
+      title: 'Fortunately, Dominica is looking to \"build back better\"...',
+      info: `Dominica needs to incorporate resilient strategies into their recovery, and some groups have already begun to do just that. As part of this effort they are pursuing various strategies, such as: \n \n
       - Nature based solutions. Coral reefs and mangroves can absorb 98% of the wave energy from an incoming storm. One of the most efficient ways to accomplish this is to plant more trees to prevent erosion \n
       - Investing in infrastructure. One of the recommendations from the PDNA is to significantly invest in improving infrastructure. Improving roads and transportation networks can improve post-disaster relief efforts & access to temporary shelters. \n
       - Improving building codes and construction practices. One of the other targeted areas for investment is housing, as this sector accounted for a third of damage sustained during the hurricane. Dominica is already working on improving its building codes; one of the proposed improvements is to have steeper roof angles & to use screws instead of nails to strengthen frames.`,
@@ -560,11 +560,11 @@ export class MapComponent implements OnInit {
     },
     // 9. FINAL SLIDE
     {
-      title: 'Conclusions',
+      title: 'In conclusion...',
       info: `As a Small Island Development State (SIDS), Dominica faces various challenges on the road to recovery. \n
-      Some of this includes global trends such as climate change, which can increase the intensity of hazards such as flooding and storm surge. \n
+      These challenges include global trends such as climate change, which can increase the intensity of hazards such as flooding and storm surge. \n
       Recent investments in the tourism sector can exacerbate these effects, as the developments tend to be concentrated on the coastlines and can contribute to coastal erosion. \n
-      Despite these challenges, Dominica is taking steps forward to prioritize various mitigation strategies. By incorporating resilience in its recovery, Dominica is well on its way to reducing damage and downtime in subsequent hurricanes.  \n
+      Despite these challenges, Dominica is taking steps forward to prioritize various mitigation strategies. By incorporating efforts towards resilience in its recovery, Dominica is well on its way to reducing damage and downtime in subsequent hurricanes.  \n
       `,
       attribution: [
       {
