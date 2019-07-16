@@ -15,5 +15,5 @@ pipelines:
       - step:
           image: atlassian/pipelines-awscli
           script:
-            - aws s3 sync --delete map-app/dist s3://understanding-risk
+            - aws s3 sync --delete map-app/dist/map-app s3://understanding-risk
           deployment: production
