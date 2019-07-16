@@ -105,7 +105,7 @@ export class MapComponent implements OnInit {
             }
           },
           title: {
-            text: 'Hurricane intensity and frequency since 1960'
+            text: 'Hurricane intensity and frequency in the Caribbean Sea since 1960'
           },
           legend: {
             enabled: true
