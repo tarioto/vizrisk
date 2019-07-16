@@ -558,8 +558,8 @@ export class MapComponent implements OnInit {
       },
       legend: {
         exists: true,
-        colors: ['dodgerblue', 'mediumseagreen', '#666666'],
-        labels: ['Coastline', 'Roads', 'Emergency shelters']
+        colors: ['dodgerblue', 'mediumseagreen', '#666666', '#cdcdcd'],
+        labels: ['Coastline', 'Roads', 'Buildings', 'Emergency Shelters']
       }
     },
     // 9. FINAL SLIDE
@@ -591,8 +591,8 @@ export class MapComponent implements OnInit {
       },
       legend: {
         exists: true,
-        colors: ['dodgerblue', 'mediumseagreen', '#666666'],
-        labels: ['Coastline', 'Roads', 'Emergency shelters']
+        colors: ['dodgerblue', 'mediumseagreen', '#666666', '#cdcdcd'],
+        labels: ['Coastline', 'Roads', 'Buildings', 'Emergency Shelters']
       }
     }
   ];
