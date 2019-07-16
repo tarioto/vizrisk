@@ -7,12 +7,13 @@ pipelines:
           caches:
             - node
           script:
-            - cd map-app && npm install
+            - cd map-app
+            - npm install
             - npm run build-prod
           artifacts:
-            - dist/**
+            - map-app/dist/**
       - step:
           image: atlassian/pipelines-awscli
           script:
-            - aws s3 sync --delete dist s3://understanding-risk
+            - aws s3 sync --delete map-app/dist s3://understanding-risk
           deployment: production
