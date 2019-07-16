@@ -50,8 +50,9 @@
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 1em;
   margin: 10px;
-  background-color: #444444;
-  color: #F5F5F5;
+  border: 1px solid #FFD700;
+  background-color: #333333;
+  color: #FFD700;
 }
 
 .button[disabled] {
@@ -59,6 +60,7 @@
   font-size: 1em;
   margin: 1vh;
   background-color: #181919;
+  border: 0px solid #181919;
   color: #181919;
 }
 
