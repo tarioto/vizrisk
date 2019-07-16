@@ -25,6 +25,7 @@ export class MapComponent implements OnInit {
       }
     }
   };
+  updateFlag = true;
   map: mapboxgl.Map;
   style = 'mapbox://styles/awilson1233/cjy3dg55f2kxh1covpds8dnh5';
   lat = 19.232773;
@@ -685,10 +686,12 @@ export class MapComponent implements OnInit {
 
 
   changeScene(direction) {
+    this.updateFlag = false;
     if (direction === 'next') {
       this.prevDisabled = false;
       if (this.currentSceneIndex < this.scenes.length - 1) {
         this.currentSceneIndex += 1;
+        setTimeout(() => { this.updateFlag = true }, 1);
         this.setCurrentLayer();
         this.setZoomExtent();
         if (this.currentSceneIndex === this.scenes.length - 1) {
@@ -701,6 +704,7 @@ export class MapComponent implements OnInit {
       if (this.currentSceneIndex !== 0) {
         this.nextDisabled = false;
         this.currentSceneIndex -= 1;
+        setTimeout(() => { this.updateFlag = true }, 1);
         this.setCurrentLayer();
         this.setZoomExtent();
         if (this.currentSceneIndex > 0) {
@@ -711,6 +715,7 @@ export class MapComponent implements OnInit {
         }
       }
     }
+    this.updateFlag = false;
   }
 
   setCurrentLayer() {
