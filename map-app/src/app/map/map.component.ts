@@ -110,7 +110,8 @@ export class MapComponent implements OnInit {
             }
           },
           title: {
-            text: 'Hurricane intensity and frequency in the Caribbean Sea since 1960'
+            text: 'Hurricane intensity and frequency in the Caribbean Sea since 1960',
+            align: 'left'
           },
           legend: {
             enabled: true
@@ -173,7 +174,7 @@ export class MapComponent implements OnInit {
       legend: {
         exists: true,
         colors: ['#dc143c', '#de1d14', '#e05015', '#e38415', '#e5b816', '#e1e717', '#afea17', '#7dec18', '#4aee19', '#19f11d', '#1af353', '#1bf58a', '#1bf8c1', '#1cfafa', '#1dc5fc', '#1e90ff'],
-        labels: ['190 mph', '180 mph','170 mph', '160 mph','150 mph', '140 mph','130 mph', '120 mph','110 mph', '100 mph','90 mph', '80 mph','70 mph', '60 mph', '50 mph', '40 mph']
+        labels: ['190 mph', '180 mph', '170 mph', '160 mph', '150 mph', '140 mph', '130 mph', '120 mph', '110 mph', '100 mph', '90 mph', '80 mph', '70 mph', '60 mph', '50 mph', '40 mph']
       }
     },
     // 3. OVERVIEW OF IMPACT OF HURRICANE MARIA ON IMPACT SCENE
@@ -212,13 +213,14 @@ export class MapComponent implements OnInit {
             }
           },
           title: {
-            text: "Internally displaced population over time"
+            text: 'Internally displaced population over time',
+            align: 'left'
           },
           legend: {
             enabled: false
           },
           xAxis: {
-            categories: ["October 2017", "November 2017", "January 2018"],
+            categories: ['October 2017', 'November 2017', 'January 2018'],
             labels: {
               style: {
                 fontSize: '16px'
@@ -268,7 +270,7 @@ export class MapComponent implements OnInit {
           series: [{
             data: [{ y: 294, color: 'mediumseagreen' }, { y: 966, color: 'gold' }, { y: 1300, color: 'darkorange' }, { y: 381, color: 'crimson' }],
             type: 'column',
-            name: "Damaged buildings",
+            name: 'Damaged buildings',
             borderWidth: 0,
             plotOptions: {
               column: {
@@ -282,16 +284,18 @@ export class MapComponent implements OnInit {
             }
           },
           title: {
-            text: "Number of damaged Dominica buildings in Hurricane Maria"
+            text: 'Number of damaged Dominica buildings in Hurricane Maria',
+            align: 'left'
           },
           subtitle: {
-            text: "Note that only a subset of the UNOSAT data is used in this plot. There were many more records of unknown damage (shown as gray in the map) that were not included in this chart."
+            text: 'Note that only a subset of the UNOSAT data is used in this plot. There were many more records of unknown damage (shown as gray in the map) that were not included in this chart.',
+            align: 'left'
           },
           legend: {
             enabled: false
           },
           xAxis: {
-            categories: ["Negligible to slight damage", "Moderately damaged", "Highly damaged", "Completely destroyed"],
+            categories: ['Negligible to slight damage', 'Moderately damaged', 'Highly damaged', 'Completely destroyed'],
             labels: {
               style: {
                 fontSize: '16px'
@@ -370,7 +374,8 @@ export class MapComponent implements OnInit {
             }
           },
           title: {
-            text: 'Building damage by suburb within Roseau'
+            text: 'Building damage by suburb within Roseau',
+            align: 'left'
           },
           legend: {
             enabled: true
@@ -385,7 +390,8 @@ export class MapComponent implements OnInit {
           },
           yAxis: {
             title: {
-              text: 'Number of damaged buildings'
+              text: 'Number of damaged buildings',
+              align: 'left'
             }
           },
           plotOptions: {
@@ -462,10 +468,12 @@ export class MapComponent implements OnInit {
             }
           },
           title: {
-            text: 'Proportion of building damage by max wind speed'
+            text: 'Proportion of building damage by max wind speed',
+
           },
           subtitle: {
-            text: "Note that only a subset of the UNOSAT data is used in this plot. There were many more records of unknown damage (shown as gray in the map) that were not included in this chart."
+            text: 'Note that only a subset of the UNOSAT data is used in this plot. There were many more records of unknown damage (shown as gray in the map) that were not included in this chart.',
+            align: 'left'
           },
           legend: {
             enabled: true
@@ -686,7 +694,7 @@ export class MapComponent implements OnInit {
   }
 
 
-  changeScene(direction) {
+  changeScene(direction: any) {
     this.updateFlag = false;
     if (direction === 'next') {
       this.prevDisabled = false;
