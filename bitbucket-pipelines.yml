@@ -7,9 +7,10 @@ pipelines:
           caches:
             - node
           script:
-            - cd map-app && npm install
+            - cd map-app
+            - npm install
             - ls
-            - cd map-app && npm run build-prod
+            - npm run build-prod
             - ls
           artifacts:
             - map-app/dist/**
