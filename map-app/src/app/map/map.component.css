@@ -24,6 +24,38 @@
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
+@media only screen and (max-width: 959px) {
+  .overlay {
+    /* position: absolute; */
+    /* bottom: 0;
+    left: 0;
+    padding-left: 2vh; */
+    width: 100vw;
+    height: 50vh;
+    /* max-height: 95.8vh; */
+    background-color: #181919;
+    color: #B2B2B2;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  }
+
+  .match-parent {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .map {
+    height: 50vh;
+  }
+
+  #map {
+    height: 50vh;
+  }
+
+  .legend {
+    visibility: hidden;
+  }
+}
+
 .mat-card-header {
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 2em;
