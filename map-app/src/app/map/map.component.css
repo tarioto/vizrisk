@@ -137,3 +137,7 @@ ul {
 ::-webkit-scrollbar-thumb:hover {
   background: #3f3f3f;
 }
+
+::ng-deep .highcharts-title {
+  text-transform: none !important;
+}
