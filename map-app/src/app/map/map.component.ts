@@ -174,7 +174,7 @@ export class MapComponent implements OnInit {
     // 3. OVERVIEW OF IMPACT OF HURRICANE MARIA ON IMPACT SCENE
     {
       title: 'Hurricane Maria resulted in damages and losses equivalent to 226\% of the country\'s gross domestic product (GDP)',
-      info: 'Hurricane Maria caused significant negative impacts on the nation\'s economy, further delaying recovery and exacerbating human and social impacts. The PDNA published by the GFDRR estimates that \'a total of EC$94.9 million in income and 3.1 million work days\` has been lost as a result of the hurricane. Furthermore, \'critical employment sectors such as agriculture and tourism will take up to 12 months to resume regular operations\'. \n \n Combined with the structural damage shown in the previous slide, Hurricane Maria has displaced a total of XX people from their homes. The spatial distribution of the internally displaced population (IDP) is shown on the map, with the most displacement concentrated in the coastlines. \n \n Overall, the GFDRR predicted a substantial increase in poverty head count from 28.8\% to 42.8\%. For long-term resilience for future hurricane seasons, both structural and economic resilience would be reduce poverty impacts.',
+      info: 'Hurricane Maria caused significant negative impacts on the nation\'s economy, further delaying recovery and exacerbating human and social impacts. The PDNA published by the GFDRR estimates that \'a total of EC$94.9 million in income and 3.1 million work days\` has been lost as a result of the hurricane. Furthermore, \'critical employment sectors such as agriculture and tourism will take up to 12 months to resume regular operations\'. \n \n Combined with the structural damage shown in the previous slide, Hurricane Maria has displaced over 1,000 people from their homes. The spatial distribution of the internally displaced population (IDP) is shown on the map, with the most displacement concentrated in the coastlines. \n \n Overall, the GFDRR predicted a substantial increase in poverty head count from 28.8\% to 42.8\%. For long-term resilience for future hurricane seasons, both structural and economic resilience would be reduce poverty impacts.',
       attribution: [
       {
         link: 'https://www.nhc.noaa.gov/data/tcr/AL152017_Maria.pdf',
@@ -435,9 +435,12 @@ export class MapComponent implements OnInit {
     },
     // 7. WIND HAZARD MAP SCENE
     {
-      title: 'Dominica and other Caribbean countries will continue to experience hurricanes in the future...',
-      info: `While Dominica is recovering from Hurricane Maria, the country also needs to be look forwarding and fortifying itself against future hurricane seasons.\n
-      The map shows an overview of the degree of windstorm susceptibility across the island (USAID 2006). With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands*.`,
+      title: 'Dominica will continue to experience hurricanes in the future...',
+      info: `While Dominica recovers from Hurricane Maria, the country should also look forward and fortifying itself against future hurricane seasons.\n
+      The map shows an overview of the degree of windstorm susceptibility across the island (USAID 2006). High wind speeds are expected throughout the inland parts of the island, whereas the coastlines may be more susceptible to other hurricane effects such as flooding and stom surge.
+      With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands*.
+      Dominica should prepare to adopt building code changes that factor in the site-specific hazard, and ensure that these code changes have factored in climate change projections and how such changes will affect the hurricane hazard.
+      `,
       attribution: [{
         link: 'http://charim-geonode.net/layers/geonode:wind_5c',
         label: 'CIPA. (2006). Development of a Landslide Hazard Map and Multi-Hazard Assessment for Dominica, West Indies. US-AID/COTS programme.'
