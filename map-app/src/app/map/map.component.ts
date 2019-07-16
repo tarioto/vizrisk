@@ -21,7 +21,7 @@ export class MapComponent implements OnInit {
     }],
     chart: {
       style: {
-        fontFamily: 'Helvetica Neue'
+        fontFamily: 'sans-serif'
       }
     }
   };
@@ -101,7 +101,7 @@ export class MapComponent implements OnInit {
           ],
           chart: {
             style: {
-              fontFamily: 'Helvetica Neue'
+              fontFamily: 'sans-serif'
             }
           },
           title: {
@@ -203,7 +203,7 @@ export class MapComponent implements OnInit {
           }],
           chart: {
             style: {
-              fontFamily: 'Helvetica Neue'
+              fontFamily: 'sans-serif'
             }
           },
           title: {
@@ -273,7 +273,7 @@ export class MapComponent implements OnInit {
           }],
           chart: {
             style: {
-              fontFamily: 'Helvetica Neue'
+              fontFamily: 'sans-serif'
             }
           },
           title: {
@@ -361,7 +361,7 @@ export class MapComponent implements OnInit {
           ],
           chart: {
             style: {
-              fontFamily: 'Helvetica Neue'
+              fontFamily: 'sans-serif'
             }
           },
           title: {
@@ -452,7 +452,7 @@ export class MapComponent implements OnInit {
           ],
           chart: {
             style: {
-              fontFamily: 'Helvetica Neue'
+              fontFamily: 'sans-serif'
             }
           },
           title: {
@@ -731,5 +731,7 @@ export class MapComponent implements OnInit {
   displayScene(type: any) {
     return this.scenes[this.currentSceneIndex][type];
   }
+
+
 
 }
