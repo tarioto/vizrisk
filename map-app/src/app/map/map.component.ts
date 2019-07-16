@@ -491,6 +491,33 @@ export class MapComponent implements OnInit {
         colors: ['dodgerblue', 'mediumseagreen', '#666666'],
         labels: ['Coastline', 'Roads', 'Emergency shelters']
       }
+    },
+    // 9. FINAL SLIDE
+    {
+      title: 'final slide text...',
+      info: `Thus, Dominica needs to incorporate resilient strategies into their recovery. As part of this effort they are pursuing various strategies, such as: \n \n
+      - Nature based solutions. Coral reefs and mangroves can absorb 98% of the wave energy from an incoming storm. One of the most efficient ways to accomplish this is to plant more trees to prevent erosion. [need reference] \n
+      - Investing in infrastructure. One of the recommendations from the PDNA is to significantly invest in improving infrastructure. Improving roads and transportation networks can improve post-disaster relief efforts & access to temporary shelters. \n
+      - Improving building codes and construction practices. One of the other targeted areas for investment is housing, as this sector accounted for a third of damage sustained during the hurricane. Dominica is already working on improving its building codes; one of the proposed improvements is to have steeper roof angles & to use screws instead of nails to strengthen frames. [need ref]`,
+      attribution: [{
+        link: 'https://www.bloomberg.com/news/articles/2018-05-10/dominica-plans-to-be-the-world-s-first-climate-resilient-country',
+        label: '"The Quest to Hurricane-Proof and Island". Nikki Ekstein. Bloomberg. May 10, 2018. Retrieved June 23, 2019.'
+      }],
+      visibleLayer: ['dominica-coast-blue', 'hurricaneshelters', 'roads'],
+      zoom: 10.5,
+      center: { lon: -61.351322, lat: 15.428929 },
+      chart: {
+        exists: false
+      },
+      table: {
+        exists: false,
+        data: [[]]
+      },
+      legend: {
+        exists: true,
+        colors: ['dodgerblue', 'mediumseagreen', '#666666'],
+        labels: ['Coastline', 'Roads', 'Emergency shelters']
+      }
     }
   ];
 
