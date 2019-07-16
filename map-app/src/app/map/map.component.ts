@@ -337,8 +337,8 @@ export class MapComponent implements OnInit {
     },
     // 6. VULNERABILITY OF BUILDINGS TO HIGH WIND SCENE
     {
-      title: 'SOME TITLE ABOUT VULNERABILITY TO WIND...',
-      info: 'SOME MORE TEXT HERE',
+      title: 'We can correlate the building damage to the hazard...',
+      info: 'By obtaining the wind speeds at each location, we can predict the level of structural damage for future hurricanes and windstorms. Beyond 180 mph, there is a 2 in 3 chance that the building may be completely destroyed. Such correlations from damage to hazard can provide a useful structural vulnerability benchmark, and can guide building code modifications to target certain wind speed levels.',
       attribution: [
         {
         link: 'https://www.gfdrr.org/sites/default/files/publication/dominica-pdna-maria.pdf',
