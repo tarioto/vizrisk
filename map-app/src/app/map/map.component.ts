@@ -155,7 +155,7 @@ export class MapComponent implements OnInit {
           link: 'https://www.researchgate.net/publication/224327492_Engineering_Perspectives_on_Reducing_Hurricane_Damage_to_Housing_in_CARICOM_Caribbean_Islands',
           label: 'Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017.'
         }],
-      visibleLayer: ['peak-gust-mph'],
+      visibleLayer: ['peak-gust-0xiyjn'],
       zoom: 5.5,
       center: { lon: -63.509315, lat: 17.608075 },
       chart: {
@@ -166,9 +166,9 @@ export class MapComponent implements OnInit {
         data: [[]]
       },
       legend: {
-        exists: false,
-        colors: ['#666666', '#3cb371', '#ffd700', '#ff8c00', '#dc143c'],
-        labels: ['Unknown damage', 'Negligible to slight damage', 'Moderately damaged', 'Highly damaged', 'Completely destroyed']
+        exists: true,
+        colors: ['#dc143c', '#de1d14', '#e05015', '#e38415', '#e5b816', '#e1e717', '#afea17', '#7dec18', '#4aee19', '#19f11d', '#1af353', '#1bf58a', '#1bf8c1', '#1cfafa', '#1dc5fc', '#1e90ff'],
+        labels: ['190 mph', '180 mph','170 mph', '160 mph','150 mph', '140 mph','130 mph', '120 mph','110 mph', '100 mph','90 mph', '80 mph','70 mph', '60 mph', '50 mph', '40 mph']
       }
     },
     // 3. OVERVIEW OF IMPACT OF HURRICANE MARIA ON IMPACT SCENE
@@ -532,6 +532,10 @@ export class MapComponent implements OnInit {
       checked: false
     }, {
       id: 'peak-gust-mph',
+      displayName: 'Peak Gusts (mph)',
+      checked: false,
+    }, {
+      id: 'peak-gust-0xiyjn',
       displayName: 'Peak Gusts (mph)',
       checked: false,
     }, {
