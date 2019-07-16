@@ -173,19 +173,21 @@ export class MapComponent implements OnInit {
     },
     // 3. OVERVIEW OF IMPACT OF HURRICANE MARIA ON IMPACT SCENE
     {
-      title: 'In 2017, Hurricane Maria became the first recorded Category 5 storm to hit the island of Dominica....',
-      info: `In addition to Dominica, Maria dealt severe damage to the islands of St. Croix and Puerto Rico, making it the third costliest hurricane in the history of the United States. Maria had a peak intensity of more than 172 mph, and was at about 166 mph when it made landfall on Dominica. But Maria also had a rapid increase in intensity during its duration of almost 75 mph within 24 hours, the sixth-fastest hurricane intensification ever in the Atlantic basin. \n
-        In addition to severe winds, Maria brought 22.8 inches of rain to Dominica, and brought about at least 31 deaths and 34 missing persons. In the wake of the hurricane, total damages for the island were estimated to be on the order of $1.3 billion. \n
-        The map shows the intensity of Maria’s winds across the Caribbean. While Maria’s intensity weakened as the storm moved further northwest, damage continued to be devastating.`,
+      title: 'Hurricane Maria resulted in damages and losses equivalent to 226\% of the country\'s gross domestic product (GDP)',
+      info: 'Hurricane Maria caused significant negative impacts on the nation\'s economy, further delaying recovery and exacerbating human and social impacts. The PDNA published by the GFDRR estimates that \'a total of EC$94.9 million in income and 3.1 million work days\` has been lost as a result of the hurricane. Furthermore, \'critical employment sectors such as agriculture and tourism will take up to 12 months to resume regular operations\'. \n \n Combined with the structural damage shown in the previous slide, Hurricane Maria has displaced a total of XX people from their homes. The internal displaced population (IDP) is shown on the map, with the most displacement concentrated in the coastlines. \n \n Overall, the GFDRR predicted a substantial increase in poverty head count from 28.8\% to 42.8\%.',
       attribution: [
-        {
-          link: 'https://www.nhc.noaa.gov/data/tcr/AL152017_Maria.pdf',
-          label: 'National Hurricane Center Tropical Cyclone Report: Hurricane Maria. NOAA. 2017.'
-        },
-        {
-          link: 'https://www.researchgate.net/publication/224327492_Engineering_Perspectives_on_Reducing_Hurricane_Damage_to_Housing_in_CARICOM_Caribbean_Islands',
-          label: 'Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017.'
-        }],
+      {
+        link: 'https://www.nhc.noaa.gov/data/tcr/AL152017_Maria.pdf',
+        label: 'National Hurricane Center Tropical Cyclone Report: Hurricane Maria. NOAA. 2017.'
+      },
+      {
+        link: 'https://www.researchgate.net/publication/224327492_Engineering_Perspectives_on_Reducing_Hurricane_Damage_to_Housing_in_CARICOM_Caribbean_Islands',
+        label: 'Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017.'
+      },
+      {
+        link: 'https://www.gfdrr.org/sites/default/files/publication/dominica-pdna-maria.pdf',
+        label: 'Dominica: Post-Disaster Needs Assessment following Hurricane Maria. GFDRR. 2018'
+      }],
       visibleLayer: ['displaced-pop2'],
       zoom: 10.5,
       center: { lon: -61.351322, lat: 15.428929 },
@@ -207,7 +209,7 @@ export class MapComponent implements OnInit {
       title: 'Over 90% of the country\'s housing stock was damaged...',
       info: 'The chart below shows that a significant proportion of the damaged buildings were highly damaged or completely destroyed. The widespread damage left thousdands of people homeless. As the map shows, the coastlines are much more vulnerable to hurricane damage with a particularly high concentration of severely damaged housing stock on the east coast of Dominica. \n \n It is estimated that total damage to the housing sector alone is nearly US$360 million. In addition, losses resulting from this damage are estimated at US$29 million, which includes loss of rental income, demolition costs, debris removal and clean up, and shelter costs. \n \n In the GFDRR\'s proposed budget for recovery, a total of US$520 million is dedicated to housing. The group recommends that much of this budget be spent in the medium-term following the hurricane, which is in years 2019-2022. \n \n Rebuilding residential buildings using stricter building codes and connecting the most vulnerable communities through improved infrastructure can enable more efficient recovery and resilience in future hurricanes.',
       attribution: [{
-        link: 'https://www.gfdrr.org/en/dominica-pdna-hurricanemaria',
+        link: 'https://www.gfdrr.org/sites/default/files/publication/dominica-pdna-maria.pdf',
         label: 'Dominica: Post-Disaster Needs Assessment following Hurricane Maria. GFDRR. 2018'
       }],
       visibleLayer: ['building-data-9b0ub5'],
