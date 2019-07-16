@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { environment } from './../../environments/environment';
 import * as mapboxgl from 'mapbox-gl';
 import { FormControl } from '@angular/forms';
@@ -8,11 +8,15 @@ theme(Highcharts);
 
 @Component({
   selector: 'app-map',
+  queries: {
+    contentRef: new ViewChild( 'contentRef' )
+  },
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css']
 })
 
 export class MapComponent implements OnInit {
+  public contentRef!: ElementRef;
   Highcharts: typeof Highcharts = Highcharts;
   chartOptions: Highcharts.Options = {
     series: [{
@@ -716,6 +720,7 @@ export class MapComponent implements OnInit {
       }
     }
     this.updateFlag = false;
+    this.scrollCardContentToTop()
   }
 
   setCurrentLayer() {
@@ -747,6 +752,8 @@ export class MapComponent implements OnInit {
     return this.scenes[this.currentSceneIndex][type];
   }
 
-
+  private scrollCardContentToTop(): void {
+    this.contentRef.nativeElement.scrollTo( 0, 0 );
+  }
 
 }
