@@ -560,11 +560,17 @@ export class MapComponent implements OnInit {
     // 9. FINAL SLIDE
     {
       title: 'Conclusions',
-      info: `Thus, Dominica needs to incorporate resilient strategies into their recovery. As part of this effort they are pursuing various strategies, such as: \n \n
-      - Nature based solutions. Coral reefs and mangroves can absorb 98% of the wave energy from an incoming storm. One of the most efficient ways to accomplish this is to plant more trees to prevent erosion. [need reference] \n
-      - Investing in infrastructure. One of the recommendations from the PDNA is to significantly invest in improving infrastructure. Improving roads and transportation networks can improve post-disaster relief efforts & access to temporary shelters. \n
-      - Improving building codes and construction practices. One of the other targeted areas for investment is housing, as this sector accounted for a third of damage sustained during the hurricane. Dominica is already working on improving its building codes; one of the proposed improvements is to have steeper roof angles & to use screws instead of nails to strengthen frames. [need ref]`,
-      attribution: [{
+      info: `As a Small Island Development State (SIDS), Dominica faces various challenges on the road to recovery. \n 
+      Some of this includes global trends such as climate change, which can increase the intensity of hazards such as flooding and storm surge. \n
+      Recent investments in the tourism sector can exacerbate these effects, as the developments tend to be concentrated on the coastlines and can contribute to coastal erosion. \n
+      Despite these challenges, Dominica is taking steps forward to prioritize various mitigation strategies. By incorporating resilience in its recovery, Dominica is well on its way to reducing damage and downtime in subsequent hurricanes.  \n
+      `,
+      attribution: [
+      {
+        link: 'https://www.gfdrr.org/sites/default/files/publication/dominica-pdna-maria.pdf',
+        label: 'Dominica: Post-Disaster Needs Assessment following Hurricane Maria. GFDRR. 2018'
+      },
+      {
         link: 'https://www.bloomberg.com/news/articles/2018-05-10/dominica-plans-to-be-the-world-s-first-climate-resilient-country',
         label: '"The Quest to Hurricane-Proof and Island". Nikki Ekstein. Bloomberg. May 10, 2018. Retrieved June 23, 2019.'
       }],
