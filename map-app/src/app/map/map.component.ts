@@ -21,7 +21,7 @@ export class MapComponent implements OnInit {
     }],
     chart: {
       style: {
-        fontFamily: 'Helvetica Neue'
+        fontFamily: 'Helvetica '
       }
     }
   };
@@ -101,7 +101,7 @@ export class MapComponent implements OnInit {
           ],
           chart: {
             style: {
-              fontFamily: 'Helvetica Neue'
+              fontFamily: 'Helvetica '
             }
           },
           title: {
@@ -203,7 +203,7 @@ export class MapComponent implements OnInit {
           }],
           chart: {
             style: {
-              fontFamily: 'Helvetica Neue'
+              fontFamily: 'Helvetica '
             }
           },
           title: {
@@ -273,7 +273,7 @@ export class MapComponent implements OnInit {
           }],
           chart: {
             style: {
-              fontFamily: 'Helvetica Neue'
+              fontFamily: 'Helvetica '
             }
           },
           title: {
@@ -361,7 +361,7 @@ export class MapComponent implements OnInit {
           ],
           chart: {
             style: {
-              fontFamily: 'Helvetica Neue'
+              fontFamily: 'Helvetica '
             }
           },
           title: {
@@ -452,7 +452,7 @@ export class MapComponent implements OnInit {
           ],
           chart: {
             style: {
-              fontFamily: 'Helvetica Neue'
+              fontFamily: 'Helvetica '
             }
           },
           title: {
@@ -560,7 +560,7 @@ export class MapComponent implements OnInit {
     // 9. FINAL SLIDE
     {
       title: 'Conclusions',
-      info: `As a Small Island Development State (SIDS), Dominica faces various challenges on the road to recovery. \n 
+      info: `As a Small Island Development State (SIDS), Dominica faces various challenges on the road to recovery. \n
       Some of this includes global trends such as climate change, which can increase the intensity of hazards such as flooding and storm surge. \n
       Recent investments in the tourism sector can exacerbate these effects, as the developments tend to be concentrated on the coastlines and can contribute to coastal erosion. \n
       Despite these challenges, Dominica is taking steps forward to prioritize various mitigation strategies. By incorporating resilience in its recovery, Dominica is well on its way to reducing damage and downtime in subsequent hurricanes.  \n
@@ -741,5 +741,7 @@ export class MapComponent implements OnInit {
   displayScene(type: any) {
     return this.scenes[this.currentSceneIndex][type];
   }
+
+
 
 }
