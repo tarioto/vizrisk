@@ -234,7 +234,7 @@ export class MapComponent implements OnInit {
       legend: {
         exists: true,
         colors: ['#ea7b4300'],
-        labels: ['Total number of IDP individuals']
+        labels: ['Total number of displaced individuals']
       }
     },
     // 4. OVERVIEW OF DOMINICA BUILDING DAMAGE SCENE (PARISH LEVEL)
