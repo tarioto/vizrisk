@@ -573,7 +573,7 @@ export class MapComponent implements OnInit {
     },
     // 9. FINAL SLIDE
     {
-      title: 'In conclusion...',
+      title: 'In summary...',
       info: `As a Small Island Development State (SIDS), Dominica faces various challenges on the road to recovery. \n
       These challenges include global trends such as climate change, which can increase the intensity of hazards such as flooding and storm surge. \n
       Recent investments in the tourism sector can exacerbate these effects, as the developments tend to be concentrated on the coastlines and can contribute to coastal erosion. \n
