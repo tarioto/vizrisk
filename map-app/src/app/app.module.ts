@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 import { MapComponent } from './map/map.component';
-import { OverlayComponent } from './map/overlay/overlay.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HighchartsChartModule } from 'highcharts-angular';

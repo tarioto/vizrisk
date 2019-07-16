@@ -1,4 +1,4 @@
-image: node:8.7.0
+image: node:8.9.0
 
 pipelines:
   branches:
@@ -8,7 +8,7 @@ pipelines:
             - node
           script:
             - cd map-app && npm install
-            - cd map-app && npm run build-prod
+            - npm run build-prod
           artifacts:
             - map-app/dist/**
       - step:
