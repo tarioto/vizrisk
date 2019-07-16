@@ -105,7 +105,7 @@ export class MapComponent implements OnInit {
             }
           },
           title: {
-            text: 'Hurricane intensity and frequency since 1960'
+            text: 'Hurricane intensity and frequency in the Caribbean Sea since 1960'
           },
           legend: {
             enabled: true
@@ -192,7 +192,40 @@ export class MapComponent implements OnInit {
       zoom: 10.5,
       center: { lon: -61.351322, lat: 15.428929 },
       chart: {
-        exists: false
+        exists: true,
+        chartOptions: {
+          series: [{
+            data: [1018, 459, 352],
+            type: 'column',
+            borderWidth: 0,
+            color: '#ea7b43',
+            name: 'IDP'
+          }],
+          chart: {
+            style: {
+              fontFamily: 'Helvetica Neue'
+            }
+          },
+          title: {
+            text: "Internally displaced population over time"
+          },
+          legend: {
+            enabled: false
+          },
+          xAxis: {
+            categories: ["October 2017", "November 2017", "January 2018"],
+            labels: {
+              style: {
+                fontSize: '16px'
+              }
+            }
+          },
+          yAxis: {
+            title: {
+              text: false
+            }
+          }
+        }
       },
       table: {
         exists: false,
@@ -201,7 +234,7 @@ export class MapComponent implements OnInit {
       legend: {
         exists: true,
         colors: ['#ea7b4300'],
-        labels: ['Total number of IDP individuals']
+        labels: ['Total number of displaced individuals']
       }
     },
     // 4. OVERVIEW OF DOMINICA BUILDING DAMAGE SCENE (PARISH LEVEL)
@@ -230,6 +263,7 @@ export class MapComponent implements OnInit {
           series: [{
             data: [{ y: 294, color: 'mediumseagreen' }, { y: 966, color: 'gold' }, { y: 1300, color: 'darkorange' }, { y: 381, color: 'crimson' }],
             type: 'column',
+            name: "Damaged buildings",
             borderWidth: 0,
             plotOptions: {
               column: {
@@ -244,6 +278,9 @@ export class MapComponent implements OnInit {
           },
           title: {
             text: "Number of damaged Dominica buildings in Hurricane Maria"
+          },
+          subtitle: {
+            text: "Note that only a subset of the UNOSAT data is used in this plot. There were many more records of unknown damage (shown as gray in the map) that were not included in this chart."
           },
           legend: {
             enabled: false
@@ -359,6 +396,9 @@ export class MapComponent implements OnInit {
           },
           title: {
             text: 'Proportion of building damage by max wind speed'
+          },
+          subtitle: {
+            text: "Note that only a subset of the UNOSAT data is used in this plot. There were many more records of unknown damage (shown as gray in the map) that were not included in this chart."
           },
           legend: {
             enabled: true
