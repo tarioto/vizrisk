@@ -245,6 +245,9 @@ export class MapComponent implements OnInit {
           title: {
             text: "Number of damaged Dominica buildings in Hurricane Maria"
           },
+          subtitle: {
+            text: "Note that only a subset of the UNOSAT data is used in this plot. There were many more records of unknown damage (shown as gray in the map) that were not included in this chart."
+          },
           legend: {
             enabled: false
           },
@@ -359,6 +362,9 @@ export class MapComponent implements OnInit {
           },
           title: {
             text: 'Proportion of building damage by max wind speed'
+          },
+          subtitle: {
+            text: "Note that only a subset of the UNOSAT data is used in this plot. There were many more records of unknown damage (shown as gray in the map) that were not included in this chart."
           },
           legend: {
             enabled: true
