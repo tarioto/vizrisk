@@ -255,7 +255,7 @@ export class MapComponent implements OnInit {
       zoom: 10.5,
       center: { lon: -61.351322, lat: 15.428929 },
       table: {
-        exists: true
+        exists: false
       },
       chart: {
         exists: true,
@@ -327,7 +327,68 @@ export class MapComponent implements OnInit {
       zoom: 14.5,
       center: { lon: -61.377716, lat: 15.308563 },
       chart: {
-        exists: false
+        exists: true,
+        chartOptions: {
+          series: [
+            {
+              data: [6, 11, 32, 75, 14, 2, 105, 29, 18, 2],
+              name: 'Negligible to slight damage',
+              type: 'bar',
+              color: 'mediumseagreen',
+              borderWidth: 0,
+            },
+            {
+              data: [103, 46, 57, 278, 107, 10, 220, 52, 76, 17],
+              name: 'Moderately damaged',
+              type: 'bar',
+              color: 'gold',
+              borderWidth: 0,
+            },
+            {
+              data: [95, 59, 117, 308, 211, 52, 227, 109, 79, 43],
+              name: 'Highly damaged',
+              type: 'bar',
+              color: 'darkorange',
+              borderWidth: 0,
+            },
+            {
+              data: [214, 124, 281, 727, 387, 80, 602, 269, 192, 65],
+              name: 'Completely destroyed',
+              type: 'bar',
+              color: 'crimson',
+              borderWidth: 0,
+            }
+          ],
+          chart: {
+            style: {
+              fontFamily: 'Helvetica Neue'
+            }
+          },
+          title: {
+            text: 'Building damage by suburb within Roseau'
+          },
+          legend: {
+            enabled: true
+          },
+          yAxis: {
+            categories: ['Bath Estate', 'Elmshall', 'Fond Cole', 'Goodwill', 'King Hill', 'Newtown', 'Potters Ville', 'Stockfarm', 'Tarish Pit', 'Yampiece'],
+            labels: {
+              style: {
+                fontSize: '16px'
+              }
+            }
+          },
+          xAxis: {
+            title: {
+              text: 'Number of damaged buildings'
+            }
+          },
+          plotOptions: {
+            column: {
+              stacking: 'normal'
+            }
+          }
+        }
       },
       legend: {
         exists: true,
@@ -561,6 +622,10 @@ export class MapComponent implements OnInit {
     }, {
       id: 'displaced-pop2',
       displayName: 'Displaced Population',
+      checked: false
+    }, {
+      id: 'dominica-buildings-gray',
+      displayName: 'Dominica Buildings',
       checked: false
     }, {
       id: 'building-data-9b0ub5',
