@@ -404,7 +404,8 @@ export class MapComponent implements OnInit {
     // 6. VULNERABILITY OF BUILDINGS TO HIGH WIND SCENE
     {
       title: 'We can correlate the building damage to the anticipated hazard...',
-      info: 'Risk analysts use \"fragility curves\" to predict how a given hazard is likely to relate to damage. By obtaining the wind speeds and resulting damage at each location, we can show how the two correlate and improve our understanding for future hurricanes and windstorms. Beyond 180 mph, there was a 2 in 3 chance that the building would be completely destroyed. Such correlations from damage to hazard can provide a useful structural vulnerability benchmark, and can guide building code modifications to target certain wind speed levels.',
+      info: `Risk analysts use \"fragility curves\" to predict how a given hazard is likely to relate to damage. By obtaining the wind speeds and resulting damage at each location, we can show how the two correlate and improve our understanding for future hurricanes and windstorms. \n
+      Beyond 180 mph, there was a 2 in 3 chance that the building would be completely destroyed. Such correlations from damage to hazard can provide a useful structural vulnerability benchmark, and can guide building code modifications to target certain wind speed levels.`,
       attribution: [
         {
         link: 'https://www.gfdrr.org/sites/default/files/publication/dominica-pdna-maria.pdf',
@@ -503,7 +504,7 @@ export class MapComponent implements OnInit {
     {
       title: 'Dominica will continue to experience hurricanes in the future...',
       info: `While Dominica recovers from Hurricane Maria, the country must also look towards fortifying itself in advance of future hurricane seasons.\n \n
-      The map shows an overview of the degree of windstorm susceptibility across the island (USAID 2006). High wind speeds are expected throughout the inland parts of the island, whereas the coastlines may be more susceptible to other hurricane effects such as flooding and stom surge. This, combined with tendency of populations to grow along the coastline, can result in more significant impact on coastal communities.
+      The map shows an overview of the degree of windstorm susceptibility across the island (USAID 2006). High wind speeds are expected throughout the inland parts of the island, whereas the coastlines may be more susceptible to other hurricane effects such as flooding and stom surge. This, combined with tendency of populations to grow along the coastline, can result in more significant impact on coastal communities. \n \n
       With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands.
       Dominica should prepare to adopt building code changes that factor in the site-specific hazard, and ensure that these code changes have factored in climate change projections and how such changes will affect the hurricane hazard.
       `,
@@ -533,7 +534,7 @@ export class MapComponent implements OnInit {
     },
     // 8. MITIGATION MEASURES SCENE
     {
-      title: 'Fortunately, Dominica is looking to \"build back better\"...',
+      title: 'Fortunately, Dominica is looking to build back better...',
       info: `Dominica needs to incorporate resilient strategies into their recovery, and some groups have already begun to do just that. As part of this effort they are pursuing various strategies, such as: \n \n
       - Nature based solutions. Coral reefs and mangroves can absorb 98% of the wave energy from an incoming storm. One of the most efficient ways to accomplish this is to plant more trees to prevent erosion \n
       - Investing in infrastructure. One of the recommendations from the PDNA is to significantly invest in improving infrastructure. Improving roads and transportation networks can improve post-disaster relief efforts & access to temporary shelters. \n
