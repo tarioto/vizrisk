@@ -389,7 +389,7 @@ export class MapComponent implements OnInit {
             }
           },
           plotOptions: {
-            column: {
+            bar: {
               stacking: 'normal'
             }
           }
