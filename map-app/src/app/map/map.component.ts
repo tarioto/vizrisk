@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { environment } from './../../environments/environment';
 import * as mapboxgl from 'mapbox-gl';
 import { FormControl } from '@angular/forms';
@@ -8,11 +8,15 @@ theme(Highcharts);
 
 @Component({
   selector: 'app-map',
+  queries: {
+    contentRef: new ViewChild( 'contentRef' )
+  },
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css']
 })
 
 export class MapComponent implements OnInit {
+  public contentRef!: ElementRef;
   Highcharts: typeof Highcharts = Highcharts;
   chartOptions: Highcharts.Options = {
     series: [{
@@ -554,8 +558,8 @@ export class MapComponent implements OnInit {
       },
       legend: {
         exists: true,
-        colors: ['dodgerblue', 'mediumseagreen', '#666666'],
-        labels: ['Coastline', 'Roads', 'Emergency shelters']
+        colors: ['dodgerblue', 'mediumseagreen', '#666666', '#cdcdcd'],
+        labels: ['Coastline', 'Roads', 'Buildings', 'Emergency Shelters']
       }
     },
     // 9. FINAL SLIDE
@@ -587,8 +591,8 @@ export class MapComponent implements OnInit {
       },
       legend: {
         exists: true,
-        colors: ['dodgerblue', 'mediumseagreen', '#666666'],
-        labels: ['Coastline', 'Roads', 'Emergency shelters']
+        colors: ['dodgerblue', 'mediumseagreen', '#666666', '#cdcdcd'],
+        labels: ['Coastline', 'Roads', 'Buildings', 'Emergency Shelters']
       }
     }
   ];
@@ -657,8 +661,6 @@ export class MapComponent implements OnInit {
       center: [this.lng, this.lat]
     });
 
-    console.log(this.map);
-
     this.map.on('load', () => {
       this.toggleableLayerIdsList.forEach((layer) => {
         this.map.setLayoutProperty(layer.id, 'visibility', 'none');
@@ -667,7 +669,6 @@ export class MapComponent implements OnInit {
     });
 
     this.map.on('click', 'dominica-damage-buildings', (e) => {
-      console.log(e.features[0]);
       new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(e.features[0].properties.agency_id)
@@ -677,7 +678,6 @@ export class MapComponent implements OnInit {
 
   toggleLayer(layer: any) {
     if (this.map.getLayoutProperty(layer, 'visibility') === 'visible') {
-      console.log(this.map.getLayoutProperty('displaced-pop2', 'visibility'));
       this.map.setLayoutProperty(layer, 'visibility', 'none');
     } else {
       this.map.setLayoutProperty(layer, 'visibility', 'visible');
@@ -691,7 +691,7 @@ export class MapComponent implements OnInit {
       this.prevDisabled = false;
       if (this.currentSceneIndex < this.scenes.length - 1) {
         this.currentSceneIndex += 1;
-        setTimeout(() => { this.updateFlag = true }, 1);
+        setTimeout(() => this.updateFlag = true, 1);
         this.setCurrentLayer();
         this.setZoomExtent();
         if (this.currentSceneIndex === this.scenes.length - 1) {
@@ -704,18 +704,18 @@ export class MapComponent implements OnInit {
       if (this.currentSceneIndex !== 0) {
         this.nextDisabled = false;
         this.currentSceneIndex -= 1;
-        setTimeout(() => { this.updateFlag = true }, 1);
+        setTimeout(() => this.updateFlag = true, 1);
         this.setCurrentLayer();
         this.setZoomExtent();
         if (this.currentSceneIndex > 0) {
           this.prevDisabled = false;
         } else if (this.currentSceneIndex === 0) {
-          console.log(this.currentSceneIndex);
           this.prevDisabled = true;
         }
       }
     }
     this.updateFlag = false;
+    this.scrollCardContentToTop();
   }
 
   setCurrentLayer() {
@@ -747,6 +747,8 @@ export class MapComponent implements OnInit {
     return this.scenes[this.currentSceneIndex][type];
   }
 
-
+  private scrollCardContentToTop(): void {
+    this.contentRef.nativeElement.scrollTo( 0, 0 );
+  }
 
 }
