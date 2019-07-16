@@ -32,6 +32,7 @@ export class MapComponent implements OnInit {
   layers: any;
   currentSceneIndex = 0;
   scenes = [
+    // 1. HURRICANES IN CARIBBEAN INTRO SCENE
     {
       title: 'Imagine 90% of your country\'s buildings being damaged or destroyed in one night...',
       info: `This was the impact of Hurricane Maria on the island nation of Dominica on September 18, 2017.\n
@@ -63,35 +64,35 @@ export class MapComponent implements OnInit {
         chartOptions: {
           series: [
             {
-              data: [4, 6, 5, 2],
+              data: [6, 6, 5, 2],
               name: 'Category 1',
               type: 'column',
               color: 'dodgerblue',
               borderWidth: 0,
             },
             {
-              data: [2, 3, 3, 5],
+              data: [5, 3, 3, 5],
               name: 'Category 2',
               type: 'column',
               color: 'mediumseagreen',
               borderWidth: 0,
             },
             {
-              data: [1, 3, 3, 4],
+              data: [3, 3, 3, 4],
               name: 'Category 3',
               type: 'column',
               color: 'gold',
               borderWidth: 0,
             },
             {
-              data: [2, 4, 7, 0],
+              data: [6, 4, 7, 0],
               name: 'Category 4',
               type: 'column',
               color: 'darkorange',
               borderWidth: 0,
             },
             {
-              data: [1, 3, 5, 3],
+              data: [3, 3, 5, 3],
               name: 'Category 5',
               type: 'column',
               color: 'crimson',
@@ -130,7 +131,7 @@ export class MapComponent implements OnInit {
         }
       },
       table: {
-        exists: true,
+        exists: false,
         data: [[]]
       },
       legend: {
@@ -139,6 +140,7 @@ export class MapComponent implements OnInit {
         // labels: ['Unknown damage', 'Negligible to slight damage', 'Moderately damaged', 'Highly damaged', 'Completely destroyed']
       }
     },
+    // 2. HURRICANE MARIA INTRO SLIDE
     {
       title: 'In 2017, Hurricane Maria became the first recorded Category 5 storm to hit the island of Dominica....',
       info: `Maria had a peak intensity of more than 172 mph, and was at about 166 mph when it made landfall on Dominica. But Maria also had a rapid increase in intensity during its duration of almost 75 mph within 24 hours, the sixth-fastest hurricane intensification ever in the Atlantic basin. \n
@@ -159,12 +161,17 @@ export class MapComponent implements OnInit {
       chart: {
         exists: false
       },
+      table: {
+        exists: false,
+        data: [[]]
+      },
       legend: {
         exists: false,
         colors: ['#666666', '#3cb371', '#ffd700', '#ff8c00', '#dc143c'],
         labels: ['Unknown damage', 'Negligible to slight damage', 'Moderately damaged', 'Highly damaged', 'Completely destroyed']
       }
     },
+    // 3. OVERVIEW OF IMPACT OF HURRICANE MARIA ON IMPACT SCENE
     {
       title: 'Hurricane Maria resulted in damages and losses equivalent to 226\% of the country\'s gross domestic product (GDP)',
       info: 'Hurricane Maria caused significant negative impacts on the nation\'s economy, further delaying recovery and exacerbating human and social impacts. The PDNA published by the GFDRR estimates that \'a total of EC$94.9 million in income and 3.1 million work days\` has been lost as a result of the hurricane. Furthermore, \'critical employment sectors such as agriculture and tourism will take up to 12 months to resume regular operations\'. \n \n Combined with the structural damage shown in the previous slide, Hurricane Maria has displaced a total of XX people from their homes. The internal displaced population (IDP) is shown on the map, with the most displacement concentrated in the coastlines. \n \n Overall, the GFDRR predicted a substantial increase in poverty head count from 28.8\% to 42.8\%.',
@@ -187,23 +194,17 @@ export class MapComponent implements OnInit {
       chart: {
         exists: false
       },
+      table: {
+        exists: false,
+        data: [[]]
+      },
       legend: {
         exists: true,
         colors: ['#ea7b4300'],
         labels: ['Total number of IDP individuals']
       }
     },
-    // {
-    //   title: 'Here is a headline about impact on Dominica from Hurricane Maria...',
-    //   info: 'this will be a description of some stuff or whatever',
-    // attribution: [{
-    //   link: '',
-    //   label: ''
-    // }],
-    //   visibleLayer: 'hurricaneshelters',
-    //   zoom: 10.5,
-    //   center: {lon: -61.351322, lat: 15.428929}
-    // },
+    // 4. OVERVIEW OF DOMINICA BUILDING DAMAGE SCENE (PARISH LEVEL)
     {
       title: 'Over 90% of the country\'s housing stock was damaged...',
       info: 'The chart below shows that a significant proportion of the damaged buildings were highly damaged or completely destroyed. The widespread damage left thousdands of people homeless. As the map shows, the coastlines are much more vulnerable to hurricane damage with a particularly high concentration of severely damaged housing stock on the east coast of Dominica. \n \n It is estimated that total damage to the housing sector alone is nearly US$360 million. In addition, losses resulting from this damage are estimated at US$29 million, which includes loss of rental income, demolition costs, debris removal and clean up, and shelter costs. \n \n In the GFDRR\'s proposed budget for recovery, a total of US$520 million is dedicated to housing. The group recommends that much of this budget be spent in the medium-term following the hurricane, which is in years 2019-2022. \n \n Rebuilding residential buildings using stricter building codes and connecting the most vulnerable communities through improved infrastructure can enable more efficient recovery and resilience in future hurricanes.',
@@ -214,6 +215,9 @@ export class MapComponent implements OnInit {
       visibleLayer: ['building-data-9b0ub5'],
       zoom: 10.5,
       center: { lon: -61.351322, lat: 15.428929 },
+      table: {
+        exists: true
+      },
       chart: {
         exists: true,
         chartOptions: {
@@ -259,6 +263,7 @@ export class MapComponent implements OnInit {
         labels: ['Unknown damage', 'Negligible to slight damage', 'Moderately damaged', 'Highly damaged', 'Completely destroyed']
       }
     },
+    // 5. OVERVIEW OF DAMAGED BUILDINGS TO ROSEAU (SUBURB LEVEL)
     {
       title: 'In Roseau, the capital city of Dominica...',
       info: 'A large proportion of the buildings were either moderately or highly damaged. Much of the island nation\'s businesses, hotels, and commerce is located in Roseau.',
@@ -266,6 +271,9 @@ export class MapComponent implements OnInit {
         link: '',
         label: ''
       }],
+      table: {
+        exists: false
+      },
       visibleLayer: ['building-data-9b0ub5'],
       zoom: 14.5,
       center: { lon: -61.377716, lat: 15.308563 },
@@ -278,13 +286,103 @@ export class MapComponent implements OnInit {
         labels: ['Unknown damage', 'Negligible to slight damage', 'Moderately damaged', 'Highly damaged', 'Completely destroyed']
       }
     },
+    // 6. VULNERABILITY OF BUILDINGS TO HIGH WIND SCENE
+    {
+      title: 'SOME TITLE ABOUT VULNERABILITY TO WIND...',
+      info: 'SOME MORE TEXT HERE',
+      attribution: [{
+        link: '',
+        label: ''
+      }],
+      visibleLayer: ['building-data-9b0ub5'],
+      zoom: 14.5,
+      center: { lon: -61.377716, lat: 15.308563 },
+      table: {
+        exists: false,
+        data: [[]]
+      },
+      chart: {
+        exists: true,
+        chartOptions: {
+          series: [
+            {
+              data: [12.3, 7.4, 9.9, 12.8, 5.6],
+              name: 'Negligible to slight damage',
+              type: 'column',
+              color: 'mediumseagreen',
+              borderWidth: 0,
+            },
+            {
+              data: [34.4, 31.1, 31.3, 38.1, 14.3],
+              name: 'Moderately damaged',
+              type: 'column',
+              color: 'gold',
+              borderWidth: 0,
+            },
+            {
+              data: [43.3, 46.0, 39.4, 26.8, 15.0],
+              name: 'Highly damaged',
+              type: 'column',
+              color: 'darkorange',
+              borderWidth: 0,
+            },
+            {
+              data: [10.0, 15.4, 19.3, 22.2, 65.1],
+              name: 'Completely destroyed',
+              type: 'column',
+              color: 'crimson',
+              borderWidth: 0,
+            }
+          ],
+          chart: {
+            style: {
+              fontFamily: 'Helvetica Neue'
+            }
+          },
+          title: {
+            text: 'Proportion of building damage by max wind speed'
+          },
+          legend: {
+            enabled: true
+          },
+          xAxis: {
+            categories: ['140 mph', '150 mph', '160 mph', '170 mph', '180 mph'],
+            labels: {
+              style: {
+                fontSize: '16px'
+              }
+            }
+          },
+          yAxis: {
+            title: {
+              text: false
+            },
+            max: 100,
+            labels: {
+              format: '{value}%'
+            }
+          },
+          plotOptions: {
+            column: {
+              stacking: 'normal'
+            }
+          }
+        }
+      },
+      legend: {
+        exists: true,
+        colors: ['#666666', '#3cb371', '#ffd700', '#ff8c00', '#dc143c'],
+        labels: ['Unknown damage', 'Negligible to slight damage', 'Moderately damaged', 'Highly damaged', 'Completely destroyed']
+      }
+    },
+    // 7. WIND HAZARD MAP SCENE
     {
       title: 'Dominica and other Caribbean countries will continue to experience hurricanes in the future...',
       info: `While Dominica is recovering from Hurricane Maria, the country also needs to be look forwarding and fortifying itself against future hurricane seasons.\n
       The map shows an overview of the degree of windstorm susceptibility across the island (USAID 2006). With climate change, the frequency and intensity of storms is expected to change, and worsen, for Dominica and its neighboring Lower Antilles islands*.`,
       attribution: [{
         link: 'http://charim-geonode.net/layers/geonode:wind_5c',
-        label: 'This wind hazard map was produced in 2006 as part of a USAID-funded project'
+        label: 'CIPA. (2006). Development of a Landslide Hazard Map and Multi-Hazard Assessment for Dominica, West Indies. US-AID/COTS programme.'
       },
       {
         link: 'https://www.researchgate.net/publication/224327492_Engineering_Perspectives_on_Reducing_Hurricane_Damage_to_Housing_in_CARICOM_Caribbean_Islands',
@@ -296,12 +394,17 @@ export class MapComponent implements OnInit {
       chart: {
         exists: false
       },
+      table: {
+        exists: false,
+        data: [[]]
+      },
       legend: {
         exists: true,
         colors: ['#ADCBFF', '#94BDFF', '#7AABFF', '#669EFF', '#4287FF'],
         labels: ['Very Low', 'Low', 'Moderate', 'High', 'Very High']
       }
     },
+    // 8. MITIGATION MEASURES SCENE
     {
       title: 'Fortunately, Dominica is thinking pro-actively about how they can better mitigate risks in the next hurricane...',
       info: `Thus, Dominica needs to incorporate resilient strategies into their recovery. As part of this effort they are pursuing various strategies, such as: \n \n
@@ -317,6 +420,10 @@ export class MapComponent implements OnInit {
       center: { lon: -61.351322, lat: 15.428929 },
       chart: {
         exists: false
+      },
+      table: {
+        exists: false,
+        data: [[]]
       },
       legend: {
         exists: false,
@@ -446,13 +553,13 @@ export class MapComponent implements OnInit {
 
     this.scenes[this.currentSceneIndex].visibleLayer.forEach((layer) => {
       this.toggleLayer(layer);
-      if (this.currentSceneIndex === 6) {
-        this.scenes[6].visibleLayer.forEach((mitLayer) => {
+      if (this.currentSceneIndex === 7) {
+        this.scenes[7].visibleLayer.forEach((mitLayer) => {
           this.map.setLayoutProperty(mitLayer, 'visibility', 'visible');
         });
-      } else if (this.currentSceneIndex !== 6) {
+      } else if (this.currentSceneIndex !== 7) {
         this.setZoomExtent();
-        this.scenes[6].visibleLayer.forEach((mitLayer) => {
+        this.scenes[7].visibleLayer.forEach((mitLayer) => {
           this.map.setLayoutProperty(mitLayer, 'visibility', 'none');
         });
       }
