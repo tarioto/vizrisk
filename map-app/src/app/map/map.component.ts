@@ -208,10 +208,16 @@ export class MapComponent implements OnInit {
     {
       title: 'Over 90% of the country\'s housing stock was damaged...',
       info: 'The chart below shows that a significant proportion of the damaged buildings were highly damaged or completely destroyed. The widespread damage left thousdands of people homeless. As the map shows, the coastlines are much more vulnerable to hurricane damage with a particularly high concentration of severely damaged housing stock on the east coast of Dominica. \n \n It is estimated that total damage to the housing sector alone is nearly US$360 million. In addition, losses resulting from this damage are estimated at US$29 million, which includes loss of rental income, demolition costs, debris removal and clean up, and shelter costs. \n \n In the GFDRR\'s proposed budget for recovery, a total of US$520 million is dedicated to housing. The group recommends that much of this budget be spent in the medium-term following the hurricane, which is in years 2019-2022. \n \n Rebuilding residential buildings using stricter building codes and connecting the most vulnerable communities through improved infrastructure can enable more efficient recovery and resilience in future hurricanes.',
-      attribution: [{
+      attribution: [
+        {
         link: 'https://www.gfdrr.org/sites/default/files/publication/dominica-pdna-maria.pdf',
         label: 'Dominica: Post-Disaster Needs Assessment following Hurricane Maria. GFDRR. 2018'
-      }],
+      },
+        {
+        link: 'https://unitar.org/unosat/node/44/2708',
+        label: 'Tropical Cyclone Maria. Buildings Damage Assessment & Related Density in Dominica - Analysis By Parish. UNITAR-INOSAT. OCtober 18, 2017. Retrieved June 2019.'
+      }
+    ],
       visibleLayer: ['building-data-9b0ub5'],
       zoom: 10.5,
       center: { lon: -61.351322, lat: 15.428929 },
@@ -267,10 +273,16 @@ export class MapComponent implements OnInit {
     {
       title: 'In Roseau, the capital city of Dominica...',
       info: 'A large proportion of the buildings were either moderately or highly damaged. Much of the island nation\'s businesses, hotels, and commerce is located in Roseau.',
-      attribution: [{
-        link: '',
-        label: ''
-      }],
+      attribution: [
+        {
+        link: 'https://www.gfdrr.org/sites/default/files/publication/dominica-pdna-maria.pdf',
+        label: 'Dominica: Post-Disaster Needs Assessment following Hurricane Maria. GFDRR. 2018'
+      },
+        {
+        link: 'https://unitar.org/unosat/node/44/2708',
+        label: 'Tropical Cyclone Maria. Buildings Damage Assessment & Related Density in Dominica - Analysis By Parish. UNITAR-INOSAT. OCtober 18, 2017. Retrieved June 2019.'
+      }
+    ],
       table: {
         exists: false
       },
@@ -290,10 +302,16 @@ export class MapComponent implements OnInit {
     {
       title: 'SOME TITLE ABOUT VULNERABILITY TO WIND...',
       info: 'SOME MORE TEXT HERE',
-      attribution: [{
-        link: '',
-        label: ''
-      }],
+      attribution: [
+        {
+        link: 'https://www.gfdrr.org/sites/default/files/publication/dominica-pdna-maria.pdf',
+        label: 'Dominica: Post-Disaster Needs Assessment following Hurricane Maria. GFDRR. 2018'
+      },
+        {
+        link: 'https://unitar.org/unosat/node/44/2708',
+        label: 'Tropical Cyclone Maria. Buildings Damage Assessment & Related Density in Dominica - Analysis By Parish. UNITAR-INOSAT. OCtober 18, 2017. Retrieved June 2019.'
+      }
+    ],
       visibleLayer: ['building-data-9b0ub5'],
       zoom: 14.5,
       center: { lon: -61.377716, lat: 15.308563 },
