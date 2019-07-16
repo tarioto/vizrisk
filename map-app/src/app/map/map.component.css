@@ -141,3 +141,7 @@ ul {
 ::ng-deep .highcharts-title {
   text-transform: none !important;
 }
+
+::ng-deep .highcharts-subtitle {
+  text-transform: none !important;
+}
