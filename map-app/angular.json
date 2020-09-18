@@ -136,5 +136,8 @@
       }
     }
   },
-  "defaultProject": "map-app"
+  "defaultProject": "map-app",
+  "cli": {
+    "analytics": false
+  }
 }
