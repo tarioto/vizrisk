@@ -1,23 +1,20 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { environment } from './../../environments/environment';
-import * as mapboxgl from 'mapbox-gl';
 import { FormControl } from '@angular/forms';
+import { environment } from './../../environments/environment';
+import { scenes } from './scenes';
+import * as mapboxgl from 'mapbox-gl';
 import * as Highcharts from 'highcharts';
 import theme from 'highcharts/themes/dark-unica';
 theme(Highcharts);
-import { scenes } from './scenes';
 
 @Component({
   selector: 'app-map',
-  queries: {
-    contentRef: new ViewChild('contentRef')
-  },
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css']
 })
 
 export class MapComponent implements OnInit {
-  public contentRef: ElementRef;
+  @ViewChild('infoContainer') contentRef: ElementRef;
   Highcharts: typeof Highcharts = Highcharts;
   chartOptions: Highcharts.Options = {
     series: [{
