@@ -14,6 +14,7 @@ import { SummaryTableComponent } from './map/summary-table/summary-table.compone
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { MatCardModule } from '@angular/material/card';
     HighchartsChartModule,
     FormsModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
