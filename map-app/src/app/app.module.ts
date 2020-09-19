@@ -12,6 +12,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
 import { MariaLegendComponent } from './map/maria-legend/maria-legend.component';
 import { SummaryTableComponent } from './map/summary-table/summary-table.component';
 
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { SummaryTableComponent } from './map/summary-table/summary-table.compone
     FlexLayoutModule,
     HighchartsChartModule,
     FormsModule,
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
