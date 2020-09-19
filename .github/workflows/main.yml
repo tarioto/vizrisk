@@ -15,22 +15,28 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-west-2
+          aws-region: us-east-1
       - name: Install Nodejs
         uses: actions/setup-node@master
         with:
           node-version: '12.x'
       - name: Install Dependencies
-        run: npm install
+        run: |
+            cd map-app
+            npm install
       - name: Build static files
-        run: npm run build:prod
+        run: |
+            cd map-app
+            npm run build:prod
       - name: Deploy static files to S3 bucket
-        run: aws s3 sync ./dist/vizrisk/ s3://${{ secrets.AWS_S3_BUCKET }} --delete
+        run: |
+            cd map-app
+            aws s3 sync ./map-app/dist/vizrisk/ s3://${{ secrets.AWS_S3_BUCKET }} --delete
       - name: Invalidate CloudFront Cache
         uses: chetan/invalidate-cloudfront-action@master
         env:
           DISTRIBUTION: ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }}
           PATHS: '/*'
-          AWS_REGION: 'us-west-2'
+          AWS_REGION: 'us-east-1'
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
