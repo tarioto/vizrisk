@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "map-app": {
+    "vizrisk": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/map-app",
+            "outputPath": "dist/vizrisk",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -59,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "map-app:build"
+            "browserTarget": "vizrisk:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "map-app:build:production"
+              "browserTarget": "vizrisk:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "map-app:build"
+            "browserTarget": "vizrisk:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "map-app-e2e": {
+    "vizrisk-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "map-app:serve"
+            "devServerTarget": "vizrisk:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "map-app:serve:production"
+              "devServerTarget": "vizrisk:serve:production"
             }
           }
         },
@@ -135,7 +135,7 @@
       }
     }
   },
-  "defaultProject": "map-app",
+  "defaultProject": "vizrisk",
   "cli": {
     "analytics": false
   }
