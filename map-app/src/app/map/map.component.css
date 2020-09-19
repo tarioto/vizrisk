@@ -83,17 +83,17 @@
   font-size: 1em;
   margin: 10px;
   border: 1px solid #FFD700;
-  background-color: #333333;
+  background-color: #2b2a2a;
   color: #FFD700;
 }
 
+.mat-raised-button:hover {
+  background-color: #FFD700;
+  color: black;
+}
+
 .button[disabled] {
-  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 1em;
-  margin: 1vh;
   background-color: #181919;
-  border: 0px solid #181919;
-  color: #181919;
 }
 
 
@@ -111,11 +111,6 @@
 .mapboxgl-popup {
   max-width: 400px;
   font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-}
-
-
-.button {
-  margin: 1vh;
 }
 
 ::ng-deep .mat-checkbox-label {
