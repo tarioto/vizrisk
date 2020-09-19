@@ -28,8 +28,7 @@
               "./node_modules/mapbox-gl/dist/mapbox-gl.css",
               "./node_modules/@mapbox/mapbox-gl-geocoder/lib/mapbox-gl-geocoder.css"
             ],
-            "scripts": [],
-            "es5BrowserSupport": true
+            "scripts": []
           },
           "configurations": {
             "production": {
