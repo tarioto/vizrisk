@@ -9,7 +9,7 @@ theme(Highcharts);
 @Component({
   selector: 'app-map',
   queries: {
-    contentRef: new ViewChild( 'contentRef' )
+    contentRef: new ViewChild('contentRef')
   },
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css']
@@ -757,7 +757,8 @@ export class MapComponent implements OnInit {
   }
 
   private scrollCardContentToTop(): void {
-    this.contentRef.nativeElement.scrollTo( 0, 0 );
+    console.log(this.contentRef)
+    this.contentRef.nativeElement.scrollTo(0, 0);
   }
 
 }
