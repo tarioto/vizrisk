@@ -31,7 +31,7 @@ jobs:
       - name: Deploy static files to S3 bucket
         run: |
             cd map-app
-            aws s3 sync ./map-app/dist/vizrisk/ s3://${{ secrets.AWS_S3_BUCKET }} --delete
+            aws s3 sync ./dist/vizrisk/ s3://${{ secrets.AWS_S3_BUCKET }} --delete
       - name: Invalidate CloudFront Cache
         uses: chetan/invalidate-cloudfront-action@master
         env:
