@@ -17,15 +17,16 @@ export class MapComponent implements OnInit {
   @ViewChild('infoContainer') contentRef: ElementRef;
   Highcharts: typeof Highcharts = Highcharts;
   chartOptions: Highcharts.Options = {
+    chart: {
+      borderRadius: 4,
+      style: {
+        fontFamily: 'Helvetica'
+      }
+    },
     series: [{
       data: [1, 2, 3],
       type: 'column'
-    }],
-    chart: {
-      style: {
-        fontFamily: 'Helvetica '
-      }
-    }
+    }]
   };
   updateFlag = true;
   map: mapboxgl.Map;
