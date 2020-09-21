@@ -172,8 +172,18 @@ ul {
 
 ::ng-deep .highcharts-title {
   text-transform: none !important;
+  font-size: 1.4em !important;
 }
 
 ::ng-deep .highcharts-subtitle {
   text-transform: none !important;
+  font-size: 1.4em !important;
+}
+
+::ng-deep .mat-card-header {
+  font-size: 1.3em !important;
+}
+
+::ng-deep .mat-card-content {
+  font-size: .8em !important;
 }
