@@ -181,7 +181,6 @@ ul {
 
 ::ng-deep .highcharts-subtitle {
   text-transform: none !important;
-  font-size: 1.4em !important;
 }
 
 ::ng-deep .mat-card-header {
