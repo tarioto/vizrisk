@@ -28,7 +28,7 @@ export const scenes = [
         label: '"New List of the Costliest U.S. Hurricanes Includes 2017\'s Harvey, Irma, Maria." TWC. Jan 29, 2018. Retrieved July 14, 2019.'
       }],
       visibleLayer: ['dominica-coast'],
-      zoom: 4.5,
+      zoom: 3.5,
       center: { lon: -71.967749, lat: 19.232773 },
       chart: {
         exists: true,
@@ -132,7 +132,7 @@ export const scenes = [
           label: '"Category 5 Hurricane Maria Hits Dominica." Dr. Jeff Masters. Sept 18, 2017. Retrieved July 14, 2019.'
         }],
       visibleLayer: ['peak-gust-0xiyjn'],
-      zoom: 5.5,
+      zoom: 4.5,
       center: { lon: -63.509315, lat: 17.608075 },
       chart: {
         exists: false
@@ -165,7 +165,7 @@ export const scenes = [
         label: 'Dominica: Post-Disaster Needs Assessment following Hurricane Maria. GFDRR. 2018'
       }],
       visibleLayer: ['displaced-pop2'],
-      zoom: 10.5,
+      zoom: 9.5,
       center: { lon: -61.351322, lat: 15.428929 },
       chart: {
         exists: true,
@@ -229,7 +229,7 @@ export const scenes = [
       }
     ],
       visibleLayer: ['building-data-9b0ub5'],
-      zoom: 10.5,
+      zoom: 9.5,
       center: { lon: -61.351322, lat: 15.428929 },
       table: {
         exists: false
@@ -303,7 +303,7 @@ export const scenes = [
         exists: false
       },
       visibleLayer: ['building-data-9b0ub5'],
-      zoom: 14.5,
+      zoom: 13.5,
       center: { lon: -61.377716, lat: 15.308563 },
       chart: {
         exists: true,
@@ -393,7 +393,7 @@ export const scenes = [
       }
     ],
       visibleLayer: ['building-data-9b0ub5'],
-      zoom: 14.5,
+      zoom: 13.5,
       center: { lon: -61.377716, lat: 15.308563 },
       table: {
         exists: false,
@@ -495,7 +495,7 @@ export const scenes = [
         label: '*Prevatt, David & Dupigny-Giroux, L-A & Masters, Forrest. (2010). Engineering Perspectives on Reducing Hurricane Damage to Housing in CARICOM Caribbean Islands. Natural Hazards Review. 11. 140-150. 10.1061/(ASCE)NH.1527-6996.0000017.'
       }],
       visibleLayer: ['wind-hazards'],
-      zoom: 10.5,
+      zoom: 9.5,
       center: { lon: -61.351322, lat: 15.428929 },
       chart: {
         exists: false
@@ -532,7 +532,7 @@ export const scenes = [
         label: 'Dominica: Post-Disaster Needs Assessment following Hurricane Maria. GFDRR. 2018'
       }],
       visibleLayer: ['dominica-coast-blue', 'hurricaneshelters', 'roads', 'dominica-buildings-gray'],
-      zoom: 10.5,
+      zoom: 9.5,
       center: { lon: -61.351322, lat: 15.428929 },
       chart: {
         exists: false
@@ -566,7 +566,7 @@ export const scenes = [
         label: '"The Quest to Hurricane-Proof and Island". Nikki Ekstein. Bloomberg. May 10, 2018. Retrieved June 23, 2019.'
       }],
       visibleLayer: ['dominica-coast-blue', 'hurricaneshelters', 'roads', 'dominica-buildings-gray'],
-      zoom: 10.5,
+      zoom: 9.5,
       center: { lon: -61.351322, lat: 15.428929 },
       chart: {
         exists: false
