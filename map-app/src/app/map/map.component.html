@@ -33,17 +33,19 @@
         </mat-card-content>
       </mat-card>
     </div>
-    <div class="navigation" fxLayout="row" fxLayoutAlign="end center">
-      <button mat-raised-button
-        [disabled]="prevDisabled"
-        class="button"
-        (click)="changeScene('prev')">prev
-      </button>
-      <button mat-raised-button
-        class="button"
-        [disabled]="nextDisabled"
-        (click)="changeScene('next')">next
-      </button>
+    <div class="navigation">
+      <div fxLayout="row" fxLayoutAlign="end center">
+        <button mat-raised-button
+          [disabled]="prevDisabled"
+          class="button"
+          (click)="changeScene('prev')">prev
+        </button>
+        <button mat-raised-button
+          class="button"
+          [disabled]="nextDisabled"
+          (click)="changeScene('next')">next
+        </button>
+      </div>
     </div>
   </div>
   <div class="map" id="map" class="match-parent"></div>
