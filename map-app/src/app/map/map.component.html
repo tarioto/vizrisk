@@ -14,6 +14,13 @@
             style="width: 100%; height: 100%; display: block;"
           ></highcharts-chart>
           <app-summary-table *ngIf="scenes[currentSceneIndex].table.exists"></app-summary-table>
+          <a
+            *ngIf="scenes[currentSceneIndex].blogPost"
+            class="blog-post"
+            href="https://medium.com/@kjbarns/visualizing-hurricane-marias-impacts-in-dominica-for-the-vizrisk-challenge-623f0b19dc33"
+            target="_blank">
+            Check out our blog post to learn more about the challenge and our process.
+          </a>
           <ul>
             <li *ngFor="let attribution of scenes[currentSceneIndex].attribution">
               <a

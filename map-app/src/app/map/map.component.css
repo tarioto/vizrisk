@@ -132,6 +132,10 @@
   font-size: .5em;
 }
 
+.blog-post {
+  color: #FFD700;
+}
+
 .content {
   /* height: 100%; */
   overflow-y: scroll;
