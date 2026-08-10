@@ -1,0 +1,14 @@
+title = "vizrisk gitleaks config"
+
+# Keep all of gitleaks' built-in rules...
+[extend]
+useDefault = true
+
+# ...but allow Mapbox PUBLIC tokens. `pk.` tokens are designed to be embedded in
+# client-side code (they already ship in the map bundle) and are not secrets.
+# Secret `sk.` tokens are deliberately NOT allowlisted and will still be flagged.
+[allowlist]
+description = "Mapbox public access tokens (pk.)"
+regexes = [
+  '''pk\.eyJ[\w-]+\.[\w-]+''',
+]
