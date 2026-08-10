@@ -28,7 +28,7 @@ import { MatTableModule } from '@angular/material/table';
     BrowserAnimationsModule,
     HttpClientModule,
     NgxMapboxGLModule.withConfig({
-     accessToken: 'pk.eyJ1IjoidGltb3RoeS1hcmlvdG8iLCJhIjoiY2p3aWw3eTIxMDBobTRha3M2MGZ0b2t4NiJ9.PPEqq6_WNM2ngRwvSf9p2g'
+     accessToken: 'pk.eyJ1IjoidGFyaW90byIsImEiOiJjbXNuZzIyMWYxcGFtMzBxeWpzeW00MGpoIn0.Nv5SzeK4esV7Q8YaQVflkQ'
      // geocoderAccessToken: 'TOKEN'
    }),
     ReactiveFormsModule,
