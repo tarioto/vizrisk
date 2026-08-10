@@ -20,7 +20,10 @@ this migration.
 | `variables.tf`  | `aws_region`, `domain_name`, `parent_zone_name`, `origin_bucket` |
 | `outputs.tf`    | Bucket name, distribution ID, CloudFront domain, cert ARN |
 
-State is local (`terraform.tfstate`, git-ignored).
+State is stored remotely in S3 (`s3://timarioto-tofu-state-322859817636`, key
+`vizrisk/terraform.tfstate`) with native S3 locking (`use_lockfile`, no
+DynamoDB). The bucket is versioned and encrypted. Backend config is in
+`versions.tf`; run `tofu init` to use it.
 
 ## Apply
 
