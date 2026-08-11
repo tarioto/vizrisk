@@ -4,39 +4,80 @@ on:
   push:
     branches:
       - master
+  pull_request:
+
+# Default to read-only; the deploy job opts into id-token for OIDC.
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: map-app
     steps:
-      - uses: actions/checkout@master
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@master
+      - uses: actions/checkout@v5
+
+      - name: Install Node.js
+        uses: actions/setup-node@v5
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
-      - name: Install Nodejs
-        uses: actions/setup-node@master
-        with:
+          # Angular 10 build toolchain — pinned to the Node it was built against.
           node-version: '12.x'
-      - name: Install Dependencies
-        run: |
-            cd map-app
-            npm install
+
+      - name: Install dependencies
+        run: npm install
+
       - name: Build static files
-        run: |
-            cd map-app
-            npm run build:prod
+        run: npm run build:prod
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: dist
+          path: map-app/dist/vizrisk/
+          retention-days: 1
+
+  deploy:
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v7
+        with:
+          name: dist
+          path: dist
+
+      - name: Configure AWS credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: arn:aws:iam::322859817636:role/github-actions-deploy-vizrisk
+          aws-region: us-east-1
+
       - name: Deploy static files to S3 bucket
         run: |
-            cd map-app
-            aws s3 sync ./dist/vizrisk/ s3://${{ secrets.AWS_S3_BUCKET }} --delete
-      - name: Invalidate CloudFront Cache
-        uses: chetan/invalidate-cloudfront-action@master
-        env:
-          DISTRIBUTION: ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }}
-          PATHS: '/*'
-          AWS_REGION: 'us-east-1'
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          # index.html + assets + favicon are not fingerprinted — must
+          # revalidate so new deploys are picked up. JS/CSS are excluded here
+          # so this pass never touches or deletes the hashed bundles.
+          aws s3 sync ./dist/ s3://${{ secrets.AWS_S3_BUCKET }} --delete \
+            --exclude "*.js" --exclude "*.css" \
+            --cache-control "no-cache"
+          # Angular fingerprints the JS/CSS bundles (outputHashing: all) —
+          # safe to cache forever.
+          aws s3 sync ./dist/ s3://${{ secrets.AWS_S3_BUCKET }} --delete \
+            --exclude "*" --include "*.js" --include "*.css" \
+            --cache-control "public, max-age=31536000, immutable"
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"
