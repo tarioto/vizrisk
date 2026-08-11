@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # GitHub Actions pinned in .github/workflows/*.
+  # npm is intentionally omitted: the Angular 10 app in map-app/ is legacy and
+  # version bumps would open a flood of major-version PRs. GitHub still opens
+  # security-vulnerability PRs for npm regardless of this config.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns:
+          - "*"
