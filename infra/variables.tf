@@ -21,3 +21,9 @@ variable "origin_bucket" {
   type        = string
   default     = "vizrisk"
 }
+
+variable "github_repository" {
+  description = "owner/repo allowed to assume the deploy role via OIDC."
+  type        = string
+  default     = "tarioto/vizrisk"
+}
