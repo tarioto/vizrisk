@@ -47,7 +47,7 @@ Full citations for each scene are shown in the app and defined in
 
 ## Tech stack
 
-- [Angular 10](https://angular.io/) + Angular Material / Flex Layout
+- [Angular 22](https://angular.dev/) + Angular Material
 - [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/) for the map
 - [Highcharts](https://www.highcharts.com/) for the per-scene charts
 - Static hosting on AWS S3 + CloudFront, provisioned with OpenTofu
@@ -65,17 +65,20 @@ Full citations for each scene are shown in the app and defined in
 
 ## Running locally
 
-Requires Node.js 12 (the Angular 10 toolchain doesn't build on newer versions;
-use `nvm use 12` or similar).
+Requires Node.js 24 (see `map-app/.nvmrc`; `nvm use` picks it up).
 
 ```bash
 cd map-app
 npm install
-npm start            # dev server at http://localhost:4200
-npm run build:prod   # production build to map-app/dist/vizrisk/
+npm start    # dev server at http://localhost:4200
+npm test     # unit tests (Vitest)
+npm run build  # production build to map-app/dist/vizrisk/
 ```
 
-The Mapbox public access token is set in `map-app/src/environments/`.
+The Mapbox public access token is set in `map-app/src/environments/`. It is
+URL-restricted to the production domain, so the map won't load on
+`localhost` unless `localhost` is added to the token's allowed URLs in the
+Mapbox account.
 
 ### Optional: data pipeline
 

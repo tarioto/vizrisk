@@ -26,14 +26,18 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v7
         with:
-          # Angular 10 build toolchain — pinned to the Node it was built against.
-          node-version: '12.x'
+          node-version-file: map-app/.nvmrc
+          cache: npm
+          cache-dependency-path: map-app/package-lock.json
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+
+      - name: Run unit tests
+        run: npm test -- --watch=false
 
       - name: Build static files
-        run: npm run build:prod
+        run: npm run build
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v7
