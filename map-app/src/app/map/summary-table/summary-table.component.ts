@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatTableModule } from '@angular/material/table';
 
 export interface PeriodicElement {
   suburb: string;
@@ -25,8 +26,9 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 @Component({
   selector: 'app-summary-table',
+  imports: [MatTableModule],
   templateUrl: './summary-table.component.html',
-  styleUrls: ['./summary-table.component.css']
+  styleUrl: './summary-table.component.css'
 })
 export class SummaryTableComponent implements OnInit {
   displayedColumns: string[] = [
