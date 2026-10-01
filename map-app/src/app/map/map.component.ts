@@ -103,6 +103,10 @@ export class MapComponent implements OnInit {
         this.map.setLayoutProperty(layer.id, 'visibility', 'none');
       });
       this.map.setLayoutProperty('dominica-coast', 'visibility', 'visible'); // Highlight coastline by default
+      // Some displaced-population features have no IDP count, which the style's
+      // circle-radius/circle-color expressions can't evaluate (they fall back to
+      // black and log a warning per feature). Only draw features with a count.
+      this.map.setFilter('displaced-pop2', ['has', '2.1.b.1 Total number of IDP individuals']);
     });
 
     this.map.on('click', 'dominica-damage-buildings', (e) => {
