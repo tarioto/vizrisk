@@ -57,7 +57,6 @@ Full citations for each scene are shown in the app and defined in
 | Path | Contents |
 | ---- | -------- |
 | `map-app/` | The Angular front end. Scenes, charts, and citations live in `src/app/map/scenes.ts`; map and layer logic in `src/app/map/map.component.ts` |
-| `map-app/server.js`, `building.js` | Optional Express + MongoDB API (`/api/buildings`) from early development. The deployed site is fully static and does not use it |
 | `input-db/` | Python scripts used to load and update the building damage data in a local MongoDB (`viz_risk` database) |
 | `building_data.csv` | Processed building-level damage dataset |
 | `infra/` | OpenTofu config for S3, CloudFront, ACM, and Route53. See [`infra/README.md`](infra/README.md) |
