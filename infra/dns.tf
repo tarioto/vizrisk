@@ -30,3 +30,20 @@ resource "aws_route53_record" "aaaa" {
     evaluate_target_health = false
   }
 }
+
+# The alias hostname lives in Cloudflare. DNS-only (not proxied) so CloudFront
+# terminates TLS and serves its own headers, same as the primary hostname.
+data "cloudflare_zone" "alias" {
+  filter = {
+    name = var.cloudflare_zone_name
+  }
+}
+
+resource "cloudflare_dns_record" "alias" {
+  zone_id = data.cloudflare_zone.alias.zone_id
+  name    = var.cloudflare_domain_name
+  type    = "CNAME"
+  content = aws_cloudfront_distribution.site.domain_name
+  ttl     = 300
+  proxied = false
+}

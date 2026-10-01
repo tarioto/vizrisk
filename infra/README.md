@@ -1,13 +1,18 @@
 # Infrastructure (OpenTofu)
 
-Infrastructure-as-code for `vizrisk.timarioto.com`: the existing `vizrisk` S3
-bucket served through a new CloudFront distribution (Origin Access Control) with
-a DNS-validated, auto-renewing ACM certificate and Route53 records.
+Infrastructure-as-code for `vizrisk.timarioto.com` (and its alias
+`vizrisk.nicolepaul.io`): the existing `vizrisk` S3 bucket served through a new
+CloudFront distribution (Origin Access Control) with a DNS-validated,
+auto-renewing ACM certificate covering both hostnames.
 
 DNS records live in the shared **`timarioto.com`** hosted zone (referenced
 read-only via a data source) — the same zone the main site uses. The old orphan
 `vizrisk.timarioto.com` sub-zone was never delegated and is removed as part of
 this migration.
+
+The alias `vizrisk.nicolepaul.io` lives in the **`nicolepaul.io`** Cloudflare
+zone (also referenced read-only). Its CNAME to CloudFront and its ACM
+validation record are DNS-only (not proxied) Cloudflare records.
 
 ## Resources
 
@@ -15,9 +20,9 @@ this migration.
 | --------------- | --------- |
 | `s3.tf`         | Access posture for the **existing** `vizrisk` bucket: public-access block, ownership controls, CloudFront-only policy (bucket + content reused, not recreated) |
 | `cloudfront.tf` | Origin Access Control + CloudFront distribution |
-| `acm.tf`        | ACM cert (us-east-1) + Route53 DNS validation (auto-renews) |
-| `dns.tf`        | Route53 A/AAAA alias records in the parent zone |
-| `variables.tf`  | `aws_region`, `domain_name`, `parent_zone_name`, `origin_bucket` |
+| `acm.tf`        | ACM cert (us-east-1) + Route53/Cloudflare DNS validation (auto-renews) |
+| `dns.tf`        | Route53 A/AAAA alias records in the parent zone + Cloudflare CNAME for the alias |
+| `variables.tf`  | `aws_region`, `domain_name`, `parent_zone_name`, `cloudflare_domain_name`, `cloudflare_zone_name`, `origin_bucket` |
 | `outputs.tf`    | Bucket name, distribution ID, CloudFront domain, cert ARN |
 
 State is stored remotely in S3 (`s3://timarioto-tofu-state-322859817636`, key
@@ -28,7 +33,9 @@ DynamoDB). The bucket is versioned and encrypted. Backend config is in
 ## Apply
 
 Requires AWS credentials with S3 (on the `vizrisk` bucket), CloudFront, ACM, and
-Route53 permissions.
+Route53 permissions, plus a Cloudflare API token with **Zone:Read** and
+**DNS:Edit** on `nicolepaul.io` in `CLOUDFLARE_API_TOKEN` (CI reads it from the
+repo secret of the same name).
 
 ```bash
 cd infra

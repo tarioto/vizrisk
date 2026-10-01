@@ -6,6 +6,10 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
+    cloudflare = {
+      source  = "cloudflare/cloudflare"
+      version = "~> 5.0"
+    }
   }
 
   # Remote state in S3 with native S3 locking (use_lockfile, no DynamoDB).
