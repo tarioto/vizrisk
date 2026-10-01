@@ -6,7 +6,10 @@ export const appConfig: ApplicationConfig = {
     provideBrowserGlobalErrorListeners(),
     provideHighcharts({
       instance: () => import('highcharts/esm/highcharts').then((m) => m.default),
-      modules: () => [import('highcharts/esm/themes/dark-unica')],
+      modules: () => [
+        import('highcharts/esm/modules/accessibility'),
+        import('highcharts/esm/themes/dark-unica'),
+      ],
     }),
   ],
 };
