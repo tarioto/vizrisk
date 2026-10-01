@@ -91,12 +91,12 @@ python insert_buildings.py
 
 ## Deployment
 
-- **App:** every push to `master` builds the app and syncs it to S3, then
+- **App:** every push to `main` builds the app and syncs it to S3, then
   invalidates the CloudFront cache (`.github/workflows/main.yml`). Pull
   requests run the build only. AWS access uses GitHub OIDC, so no long-lived
   keys are stored.
 - **Infrastructure:** changes under `infra/` get a `tofu plan` posted as a PR
-  comment and are applied on merge to `master` (`.github/workflows/infra.yml`).
+  comment and are applied on merge to `main` (`.github/workflows/infra.yml`).
 - **Secret scanning:** TruffleHog runs in CI, and a
   [gitleaks](https://github.com/gitleaks/gitleaks) pre-commit hook is
   available locally (`pre-commit install`).

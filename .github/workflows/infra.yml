@@ -7,7 +7,7 @@ on:
       - '.github/workflows/infra.yml'
   push:
     branches:
-      - master
+      - main
     paths:
       - 'infra/**'
       - '.github/workflows/infra.yml'
@@ -84,5 +84,5 @@ jobs:
           exit "${{ steps.plan.outputs.exitcode }}"
 
       - name: tofu apply
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: tofu apply -no-color -input=false -auto-approve
