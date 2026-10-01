@@ -23,3 +23,7 @@ provider "aws" {
     }
   }
 }
+
+# Manages DNS for the vizrisk.nicolepaul.io alias. Authenticates via the
+# CLOUDFLARE_API_TOKEN env var (needs Zone:Read + DNS:Edit on the zone).
+provider "cloudflare" {}

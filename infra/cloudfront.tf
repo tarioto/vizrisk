@@ -48,7 +48,7 @@ resource "aws_cloudfront_distribution" "site" {
   comment             = var.domain_name
   price_class         = "PriceClass_100"
 
-  aliases = [var.domain_name]
+  aliases = [var.domain_name, var.cloudflare_domain_name]
 
   origin {
     domain_name              = data.aws_s3_bucket.site.bucket_regional_domain_name
