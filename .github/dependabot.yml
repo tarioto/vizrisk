@@ -1,9 +1,6 @@
 version: 2
 updates:
   # GitHub Actions pinned in .github/workflows/*.
-  # npm is intentionally omitted: the Angular 10 app in map-app/ is legacy and
-  # version bumps would open a flood of major-version PRs. GitHub still opens
-  # security-vulnerability PRs for npm regardless of this config.
   - package-ecosystem: github-actions
     directory: /
     schedule:
@@ -12,3 +9,17 @@ updates:
       actions:
         patterns:
           - "*"
+
+  # npm: no automated PRs (version or security). The Angular 10 app in map-app/
+  # builds on Node 12 / npm 6, which only reads lockfileVersion 1. Dependabot
+  # regenerates package-lock.json as v3, so its npm PRs can't be installed
+  # correctly by CI. Security alerts still appear under the Security tab; fix
+  # them with npm 6 (`npx npm@6 audit fix`) until the app is upgraded off
+  # Angular 10, then remove this ignore rule.
+  - package-ecosystem: npm
+    directory: /map-app
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 0
+    ignore:
+      - dependency-name: "*"
