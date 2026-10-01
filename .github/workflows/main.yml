@@ -26,14 +26,18 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v7
         with:
-          # Angular 10 build toolchain — pinned to the Node it was built against.
-          node-version: '12.x'
+          node-version-file: map-app/.nvmrc
+          cache: npm
+          cache-dependency-path: map-app/package-lock.json
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+
+      - name: Run unit tests
+        run: npm test -- --watch=false
 
       - name: Build static files
-        run: npm run build:prod
+        run: npm run build
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v7
@@ -66,14 +70,18 @@ jobs:
         run: |
           # index.html + assets + favicon are not fingerprinted — must
           # revalidate so new deploys are picked up. JS/CSS are excluded here
-          # so this pass never touches or deletes the hashed bundles.
+          # so this pass never touches or deletes the hashed bundles. The
+          # mapbox-gl worker is copied from node_modules without a hash, so it
+          # belongs in this pass too.
           aws s3 sync ./dist/ s3://${{ secrets.AWS_S3_BUCKET }} --delete \
             --exclude "*.js" --exclude "*.css" \
+            --include "mapbox-gl-csp-worker.js" \
             --cache-control "no-cache"
           # Angular fingerprints the JS/CSS bundles (outputHashing: all) —
           # safe to cache forever.
           aws s3 sync ./dist/ s3://${{ secrets.AWS_S3_BUCKET }} --delete \
             --exclude "*" --include "*.js" --include "*.css" \
+            --exclude "mapbox-gl-csp-worker.js" \
             --cache-control "public, max-age=31536000, immutable"
 
       - name: Invalidate CloudFront cache

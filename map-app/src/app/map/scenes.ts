@@ -361,7 +361,7 @@ export const scenes = [
           yAxis: {
             title: {
               text: 'Number of damaged buildings',
-              align: 'left'
+              align: 'low'
             }
           },
           plotOptions: {

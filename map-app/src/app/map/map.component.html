@@ -1,5 +1,5 @@
-<div fxLayout="row" fxLayoutAlign="start" fxLayout.lt-md="column-reverse">
-  <div fxLayout="column" fxLayoutAlign="space-between" class="overlay" style="white-space: pre-line">
+<div class="layout">
+  <div class="overlay" style="white-space: pre-line">
     <div #infoContainer class="content">
       <mat-card>
         <mat-card-header>
@@ -7,34 +7,39 @@
         </mat-card-header>
         <mat-card-content>
           <p>{{displayScene('info')}}</p>
-          <highcharts-chart
-            *ngIf="updateFlag && scenes[currentSceneIndex].chart.exists"
-            [Highcharts]="Highcharts"
-            [options]="scenes[currentSceneIndex].chart.chartOptions"
-            style="width: 100%; height: 100%; display: block;"
-          ></highcharts-chart>
-          <app-summary-table *ngIf="scenes[currentSceneIndex].table.exists"></app-summary-table>
-          <a
-            *ngIf="scenes[currentSceneIndex].blogPost"
-            class="blog-post"
-            href="https://medium.com/@kjbarns/visualizing-hurricane-marias-impacts-in-dominica-for-the-vizrisk-challenge-623f0b19dc33"
-            target="_blank">
-            Check out our blog post to learn more about the challenge and our process.
-          </a>
+          @if (updateFlag() && scenes[currentSceneIndex].chart.exists) {
+            <highcharts-chart
+              [options]="scenes[currentSceneIndex].chart.chartOptions"
+              style="width: 100%; height: 100%; display: block;"
+            ></highcharts-chart>
+          }
+          @if (scenes[currentSceneIndex].table.exists) {
+            <app-summary-table></app-summary-table>
+          }
+          @if (scenes[currentSceneIndex].blogPost) {
+            <a
+              class="blog-post"
+              href="https://medium.com/@kjbarns/visualizing-hurricane-marias-impacts-in-dominica-for-the-vizrisk-challenge-623f0b19dc33"
+              target="_blank">
+              Check out our blog post to learn more about the challenge and our process.
+            </a>
+          }
           <ul>
-            <li *ngFor="let attribution of scenes[currentSceneIndex].attribution">
-              <a
-              class="attribution"
-              href="{{attribution.link}}">
-                {{attribution.label}}
-              </a>
-            </li>
+            @for (attribution of scenes[currentSceneIndex].attribution; track $index) {
+              <li>
+                <a
+                class="attribution"
+                href="{{attribution.link}}">
+                  {{attribution.label}}
+                </a>
+              </li>
+            }
           </ul>
         </mat-card-content>
       </mat-card>
     </div>
     <div class="navigation">
-      <div fxLayout="row" fxLayoutAlign="end center">
+      <div class="navigation-buttons">
         <button mat-raised-button
           [disabled]="prevDisabled"
           class="button"
@@ -50,9 +55,10 @@
   </div>
   <div class="map" id="map" class="match-parent"></div>
 </div>
-<app-maria-legend
-  class="legend"
-  *ngIf="scenes[currentSceneIndex].legend.exists"
-  [colors]="scenes[currentSceneIndex].legend.colors"
-  [labels]="scenes[currentSceneIndex].legend.labels">
-</app-maria-legend>
+@if (scenes[currentSceneIndex].legend.exists) {
+  <app-maria-legend
+    class="legend"
+    [colors]="scenes[currentSceneIndex].legend.colors"
+    [labels]="scenes[currentSceneIndex].legend.labels">
+  </app-maria-legend>
+}

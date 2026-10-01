@@ -1,35 +1,31 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { Component, OnInit, ElementRef, ViewChild, signal } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { HighchartsChartComponent } from 'highcharts-angular';
+import mapboxgl from 'mapbox-gl';
 import { environment } from './../../environments/environment';
 import { scenes } from './scenes';
-import * as mapboxgl from 'mapbox-gl';
-import * as Highcharts from 'highcharts';
-import theme from 'highcharts/themes/dark-unica';
-theme(Highcharts);
+import { MariaLegendComponent } from './maria-legend/maria-legend.component';
+import { SummaryTableComponent } from './summary-table/summary-table.component';
 
 @Component({
   selector: 'app-map',
+  imports: [
+    MatButtonModule,
+    MatCardModule,
+    HighchartsChartComponent,
+    MariaLegendComponent,
+    SummaryTableComponent
+  ],
   templateUrl: './map.component.html',
-  styleUrls: ['./map.component.css']
+  styleUrl: './map.component.css'
 })
 
 export class MapComponent implements OnInit {
-  @ViewChild('infoContainer') contentRef: ElementRef;
-  Highcharts: typeof Highcharts = Highcharts;
-  chartOptions: Highcharts.Options = {
-    chart: {
-      borderRadius: 4,
-      style: {
-        fontFamily: 'Helvetica'
-      }
-    },
-    series: [{
-      data: [1, 2, 3],
-      type: 'column'
-    }]
-  };
-  updateFlag = true;
-  map: mapboxgl.Map;
+  @ViewChild('infoContainer') contentRef!: ElementRef;
+  // Toggled off and back on to force the chart to re-render for each scene.
+  updateFlag = signal(true);
+  map!: mapboxgl.Map;
   style = 'mapbox://styles/awilson1233/cjy3dg55f2kxh1covpds8dnh5';
   lat = 19.232773;
   lng = -71.967749;
@@ -40,7 +36,6 @@ export class MapComponent implements OnInit {
   nextDisabled = false;
   prevDisabled = true;
 
-  toggleableLayerIds = new FormControl();
   toggleableLayerIdsList = [
     {
       id: 'storm-track-8xi3zk',
@@ -91,7 +86,10 @@ export class MapComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    (mapboxgl as typeof mapboxgl).accessToken = environment.mapbox.accessToken;
+    mapboxgl.accessToken = environment.mapbox.accessToken;
+    // The bundler re-minifies mapbox-gl, which breaks the worker it builds from
+    // its own source. Load the prebuilt worker shipped as a static asset instead.
+    mapboxgl.workerUrl = 'mapbox-gl-csp-worker.js';
 
     this.map = new mapboxgl.Map({
       container: 'map',
@@ -105,12 +103,16 @@ export class MapComponent implements OnInit {
         this.map.setLayoutProperty(layer.id, 'visibility', 'none');
       });
       this.map.setLayoutProperty('dominica-coast', 'visibility', 'visible'); // Highlight coastline by default
+      // Some displaced-population features have no IDP count, which the style's
+      // circle-radius/circle-color expressions can't evaluate (they fall back to
+      // black and log a warning per feature). Only draw features with a count.
+      this.map.setFilter('displaced-pop2', ['has', '2.1.b.1 Total number of IDP individuals']);
     });
 
     this.map.on('click', 'dominica-damage-buildings', (e) => {
       new mapboxgl.Popup()
         .setLngLat(e.lngLat)
-        .setHTML(e.features[0].properties.agency_id)
+        .setHTML(String(e.features?.[0]?.properties?.['agency_id']))
         .addTo(this.map);
     });
   }
@@ -125,12 +127,12 @@ export class MapComponent implements OnInit {
 
 
   changeScene(direction: any) {
-    this.updateFlag = false;
+    this.updateFlag.set(false);
     if (direction === 'next') {
       this.prevDisabled = false;
       if (this.currentSceneIndex < this.scenes.length - 1) {
         this.currentSceneIndex += 1;
-        setTimeout(() => this.updateFlag = true, 1);
+        setTimeout(() => this.updateFlag.set(true), 1);
         this.setCurrentLayer();
         this.setZoomExtent();
         if (this.currentSceneIndex === this.scenes.length - 1) {
@@ -143,7 +145,7 @@ export class MapComponent implements OnInit {
       if (this.currentSceneIndex !== 0) {
         this.nextDisabled = false;
         this.currentSceneIndex -= 1;
-        setTimeout(() => this.updateFlag = true, 1);
+        setTimeout(() => this.updateFlag.set(true), 1);
         this.setCurrentLayer();
         this.setZoomExtent();
         if (this.currentSceneIndex > 0) {
@@ -153,7 +155,7 @@ export class MapComponent implements OnInit {
         }
       }
     }
-    this.updateFlag = false;
+    this.updateFlag.set(false);
     this.scrollCardContentToTop();
   }
 
@@ -162,15 +164,15 @@ export class MapComponent implements OnInit {
       this.map.setLayoutProperty(layer.id, 'visibility', 'none');
     });
 
-    this.scenes[this.currentSceneIndex].visibleLayer.forEach((layer) => {
+    this.scenes[this.currentSceneIndex].visibleLayer.forEach((layer: string) => {
       this.toggleLayer(layer);
       if (this.currentSceneIndex >= 7) {
-        this.scenes[7].visibleLayer.forEach((mitLayer) => {
+        this.scenes[7].visibleLayer.forEach((mitLayer: string) => {
           this.map.setLayoutProperty(mitLayer, 'visibility', 'visible');
         });
       } else if (this.currentSceneIndex < 7) {
         this.setZoomExtent();
-        this.scenes[7].visibleLayer.forEach((mitLayer) => {
+        this.scenes[7].visibleLayer.forEach((mitLayer: string) => {
           this.map.setLayoutProperty(mitLayer, 'visibility', 'none');
         });
       }
