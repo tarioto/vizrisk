@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@angular/build": "^22.2.1",
-    "@angular/cli": "^22.2.1",
+    "@angular/cli": "^22.2.3",
     "@angular/compiler-cli": "^22.2.0",
     "@types/geojson": "^7946.0.16",
     "jsdom": "^30.0.0",
